@@ -1,3 +1,3 @@
-# Bachelorproef - Peter Van de Putte & Jasper Van Gestel
+# Scriptie
 
-Repo voor gedeelde documenten, etc.
+in .Md
