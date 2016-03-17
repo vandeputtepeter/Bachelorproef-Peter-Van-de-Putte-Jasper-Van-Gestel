@@ -6,6 +6,30 @@
 
 ### 1. Doelstelling
 
+### 2. Werkwijze
+
+### 3. Testing guideline
+
+#### 3.1 
+
+
+### 
+### 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
