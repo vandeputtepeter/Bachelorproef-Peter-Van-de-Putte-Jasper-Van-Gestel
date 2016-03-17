@@ -10,11 +10,26 @@
 
 ### 3. Testing guideline
 
-#### 3.1 
+#### 3.1. Hierarchical navigation design
+
+#### 3.2. Testing checklist
+
+#### 3.3. How to test
+
+#### 3.4. Testing problems
 
 
-### 
-### 
+### 4. Bronnen
+
+
+
+
+
+
+
+
+
+
 
 
 
