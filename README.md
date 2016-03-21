@@ -1,4 +1,4 @@
->This file contains the temporary representation of our thesis
+>These files contains the temporary representation of our thesis
 
 # Thesis
 ---
