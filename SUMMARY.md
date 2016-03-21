@@ -1,4 +1,4 @@
 # Summary
 
-* [Introduction](Scriptie/README.md)
+* [Introduction](README.md)
 
