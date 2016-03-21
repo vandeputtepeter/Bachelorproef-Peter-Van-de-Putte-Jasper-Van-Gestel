@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
    * [Objectives](Scriptie/Objectives.md)
-   * Methods and Techniques
+   * [Methods and Techniques](Scriptie/MethodsAndTechniques)
    * Testing Guideline
    * Sources
 
