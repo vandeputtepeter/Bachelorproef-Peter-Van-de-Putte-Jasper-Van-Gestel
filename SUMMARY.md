@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-   * Objectives
+   * [Objectives](Scriptie/Objectives.md)
    * Methods and Techniques
    * Testing Guideline
    * Sources
