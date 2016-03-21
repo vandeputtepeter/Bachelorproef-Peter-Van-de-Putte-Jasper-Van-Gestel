@@ -1,18 +1,14 @@
 
 
-# Testscriptie
+# Test Thesis
 
-## Inhoud
+## 1. Objectives
 
-### 1. Doelstelling
-[Plan van aanpak.](https://github.com/vandeputtepeter/Bachelorproef-Peter-Van-de-Putte-Jasper-Van-Gestel/blob/master/OverigeDocumenten/Plan%20van%20aanpak%20nieuw.docx)
+## 2. Methods And Techniques
 
-### 2. Werkwijze
+## 3. Testing Guideline
 
-[Plan van aanpak.](https://github.com/vandeputtepeter/Bachelorproef-Peter-Van-de-Putte-Jasper-Van-Gestel/blob/master/OverigeDocumenten/Plan%20van%20aanpak%20nieuw.docx)
-### 3. Testing guideline
-
-### 4. Bronnen
+## 4. Sources
 
 
 
