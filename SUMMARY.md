@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-   * Thesis
+   * [Thesis](Scriptie/TestScriptie.md)
 
