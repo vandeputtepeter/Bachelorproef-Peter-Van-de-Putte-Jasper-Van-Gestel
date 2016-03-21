@@ -28,7 +28,6 @@
 ## Abstract
 ---
 
-### The Thesis
 The subject of our thesis is 'Coded UI Testing'.
 
 We will be doing this on a program, the "Maät" project , that is currently under developement by "Calidos".
@@ -43,8 +42,6 @@ The first steps of our thesis are:
   * Windows 10
 
 When these goals are achieved and the basic knowledge has been absorbed, we can start with the actual objective given to us by Mark Devos.
-
-### Objectives
 
 There are two main goals, or objectives:
 
