@@ -85,20 +85,37 @@ This function loops over every ListItem and checks all datafields inside of it, 
 
 *C. to do*
 
+###### Displayed data
 
-#### Update
+* Execute the correct actions to go to the page you are testing, using variables such as for example “Case ID”/”Trial ID”. Ideally, you should get this variable from a datafile in which all other data of this Case/Trial/… is available. For datadriven tests: go to “How to test” → “Datadriven tests”.
+* Add the involved controls on the page to the UIMap. 
+* To check if the data is correct, just assert to ```Control.Name``` or ```control.Text```, depending on the type of control involved. The expected value should be in your datafile, so to access this, check out datadriven tests.
 
-* Check if changing data inside the control makes the data change where it should change elsewhere
+#### 1.3. Update & delete
 
-#### Delete
+##### what?
+This paradigm is similar to create, but now you change already existing data instead of creating new data. 
 
-* Check if deleting specific data triggers the dissapearance of the data elsewhere in the application
+##### How?
+The “how to” of Update/Delete is similar to the create. 
+* Add all textfields (and if necessary, the “execute” button) involved in the “update”- action, to the UIMap.
+* Clear all textfields with the “ClearEdit(textfield)” function from the BaseClassCodedUI.
+* Add content to the textboxes by using the following line of Code:
 
-#### Custom
+```TextBox.Text = content;```
 
-* Page specific functionality regarding data in the database
+in which content is replaced by the data you want to add. To do this with external data: go to “How to test” → “Datadriven tests”.
 
-### Navigations
+* If necessary, click the execute button.
+* Navigate to the page where your input should have influence and execute a “Read” test on the influenced controls, to make sure the data is updated. 
+* How to execute a “Read” test is explained in the previous paragraph. 
+
+
+#### 1.4 Custom
+##### what?
+* (things we may find in the future)
+
+### 2. Navigations
 
 * Check if we navigated to the right page when control is activated
 * Check if navigation triggered the correct page-state
