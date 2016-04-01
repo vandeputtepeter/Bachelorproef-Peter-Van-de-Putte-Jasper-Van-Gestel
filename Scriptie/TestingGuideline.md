@@ -19,19 +19,72 @@ In this sheet, the general paradigms are displayed and we have indicate for ever
 In the Paradigm checklist, we have a more detailed list for the checklist, containing all the subcategories explained in this document. Here, we indicate wether a certain paradigm is already analysed on the “How to test?”-aspect. It looks like this:
 ![](paradigm checklist.png)
 
+### Example page & page checklists
+In the example page, we have the same list as in the Paradigm checklist, but on top of it, but together with some of the basic controls which are present on every single page. On the Page checklists (one for each page), we use the example page and then search for every possible testable control. For every control we mapped, we indicate wether a certain paradigm needs to be tested on that control or not. The result looks like this: 
+
+![](example page.png)
+The first small column is a summary of each row, to indicate wether this paradigm is tested for all controls it needed to be tested for. 
+
+![](page checklist.png)
+
+
 
 
 
 
 ### 1. Content
+>This section contains every possible testscenario, which involves the data which is loaded in the application.
 
 #### 1.1. Create
 
-* Check if adding data (for example adding patient) and clicking the execute button adds the data you added to the database, do this by asserting the elements in the user interface where this data should be added after clicking the execute button.
+##### What?
+Check if adding data (for example adding patient) and clicking the execute button adds the data you added to the database, do this by asserting the elements in the user interface where this data should be added after clicking the execute button.
 
-#### Read
+##### How?
+* Add all textfields (and if necessary, the “execute” button) involved in the “create”- action, to the UIMap.
+* Clear all textfields with the “ClearEdit(textfield)” function from the BaseClassCodedUI.
+* Add content to the textboxes by using the following line of Code:
 
-* Check if the data within the control is correct
+```TextBox.Text = content;```
+
+in which content is replaced by the data you want to add. To do this with external data: go to “How to test” → “Datadriven tests”.
+
+* If necessary, click the execute button.
+* Navigate to the page where your input should have influence and execute a “Read” test on the influenced controls, to make sure the data is added. How to execute a “Read” test is explained in the next paragraph. 
+
+
+
+#### 1.2. Read
+##### What?
+###### Search algorithm
+
+When using a searchbox, you want to check 3 things.
+
+*A. Check all the possible parameters on wich you can perform a search (for example, search by name, search by trial, search by trialnumber,...).*
+
+*B. Check if all the searchresults contain the parameter you searched.*
+
+*C. Check if all possible searchresults available in the database, based on your search, are all displayed.*
+
+###### Displayed data
+Check if all controls on the page you are testing, containing data from the database, display the correct data for the parameters by which you got to that page. So for example, if you navigated to a trial with trial-id “4”. All controls in the TrialHub should contain the data of trial “4”, and not the data of for example trial “6” or completely faulty data. 
+
+##### How?
+###### General
+If you want to make sure a certain word/value is displayed in every single ListItem in the list, you can use the ReadListItems-function:
+
+```ReadListItems( list, expectedValue);```
+
+This function loops over every ListItem and checks all datafields inside of it, if the ExpectedValue isn’t displayed in one of the ListItems, the test will fail. 
+
+###### Search algorithm 
+
+*A. to do*
+
+*B. Use ReadListItems-function.*
+
+*C. to do*
+
 
 #### Update
 
