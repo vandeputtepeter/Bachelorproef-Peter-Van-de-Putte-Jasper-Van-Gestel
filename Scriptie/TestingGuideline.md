@@ -6,9 +6,26 @@
 
 This is the checklist to review for every page. This means that for every page in the application, we need to test every paradigm documented in the checklist (control per control). If we find new paradigms while analyzing new pages, we will add these to the checklist and review all previously tested pages for the newly found paradigms.
 
-### Content
+This document contains the full checklist in which every paradigm that needs to be tested is fully explained together with how to test this paradigm. We also have an Excel document which contains the following sheets:
 
-#### Create
+
+### General checklist
+In this sheet, the general paradigms are displayed and we have indicate for every page if this paradigm is already tested or not. It looks like this:
+
+![](general checklist.png)
+
+
+### Paradigm checklist
+In the Paradigm checklist, we have a more detailed list for the checklist, containing all the subcategories explained in this document. Here, we indicate wether a certain paradigm is already analysed on the “How to test?”-aspect. It looks like this:
+![](paradigm checklist.png)
+
+
+
+
+
+### 1. Content
+
+#### 1.1. Create
 
 * Check if adding data (for example adding patient) and clicking the execute button adds the data you added to the database, do this by asserting the elements in the user interface where this data should be added after clicking the execute button.
 
