@@ -117,12 +117,60 @@ in which content is replaced by the data you want to add. To do this with extern
 
 ### 2. Navigations
 
-* Check if we navigated to the right page when control is activated
-* Check if navigation triggered the correct page-state
+#### 2.1 Correct navigation
+
+##### what?
+
+When navigating to a certain page, from the page you are testing, you have to make sure the application navigates to the correct page according to the navigation-control you used. To keep the testing project easily readable, we will concider each different tab of a page (if there are tabs available) as a different page. 
+
+##### How?
+
+
+###### Variable Controls
+
+A variable Control is a Control which is embedded in a list, in which all cases of a certain object are displayed. For example, you can have a list of trials, patients, logs,... In other words, “variable” in this context means that there is never a fixed amount of Controls in the list, and the Controls displayed, never have a fixed instance inside the list. These kind of Controls all navigate to the same page, but the data displayed on that page is dependent on the instance you navigated to. 
+
+To test the navigation of this kind of Control, use the following function:
+```
+NavigateVariableControl(parameters);
+```
+
+For more info about this function and its parameters, refer to “How to test” → “BaseClassCodedUI”
+
+
+###### Fixed controls
+
+A fixed Control is a Control which is embedded in a HubSection, in which every possible navigation-control has a fixed instance. Also, there is a fixed amount of navigation-control’s inside the hub. These kind of Controls normally navigate to a different page, or to a different state of the same page(for that, refer to the next paragraph). 
+
+To test the navigation of this kind of Control, use one of the following functions: 
+
+ * ```NavigateFixedControlToPage(parameters);```
+ * ```NavigateFixedControlToTab(parameters);```
+
+For more info about these function and there parameters, refer to “How to test” → “BaseClassCodedUI”.
+
+###### Search navigation
+//To finish
+
+
+#### 2.2 Correct page state
+
+##### What?
+
+On some pages, you can use multible controls to navigate to the same page. But every control triggers a different page state on the page you navigated to. So you need a test which can assert if the navigation-control you used, triggers the correct page-state on the page navigated to. 
+
+##### How?
+
+//To finish
+
+
+
+
+
 
 ### States
 
-#### Semantic zoom
+### Semantic zoom
 
 ##### Zoom out
 
