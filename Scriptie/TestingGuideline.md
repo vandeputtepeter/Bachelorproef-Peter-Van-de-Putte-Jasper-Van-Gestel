@@ -168,96 +168,63 @@ On some pages, you can use multible controls to navigate to the same page. But e
 
 
 
-### States
+### 3. States
 
-### Semantic zoom
+#### 3.1 Semantic zoom
 
-##### Zoom out
+##### What?
 
-###### Ctrl-
+The semantic zoom is a control within a page, which contains a hub. This hub contains different hubsections, each with it’s own title. The semantic zoom is able to zoom out these hubsections so that they are displayed as a list of ListItems, each containing the text of one of the hubsection titles. This is a functionality that needs to be tested. 
 
-* Check if using the “ctrl” key in combination with the “-” key makes the semantic zoom zoom out. Note that the semantic zoom needs to be selected before this action is possible.
+* Zoomed in view:
+//picture to be included
+* Zoomed out view:
+//picture to be included
 
-######Ctrl & mousescroll
+##### How?
 
-* Check if using the “ctrl” key in combination with the “mousewheel” makes the semantic zoom zoom out. Note that the mouse needs to be hovered over the semantic zoom before this action is possible.
 
-######Tab/arrow select
+###### Zoom out/Zoom in
 
-* Check if using the tab key (or arrow keys) selects the hubsection titles in the semantic zoom and using a specific key makes the semantic zoom zoom out.:
-  * Space key
-  * Enter key
+temporary for Zoom out & Zoom in:  BaseClassCodedUI function: 
+```
+AssertSemanticZoom(Hubsection, HubsectionSemanticName, action);
+```
+* Hubsection: Hubsection you want to test
+* HubsectionSemanticName: Name of zoomed out listItem 
+* representing hubsection
+* action: CtrlKey/Scroll
 
-######PgUp/PgDn select
+###### Content
+Check if correct data is displayed in hubsections when zoomed out
 
-* Check if using the PgUp / PgDn keys selects the hubsection titles in the semantic zoom and using a specific key makes the semantic zoom zoom out.:
-  * Space key
-  * Enter key
+//not yet analysed
 
-######Mouseclick
+###### Functionality
+To check if the titles displayed in the zoomed out list of the hubsections, are the same as the titles in the zoomed in state (and the same amount), use the following function of the BaseClassCodedUI:
+```
+CheckSemanticZoomTitles();
+```
 
-* Check if clicking on a hubsection-title makes the semantic zoom zoom out.
+#### 3.2 Overlay
 
-##### Zoom in
+##### 3.2.1 Content
 
-######Ctrl+
+###### CRUD
 
-* Check if the semantic zoom functionality of the page zooms in when using the “Ctrl” key in combination with the “+” key.
-* Check if the selected hubsection is positioned correctly (on the left side of the screen).
+Look to: **1. Content**
 
-######Ctrl and mousescroll
 
-* Check if the semantic zoom functionality of the page zooms in when using the “Ctrl” key in combination with the “mousewheel”.
-* Check if the selected hubsection is positioned correctly (on the left side of the screen).
 
-######Tab/arrow select
+##### 3.2.2 Navigations
 
-* See 'Zoom out'
+Look to: **2. Navigations**
 
-######PgUp/PgDn select
-
-* See 'Zoom out'
-
-######Mouseclick
-
-* Check if clicking on a hubsection-title makes the semantic zoom zoom out.
-*  Check if the clicked hubsection is positioned correctly (on the left side of the screen).
-
-##### Content
-
-* Check if correct data is displayed in hubsections when zoomed out
-
-##### Functionality
-
-* Check if correct hubsections with correct titles are displayed when zoomed out
-
-#### Overlay
-
-##### Content
-
-######Create
-
-* Check if adding data in the overlay and clicking the execute button makes the data appear in the application.
-
-######Read
-
-* Check if data in the controls is correct
-
-######Update
-
-* Check if editing data in the overlay and clicking execute makes the data change in the application
-
-######Delete
-
-* Check if removing data in the overlay and clicking execute makes the data dissapear in the application.
-
-##### Navigations
-
-* Check if we navigated to the right page when control is activated.
-
-#####Functionality
-
-######Open overlay button
+##### 3.2.3 Functionality
+###### Speed
+//NOT YET ANALYSED//
+###### Control functionality
+####### Open overlay button
 
 * Check if using the button intended to open the overlay, triggers the overlay appearance
 
