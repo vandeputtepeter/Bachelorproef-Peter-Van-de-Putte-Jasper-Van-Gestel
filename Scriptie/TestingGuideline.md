@@ -225,15 +225,64 @@ Look to: **2. Navigations**
 //NOT YET ANALYSED//
 ###### Control functionality
 
-####### Open overlay button
+* Open overlay button
 
-* Check if using the button intended to open the overlay, triggers the overlay appearance
+  ***What?***
 
-######Close overlay button
+  Check if using the button intended to open the overlay, triggers the overlay appearance.
 
-* Check if using the button intended to close the overlay, triggers the overlay appearance
+  ***How?***
 
-######Close overlay with “esc”
+  1. Add button to the UIMap
+  2. Add the full overlay to the UIMap as a control (this will be a Hub)
+  3. Click the button
+  4. Assert on the coördinates of the hub, if the hub is visible, these should have a value above “0”. Otherwise, all values should be “-1”. 
+
+  *note: The overlay needs to be opened and used by your testmethod, before it can see the coördinates being set to -1 after closing it. If you don’t open it initially and try to search it’s coördinates, the testmethod will fail to find the overlay in the first place. *
+
+
+
+* Close overlay button
+
+  ***What?***
+
+  Check if using the button intended to close the overlay, makes the overlay disappear.
+
+  ***How?***
+  1. Add “x” button to the UIMap (for some overlays, you may need to give an automationId to the button).
+  ex. 
+
+ ```
+ <AppBarButton x:Name="CloseOverlayButton"
+                Width="44"
+                          Margin="0,0,0,0"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Top"
+                          HorizontalContentAlignment="Center"
+                          Canvas.ZIndex="99"
+                          Icon="Cancel"
+                          IsEnabled="{Binding IsLoading,
+                                              Converter={StaticResource InverseBooleanConverter}}">
+                <interactivity:Interaction.Behaviors>
+                    <core:EventTriggerBehavior EventName="Click">
+                        <actions:OpenCloseOverlayAction Overlay="{Binding Overlay, Source={StaticResource overlayLink}}" State="Closed" />
+                    </core:EventTriggerBehavior>
+                </interactivity:Interaction.Behaviors>
+            </AppBarButton>
+ ```
+
+   This button is located in the ClinicTrials.NewTrial - page, in which NewTrial is the overlay of ClinicTrials.
+  
+  2. Add the overlay hub to the UIMap
+  3. Use the XamlControl.TryFind() function to make sure the overlay is opened.
+  4. Click the button & add delay to make sure the overlay has time enough to close completely
+  5. Check if one of the coördinates of the OverlayHub is still larger than zero, normally when a control is not visible on a page, it’s coördinates will all be set to “-1”.
+
+
+
+
+
+* Close overlay with “esc”
 
 * Check if overlay closes when pressing the “esc”-key
 
