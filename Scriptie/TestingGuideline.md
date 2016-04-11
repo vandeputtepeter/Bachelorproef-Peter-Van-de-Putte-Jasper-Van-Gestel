@@ -332,107 +332,276 @@ Look to: **2. Navigations**
 #### 4.1 Speed
 
 ##### Reaction speed
+
+
+###### What?
+
+Check how fast a page is loaded when navigated to. Save this loading time and report. 
+
+###### How?
+
+//NOT YET ANALYSED//
+
+
+
 ##### Reactivity
+
+###### What?
+
+Check if you can already use loaded functionality before the page is fully loaded. 
+
+###### How?
+
+//NOT YET ANALYSED//
 
 #### 4.2 Scrolling
 
-* Check “Mousewheel” scroll functionality	
-* Check “Click scrollbar & drag” functionality
-* Check “Click scrollbar arrows” functionality
-* Check if hovering over the scrollbar makes the scrollbar highlight
-* Check if hovering over the scrollbar arrows makes the scrollbar arrows highlight
+##### 4.2.1 Check “Mousewheel” scroll functionality	
 
-####Buttons
+###### What?
 
-##### Toggle Button
+Check if the scroll function works with the “mousewheel”-action. 
 
-* Check Toggle Button initial toggle state
-* Check if Toggle Button toggle-state is changed when clicked
-* Check if Toggle Button is highlighted when hovering over the element
-* Check accessibility of Toggle Button with ‘tab’ & “arrow”  keys
-* Check if Toggle Button responds to ‘space’ key
-* Check if hovering over Button makes “extra info”-field appear above it
+###### How?
 
-##### Button
+Use the following function of the BaseClassCodedUI:
 
-* Check if Button is highlighted when hovering over the element
-* Check if Button executes correct action when clicked
-* Check accessibility of Button with ‘tab’ & “arrow”  keys
-* Check if Button executes correct action when hitting enter (if selected)
-* Check if Button executes correct action when hitting space (if selected)
-* Check if hovering over Button makes “extra info”-field appear above it
+```ScrollToControl(control,scrollControl, scrolldirection)```
+
+* control: The control you want to scroll to
+* scrollControl: The control you want to start scrolling from
+* scrolldirection: Up or Down
+
+##### 4.2.2 Check “scrollbar & drag” functionality
+
+###### What?
+
+Check if the scroll function works when clicking and holding the scrollbar and than dragging it across. 
+
+###### How?
+
+PROBLEM: Can not access the scrollbar in any way other than manual
+
+##### 4.2.3 Check “Click scrollbar arrows” functionality
+
+###### What?
+
+Check if the scroll function works with when clicking the arrows of the scrollbar. 
+
+###### How?
+
+PROBLEM: Can not access the scrollbar-arrows in any way other than manual
+
+##### 4.2.4 Check scrollbar state
+
+###### What?
+
+Check if hovering over the scrollbar makes the scrollbar highlight.
+
+###### How?
+
+PROBLEM: Can not access the scrollbar in any way other than manual
+
+##### 4.2.5 Check scrollbar-arrows state
+
+###### What?
+
+Check if hovering over the scrollbar arrows makes the scrollbar arrows highlight
+
+###### How?
+
+PROBLEM: Can not access the scrollbar-arrows in any way other than manual
+
+#### 4.3 Control state verification
+
+##### 4.3.1 Initial
+
+###### What?
+
+Check if the control’s initial state (appearance) is as it should be.
+
+###### How?
+
+* color
+* highlighted
+* enabled
+* default text
+* default value
+//To analyze//
+
+##### 4.3.2 Hovered
+
+###### What?
+
+Check if the control’s state changes correctly when hovering over the control.
+
+###### How?
+
+* Mouse/cursor change
+* color
+* highlighted
+* enabled
+* default text
+* default value
+
+//To analyze//
+
+##### 4.3.3 Clicked
+
+###### What?
+
+Check of the control’s state changes correctly when clicking on the control.
+
+###### How?
+
+* Mouse/cursor change
+* color
+* highlighted
+* enabled
+* default text
+* default value
+
+//To analyze//
+
+##### 4.3.4 Click & hold
+
+###### What?
+
+Check if the control’s state changes correctly when clicking on it and holding your click.
 
 
-##### ListItems
+###### How?
 
-* Check if ListItem executes correct action when clicked
-* Check accessibility of list with ‘tab’ & “arrow”  keys
-* Check if ListItem executes correct action when hitting enter (if selected)
-* Check if ListItem executes correct action when hitting space (if selected)
-* Check if ListItem is highlighted when hovering over the element
+* Mouse/cursor change
+* color
+* highlighted
+* enabled
+* default text
+* default value
+* Control deepens?
 
-####Edits
+//To analyze//
 
-##### TextBoxes
+##### 4.3.5 Filled in
 
-* Check accessibility of Textbox with “tab”-key
-* Check accessibility of Textbox with mouseclick
-* Check dataverification
-  * A red sentence will appear if the data input from the user does not follow the correct data guidelines
-* Check if clicking the “x” in the Textbox sets it back into default state
-* Check if Textbox is colored gray when no data is filled inCheck the by default selected textboxCheck if the default Textbox value is visible when not used.Check clipboard functions with right mouse click:
-  * Cut
-  * Copy
-  * Paste
-  * Undo
-  * Select all
-* Check if typing text with the keyboard when Textbox is selected, results in the text beïng added into the Textbox
-* Check if hovering over the Textbox makes the mouse change into a line
-* Check if hovering over the Textbox makes the Textbox highlight
-* Check if selecting the Textbox makes the Textbox highlight even more and makes a flashing line appear inside of it
+###### What?
 
-##### Searchbox
+Check if the control’s state changes correctly when filling it in.
 
-* Check accessibility of Searchbox with “tab”-key
-* Check accessibility of Searchbox with mouseclick
-* Check the searchboxes default state: fully gray
-* Check the Searchboxes default text
-* Check if the Searchbox highlights when hovering over it
-* Check if the Searchbox highlights even more when selecting it
-* Check clipboard functions with right mouse click:
-  * Cut
-  * Copy
-  * Paste
-  * Undo
-  * Select all
-* Check if typing text with the keyboard when Searchbox is selected, results in the text beïng added into the Searchbox
-* Check if typing randomly, without selecting anything, makes your text appear in the searchbox
-* Check if hovering over the Searchbox makes the mouse change into a line
-* Check if pressing escape makes the searchbox empty
-* Check the searchfunction for pressing “Enter”
-* Check the searchfunction for clicking the magnifying glass
-* Check if the magnifying glass highlights when hovering over it
-* Check if selecting the Textbox makes the Textbox highlight even more and makes a flashing line appear inside of it
+###### How?
 
-####Combobox
+* color
+* highlighted
+* enabled
+* value
 
-* Check if ComboBox is highlighted when hovering over the element (only when in default modus)
-* Check if ComboBox opens when clicking it
-* Check accessibility of ComboBox with ‘tab’ key
-* Check if combobox opens with the “enter” key
-* Check if combobox opens with the “space” key
-* Check combobox scrolling functions
-* Check if:
-  * ComboBox changes the selected item into the item that is clicked
-  * This change responds with the proper action/ordering
-* Check if ComboBox responds to ‘arrow’ key
-* Check if ComboBox responds to ‘tab’ key
-* Check if TextBox responds to ‘enter’ key
-* Check all highlight functions
+//To analyze//
 
-### Custom
+#### 4.4 Control accessibility 
 
-* Things we may find in the future that dont have a specific place within the checklist
+##### What?
+
+Check if the control is accessible through every action it should be accesible through. This means that the control will be selected when this action is executed.
+
+##### How?
+
+###### Click
+
+1. Add the control to the UIMap
+2. Click the control
+3. Assert to the control’s “HasFocus” property (should be true)
+
+###### Tab
+
+1. Add the control to the UIMap
+2. Tab to the control with the TabToControl function in the BaseClassCodedUI, in case the control you want to access is embedded in a list, use the ListItemEnter-function.
+3. Assert to the control’s “HasFocus” property (should be true)
+
+#### 4.5 Custom 
+##### 4.5.1 Buttons
+
+###### 4.5.1.1 General
+
+A. Check if hovering over "Button" shows tooltip
+
+B. Check if Button executes correct action when clicked
+
+C. Check if Button executes correct action when hitting enter (if selected)
+
+D. Check if Button executes correct action when hitting space (if selected)
+
+###### 4.5.1.2 Toggle Button
+
+A. Check if Toggle Button toggle-state is changed when clicked
+
+B. Check if Toggle Button responds to ‘space’ key
+
+
+
+##### 4.5.2 ListItems
+
+A. Check if ListItem executes correct action when clicked
+
+B. Check if ListItem executes correct action when hitting enter (if selected)
+
+C. Check if ListItem executes correct action when hitting space (if selected)
+
+
+##### 4.5.3 Edits
+
+###### 4.5.3.1 General
+
+A. Check clipboard functions with right mouse click:Cut
+
+B. Check clipboard functions with right mouse click: Copy
+
+C. Check clipboard functions with right mouse click: Paste
+
+D. Check clipboard functions with right mouse click: Undo
+
+E. Check clipboard functions with right mouse click: Select all
+
+###### 4.5.3.2 TextBoxes
+
+A. Verify correct data
+
+B. Check if clicking the “x” in the Textbox sets it back into default state
+
+C. Check the by default selected textbox
+
+D.Check typing when selected --> text in selected textbox
+
+###### 4.5.3.3 Searchbox
+
+A. Check typing when selected --> text in searchbox
+
+B. Check typing randomly --> text in searchbox
+
+C. Check "esc" --> searchbox empty
+
+D. Check the searchfunction for pressing “Enter”
+
+E. Check the searchfunction for clicking the magnifying glass
+
+
+##### 4.5.4 Combobox
+
+A. Check if ComboBox responds to ‘arrow’ key: immediately change selected item
+
+B. Check all selected item highlight functions
+
+C. Check combobox scrolling functions
+
+D. Select combobox Item: Check selected item is correct
+
+E. Select combobox Item: check correct action following
+
+F. Check if combobox opens with: Click
+
+G. Check if combobox opens with: Enter (when selected)
+
+H. Check if combobox opens with: Space (when selected)
+
 
 ## Testing: How to
 
