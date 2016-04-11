@@ -284,19 +284,57 @@ Look to: **2. Navigations**
 
 * Close overlay with “esc”
 
-* Check if overlay closes when pressing the “esc”-key
+  ***What?***
 
-######Control functionality
+  Check if overlay closes when pressing the “esc”-key
 
-* Check if “execute” button only highlights when correct datafields are filled in
+  ***How?***
+  Same method as above, but instead of clicking a button, use ```Keyboard.SendKeys(“{Escape}”)```
 
-#### Ordering
+
+* Control functionality
+
+  ***What?***
+
+  Check if “execute” button is only enabled when correct datafields are filled in
+
+  ***How?***
+  
+  1. Make sure the datafields involved are all empty before you begin checking the button’s state.
+  2. Check button’s state after filling in datafields
+  
+  ex.
+
+  ```
+        public void ClinicTrialsPageOverlayCheckStudieToevoegenButtonState()
+        {
+            ClearEdit(StudieNummer);
+            ClearEdit(ProtocolNummer);
+            ClearEdit(Alias);
+            if (ToevoegenButton.Enabled) Assert.Fail("Button is enabled when it should be disabled!");
+            StudieNummer.Text = "Blabla";
+            if (ToevoegenButton.Enabled) Assert.Fail("Button is enabled when it should be disabled!");
+            ProtocolNummer.Text = "Blabla";
+            if (ToevoegenButton.Enabled) Assert.Fail("Button is enabled when it should be disabled!");
+            Alias.Text = "Blabla";
+            if (!ToevoegenButton.Enabled) Assert.Fail("Button is disabled when it should be enabled!");
+        }
+```
+
+#### 3.3 Filtering search
 
 * Check if Combobox ordering function orders the page correctly
 
-### Functionality
+//NOT YET ANALYSED//
 
-#### Scrolling
+### 4. Functionality
+
+#### 4.1 Speed
+
+##### Reaction speed
+##### Reactivity
+
+#### 4.2 Scrolling
 
 * Check “Mousewheel” scroll functionality	
 * Check “Click scrollbar & drag” functionality
