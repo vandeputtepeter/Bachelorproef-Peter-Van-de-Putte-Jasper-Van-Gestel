@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="planning week 6 - week 13" company="" webLink="http://" view-date="2016-02-29" view-index="0" gantt-divider-location="420" resource-divider-location="300" version="2.7.2" locale="nl">
+<?xml version="1.0" encoding="UTF-8"?><project name="planning week 6 - week 13" company="" webLink="http://" view-date="2016-04-02" view-index="0" gantt-divider-location="420" resource-divider-location="300" version="2.7.2" locale="nl">
     <description/>
-    <view zooming-state="default:7" id="gantt-chart">
+    <view zooming-state="default:1" id="gantt-chart">
         <field id="tpd3" name="Naam" width="53" order="0"/>
         <field id="tpd4" name="Begin datum" width="23" order="1"/>
         <field id="tpd5" name="Eind datum" width="23" order="2"/>
         <option id="color.recent"><![CDATA[#009999 #6600cc #9900cc #cc00cc #990099 #ff0000 #009900]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Naam" width="56" order="0"/>
-        <field id="1" name="Standaard rol" width="43" order="1"/>
+        <field id="0" name="Naam" width="50" order="0"/>
+        <field id="1" name="Standaard rol" width="49" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -36,6 +36,7 @@
         </taskproperties>
         <task id="0" name="Control accessibility actions(looping)" color="#990099" meeting="false" start="2016-03-21" duration="5" complete="0" expand="true">
             <notes><![CDATA[jasper]]></notes>
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="20" name="Functionality: custom: buttons" color="#6600cc" meeting="false" start="2016-04-25" duration="5" complete="0" expand="true">
             <notes><![CDATA[Jasper]]></notes>
@@ -43,6 +44,7 @@
         </task>
         <task id="2" name="CRUD: Read (Create)" color="#8cb6ce" meeting="false" start="2016-03-21" duration="5" complete="0" expand="true">
             <notes><![CDATA[Peter]]></notes>
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="3" name="documentatie + scriptie" color="#009999" meeting="false" start="2016-03-28" duration="10" complete="0" expand="true">
             <depend id="8" type="2" difference="0" hardness="Strong"/>
