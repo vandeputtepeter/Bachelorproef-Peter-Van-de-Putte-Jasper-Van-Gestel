@@ -1,16 +1,12 @@
 >These files contains the temporary representation of our thesis
 
 # Thesis
----
 
 ## Coded UI Testing 
 
 ###### Bachelor Electronics and ICT - Peter Van de Putte & Jasper Van Gestel
 
----
-
 ## Promotors
----
 
 * **Internship Attendent:**
     * Naam: Patrick Van Houtven
@@ -26,7 +22,6 @@
     * Gsm: -
 
 ## Abstract
----
 
 The subject of our thesis is 'Coded UI Testing'.
 
