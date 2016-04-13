@@ -1,4 +1,4 @@
-*Deze map is zeer belangrijk daar deze bij de finale beoordeling zal gebruikt worden om je bachelorproefresultaat te beoordelen*
+﻿*Deze map is zeer belangrijk daar deze bij de finale beoordeling zal gebruikt worden om je bachelorproefresultaat te beoordelen*
 
 Hierin plaats je al je ZELF ontwikkelde zaken, denk aan:
 * Code
@@ -14,16 +14,15 @@ Hierin plaats je al je ZELF ontwikkelde zaken, denk aan:
 
 ### CUIT_Testing
 * **SimpleWPFApp :**
-    * Test op Button + Checkbox
-    * Test op Textboxen + Buttons
+    * Testing on Button / Checkbox
+    * Testing on Textboxes / Buttons
 * **Pokemon_CUIT :**
-    * Test met bestaande pokemon project
-    * Proberen via Excel file scenario's te laten afspelen
+    * Testing on existing pokemon project
+    * Trying to make 'scenario's' using Excel files
 * **ExcelAddIn :**
-    * Test om DataDriven te coderen via Excel bestanden
+    * DataDriven scenario testing via Excel files
 * **AppTestWin10 :**
-    * Eerste test op Windows 10 applicatie (UWP)
+    * First test on a Windows 10 (UWP) application
 
-### Maät
-* **Code :**
-    * Bevat uitleg over geschreven code
+### CodedUITestDocs
+* Contains all deliverables for Calidos
