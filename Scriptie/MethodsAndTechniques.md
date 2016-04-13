@@ -6,7 +6,7 @@
 
 ### Hierarchical navigation design
 
-In this section, you can see a hierarchical design of all possible navigations inside the Clinical Trials application, ordered by page.
+A hierarchical representation of all possible navigation's inside the "Clinical Trials" application.
 
 **ClinicHub**
 
@@ -31,15 +31,15 @@ To maintain the readability of the test project, here are some guidelines on how
 * Paradigm: Navigate
   * Paradigm is the kind of action you are testing for the control/set of controls (ex. navigate, zoom, toggle,...)
 * Context: Studie
-  * Indicator of the context in which the control/set of controls you want tot test exist, in this case, the method tests a “Studie-searchresult”
+  * Context in which the control, or set, of controls you want tot test exist. In this case, the method tests a “Studie-searchresult”
 * XamlNameProperty: ListItem
-  * In case of testing one specific control (or set of the same controls), this will indicate the kind of controls tested
+  * In case of testing one specific control (or set of the same controls), this will state the kind of controls tested
 * Optional info: State1
-  * This will indicate extra info about the context of your test, in this case, the extra info indicates the stage of the page.
+  * This will state extra info about the context of your test, in this case, the extra info indicates the stage of the page.
 
 ### File Structure
 
-The Clinical Trials application follows a specific map structure for all it’s elements. To keep the file structure readable, we follow the same structure inside our testproject.
+The Clinical Trials application follows a specific map structure for all it's elements. To keep the file structure readable, we follow the same structure inside our test project.
 
 * Calidos.Maat.CodedUITests
   * Screens
@@ -48,15 +48,15 @@ The Clinical Trials application follows a specific map structure for all it’s 
     * '.csv' global scenarios
     * Category (clinic,…)
       * '.csv' categorical scenarios
-      * Page (contactspage,….)
+      * Page (contactspage,…)
         * UI Map
         * '.csv' local scenarios
         * '.cs' files per category
           * States
-            * All tests regarding the different states of a page
+            * All tests about the different states of a page
           * Navigation
-            * All tests regarding forward navigations from a page and backwards navigation to the page
+            * All tests about forward navigation's from a page and backwards navigation to the page
           * Functionality
-            * All tests regarding functionality/interfunctionality of controls
+            * All tests about functionality/inter functionality of controls
           * Content	
-            * All tests regarding data in the database
+            * All tests about data in the database
