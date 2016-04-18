@@ -104,6 +104,26 @@ Op de page checklist staat opnieuw aangeduid welk paradigma getest is en welk ni
 
 #### 1. Content
 
+In deze sectie gaan we alle paradigma's beschrijven die betrekking hebben tot de inhoud van control's en tekstvelden. Alle informatie die in de user-interface beschikbaar is die uit de database komt, of aangepast kan worden, komt onder het paradigma "content". 
+
+Er zijn 4 verschillende handelingen die uitgevoerd kunnen worden op info in de control's. Deze 4 staan beter bekend als de CRUD-acties. (Create, Read, Update, Delete)
+
+
+##### CRUD
+
+
+###### Create
+
+"Create" wil zeggen dat je nieuwe data gaat toevoegen aan de database. Een voorbeeld hiervan is het toevoegen van een nieuwe patiënt of een nieuwe studie. Je vult alle velden in die relevant zijn en klikt dan op "toevoegen", wat ervoor zorgt dat er in de database een patiënt bijkomt die nog niet bestond.
+
+Om dit paradigma te testen, moeten we eerst gaan uitzoeken op welk deel van de applicatie het toevoegen van nieuwe data invloed heeft. Vervolgens kunnen we dan data toevoegen (door tekstveldjes in te vullen, staat beschreven in de guideline)
+
+
+
+
+
+
+
 
 
 
