@@ -122,4 +122,10 @@ Om dit paradigma te testen, moeten we eerst gaan uitzoeken op welk deel van de a
 
 ###### Read
 
-"Read" wil zeggen dat je gaat controleren of bestaande data, die aanwezig zou moeten zijn in de user-interface, ook effectief aanwezig is. Om dit te testen moeten we gaan uitzoeken hoe we enerzijds tekstvelden en eventueel andere control's kunnen gaan uitlezen, en anderzijds hoe we deze kunnen vergelijken met de effectieve date in de database. 
+"Read" wil zeggen dat je gaat controleren of bestaande data, die aanwezig zou moeten zijn in de user-interface, ook effectief aanwezig is. Om dit te testen moeten we gaan uitzoeken hoe we enerzijds tekstvelden en eventueel andere control's kunnen gaan uitlezen, en anderzijds hoe we deze kunnen vergelijken met de effectieve data in de database. 
+
+Er zijn verschillende scenario's die onder "Read" vallen.
+
+**Zoek-algoritme**
+
+Dit het algoritme dat de zoekfunctie doet werken. 
