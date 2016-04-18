@@ -102,6 +102,10 @@ Wanneer we dus een nieuw paradigma vinden, zal dit eerst in de paradigm checklis
 
 Op de page checklist staat opnieuw aangeduid welk paradigma getest is en welk niet, volgens de kleurcode in de legende op de general checklist, met als verschil dat deze hier nog eens onderverdeeld worden per control. We analyseren dus voor elke control welk paradigma van toepassing is en duiden dan de status aan volgens de kleurcode. 
 
+#### 1. Content
+
+
+
 
 
 
