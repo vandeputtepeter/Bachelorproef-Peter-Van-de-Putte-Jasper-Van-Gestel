@@ -26,7 +26,32 @@ Page name + Paradigm (+ Context) (+ Xaml Control Type Property) (+ optional info
 
 
 ##File structure
-In dit onderdeel hebben we een aantal regels opgesteld voor de onderverdeling van de verschillende testprojecten. De visie hier is dat we niet alle tests van het gehele project in 1 groot project mogen schrijven (wat de onderhoudbaarheid nagenoeg onmogelijk maakt), maar dat we ook niet voor elke testmethode een nieuw project mogen sch
+In dit onderdeel hebben we een aantal regels opgesteld voor de onderverdeling van de verschillende testprojecten. De visie hier is dat we niet alle tests van het gehele project in 1 groot project mogen schrijven (wat de onderhoudbaarheid nagenoeg onmogelijk maakt), maar dat we ook niet voor elke testmethode een nieuw project mogen schrijven, aangezien er dan teveel files zouden ontstaan. Een gulden middenweg die we gevonden hebben na enkele besprekingen met onze promotors, is dat we voor elk hoofdparadigma, per pagina, een nieuw testproject schrijven, en dat we voor elke pagina één UIMap maken die gebruikt wordt in alle testprojecten voor deze pagina. Ook hebben we na overleg beslist dat we bij elke pagina die verschillende subtabs bevat, elke subtab als één volledige pagina beschouwen. Deze worden dus onderverdeeld alsof het aparte pagina's zijn. 
+
+Door bovenstaande regels in acht te nemen, hebben we volgende file structuur opgebouwd: 
+* Screens
+  * General UIMap
+  * Partial parent .cs file
+  * .csv global scenarios
+  * Category (clinic,…)
+    * .csv categorical scenarios
+    * Page (contactspage,….)
+      * UImap
+      * .csv local scenarios
+      * .cs files per category
+        * States
+        
+        All tests regarding the different states of a page
+
+        * Navigation
+
+        All tests regarding forward navigations from a page and backwards navigation to the page
+
+        * Functionality
+        All tests regarding functionality/interfunctionality of controls
+
+        * Content	
+        All tests regarding data in the database
 
 
 
