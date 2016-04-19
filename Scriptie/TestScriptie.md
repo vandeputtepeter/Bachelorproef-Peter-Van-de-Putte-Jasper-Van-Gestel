@@ -111,15 +111,11 @@ Vervolgens staat onder "how?" een stappenplan beschreven dat je moet volgen om d
 
 In deze checklist proberen we zo specifiek en zo duidelijk mogelijk te zijn, zodat het ook voor een eventuele opvolger helemaal duidelijk is wat exact de bedoeling is van deze test en wat de verschillende control's en elementen horen te doen wanneer ze gebruikt worden op de beschreven manier. 
 
-#### 1. Content
+##### 1. Content
 
 In deze sectie gaan we alle paradigma's beschrijven die betrekking hebben tot de inhoud van control's en tekstvelden. Alle informatie die in de user-interface beschikbaar is die uit de database komt, of aangepast kan worden, komt onder het paradigma "content". 
 
 Er zijn 4 verschillende handelingen die uitgevoerd kunnen worden op info in de control's. Deze 4 staan beter bekend als de CRUD-acties. (Create, Read, Update, Delete)
-
-
-##### CRUD
-
 
 ###### Create
 
@@ -135,6 +131,32 @@ Om dit paradigma te testen, moeten we eerst gaan uitzoeken op welk deel van de a
 
 Er zijn verschillende scenario's die onder "Read" vallen.
 
-**Zoek-algoritme**
+***Zoek-algoritme***
 
-Dit het algoritme dat de zoekfunctie doet werken. 
+Dit het algoritme dat de zoekfunctie doet werken. Er zijn 3 verschillende testscenario's die we hierop gaan moeten uitvoeren.
+1. We moeten testen of alle mogelijke parameters waarop we kunnen zoeken zoekresultaten opleveren. Het kan bijvoorbeeld zijn dat het zoekalgoritme zo is ingesteld dat je kan zoeken op de studienaam, patientnaam,... 
+
+  Het soort parameters waarop we kunnen zoeken gaan we zelf analyseren. Nadien schrijven we hier tests voor.
+2. Vervolgens moeten we controleren of alle zoekresultaten die weergegeven worden het zoekwoord bevatten dat we hebben ingegeven. Hiervoor moeten we een speciaal soort read-functie schrijven, waar we later meer over zullen vertellen. 
+3. Als derde moeten we controleren of alle objecten in de database, die voldoen aan onze zoekterm, ook effectief worden weergegeven. Het is één ding dat alle zoekresultaten de zoekterm bevatten, maar het zou natuurlijk altijd kunnen dat een aantal zoekresultaten die in de database wel effectief bestaan, niet worden weergegeven. In dat geval zou de vorige test wel werken, maar zou er toch nog een fout in het zoek-algoritme zitten. Vandaar dat deze derde test noodzakelijk is om het zoek-algoritme volledig te testen.
+
+***Weergegeven data***
+
+Buiten het zoek-algoritme, welke een speciaal geval van "read" is, bestaat een read-test eruit om te gaan controleren dat de data die weergegeven wordt in de user-interface correct is. 
+
+Een voorbeeld is dat we naar de TrialHubPage navigeren. Hierin staat alle data die te maken heeft met een bepaalde studie. Deze pagina gedraagt zich qua functionaliteit altijd hetzelfde, maar de data die weergegeven wordt hangt af van de studie waarop we geklikt hebben. De bedoeling van de read-test is dan om te gaan controleren of de data die we te zien krijgen in de user-interface dezelfde is als de data die we verwachten na een bepaalde navigatie. 
+
+We kunnen dit enerzijds hardcoded controleren, door eerst manueel de navigatie uit te voeren en dan alle data die we zien in code te schrijven als assertions (assertions worden later uitgelegd). Anderzijds kunnen we datadriven tests schrijven, waarbij de data die we gebruiken in de test afkomstig is van een database (wordt ook later uitgelegd). 
+
+###### Update/delete
+
+Update wil zeggen dat je reeds bestaande data gaat aanpassen en deze aanpassingen opslaan.
+
+Delete is het verwijderen van bestaande data in de database. 
+
+Update en delete vallen binnen deze applicatie onder dezelfde tab, aangezien het deleten van data in de UI een update naar de database stuurt met een indicatie dat deze data niet meer bestaat. 
+
+###### Custom
+
+
+
