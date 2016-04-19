@@ -157,6 +157,3 @@ Delete is het verwijderen van bestaande data in de database.
 Update en delete vallen binnen deze applicatie onder dezelfde tab, aangezien het deleten van data in de UI een update naar de database stuurt met een indicatie dat deze data niet meer bestaat. 
 
 ###### Custom
-
-
-
