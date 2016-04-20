@@ -131,14 +131,7 @@ Om dit paradigma te testen, moeten we eerst gaan uitzoeken op welk deel van de a
 
 Er zijn verschillende scenario's die onder "Read" vallen.
 
-***Zoek-algoritme***
 
-Dit het algoritme dat de zoekfunctie doet werken. Er zijn 3 verschillende testscenario's die we hierop gaan moeten uitvoeren.
-1. We moeten testen of alle mogelijke parameters waarop we kunnen zoeken zoekresultaten opleveren. Het kan bijvoorbeeld zijn dat het zoekalgoritme zo is ingesteld dat je kan zoeken op de studienaam, patientnaam,... 
-
-  Het soort parameters waarop we kunnen zoeken gaan we zelf analyseren. Nadien schrijven we hier tests voor.
-2. Vervolgens moeten we controleren of alle zoekresultaten die weergegeven worden het zoekwoord bevatten dat we hebben ingegeven. Hiervoor moeten we een speciaal soort read-functie schrijven, waar we later meer over zullen vertellen. 
-3. Als derde moeten we controleren of alle objecten in de database, die voldoen aan onze zoekterm, ook effectief worden weergegeven. Het is één ding dat alle zoekresultaten de zoekterm bevatten, maar het zou natuurlijk altijd kunnen dat een aantal zoekresultaten die in de database wel effectief bestaan, niet worden weergegeven. In dat geval zou de vorige test wel werken, maar zou er toch nog een fout in het zoek-algoritme zitten. Vandaar dat deze derde test noodzakelijk is om het zoek-algoritme volledig te testen.
 
 ***Weergegeven data***
 
@@ -158,4 +151,25 @@ Update en delete vallen binnen deze applicatie onder dezelfde tab, aangezien het
 
 ###### Custom
 
-Onder deze tab gaan we alle speciale gevallen plaatsen die nog bij content horen.
+Onder deze tab gaan we alle speciale gevallen plaatsen die nog bij content horen. Onder deze speciale gevallen horen bijvoorbeeld: het zoek-algoritme, de partpickers (wordt zo meteen besproken),...
+
+***Zoek-algoritme***
+
+Dit het algoritme dat de zoekfunctie doet werken. Er zijn 3 verschillende testscenario's die we hierop gaan moeten uitvoeren.
+1. We moeten testen of alle mogelijke parameters waarop we kunnen zoeken zoekresultaten opleveren. Het kan bijvoorbeeld zijn dat het zoekalgoritme zo is ingesteld dat je kan zoeken op de studienaam, patientnaam,... 
+
+  Het soort parameters waarop we kunnen zoeken gaan we zelf analyseren. Nadien schrijven we hier tests voor.
+2. Vervolgens moeten we controleren of alle zoekresultaten die weergegeven worden het zoekwoord bevatten dat we hebben ingegeven. Hiervoor moeten we een speciaal soort read-functie schrijven, waar we later meer over zullen vertellen. 
+3. Als derde moeten we controleren of alle objecten in de database, die voldoen aan onze zoekterm, ook effectief worden weergegeven. Het is één ding dat alle zoekresultaten de zoekterm bevatten, maar het zou natuurlijk altijd kunnen dat een aantal zoekresultaten die in de database wel effectief bestaan, niet worden weergegeven. In dat geval zou de vorige test wel werken, maar zou er toch nog een fout in het zoek-algoritme zitten. Vandaar dat deze derde test noodzakelijk is om het zoek-algoritme volledig te testen.
+
+***Part-pickers***
+
+Part-pickers zijn speciale knoppen waarmee je een datum of een tijd kan instellen. Door op de knop te klikken, verschijnt er een popup-venster. In dit venster staan een aantal verschillende tabs. Elk van deze tabs bevat een aantal blokken met waarden gaande van bvb 0-30/maandag-vrijdag/januari-december/... Door over deze blokken te hoveren met de muis en te scrollen, verschuiven ze, waardoor je de waarde aanpast. Er is altijd 1 van tab geselecteerd die je kan aanpassen. Bij het hoveren met de muis wordt de tab waarover je hovert automatisch geselecteerd. Je kan echter ook met de pijltjestoetsen van links naar rechts gaan om andere tabs te selecteren. Als je met de pijltjestoetsen van boven naar beneden gaat verschuif je de geselecteerde tab altijd met 2 waardes per keer. Met het scroll-wiel van de muis verplaats je de geselecteerde tab met 1 waarde per keer. 
+
+Onderaan het popup-venster staan 2 knoppen, een vinkje en een kruisje. Door op het vinkje te klikken accepteer je de datum/tijd die je net hebt ingesteld en zal deze verschijnen in de Part-picker waarmee je net gewerkt hebt. Door op het kruisje te klikken wordt de verandering geanuleerd en blijft de waarde van de part-picker staan zoals die voordien stond. 
+
+De aangepaste waarde accepteren kan ook door op enter te klikken. 
+
+Telkens je een waarde accepteert/weigert verdwijnt het popup-venster terug. 
+
+Het testen van deze partpickers is tot nu toe nog niet gelukt, aangezien we geen enkele manier hebben gevonden om in testcode de partpicker te kunnen zien. 
