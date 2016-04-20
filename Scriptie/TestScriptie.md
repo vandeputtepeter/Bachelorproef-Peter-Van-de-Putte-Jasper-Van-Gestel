@@ -173,3 +173,13 @@ De aangepaste waarde accepteren kan ook door op enter te klikken.
 Telkens je een waarde accepteert/weigert verdwijnt het popup-venster terug. 
 
 Het testen van deze partpickers is tot nu toe nog niet gelukt, aangezien we geen enkele manier hebben gevonden om in testcode de partpicker te kunnen zien. 
+
+##### 2. Navigations
+
+Het volgende grote paradigma zijn de navigaties binnen de applicatie. Onder navigaties verstaan we alle acties die ervoor zorgen dat de applicatie een ander scherm opendoet. Ook de zoekfunctie behoort tot navigaties, aangezien we hier ook naar een ander scherm gaan. Het verschil tussen de CRUD-tests voor de zoekfunctie en de navigatietests is echter dat we bij de navigatietests niet gaan controleren welke zoekdata weergegeven wordt, maar enkel of we op de zoekresultatenpagina terecht komen (ClinicSearch). 
+
+Om een navigatie te testen zijn er dus in grote lijnen 2 handelingen die we moeten uitvoeren. Enerzijds moeten we de actie uitvoeren die zorgt voor de navigatie (meestal klikken op een control). Anderzijds moeten we gaan controleren of de juiste pagina wordt geopend nadat deze actie is uitgevoerd. 
+
+Deze controle kan voor elke pagina anders zijn, maar de werkwijze is steeds dezelfde: we zoeken een control of een set van controls die uniek zijn voor de desbetreffende pagina, en controleren dan of deze controls aanwezig zijn, of dat ze de juiste waarde bevatten (bvb titels). 
+
+
