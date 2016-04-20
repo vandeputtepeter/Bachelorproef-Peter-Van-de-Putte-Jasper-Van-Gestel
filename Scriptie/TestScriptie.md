@@ -182,4 +182,12 @@ Om een navigatie te testen zijn er dus in grote lijnen 2 handelingen die we moet
 
 Deze controle kan voor elke pagina anders zijn, maar de werkwijze is steeds dezelfde: we zoeken een control of een set van controls die uniek zijn voor de desbetreffende pagina, en controleren dan of deze controls aanwezig zijn, of dat ze de juiste waarde bevatten (bvb titels). 
 
+###### Soorten navigations
 
+Paradigmagewijs zijn alle navigations natuurlijk hetzelfde. Maar in manier van testen hebben we de navigaties verder onderverdeeld in sub-paradigma's, waarbij elk sub-paradigma een lichtjes andere manier van testen omvat. 
+
+***Variabele listitems***
+
+Hieronder verstaan we het concept van een lijst, waarin zich allemaal verschillende gevallen bevinden van een bepaald opject. Dit kan bijvoorbeeld zijn: een lijst van studies, een lijst van patienten,... Het aantal items in de lijst staat nooit vast, aangezien het afhangt van hoeveel studies/patienten/... er zich in de database bevinden. Dit kan voortdurend wijzigen. Ook de tekst op deze listitems hangt af van de data in de database. 
+
+Als je op één van de items in deze lijst klikt, zal je altijd op dezelfde pagina terecht komen. Hoe deze pagina is ingevuld hangt echter af van het item waarop je geklikt hebt; 
