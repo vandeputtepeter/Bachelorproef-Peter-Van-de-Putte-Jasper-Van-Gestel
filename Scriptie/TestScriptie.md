@@ -298,3 +298,16 @@ Als we de toestand van een control gaan testen, gaan we natuurlijk ook de toegan
 
 Later gaan we ook controleren of we de control kunnen gebruiken met enkele toetsen op het toetsenbord als deze geselecteerd is. 
 
+###### Custom
+
+Onder custom plaatsen we alle functionaliteit die specifiek te maken heeft met de controls zelf, en voor elk type van control alle tests die enkel gelden voor dit soort control. 
+
+##### 5. Config
+
+Alle config-pagina's van Maät, zijn veruit de meest unieke pagina's in de applicatie. Dit zijn de pagina's met de meeste maar ook de meest complexe functionaliteit, die nergens anders in de applicatie te vinden is. Daarom hebben we beslist om voor deze pagina's een apart paradigma te maken, waarin we al deze unieke gevallen beschrijven en er automatische functies van maken. Deze functies kunnen we dan op alle config-pagina's toepassen. Dit is mogelijk omdat veel controls en elementen op exact dezelfde plaats en in exact dezelfde hiërarchie voorkomen op al deze pagina's. 
+
+## How to test
+
+In dit hoofdstuk gaan we bespreken welke technieken we gebruiken bij het schrijven van tests en waarom we exact deze technieken gebruiken. In de checklist zal stap voor stap beschreven staan welke exacte handelingen moeten uitgevoerd worden om deze tests te volbrengen. Onder "How to test" staan deze stappen individueel uitgelegd in detail, zodat dit duidelijk is voor iedereen die het leest. 
+
+Ook gaan we in dit hoofdstuk al onze methodes of functies die we zelf hebben geschreven om bepaalde paradigma's te testen, verder uitleggen onder de sectie "BaseClassCodedUI". Dit is een klasse die we zelf geschreven hebben en waar al onze testprojecten van overerven, waarin we alle zelfgeschreven functies om het testen zo autonoom mogelijk te maken plaatsen. 
