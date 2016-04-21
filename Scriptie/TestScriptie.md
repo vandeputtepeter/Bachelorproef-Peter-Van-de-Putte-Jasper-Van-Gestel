@@ -186,10 +186,59 @@ Deze controle kan voor elke pagina anders zijn, maar de werkwijze is steeds deze
 
 Paradigmagewijs zijn alle navigations natuurlijk hetzelfde. Maar in manier van testen hebben we de navigaties verder onderverdeeld in sub-paradigma's, waarbij elk sub-paradigma een lichtjes andere manier van testen omvat. 
 
-***Variabele listitems***
+***Variabele controls***
 
-Hieronder verstaan we het concept van een lijst, waarin zich allemaal verschillende gevallen bevinden van een bepaald opject. Dit kan bijvoorbeeld zijn: een lijst van studies, een lijst van patienten,... Het aantal items in de lijst staat nooit vast, aangezien het afhangt van hoeveel studies/patienten/... er zich in de database bevinden. Dit kan voortdurend wijzigen. Ook de tekst op deze listitems hangt af van de data in de database. 
+Hieronder verstaan we het concept van een lijst, waarin zich allemaal verschillende gevallen bevinden van een bepaald opject. Dit kan bijvoorbeeld zijn: een lijst van studies, een lijst van patienten,... Het aantal items in de lijst staat nooit vast, aangezien het afhangt van hoeveel studies/patienten/... er zich in de database bevinden. Dit kan voortdurend wijzigen. Ook de tekst op deze controls hangt af van de data in de database. 
 
-Als je op één van de items in deze lijst klikt, zal je altijd op dezelfde pagina terecht komen. Hoe deze pagina is ingevuld hangt echter af van het item waarop je geklikt hebt.
+Als je op één van de controls in deze lijst klikt, zal je altijd op dezelfde pagina terecht komen. Hoe deze pagina is ingevuld hangt echter af van de control waarop je geklikt hebt.
 
-Om dit te testen moeten we dus enerzijds zorgen dat we kunnen klikken op de listitem, en nadien moeten we controleren of de titel van de pagina naarwaar we genavigeerd zijn overeen stemt met het item waarop we geklikt hebben. 
+Om dit te testen moeten we dus enerzijds zorgen dat we kunnen klikken op de control, en nadien moeten we controleren of de titel van de pagina naarwaar we genavigeerd zijn overeen stemt met de control waarop we geklikt hebben. 
+
+
+***Vaste controls***
+
+Vaste controls zijn controls die altijd op een pagina aanwezig zijn, ongeacht de data in de database. De navigatie is uniek voor elk van deze controls. Soms kan het wel zijn dat meerdere vaste controls naar dezelfde pagina navigeren maar ze zorgen dan elk apart voor een andere state van de desbetreffende pagina. Ze openen bijvoorbeeld allemaal een aparte tab van dezelfde pagina of zorgen ervoor dat de pagina anders ge-ordend is. 
+
+Het aantal vaste controls op een pagina is altijd dezelfde, en deze staan ook altijd op dezelfde plaats gepositioneerd, enkel kan het zijn dat de tekst in deze controls varieert op basis van de data die zich in de database bevind. 
+
+Om deze controls te testen moeten we ook klikken op de control, maar de concrete klikfunctie voor deze testmethode zal lichtjes verschillen van de variabele controls, aangezien de manier om toegang te krijgen tot de control anders zal zijn. De controle of de navigatie juist gebeurd is is opnieuw een controle op de titel van de pagina waarnaar we genavigeerd hebben, en eventueel een controle op de state van deze pagina (bvb: staat de juiste tab open? Staan de elementen in de pagina juist ge-ordend? ...).
+
+***Zoekfunctie***
+
+De zoekfunctie vanuit de ClinicHubPage kan ook beschouwd worden als een navigatie. Als we puur het navigatiegedeelte gaan testen hiervan, moeten we geen rekening meer houden met het algoritme dat zorgt voor de correcte zoekresultaten, maar enkel met het feit dat er genavigeerd wordt naar de zoekresultatenpagina. 
+
+Opnieuw zal dit een klein verschil geven in het schrijven van code, aangezien we deze keer niet moeten klikken op een control, maar eerst een zoekwoord moeten ingeven en nadien enteren of klikken op het vergrootglas naast het zoekvak. 
+
+De controle gaan we opnieuw doen op de titel van de zoekresultatenpagina. 
+
+***Hyperlink-navigatie***
+
+Op pagina's die data bevatten die te maken heeft met één bepaalde studie of één bepaalde patiënt (of eventueel nog andere objecten die we in de toekomst nog zouden kunnen tegenkomen), staat bovenaan steeds een hyperlink met de naam van dit object. Als we hierop klikken, komen we op de overzichtpagina van dat object (bvb studie->TrialHub, patiënt->PatientHub, ...)
+
+Het schrijven van navigatiecode zal hier opnieuw lichtjes verschillen omdat de toegankelijkheid van de hyperlink lichtjes verschilt van de vorige navigaties. De controle gebeurt opnieuw op de titel.
+
+>Voor al deze verschillende navigaties gaan we steeds onderzoeken hoe we de control kunnen vinden in code, hoe we een verwachte waarde kunnen creëren aan de hand van welke we kunnen controleren of de juiste navigatie uitgevoerd werd, hoe we dan deze control kunnen gebruiken (meestal klikken, aangezien de verschillende functionaliteiten zoals tab-enter bij navigaties nog niet van belang zijn, deze komen later terug bij functionality) en hoe we dan kunnen controleren dat deze verwachtte waarde aanwezig is na de navigatie. Na elk van deze tests gaan we dan ook nog de omgekeerde test doen met de backbutton, opnieuw met een verwachtte waarde en een effectieve waarde. Dit zorgt ervoor dat alle mogelijke back-navigaties in de applicatie uiteindelijk getest zijn. Dit geheel gaan we zoveel mogelijk in één grote functie per soort navigatie proberen te schrijven, zodat als we nadien dit soort navigatie nog tegenkomen, we gewoon éénmaal de geschreven functie kunnen aanroepen en dus geen extra werk meer hebben.
+
+##### 3. States
+
+De verschillende states van een pagina zijn de verschillende soorten toestanden waarin die pagina zich kan bevinden. Dit zijn:
+* Semantic zoom
+  * Zoomed in
+  * Zoomed out
+* Overlay
+  * Overlay is open
+  * Overlay is gesloten
+* Filtering search
+  * Verschillende orderingen
+* Multiselect
+  * Meerdere geselecteerde elementen
+
+###### Semantic zoom
+
+De semantic zoom is een parent-control, die de mogelijkheid bezit om zichzelf in en uit te zoomen. Meestal bevind er zich in de semantic zoom een hub, die onderverdeeld wordt in verschillende hubsecties. Dit zijn allemaal aparte blokken waarin zich een aantal controls bevinden. Bovenaan een hubsectie staat dan de titel van deze hubsectie. Het aantal hubsecties is niet van belang, en ook het aantal controls die in een hubsectie geimplementeerd worden is niet van belang. Dat zijn er zoveel of zo weinig als je zelf wil. 
+
+Wanneer we naar een pagina navigeren met een semantic zoom, staat deze automatisch ingezoomd. Alle hubsecties zijn dan volledig zichtbaar met hun titel en alle controls. Uitzoomen kunnen we doen door "Ctrl-", Ctrl & scrollen, klikken op de hubsectie-titels, PgUp/PgDn&Enter en Tab&Enter. Wanneer we uitzoomen verdwijnen alle volledige hubsecties en komt er in de plaats een lijst met listitems tevoorschijn, waarin alle titels van de hubsecties weergegeven zijn. Zo kunnen we makkelijk navigeren naar een hubsectie die helemaal rechts op het scherm staat en dus nog niet zichtbaar was in de zoomed-in state (toen moesten we er naartoe scrollen). 
+
+Het terug inzoomen kan op dezelfde manier, door te klikken op de listitems, "Ctrl+", Ctrl & scrollen, , PgUp/PgDn&Enter en Tab&Enter. Als we terug inzoomen op een bepaalde hubsectie zal deze links van het scherm getoond worden. 
+
+Wat we dus moeten testen is dat deze semantic zoom altijd in- en uitzoomt wanneer we de beschreven acties uitvoeren. We gaan dit opnieuw één keer volledig manueel analyseren, en nadien proberen op zo een manier te schrijven in een functie dat we deze functie voor alle pagina's die een semantic zoom bevatten kunnen gebruiken zonder moeite. 
