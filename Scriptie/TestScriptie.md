@@ -242,3 +242,39 @@ Wanneer we naar een pagina navigeren met een semantic zoom, staat deze automatis
 Het terug inzoomen kan op dezelfde manier, door te klikken op de listitems, "Ctrl+", Ctrl & scrollen, , PgUp/PgDn&Enter en Tab&Enter. Als we terug inzoomen op een bepaalde hubsectie zal deze links van het scherm getoond worden. 
 
 Wat we dus moeten testen is dat deze semantic zoom altijd in- en uitzoomt wanneer we de beschreven acties uitvoeren. We gaan dit opnieuw één keer volledig manueel analyseren, en nadien proberen op zo een manier te schrijven in een functie dat we deze functie voor alle pagina's die een semantic zoom bevatten kunnen gebruiken zonder moeite. 
+
+Wat echter ook moet getest worden bij de semantic zoom, is het feit dat de hubsectietitels die in de zoomed-in state weergegeven zijn, ook overeenkomen met de titels die we in de lijst te zien krijgen als we uitzoomen. Ook moeten we controleren of alle hubsecties aanwezig zijn in de zoomed-in en zoomed-out state en dat deze aantallen dus overeen komen. 
+
+Op sommige pagina's bevat de semantic zoom dan ook nog eens content die gebaseerd is op de content veranderingen in de gehele pagina. Zo is het bijvoorbeeld zo dat op de PatientScript page een checkbox in de semantic zoom staat, die aan uit uitgevinkt staat afhankelijk van het feit dat bepaalde info in de pagina is ingevuld of nog leeg is. We moeten dus ook testen dat deze checkboxes bij de zoomed-in en de zoomed-out state overeen komen.
+
+Ook deze inhoudelijke tests gaan we eerst manueel uitvoeren en daarna in een functie wegschrijven zodat deze later hergebruikt kan worden zonder teveel denkwerk. 
+
+###### Overlay
+
+Een overlay is een extra stuk scherm dat bovenop een weergegeven scherm komt, wanneer we op een bepaalde knop klikken. De intentie van de overlay is dat we bepaalde data kunnen toevoegen (create) of aanpassen (Update). Meestal bestaat de overlay uit een aantal inputveldjes en een uitvoer-knop. Door deze inputveldjes in te vullen en op de uitvoer-knop te klikken wordt de data die jij net hebt ingevuld toegevoegd of aangepast in de database. 
+
+Wat we hier moeten testen zijn verschillende dingen. Eerst en vooral moeten we testen of de overlay initieel niet zichtbaar is. Dan moeten we gaan kijken dat de knop die de bedoeling heeft de overlay te openen dit ook effectief doet. Dan moeten we controleren of de functionaliteit op de overlay zelf werkt naar behoren. Dit kan bijvoorbeeld zijn dat de uitvoer-knop pas actief wordt als bepaalde veldjes zijn ingevuld. Als laatste moeten we dan gaan testen of de overlay ook terug sluit als we op de sluit-knop of de uitvoer-knop klikken. Als we op de uitvoerknop hebben geklikt moeten we controleren of de data die wij hebben ingevoerd doorgevoerd wordt naar de applicatie. 
+
+##### 4. Functionality
+
+Onder functionaliteit verstaan we: alles dat te maken heeft met hoe de applicatie werkt, hoe controls werken,...
+
+###### Speed
+
+Speed heeft alles te maken met de snelheid waarmee de pagina's geladen zijn. Er zijn twee speed paradigmas die we gaan testen. 
+* Reaction-speed
+* Reactivity
+
+***Reaction speed***
+
+De "reaction-speed" of reactiesnelheid is de snelheid waarmee een pagina geladen wordt. Dit is een speciaal soort test, die niet slaagt of faalt, maar een bepaalde waarde moet teruggeven. 
+
+Om dit te testen moeten we dus eerst gaan uitzoeken hoe je nagaat of een pagina geladen is of niet. Vervolgens moeten we uitzoeken hoe we dit kunnen timen en tot slot hoe we deze getimede tijd kunnen opslaan en rapporteren.
+
+***Reactivity***
+
+Reactiviteit is het kunnen gebruiken van controls vooraleer de pagina volledig geladen is. 
+
+Om dit te testen moeten we dus een manier vinden om te controleren of de pagina al geladen is of nog niet, nadat we de control gebruikt hebben. Als we vorige test succesvol hebben uitgevoerd, weten we hoe we moeten controleren of een pagina geladen is of niet, dus zou dit voor deze test geen probleem mogen zijn. 
+
+###### Speed
