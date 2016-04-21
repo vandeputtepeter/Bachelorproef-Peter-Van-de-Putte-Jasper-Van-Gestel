@@ -279,3 +279,22 @@ Om dit te testen moeten we dus een manier vinden om te controleren of de pagina 
 
 ###### Scrolling
 
+De scroll-functie wordt bij heel veel verschillende soorten vensters gebruikt. Het wordt gebruikt binnen een hub, binnen een combobox, sommige dropdown of popup-menus,...
+
+Om de scroll-functie te testen, moeten we een manier vinden om te controleren of het de controls op het scherm dat we proberen te testen verplaatsen of zijn verplaatst. Vervolgens moeten we dan een manier zoeken om de verschillende soorten scroll-functies uit te voeren. Deze zijn onderandere het muis-scroll-wiel, de scrollbar,...
+
+###### Control state verification
+
+Dit is het controleren of de visuele toestand van de controls is hoe deze hoort te zijn. Enkele toestanden kunnen zijn: enabled/disabled, de kleur, de helptext,...
+
+Er zijn ook verschillende scenarios waarvoor we deze toestanden moeten controleren. Je kunt klikken op een control, klikken en vasthouden, hoveren over de control, ... Ook heb je nog de initiele toestand waarin de control zich bevind. 
+
+De tests zullen dus bestaan uit 2 delen, in het eerste deel creëren we het scenario dat we gaan testen (initeel, hover,...)
+In het tweede deel controleren we de toestand van de control, zich bevindend in dit scenario. 
+
+###### Control accessibility
+
+Als we de toestand van een control gaan testen, gaan we natuurlijk ook de toegankelijkheid testen. Dit wil zeggen dat we gaan testen of je de control kan selecteren door middel van de tab en pijltjes toetsen. We hebben gemerkt dat dit voor sommige controls mogelijk is maar voor andere niet. Indien het mogelijk is moeten we dus uitzoeken hoe we kunnen controleren of er een stippelijn rondom de control zichtbaar is wanneer deze geselecteerd is. Vervolgens kunnen we dan automatisch beginnen tabben of op de pijltjestoetsen drukken in code en controleren of op een gegeven moment deze control geselecteerd is. 
+
+Later gaan we ook controleren of we de control kunnen gebruiken met enkele toetsen op het toetsenbord als deze geselecteerd is. 
+
