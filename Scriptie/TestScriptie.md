@@ -277,4 +277,5 @@ Reactiviteit is het kunnen gebruiken van controls vooraleer de pagina volledig g
 
 Om dit te testen moeten we dus een manier vinden om te controleren of de pagina al geladen is of nog niet, nadat we de control gebruikt hebben. Als we vorige test succesvol hebben uitgevoerd, weten we hoe we moeten controleren of een pagina geladen is of niet, dus zou dit voor deze test geen probleem mogen zijn. 
 
-###### Speed
+###### Scrolling
+
