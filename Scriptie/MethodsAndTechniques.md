@@ -5,50 +5,76 @@
 
 In de eerste fase van onze opdracht hebben we een hiërarchisch design opgesteld van alle navigatie die in de applicatie "Maät" mogelijk zijn. Dit hebben we gedaan door gewoon alle navigatie uit te proberen en te documenteren naar welke pagina, of eventueel welke sub-pagina, een knop leidt. Zo konden we niet alleen een handig overzicht creëren waarin we konden zien welke schermen het belangrijkste zijn en welke voorlopig minder belangrijk waren. Tegelijkertijd gaf dit het voordeel dat we leerden werken met de applicatie, wat handig werd bij het verdere verloop van het project. 
 
-Het hiërarchisch design vertrekt vanuit de "ClinicHubPage". Dit is de hoofdpagina waarop we terecht komen als we de applicatie starten (Na het inloggen). Van hieruit is een boomstructuur getekend naar alle pagina's waarnaar navigatie mogelijk is vanuit de "ClinicHubPage". Vervolgens hebben we voor elke hub-pagina - pagina's van waaruit we naar meerdere andere pagina's kunnen navigeren - een nieuw bestand gemaakt waarin we dezelfde werkwijze volgden als bij de "ClinicHubPage", namelijk al deze pagina's laten vertakken uit de respectievelijke pagina (Zie afbeelding onder). 
+Het hiërarchisch design vertrekt vanuit de "ClinicHubPage". Dit is de hoofdpagina waarop we terecht komen als we de applicatie starten (Na het inloggen). Van hieruit is een boomstructuur getekend naar alle pagina's waarnaar navigatie mogelijk is vanuit de "ClinicHubPage" (Zie afbeelding onder voor voorbeeld). Vervolgens hebben we voor elke hub-pagina - pagina's van waaruit we naar meerdere andere pagina's kunnen navigeren - een nieuw bestand gemaakt waarin we dezelfde werkwijze volgden als bij de "ClinicHubPage", namelijk al deze pagina's laten vertakken uit de respectievelijke pagina. 
 
-![OverigeDocumenten/Afbeeldingen/ClinicHub.jpg]
+![Voorbeeld: boomstructuur van "ClinicHubPage"](../OverigeDocumenten/Afbeeldingen/ClinicHub.jpg)
 
 Op elke tak hebben we ook geschreven welke knop of handeling ervoor zorgt dat we op die specifieke pagina terecht komen. Ook hebben we per pagina de belangrijkheid aangeduid in het testgebeuren. Sommige pagina's zijn namelijk nog niet af, of zijn zelfs nog in hun beginfase. Dit zijn dan pagina's die in het totale testproject minder prioriteit hebben ten opzichte van de pagina's die wel al af zijn of belangrijke informatie bevatten.
 
-##Method naming
-In dit onderdeel beschrijven we een aantal regels, door ons opgesteld, waaraan de namen van alle geschreven testmethodes moeten voldoen. De visie op deze naamgeving is dat je aan de naam van een testmethode alleen alle informatie over wat er getest wordt kan afleiden. De reden hierachter is dat wanneer we een verslag terug krijgen van alle uitgevoerde tests, en er zijn bepaalde tests gefaald, we meteen kunnen zien welk paradigma in de applicatie niet werkt zoals het hoort te werken, en dit door gewoon de naam van de testmethode te lezen. Waarom dit paradigma gefaald is wordt weggeschreven in een test-log, waar we later op terugkomen. 
+### Benaming van testmethoden
 
-Na een brainstorm sessie zijn we tot het volgende resultaat gekomen:
+In dit onderdeel beschrijven we een aantal regels, door ons opgesteld, waaraan de namen van alle geschreven testmethodes moeten voldoen. De visie op deze naamgeving is dat je aan de naam van een testmethode alle informatie over wat er getest wordt kan afleiden. De reden hiervoor is dat wanneer we een verslag terug krijgen van alle uitgevoerde tests en bepaalde tests zijn gefaald, we meteen kunnen zien welk paradigma in de applicatie niet werkt zoals het hoort te werken, en dit door gewoon de naam van de testmethode te lezen. Waarom dit paradigma gefaald is wordt weggeschreven in een test-log, waar we later op terugkomen.
 
-Page name + Paradigm (+ Context) (+ Xaml Control Type Property) (+ optional info)
+Na een brainstorm sessie over de benamingen van testmethoden zijn we tot het volgende resultaat gekomen:
 
-* "Page name" duidt de pagina aan waarin de test zich bevind. Dit is dus bijvoorbeeld "ClinicHub", "ClinicSearch", "TrialHub", "PatientScript",... Deze parameter moet altijd in het begin van de testmethode geschreven worden, omdat we dan meteen weten op welke pagina er zich een bug bevind indien de test faalt.
-* "Paradigm" duidt op het paradigma dat getest wordt. Dit is een denkwijze/werkwijze die de applicatie volgt om tot een bepaald resultaat te komen. Paradigma's kunnen zijn: Navigate (navigeer naar een andere pagina), Check (controleer een bepaalde waarde),... Deze parameter komt meteen na de pagina om een duidelijke afbakening te zien van wat er wel/niet werkt op welke pagina.
-* "Context": Dit is een optionele parameter, die meer specifiek aanduidt welke control of welk deel van de geteste pagina getest wordt. Wanneer je bijvoorbeeld meerdere lijsten hebt, die elk een lijst van zoekresultaten bevatten, en waarbij elke lijst een ander soort zoekresultaat bevat, kan je "Context" interpreteren als het woord dat duidelijk maakt om welke lijst het gaat. 
-* "Xaml Control Type property" duidt op het type control dat getest wordt. Wanneer je bijvoorbeeld bij context al hebt aangeduid welk subdeel van de applicatie getest wordt, kan het nog steeds zijn dat dit subdeel meerdere control's of control types bevat. Deze parameter duid dan duidelijk aan om welke control het gaat (indien er één specifieke control getest wordt). 
-* "Optional info" is de laatste extra info die je bij sommige tests nodig hebt om volledig duidelijk te maken wat er exact getest wordt. Dit kan allerhande informatie zijn zoals bijvoorbeeld een bepaalde state waarin de pagina zich bevind voor die specifieke test.
+Page name + Paradigm (+ Context) (+ Xaml Control Type Property) (+ Optional Info)
+
+* "Page name"
+  * Verplichte parameter
+  * Duidt de pagina aan waarin de test zich bevind.
+  * Bijvoorbeeld: "ClinicHub", "ClinicSearch", "TrialHub", "PatientScript",...
+  * Deze parameter moet altijd in het begin van de testmethode geschreven worden, omdat we dan meteen weten op welke pagina er zich een bug bevind indien de test faalt.
+* "Paradigm"
+  * Verplichte parameter
+  * Duidt op het paradigma dat getest wordt. Dit is de denkwijze/werkwijze die de applicatie volgt om tot een bepaald resultaat te komen.
+  * Bijvoorbeeld: Navigate (navigeer naar een andere pagina), Check (controleer een bepaalde waarde),... 
+  * Deze parameter komt meteen na de pagina om een duidelijke afbakening te zien van wat er wel/niet werkt op welke pagina.
+* "Context"
+  * Optionele parameter
+  * Duidt meer specifiek aan welke control of welk deel van de geteste pagina getest wordt.
+  * Bijvoorbeeld: Wanneer je meerdere lijsten hebt, die elk een lijst van zoekresultaten bevatten, en waarbij elke lijst een ander soort zoekresultaat bevat, kan je "Context" interpreteren als het woord dat duidelijk maakt om welke lijst het gaat. 
+* "Xaml Control Type Property":
+  * Optionele parameter
+  * Duidt op het type control dat getest wordt.
+  * Bijvoorbeeld: Wanneer je bij context al hebt aangeduid welk sub-deel van de applicatie getest wordt, kan het nog steeds zijn dat dit sub-deel meerdere control's of control types bevat. Deze parameter duid dan duidelijk aan om welke control het gaat (indien er één specifieke control getest wordt). 
+* "Optional Info":
+  * Optionele parameter
+  * Duidt op de info die je bij sommige tests nodig hebt om volledig duidelijk te maken wat er exact getest wordt. Dit kan allerhande informatie zijn.
+  * Bijvoorbeeld: Een bepaalde state waarin de pagina zich bevind voor die specifieke test.
+
+>Het is noodzakelijk dat minstens één van de optionele parameters ook aanwezig is in de testmethodebenaming om verduidelijking te geven over de betreffende testmethode.
 
 
-##File structure
-In dit onderdeel hebben we een aantal regels opgesteld voor de onderverdeling van de verschillende testprojecten. De visie hier is dat we niet alle tests van het gehele project in 1 groot project mogen schrijven (wat de onderhoudbaarheid nagenoeg onmogelijk maakt), maar dat we ook niet voor elke testmethode een nieuw project mogen schrijven, aangezien er dan teveel files zouden ontstaan. Een gulden middenweg die we gevonden hebben na enkele besprekingen met onze promotors, is dat we voor elk hoofdparadigma, per pagina, een nieuw testproject schrijven, en dat we voor elke pagina één UIMap maken die gebruikt wordt in alle testprojecten voor deze pagina. Ook hebben we na overleg beslist dat we bij elke pagina die verschillende subtabs bevat, elke subtab als één volledige pagina beschouwen. Deze worden dus onderverdeeld alsof het aparte pagina's zijn. 
+### ## Bestandsstructuur
+
+In dit onderdeel hebben we een aantal regels opgesteld voor de onderverdeling van de verschillende testprojecten. De visie hier is dat we niet alle tests van het gehele project in 1 grote klasse mogen schrijven (wat de onderhoudbaarheid nagenoeg onmogelijk maakt). tegelijkertijd mogen we ook niet voor elke testmethode een nieuwe klasse aanmaken, aangezien er dan teveel files zouden ontstaan. Een gulden middenweg die we gevonden hebben na enkele besprekingen met onze promotors, is dat we voor elk hoofdparadigma, per pagina, een nieuwe klasse aanmaken, en dat we voor elke pagina één UIMap-klasse maken die gebruikt wordt in alle testprojecten voor de betreffende pagina. Ook hebben we na overleg beslist dat we bij elke pagina die verschillende sub-tabs bevat, elke sub-tab als één volledige pagina beschouwen. Deze worden dus onderverdeeld alsof het aparte pagina's zijn. 
 
 Door bovenstaande regels in acht te nemen, hebben we volgende file structuur opgebouwd: 
-* Screens
-  * General UIMap
-  * Partial parent .cs file
-  * .csv global scenarios
-  * Category (clinic,…)
-    * .csv categorical scenarios
-    * Page (contactspage,….)
-      * UImap
-      * .csv local scenarios
-      * .cs files per category
-        * States
-        
-        All tests regarding the different states of a page
 
-        * Navigation
-
-        All tests regarding forward navigations from a page and backwards navigation to the page
-
-        * Functionality
-        All tests regarding functionality/interfunctionality of controls
-
-        * Content	
-        All tests regarding data in the database
+* **Screens**
+  * Bestand dat alle UIMap's en Testklassen bevat die zich bevinden in sub-folders
+  * **General UIMap**
+    * UIMap die gebruikt wordt voor de base-klassen
+  * **Partial base-klassen**
+    * Base klassen die methoden definieert die overal terugkomen
+  * **Globaal scenario bestanden** 
+    * Scenario's opgesteld in .csv formaat die zich strekken over alle groeperingen
+  * **Groepering**
+    * Bijvoorbeeld: Clinic, Patient, ...
+    * **Groepsniveau scenario bestanden**
+      * Scenario's opgesteld in .csv formaat die zich strekken binnen groepsniveau
+    * **Pagina**
+      * Bijvoorbeeld: ClinicContactsPage, ClinicHubPage,...
+      * **UIMap**
+        * UIMap van de betreffende pagina
+      * **Locale scenario bestanden**
+        * Scenario's opgesteld in .csv formaat die zich strekt over enkel de pagina zelf
+      * **Klasse per paradigma**
+        * **Staten**
+          *  Klasse die alle testen betreffende verschillende staten van een pagina bevat
+        * **Navigatie**
+          * Klasse die alle testen betreffende voorwaartse en achterwaartse navigatie naar pagina's bevat
+        * **Functionaliteit**
+          * Klasse die alle testen betreffende functionaliteit / inter-functionaliteit van controls bevat
+        * **Content**
+          * Klasse die alle testen betreffende data in de database of applicatie bevat
