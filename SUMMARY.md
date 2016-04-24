@@ -6,6 +6,7 @@
 * [Omkadering](Scriptie/Omkadering.md)
 * [How to test: De basis van testen](Scriptie/HowToTest.md)
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
+   * temp
 * [Testing guideline](Scriptie/TestingGuideline.md)
    * [Testing checklist](Scriptie/TestingChecklist.md)
    * [Testing log](Scriptie/TestingLog.md)
