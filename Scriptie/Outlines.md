@@ -1,4 +1,3 @@
->These files contains the temporary representation of our thesis
-
-# Outlines
+>Deze bestanden representeren een tijdelijke voorstelling van de scriptie
+## Omkadering
 
