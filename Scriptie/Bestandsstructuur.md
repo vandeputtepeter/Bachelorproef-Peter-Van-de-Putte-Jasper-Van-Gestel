@@ -1,4 +1,5 @@
 >Deze bestanden representeren een tijdelijke voorstelling van de scriptie 
+
 ### Bestandsstructuur
 
 In dit onderdeel hebben we een aantal regels opgesteld voor de onderverdeling van de verschillende testprojecten. De visie hier is dat we niet alle tests van het gehele project in 1 grote klasse mogen schrijven (wat de onderhoudbaarheid nagenoeg onmogelijk maakt). tegelijkertijd mogen we ook niet voor elke testmethode een nieuwe klasse aanmaken, aangezien er dan teveel files zouden ontstaan. Een gulden middenweg die we gevonden hebben na enkele besprekingen met onze promotors, is dat we voor elk hoofdparadigma, per pagina, een nieuwe klasse aanmaken, en dat we voor elke pagina één UIMap-klasse maken die gebruikt wordt in alle testprojecten voor de betreffende pagina. Ook hebben we na overleg beslist dat we bij elke pagina die verschillende sub-tabs bevat, elke sub-tab als één volledige pagina beschouwen. Deze worden dus onderverdeeld alsof het aparte pagina's zijn. 
