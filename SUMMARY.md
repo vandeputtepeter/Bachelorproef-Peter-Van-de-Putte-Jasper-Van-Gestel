@@ -6,7 +6,7 @@
 * [Omkadering](Scriptie/Omkadering.md)
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
 * [Testing Guideline](Scriptie/TestingGuideline.md)
-* [Testing Checklist](Scriptie/TestingChecklist.md)
+* [Testing checklist](Scriptie/TestingChecklist.md)
 * [Testing Log](Scriptie/TestingLog.md)
 * [Bronnen](Scriptie/Sources.md)
 
