@@ -2,7 +2,7 @@
 
 * [Introductie](README.md)
 * Voorwoord
-* [Objectives](Scriptie/Objectives.md)
+* [Doelstellingen](Scriptie/Objectives.md)
 * [Outlines](Scriptie/Outlines.md)
 * [Methods and Techniques](Scriptie/MethodsAndTechniques.md)
 * [Testing Guideline](Scriptie/TestingGuideline.md)
