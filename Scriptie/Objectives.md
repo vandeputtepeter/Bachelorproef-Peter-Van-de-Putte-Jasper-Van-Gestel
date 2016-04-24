@@ -1,5 +1,6 @@
 >These files contains the temporary representation of our thesis
 
-# Objectives
+
+## Doelstellingen
 
 <!-- Vul hier aan -->
