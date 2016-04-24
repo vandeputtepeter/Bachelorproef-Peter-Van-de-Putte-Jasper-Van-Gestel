@@ -6,7 +6,7 @@
 * [Omkadering](Scriptie/Omkadering.md)
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
    * [How to test: De basis van testen](Scriptie/HowToTest.md)
-   * Hierarchisch navigatie ontwerp
+   * [Hierarchisch navigatie ontwerp](Scriptie/HierarchischNavigatieOntwerp.md)
 * [Testing guideline](Scriptie/TestingGuideline.md)
    * [Testing checklist](Scriptie/TestingChecklist.md)
    * [Testing log](Scriptie/TestingLog.md)
