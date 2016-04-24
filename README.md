@@ -4,7 +4,7 @@
 
 ###### Bachelor Electronica & ICT - Peter Van de Putte & Jasper Van Gestel
 
-## Promotors
+### Promotors
 
 * **Stagebegeleider:**
     * Naam: Patrick Van Houtven
@@ -19,7 +19,7 @@
     * E-mail: Tom.wuyts@calidos.be
     * Gsm: -
 
-## Abstract
+### Abstract
 
 Het onderwerp van onze thesis is 'Coded UI Testing'.
 
