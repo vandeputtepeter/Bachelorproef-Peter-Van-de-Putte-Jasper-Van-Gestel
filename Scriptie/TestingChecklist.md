@@ -1,13 +1,14 @@
 >Deze bestanden representeren een tijdelijke voorstelling van de scriptie 
-## Testing checklist
 
-### Overzicht
+### Testing checklist
+
+#### Overzicht
 
 Dit is de kern van het project. Het is de bedoeling dat we een lijst opstellen waarin alle paradigma's die getest moeten worden onder elkaar staan weergegeven. In de "testing guideline" staat voor elk element in deze lijst beschreven hoe dat bepaald paradigma moet getest worden, en in een apart excel document staat voor elke pagina elk paradigma opgelijst onder elkaar. Op die manier kunnen we in een matrix makkelijk aanduiden of een bepaald paradigma volledig getest is of niet, op de respectievelijke pagina. 
 
 >Ondertussen is er een automation van dit process in ontwikkeling, we hopen deze nog af te hebben voor de stage afgelopen is, het gaat om een applicatie die twee XML documenten neemt en deze verwerkt tot een HTML document die weergeeft in hoevere de applicatie getest is. Eén van de input XML documenten wordt dagelijks gegenereerd door het automatische buildprocess dat 'snachts in werking treed (De DOBT of build-straat). Het andere XML document wordt opgestelt door de gebruiker die hierin beschrijft welke dingen getest moeten worden. De applicatie moet deze twee documenten overlapen en weergeven in een HTML document in hoevere er getest is geweest op de gewenste plaatsen van de applicatie.
 
-### Werkwijze
+#### Werkwijze
 
 We beginnen met de basispagina’s die de meest gebruikte paradigma's/control ’s bevatten (die zo goed als overal zullen terugkomen). 
 
@@ -15,10 +16,10 @@ Voor elke gevonden control/paradigma zoeken we dan uit hoe we deze zo efficiënt
 
 Indien we op een volgende pagina weer een nieuwe control/paradigma tegenkomen, zetten we deze bij onderaan onze checklist met gevonden control ‘s/paradigma's. Het is dan weer opnieuw de bedoeling om uit te zoeken hoe we deze kunnen testen en alle voorgaande pagina’s opnieuw af te gaan en te controleren of ook dit element aanwezig is op de pagina en te testen indien nodig, zodat we de pagina weer als getest kunnen verklaren. 
 
-### Resultaat
+#### Resultaat
 Het uiteindelijke resultaat, na een paar keer herwerken, zijn verschillende checklists.
 
-#### General checklist
+##### General checklist
 
 Deze checklist bevat de algemene paradigma's die op elke pagina aanwezig zijn. Deze zijn onderverdeeld in een aantal subcategorieën, die later verder onderverdeeld zullen worden.
 
@@ -26,13 +27,13 @@ Op de general checklist staat voor elke pagina een kolom, met daaronder voor elk
 
 Onderaan de general checklist staat ook een legende met een letter en een kleur voor elke toestand van het "getest-zijn" van een paradigma (bvb Y van Yes = getest, D van Do = nog te doen, E van Error = probleem bij testen,...)
 
-#### Paradigm checklist
+##### Paradigm checklist
 
 Aangezien het de bedoeling is dat we paradigma's gaan zoeken, en dan voor elk paradigma uitzoeken hoe we dit moeten gaan testen en nadien documenteren, leek het ons handig om een aparte paradigma-checklist te maken. Hier staan alle paradigma's, onderverdeeld tot op het niveau van specifieke scenario's, die getest moeten worden. Vervolgens staat er een kolom naast deze lijst, met dezelfde kleurcode als in de legende. Deze geeft dus aan of dit paradigma ge-analyseerd is en we dus weten hoe we dit moeten gaan testen. 
 
 Wanneer er een nieuw paradigma bijkomt, zal deze dus altijd eerst op groen moeten komen in de paradigma-checklist, vooraleer we dit kunnen gaan testen op de rest van de pagina's. Uiteraard zullen we dit dan wel op één pagina al getest hebben, namelijk de pagina waarop we dit paradigma gevonden en ge-analyseerd hebben. 
 
-#### Example-page + Page checklists
+##### Example-page + Page checklists
 
 Vervolgens komen we dan tot de pagina-specifieke checklist. Hierin staan de algemene paradigma's van de general checklist verder onderverdeeld zoals bij de paradigma-checklist. Bovenaan splitsen we de pagina dan op in al zijn aparte control's, die we gaan gebruiken om tests uit te voeren. Voor elke control hebben we ook de parent-control gedocumenteerd, zodat het duidelijk is over welke control het gaat. 
 
@@ -42,7 +43,7 @@ Wanneer we dus een nieuw paradigma vinden, zal dit eerst in de paradigm checklis
 
 Op de page checklist staat opnieuw aangeduid welk paradigma getest is en welk niet, volgens de kleurcode in de legende op de general checklist, met als verschil dat deze hier nog eens onderverdeeld worden per control. We analyseren dus voor elke control welk paradigma van toepassing is en duiden dan de status aan volgens de kleurcode. 
 
-#### Full checklist
+##### Full checklist
 
 In onze guideline staat de volledig uitgeschreven versie van de checklist. Hierin staat voor elk puntje in de lijst beschreven wat het exact inhoud onder "what?". Dit is een korte beschrijving van wat er getest wordt en wat de elementen die in de test gebruikt worden horen te doen. 
 
@@ -50,7 +51,7 @@ Vervolgens staat onder "how?" een stappenplan beschreven dat je moet volgen om d
 
 In deze checklist proberen we zo specifiek en zo duidelijk mogelijk te zijn, zodat het ook voor een eventuele opvolger helemaal duidelijk is wat exact de bedoeling is van deze test en wat de verschillende control's en elementen horen te doen wanneer ze gebruikt worden op de beschreven manier. 
 
-##### 1. Content
+###### 1. Content
 
 In deze sectie gaan we alle paradigma's beschrijven die betrekking hebben tot de inhoud van control's en tekstvelden. Alle informatie die in de user-interface beschikbaar is die uit de database komt, of aangepast kan worden, komt onder het paradigma "content". 
 
@@ -111,7 +112,7 @@ Telkens je een waarde accepteert/weigert verdwijnt het popup-venster terug.
 
 Het testen van deze partpickers is tot nu toe nog niet gelukt, aangezien we geen enkele manier hebben gevonden om in testcode de partpicker te kunnen zien. 
 
-##### 2. Navigations
+###### 2. Navigations
 
 Het volgende grote paradigma zijn de navigaties binnen de applicatie. Onder navigaties verstaan we alle acties die ervoor zorgen dat de applicatie een ander scherm opendoet. Ook de zoekfunctie behoort tot navigaties, aangezien we hier ook naar een ander scherm gaan. Het verschil tussen de CRUD-tests voor de zoekfunctie en de navigatietests is echter dat we bij de navigatietests niet gaan controleren welke zoekdata weergegeven wordt, maar enkel of we op de zoekresultatenpagina terecht komen (ClinicSearch). 
 
@@ -155,7 +156,7 @@ Het schrijven van navigatiecode zal hier opnieuw lichtjes verschillen omdat de t
 
 >Voor al deze verschillende navigaties gaan we steeds onderzoeken hoe we de control kunnen vinden in code, hoe we een verwachte waarde kunnen creëren aan de hand van welke we kunnen controleren of de juiste navigatie uitgevoerd werd, hoe we dan deze control kunnen gebruiken (meestal klikken, aangezien de verschillende functionaliteiten zoals tab-enter bij navigaties nog niet van belang zijn, deze komen later terug bij functionality) en hoe we dan kunnen controleren dat deze verwachtte waarde aanwezig is na de navigatie. Na elk van deze tests gaan we dan ook nog de omgekeerde test doen met de backbutton, opnieuw met een verwachtte waarde en een effectieve waarde. Dit zorgt ervoor dat alle mogelijke back-navigaties in de applicatie uiteindelijk getest zijn. Dit geheel gaan we zoveel mogelijk in één grote functie per soort navigatie proberen te schrijven, zodat als we nadien dit soort navigatie nog tegenkomen, we gewoon éénmaal de geschreven functie kunnen aanroepen en dus geen extra werk meer hebben.
 
-##### 3. States
+###### 3. States
 
 De verschillende states van een pagina zijn de verschillende soorten toestanden waarin die pagina zich kan bevinden. Dit zijn:
 * Semantic zoom
@@ -191,7 +192,7 @@ Een overlay is een extra stuk scherm dat bovenop een weergegeven scherm komt, wa
 
 Wat we hier moeten testen zijn verschillende dingen. Eerst en vooral moeten we testen of de overlay initieel niet zichtbaar is. Dan moeten we gaan kijken dat de knop die de bedoeling heeft de overlay te openen dit ook effectief doet. Dan moeten we controleren of de functionaliteit op de overlay zelf werkt naar behoren. Dit kan bijvoorbeeld zijn dat de uitvoer-knop pas actief wordt als bepaalde veldjes zijn ingevuld. Als laatste moeten we dan gaan testen of de overlay ook terug sluit als we op de sluit-knop of de uitvoer-knop klikken. Als we op de uitvoerknop hebben geklikt moeten we controleren of de data die wij hebben ingevoerd doorgevoerd wordt naar de applicatie. 
 
-##### 4. Functionality
+###### 4. Functionality
 
 Onder functionaliteit verstaan we: alles dat te maken heeft met hoe de applicatie werkt, hoe controls werken,...
 
@@ -238,6 +239,6 @@ Later gaan we ook controleren of we de control kunnen gebruiken met enkele toets
 
 Onder custom plaatsen we alle functionaliteit die specifiek te maken heeft met de controls zelf, en voor elk type van control alle tests die enkel gelden voor dit soort control. 
 
-##### 5. Config
+###### 5. Config
 
 Alle config-pagina's van Maät, zijn veruit de meest unieke pagina's in de applicatie. Dit zijn de pagina's met de meeste maar ook de meest complexe functionaliteit, die nergens anders in de applicatie te vinden is. Daarom hebben we beslist om voor deze pagina's een apart paradigma te maken, waarin we al deze unieke gevallen beschrijven en er automatische functies van maken. Deze functies kunnen we dan op alle config-pagina's toepassen. Dit is mogelijk omdat veel controls en elementen op exact dezelfde plaats en in exact dezelfde hiërarchie voorkomen op al deze pagina's. 
