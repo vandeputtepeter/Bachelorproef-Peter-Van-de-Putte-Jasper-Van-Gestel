@@ -1,3 +1,4 @@
+>These files contains the temporary representation of our thesis
 # Thesis
 
 ## Coded UI Testing 
