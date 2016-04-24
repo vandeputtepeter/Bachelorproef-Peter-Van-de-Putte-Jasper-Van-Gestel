@@ -1,4 +1,5 @@
 >Deze bestanden representeren een tijdelijke voorstelling van de scriptie 
+
 ### Hiërarchisch navigatie ontwerp
 
 In de eerste fase van onze opdracht hebben we een hiërarchisch design opgesteld van alle navigatie die in de applicatie "Maät" mogelijk zijn. Dit hebben we gedaan door gewoon alle navigatie uit te proberen en te documenteren naar welke pagina, of eventueel welke sub-pagina, een knop leidt. Zo konden we niet alleen een handig overzicht creëren waarin we konden zien welke schermen het belangrijkste zijn en welke voorlopig minder belangrijk waren. Tegelijkertijd gaf dit het voordeel dat we leerden werken met de applicatie, wat handig werd bij het verdere verloop van het project. 
