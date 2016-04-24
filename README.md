@@ -1,4 +1,5 @@
 >Deze bestanden representeren een tijdelijke voorstelling van de scriptie
+
 # Thesis
 
 ## Coded UI Testing 
