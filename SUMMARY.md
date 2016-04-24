@@ -7,6 +7,7 @@
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
    * [How to test: De basis van testen](Scriptie/HowToTest.md)
    * [Hierarchisch navigatie ontwerp](Scriptie/HierarchischNavigatieOntwerp.md)
+   * Benamingen
 * [Testing guideline](Scriptie/TestingGuideline.md)
    * [Testing checklist](Scriptie/TestingChecklist.md)
    * [Testing log](Scriptie/TestingLog.md)
