@@ -1,6 +1,6 @@
 >These files contains the temporary representation of our thesis
 
-# Sources
+# Bronnen
 
 * https://msdn.microsoft.com/en-us/windows/uwp/index
 * https://msdn.microsoft.com/en-us/windows/uwp/layout/design-and-ui-intro
