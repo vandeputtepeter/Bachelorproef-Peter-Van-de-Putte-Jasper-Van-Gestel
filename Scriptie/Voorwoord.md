@@ -1,4 +1,4 @@
->These files contains the temporary representation of our thesis
+>Deze bestanden representeren een tijdelijke voorstelling van de scriptie
 ## Voorwoord
 
 <!-- Vul hier aan -->
