@@ -8,6 +8,6 @@
 * [Omkadering](Scriptie/Omkadering.md)
 * [Testing guideline](Scriptie/TestingGuideline.md)
 * [Testing checklist](Scriptie/TestingChecklist.md)
-* [Bronnen](Scriptie/Sources.md)
 * [Testing log](Scriptie/TestingLog.md)
+* [Bronnen](Scriptie/Sources.md)
 
