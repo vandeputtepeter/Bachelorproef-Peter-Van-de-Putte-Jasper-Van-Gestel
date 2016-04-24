@@ -7,15 +7,15 @@
 
 ### Promotors
 
-* **Stagebegeleider:**
+* **Stage mentor:**
     * Naam: Patrick Van Houtven
     * E-mail: patrick.vanhoutven@ap.be
     * Gsm: 0474 66 57 15
-* **Stagementor:**
+* **Stage promotor:**
     * Naam: Mark Devos
     * E-mail: Mark.devos@calidos.be
     * Gsm: 0475 69 13 42
-* **Stagementor:**
+* **Stage promotor:**
     * Naam: Tom Wuyts
     * E-mail: Tom.wuyts@calidos.be
     * Gsm: -
