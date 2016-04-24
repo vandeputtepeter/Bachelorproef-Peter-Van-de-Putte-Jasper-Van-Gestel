@@ -2,48 +2,48 @@
 
 ## Coded UI Testing 
 
-###### Bachelor Electronics and ICT - Peter Van de Putte & Jasper Van Gestel
+###### Bachelor Electronica & ICT - Peter Van de Putte & Jasper Van Gestel
 
 ## Promotors
 
-* **Internship Attendent:**
+* **Stagebegeleider:**
     * Naam: Patrick Van Houtven
     * E-mail: patrick.vanhoutven@ap.be
     * Gsm: 0474 66 57 15
-* **Internship Monitor:**
+* **Stagementor:**
     * Naam: Mark Devos
     * E-mail: Mark.devos@calidos.be
     * Gsm: 0475 69 13 42
-* **Internship Monitor:**
+* **Stagementor:**
     * Naam: Tom Wuyts
     * E-mail: Tom.wuyts@calidos.be
     * Gsm: -
 
 ## Abstract
 
-The subject of our thesis is 'Coded UI Testing'.
+Het onderwerp van onze thesis is 'Coded UI Testing'.
 
-We will be doing this on a program, the "Maät" project , that is currently under developement by "Calidos".
+We gaan dit toepassen op een programma, het "Maät" project , dat momenteel nog in ontwikkeling is door "Calidos".
 
-The first steps of our thesis are:
+De eerste fasen in onze thesis zijn:
 
-* Finding out what "Coded UI Testing" actually is
-  * What is Testing Automation
-* Learn to work with the Coded UI Tools that are provided by Microsoft, and the new Operating System
-  * The Coded UI Test Builder (Visual Studio 2015)
+* Uitzoeken wat "Coded UI Testing" nu eigenlijk is.
+  * Wat is testing automation
+* Leren werken met de Coded UI tools die voorzien zijn door Microsoft Visual Studio 2015 en het nieuwe OS van Microsoft, Windows 10 
+  * De Coded UI Test Builder (Visual Studio 2015)
   * UWP / XAML (Visual Studio 2015)
-  * Windows 10
+  * Windows 10 (Microsoft)
 
-When these goals are achieved and the basic knowledge has been absorbed, we can start with the actual objective given to us by Mark Devos.
+Wanneer deze doelen bereikt zijn en de basiskennis opgenomen is, kan er gestart worden met het eigenlijke eindwerk dat ons gegeven is door Mark Devos.
 
-There are two main goals, or objectives:
+De twee grote doelen zijn:
 
-* Delivering a "Testing Guideline"
-  * How to test the application
-  * How to automate testing on the application
-* Delivering a "Testing Checklist" as part of the "Testing Guideline"
-  * What criteria should be tested to make sure we know when a control or page is fully tested
+* Opleveren van een "Testing Guideline"
+  * Hoe moet de applicatie getest worden
+  * Hoe moet testing automation toegepast worden op de applicatie
+* Opleveren van een "Testing Checklist" als onderdeel van de "Testing Guideline"
+  * Welke criteria moeten getest zijn om zeker te zijn dat de control of pagina volledig is uitgetest
 
-* Alternatively there will be a document that defines bugs, and information of controls that do not seem to work as intended. This document will also be a part of the "Testing Guideline"
+* Er werd ook gevraag om een bijkomstig document op te stellen dat bugs en niet werkende elementen of foutjes bij controls definieert. Dit document zal ook deel uitmaken van de "Testing Guideline".
 
-Initially, these documents will be short, but will grow drastically during our internship here at "Calidos"
+Initieel zullen deze documenten korte beschrijvingen zijn, maar gedurende ons verblijf bij "Calidos" zullen deze drastisch aangroeien tot een duidelijk geheel dat in detail beschrijft hoe testing op "Maät" moet worden verwezenlijkt.
