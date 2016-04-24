@@ -3,7 +3,7 @@
 * [Introductie](README.md)
 * [Voorwoord](Scriptie/Voorwoord.md)
 * [Doelstellingen](Scriptie/Objectives.md)
-* [Situering](Scriptie/Outlines.md)
+* [Omkadering](Scriptie/Outlines.md)
 * [Methoden en Technieken](Scriptie/MethodsAndTechniques.md)
 * [Testing Guideline](Scriptie/TestingGuideline.md)
 * [Testing Checklist](Scriptie/TestingChecklist.md)
