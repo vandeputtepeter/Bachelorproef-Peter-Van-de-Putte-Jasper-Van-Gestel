@@ -1,7 +1,7 @@
 >Deze bestanden representeren een tijdelijke voorstelling van de scriptie
 ## Doelstellingen
 
->Nog verder uit te breiden dan het 'abstract'
+>TODO: Nog verder uit te breiden dan het 'abstract'
  
 Het onderwerp van onze thesis is 'Coded UI Testing'.
 
