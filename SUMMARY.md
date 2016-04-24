@@ -9,6 +9,5 @@
 * [Testing guideline](Scriptie/TestingGuideline.md)
    * [Testing checklist](Scriptie/TestingChecklist.md)
    * [Testing log](Scriptie/TestingLog.md)
-   * temp
 * [Bronnen](Scriptie/Sources.md)
 
