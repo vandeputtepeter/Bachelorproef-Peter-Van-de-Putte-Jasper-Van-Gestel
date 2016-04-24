@@ -1,25 +1,22 @@
-
-## Testing Checklist
+>Deze bestanden representeren een tijdelijke voorstelling van de scriptie 
+## Testing checklist
 
 ### Overzicht
 
-Dit is de kern van het project. Het is de bedoeling dat we een lijst opstellen waarin alle paradigma's die getest moeten worden onder elkaar staan weergegeven. In de Testing Guideline staat voor elk element in deze lijst beschreven hoe dat bepaald paradigma moet getest worden, en in een apart excel document staat voor elke pagina elk paradigma opgelijst onder elkaar. Op die manier kunnen we in een matrix makkelijk aanduiden of een bepaald paradigma volledig getest is of niet, op de respectievelijke pagina. 
+Dit is de kern van het project. Het is de bedoeling dat we een lijst opstellen waarin alle paradigma's die getest moeten worden onder elkaar staan weergegeven. In de "testing guideline" staat voor elk element in deze lijst beschreven hoe dat bepaald paradigma moet getest worden, en in een apart excel document staat voor elke pagina elk paradigma opgelijst onder elkaar. Op die manier kunnen we in een matrix makkelijk aanduiden of een bepaald paradigma volledig getest is of niet, op de respectievelijke pagina. 
 
+>Ondertussen is er een automation van dit process in ontwikkeling, we hopen deze nog af te hebben voor de stage afgelopen is, het gaat om een applicatie die twee XML documenten neemt en deze verwerkt tot een HTML document die weergeeft in hoevere de applicatie getest is. Eén van de input XML documenten wordt dagelijks gegenereerd door het automatische buildprocess dat 'snachts in werking treed (De DOBT of build-straat). Het andere XML document wordt opgestelt door de gebruiker die hierin beschrijft welke dingen getest moeten worden. De applicatie moet deze twee documenten overlapen en weergeven in een HTML document in hoevere er getest is geweest op de gewenste plaatsen van de applicatie.
 
 ### Werkwijze
 
 We beginnen met de basispagina’s die de meest gebruikte paradigma's/control ’s bevatten (die zo goed als overal zullen terugkomen). 
 
-Voor elke gevonden control/paradigma  zoeken we dan uit hoe we deze zo efficiënt mogelijk kunnen testen. Deze methode documenteren we dan zodat wij, en onze eventuele opvolgers, deze altijd terug kunnen raadplegen wanneer nodig (voor volgende pagina’s etc.). We documenteren ook voor de pagina die we aan het testen zijn welke control ’s en paradigma's reeds getest zijn, tot we ze allemaal hebben gehad. Op dit moment wordt de pagina als volledig getest verklaard.
+Voor elke gevonden control/paradigma zoeken we dan uit hoe we deze zo efficiënt mogelijk kunnen testen. Deze methode documenteren we dan zodat wij, en onze eventuele opvolgers, deze altijd terug kunnen raadplegen wanneer nodig. We documenteren ook voor de pagina die we aan het testen zijn welke control ’s en paradigma's reeds getest zijn, tot we ze allemaal hebben gehad. Op het moment dat alle paradigma's op alle controls die deze paradigma's toepassen getest zijn, wordt de pagina als volledig getest verklaard.
 
 Indien we op een volgende pagina weer een nieuwe control/paradigma tegenkomen, zetten we deze bij onderaan onze checklist met gevonden control ‘s/paradigma's. Het is dan weer opnieuw de bedoeling om uit te zoeken hoe we deze kunnen testen en alle voorgaande pagina’s opnieuw af te gaan en te controleren of ook dit element aanwezig is op de pagina en te testen indien nodig, zodat we de pagina weer als getest kunnen verklaren. 
 
-
-
-
 ### Resultaat
 Het uiteindelijke resultaat, na een paar keer herwerken, zijn verschillende checklists.
-
 
 #### General checklist
 
@@ -29,13 +26,11 @@ Op de general checklist staat voor elke pagina een kolom, met daaronder voor elk
 
 Onderaan de general checklist staat ook een legende met een letter en een kleur voor elke toestand van het "getest-zijn" van een paradigma (bvb Y van Yes = getest, D van Do = nog te doen, E van Error = probleem bij testen,...)
 
-
 #### Paradigm checklist
 
 Aangezien het de bedoeling is dat we paradigma's gaan zoeken, en dan voor elk paradigma uitzoeken hoe we dit moeten gaan testen en nadien documenteren, leek het ons handig om een aparte paradigma-checklist te maken. Hier staan alle paradigma's, onderverdeeld tot op het niveau van specifieke scenario's, die getest moeten worden. Vervolgens staat er een kolom naast deze lijst, met dezelfde kleurcode als in de legende. Deze geeft dus aan of dit paradigma ge-analyseerd is en we dus weten hoe we dit moeten gaan testen. 
 
 Wanneer er een nieuw paradigma bijkomt, zal deze dus altijd eerst op groen moeten komen in de paradigma-checklist, vooraleer we dit kunnen gaan testen op de rest van de pagina's. Uiteraard zullen we dit dan wel op één pagina al getest hebben, namelijk de pagina waarop we dit paradigma gevonden en ge-analyseerd hebben. 
-
 
 #### Example-page + Page checklists
 
@@ -46,7 +41,6 @@ Op de example-page hebben we enkele control's gezet die op elke pagina terugkome
 Wanneer we dus een nieuw paradigma vinden, zal dit eerst in de paradigm checklist terecht komen. Vervolgens zetten we dit paradigma over op de example-page en nadien op alle andere page-checklists. Wanneer we beginnen met een nieuwe pagina te testen en dus een page-checklist maken voor deze pagina, kunnen we gewoon rechtstreeks de example-page kopiëren en plakken, en vervolgens alle pagina-specifieke control's toevoegen.
 
 Op de page checklist staat opnieuw aangeduid welk paradigma getest is en welk niet, volgens de kleurcode in de legende op de general checklist, met als verschil dat deze hier nog eens onderverdeeld worden per control. We analyseren dus voor elke control welk paradigma van toepassing is en duiden dan de status aan volgens de kleurcode. 
-
 
 #### Full checklist
 
@@ -75,8 +69,6 @@ Om dit paradigma te testen, moeten we eerst gaan uitzoeken op welk deel van de a
 "Read" wil zeggen dat je gaat controleren of bestaande data, die aanwezig zou moeten zijn in de user-interface, ook effectief aanwezig is. Om dit te testen moeten we gaan uitzoeken hoe we enerzijds tekstvelden en eventueel andere control's kunnen gaan uitlezen, en anderzijds hoe we deze kunnen vergelijken met de effectieve data in de database. 
 
 Er zijn verschillende scenario's die onder "Read" vallen.
-
-
 
 ***Weergegeven data***
 
@@ -138,7 +130,6 @@ Hieronder verstaan we het concept van een lijst, waarin zich allemaal verschille
 Als je op één van de controls in deze lijst klikt, zal je altijd op dezelfde pagina terecht komen. Hoe deze pagina is ingevuld hangt echter af van de control waarop je geklikt hebt.
 
 Om dit te testen moeten we dus enerzijds zorgen dat we kunnen klikken op de control, en nadien moeten we controleren of de titel van de pagina naarwaar we genavigeerd zijn overeen stemt met de control waarop we geklikt hebben. 
-
 
 ***Vaste controls***
 
