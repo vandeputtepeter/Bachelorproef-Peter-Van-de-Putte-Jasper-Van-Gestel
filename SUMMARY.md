@@ -9,4 +9,5 @@
 * [Testing checklist](Scriptie/TestingChecklist.md)
 * [Testing log](Scriptie/TestingLog.md)
 * [Bronnen](Scriptie/Sources.md)
+* How to test: De basis van testen
 
