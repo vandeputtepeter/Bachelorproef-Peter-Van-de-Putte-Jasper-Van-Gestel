@@ -8,5 +8,5 @@
 * [Testing Guideline](Scriptie/TestingGuideline.md)
 * [Testing Checklist](Scriptie/TestingChecklist.md)
 * [Testing Log](Scriptie/TestingLog.md)
-* [Sources](Scriptie/Sources.md)
+* [Bronnen](Scriptie/Sources.md)
 
