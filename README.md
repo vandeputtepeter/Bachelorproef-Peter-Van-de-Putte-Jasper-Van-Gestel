@@ -4,7 +4,7 @@
 
 ## Coded UI Testing 
 
-###### Bachelor Electronica & ICT - Peter Van de Putte & Jasper Van Gestel
+###### Bachelor Elektronica & ICT - Peter Van de Putte & Jasper Van Gestel
 
 ### Promotors
 
