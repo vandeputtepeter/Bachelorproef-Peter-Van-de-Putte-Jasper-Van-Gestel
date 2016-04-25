@@ -2,6 +2,12 @@
 
 ## Bronnen
 
+##### Doelstellingen
+
+* http://davidgiard.com/2012/07/24/GettingStartedWithCodedUITests.aspx
+* http://searchsoftwarequality.techtarget.com/definition/automated-software-testing
+* 
+
 * https://msdn.microsoft.com/en-us/windows/uwp/index
 * https://msdn.microsoft.com/en-us/windows/uwp/layout/design-and-ui-intro
 * http://www.theregister.co.uk/2015/03/25/metro_meets_windows_10_can_microsoft_win_uap_preview/
