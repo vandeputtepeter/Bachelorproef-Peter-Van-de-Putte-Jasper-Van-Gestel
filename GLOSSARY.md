@@ -3,3 +3,5 @@ Programma van Calidos, tijdens onze stageperiode nog in ontwikkeling, dat instaa
 
 # Coded UI Testing
 Het uitvoeren van testen op software die betrekking hebben tot de user interface (UI). Meestal samen met het verhaal van test automation gebruikt (het automatiseren van testing op software).
+
+
