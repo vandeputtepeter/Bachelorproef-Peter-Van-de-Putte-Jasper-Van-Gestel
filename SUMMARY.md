@@ -13,4 +13,5 @@
    * [Testing checklist](Scriptie/TestingChecklist.md)
    * [Testing log](Scriptie/TestingLog.md)
 * [Bronnen](Scriptie/Sources.md)
+* Glossary
 
