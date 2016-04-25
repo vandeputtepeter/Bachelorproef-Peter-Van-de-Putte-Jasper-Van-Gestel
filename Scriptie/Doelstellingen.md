@@ -8,24 +8,6 @@ Toepassen van "Coded UI Testing" op het Maät project, dat momenteel nog in ontw
 
 ### Specifiek
 
-De eerste fasen in onze thesis waren:
-
-**Wat is een "Coded UI Test"?**
-Een Coded UI Test stelt developers in staat om tests te creëren die user interaction (UI) kunnen nabootsen / simuleren op software applicaties. De tests hebben onder meer betrekkingen tot:
-
-* Controleren of de applicatie correct opstart
-* Controleren of de navigatie naar specifieke pagina's / modules correct verloopt
-* Controleren of de ingevoerde data de correcte output weergeeft / verwerkt
-* Controleren of de control's werken zoals men verwacht
-
-**Wat is "Testing Automation"?**
-Software testing automation of gewoon testing automation is het gehele proces waarbij software tools voorgedefinieerde tests op een software applicatie uitvoeren vooraleer het betreffende product in productie gaat.
-
-* Leren werken met de Coded UI tools die voorzien zijn door Microsoft Visual Studio 2015 en het nieuwe OS van Microsoft, Windows 10 
-  * De Coded UI Test Builder (Visual Studio 2015)
-  * UWP / XAML (Visual Studio 2015)
-  * Windows 10 (Microsoft)
-
 Wanneer deze doelen bereikt zijn en de basiskennis opgenomen is, kan er gestart worden met het eigenlijke eindwerk dat ons gegeven is door Mark Devos.
 
 De twee grote doelen zijn:
