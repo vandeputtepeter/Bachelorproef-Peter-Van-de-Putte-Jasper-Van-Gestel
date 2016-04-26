@@ -16,5 +16,8 @@ In het totaal moet dit onderdeel wel zo'n kleine 10 keer herschreven zijn gewees
 
 **Bestandsstructuur**
 
+De bestandsstructuur is ook een vrij belangrijk onderdeel als we over duidelijkheid spreken. Zo was het noodzakelijk te documenteren hoe de structuur in elkaar zat. Zo kan ook in de toekomst verzekerd worden dat het op een zo duidelijk mogelijke manier zal gebeuren die overeenkomt met de bestanden die wij hebben aangemaakt tijdens ons stageverblijf bij Calidos.
 
+**How to test**
 
+Uiteraard is er ook lange tijd over gegaan vooraleer we weg waren met de testing tools. Na 1 a 2 weken filmpjes bekijken, webblogs en fora lezen en experimenteren met onder andere de Coded UI Test Builder zijn we stillaan gestart met het effectieve werk. Maar wat we dan allemaal geleerd hebben in die eerste weken is natuurlijk ook belangrijk te noteren. In dit onderdeel wordt dit allemaal beschreven.
