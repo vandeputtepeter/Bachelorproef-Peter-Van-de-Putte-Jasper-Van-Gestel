@@ -10,7 +10,7 @@
    * [Analyse en vereisten](Scriptie/AnalyseVereisten.md)
    * [Design](Scriptie/Design.md)
    * [Implementatie](Scriptie/Implementatie.md)
-   * Test en validatie
+   * [Test en validatie](Scriptie/TestValidatie.md)
    * Gebruikte tools en technologieën
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
    * [Hierarchisch navigatie ontwerp](Scriptie/HierarchischNavigatieOntwerp.md)
