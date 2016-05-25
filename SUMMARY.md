@@ -11,6 +11,7 @@
    * Design
    * Implementatie
    * Test en validatie
+   * Gebruikte technologieën
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
    * [Hierarchisch navigatie ontwerp](Scriptie/HierarchischNavigatieOntwerp.md)
    * [Benamingen van testmethoden](Scriptie/BenamingenVanTestmethoden.md)
