@@ -1,8 +1,8 @@
 # Summary
 
-* [Dankwoord](Scriptie/Dankwoord.md)
 * [Abstract](README.md)
 * [Inhoudsopgave](SUMMARY.md)
+* [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Doelstellingen.md)
 * [Technisch](Scriptie/Technisch.md)
    * [Ontwikkelingsproces](Scriptie/MethodenTechnieken.md)
