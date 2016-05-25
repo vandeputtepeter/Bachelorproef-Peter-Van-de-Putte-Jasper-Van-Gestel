@@ -1,2 +1,2 @@
-## Ontwikkelingsprocess
+## Ontwikkelingsproces
 
