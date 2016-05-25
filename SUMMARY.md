@@ -3,8 +3,8 @@
 * Cover
 * Inhoudsopgave
 * Abstract
-* [Introductie](README.md)
 * [Dankwoord](Scriptie/Voorwoord.md)
+* [Introductie](README.md)
 * [Doelstellingen](Scriptie/Doelstellingen.md)
 * [Omkadering](Scriptie/Omkadering.md)
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
