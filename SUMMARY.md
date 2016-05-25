@@ -8,7 +8,7 @@
 * [Technisch](Scriptie/Technisch.md)
    * [Ontwikkelingsproces](Scriptie/Ontwikkelingsprocess.md)
    * [Analyse en vereisten](Scriptie/AnalyseVereisten.md)
-   * Design
+   * [Design](Scriptie/Design.md)
    * Implementatie
    * Test en validatie
    * Gebruikte tools en technologieën
