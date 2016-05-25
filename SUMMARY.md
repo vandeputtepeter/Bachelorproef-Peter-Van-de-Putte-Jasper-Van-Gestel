@@ -5,7 +5,7 @@
 * [Abstract](README.md)
 * [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Doelstellingen.md)
-   * Implementatie
+* Implementatie
 * [Technisch](Scriptie/Technisch.md)
    * [Ontwikkelingsproces](Scriptie/Ontwikkelingsprocess.md)
    * [Analyse en vereisten](Scriptie/AnalyseVereisten.md)
