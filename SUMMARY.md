@@ -1,6 +1,7 @@
 # Summary
 
 * Cover
+   * Abstract
 * Inhoudsopgave
 * [Introductie](README.md)
 * [Dankwoord](Scriptie/Voorwoord.md)
