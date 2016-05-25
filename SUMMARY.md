@@ -6,7 +6,7 @@
 * [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Doelstellingen.md)
 * [Technisch](Scriptie/Technisch.md)
-   * [Ontwikkelingsproces](Scriptie/Ontwikkelingsprocess.md)
+   * [Ontwikkelingsproces](Scriptie/MethodenTechnieken.md)
    * [Analyse en vereisten](Scriptie/AnalyseVereisten.md)
    * [Design](Scriptie/Design.md)
    * [Implementatie](Scriptie/Implementatie.md)
