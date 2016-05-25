@@ -5,7 +5,7 @@
 * [Abstract](README.md)
 * [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Doelstellingen.md)
-* [Omkadering](Scriptie/Omkadering.md)
+* [Technisch](Scriptie/Omkadering.md)
    * Ontwikkelingsprocess
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
    * [Hierarchisch navigatie ontwerp](Scriptie/HierarchischNavigatieOntwerp.md)
