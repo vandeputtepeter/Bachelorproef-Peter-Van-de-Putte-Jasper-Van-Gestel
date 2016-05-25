@@ -1,6 +1,6 @@
 # Summary
 
-* Cover
+* [Cover](cover.jpg)
 * Inhoudsopgave
 * Abstract
 * [Dankwoord](Scriptie/Voorwoord.md)
