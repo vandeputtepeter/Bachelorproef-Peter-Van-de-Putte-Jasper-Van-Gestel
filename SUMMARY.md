@@ -2,6 +2,7 @@
 
 * [Abstract](README.md)
 * [Dankwoord](Scriptie/Dankwoord.md)
+* [Inhoudsopgave](SUMMARY.md)
 * [Introductie](Scriptie/Doelstellingen.md)
 * [Technisch](Scriptie/Technisch.md)
    * [Ontwikkelingsproces](Scriptie/MethodenTechnieken.md)
@@ -11,5 +12,4 @@
    * [Test en validatie](Scriptie/TestValidatie.md)
    * [Gebruikte tools en technologieën](Scriptie/ToolsTechnologieen.md)
 * [Bibliografie](Scriptie/Bibliografiemd)
-* [Inhoudsopgave](SUMMARY.md)
 
