@@ -7,7 +7,7 @@
 * [Introductie](Scriptie/Doelstellingen.md)
 * [Technisch](Scriptie/Omkadering.md)
    * [Ontwikkelingsprocess](Scriptie/Ontwikkelingsprocess.md)
-   * Analyse en vereisten
+   * [Analyse en vereisten](Scriptie/AnalyseVereisten.md)
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
    * [Hierarchisch navigatie ontwerp](Scriptie/HierarchischNavigatieOntwerp.md)
    * [Benamingen van testmethoden](Scriptie/BenamingenVanTestmethoden.md)
