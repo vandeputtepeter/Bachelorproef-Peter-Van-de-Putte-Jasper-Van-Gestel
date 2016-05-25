@@ -5,11 +5,11 @@
 * [Abstract](README.md)
 * [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Doelstellingen.md)
-* Implementatie
 * [Technisch](Scriptie/Technisch.md)
    * [Ontwikkelingsproces](Scriptie/Ontwikkelingsprocess.md)
    * [Analyse en vereisten](Scriptie/AnalyseVereisten.md)
    * Design
+* Implementatie
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
    * [Hierarchisch navigatie ontwerp](Scriptie/HierarchischNavigatieOntwerp.md)
    * [Benamingen van testmethoden](Scriptie/BenamingenVanTestmethoden.md)
