@@ -13,7 +13,7 @@ Een Coded UI Test stelt developers in staat om tests te creëren die user intera
 
 **Wat is "Testing Automation"?**
 
-Software testing automation of gewoon testing automation is het gehele proces waarbij software tools voorgedefinieerde tests op een software applicatie uitvoeren vooraleer het betreffende product in productie gaat.
+Software testing automation of gewoon test automation is het gehele proces waarbij software tools voorgedefinieerde tests op een software applicatie uitvoeren vooraleer het betreffende product in productie gaat.
 
 **Wat is de "Coded UI Test Builder"?** _(Visual Studio 2015)_
 
