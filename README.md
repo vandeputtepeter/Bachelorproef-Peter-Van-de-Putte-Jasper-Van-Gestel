@@ -1,10 +1,10 @@
-# Thesis
 
-## Coded UI Testing 
 
-###### Bachelor Elektronica & ICT - Peter Van de Putte & Jasper Van Gestel
+# Coded UI Testing 
 
-### Promotors
+##### Bachelor Elektronica & ICT - Peter Van de Putte & Jasper Van Gestel
+
+## Promotors
 
 * **Stage promotor:**
     * Naam: Patrick Van Houtven
@@ -19,6 +19,6 @@
     * E-mail: Tom.wuyts@calidos.be
     * Gsm: -
 
-### Abstract
+## Abstract
 
 
