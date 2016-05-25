@@ -1,5 +1,3 @@
->Deze bestanden representeren een tijdelijke voorstelling van de scriptie
-
 ## Omkadering
 
 De eerste fase in onze thesis: Uitzoeken waar we juist mee werken, het begrijpen en er mee leren werken. 
