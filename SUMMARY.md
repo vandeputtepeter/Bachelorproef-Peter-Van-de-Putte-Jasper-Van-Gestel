@@ -4,7 +4,7 @@
 * [Inhoudsopgave](SUMMARY.md)
 * [Abstract](README.md)
 * [Dankwoord](Scriptie/Dankwoord.md)
-* [Doelstellingen](Scriptie/Doelstellingen.md)
+* [Introductie](Scriptie/Doelstellingen.md)
 * [Omkadering](Scriptie/Omkadering.md)
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
    * [Hierarchisch navigatie ontwerp](Scriptie/HierarchischNavigatieOntwerp.md)
