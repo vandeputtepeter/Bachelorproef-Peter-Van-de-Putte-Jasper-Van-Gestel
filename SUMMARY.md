@@ -12,9 +12,6 @@
    * [Implementatie](Scriptie/Implementatie.md)
    * [Test en validatie](Scriptie/TestValidatie.md)
    * [Gebruikte tools en technologieën](Scriptie/ToolsTechnologieen.md)
-* [Testing guideline](Scriptie/TestingGuideline.md)
-   * [Testing checklist](Scriptie/TestingChecklist.md)
-   * [Testing log](Scriptie/TestingLog.md)
 * [Bronnen](Scriptie/Sources.md)
 * [Glossary](GLOSSARY.md)
 
