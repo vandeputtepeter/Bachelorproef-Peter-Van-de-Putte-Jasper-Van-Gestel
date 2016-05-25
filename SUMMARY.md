@@ -8,8 +8,8 @@
 * [Technisch](Scriptie/Technisch.md)
    * [Ontwikkelingsproces](Scriptie/Ontwikkelingsprocess.md)
    * [Analyse en vereisten](Scriptie/AnalyseVereisten.md)
+   * Design
    * Implementatie
-* Design
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
    * [Hierarchisch navigatie ontwerp](Scriptie/HierarchischNavigatieOntwerp.md)
    * [Benamingen van testmethoden](Scriptie/BenamingenVanTestmethoden.md)
