@@ -1,6 +1,6 @@
 >Deze bestanden representeren een tijdelijke voorstelling van de scriptie
 
-## Doelstellingen
+## Introductie
 
 ### Opdracht
 
