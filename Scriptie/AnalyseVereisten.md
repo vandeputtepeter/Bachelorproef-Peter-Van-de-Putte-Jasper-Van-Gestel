@@ -15,10 +15,12 @@ Een Coded UI Test stelt developers in staat om tests te creëren die user intera
 
 Software testing automation of gewoon test automation is het gehele proces waarbij software tools voorgedefinieerde tests op een software applicatie uitvoeren vooraleer het betreffende product in productie gaat.
 
-**Wat is de "Coded UI Test Builder"?** _(Visual Studio 2015)_
+### Hiërarchisch navigatie ontwerp
 
-De Coded UI Test Builder is een onderdeel van het testing framework dat voorzien is door Visual Studio. Het is meer bepaald een testing tool die de ontwikkelaar in staat stelt om controls te mappen via UIMap's. De UIMap is een partial klasse die voor de helft automatisch gegenereerd wordt. Dit deel zorgt voor de mapping en eventueel voor assertions (beweringen) die kunnen controleren of een bepaalde voorwaarde voldoet. Een soort van "if" statement, maar dan voor het testing framework. De andere helft van de partial klasse is voor manuele aanpassingen. Hier komen we later duidelijker op terug.
+In de eerste fase van onze opdracht hebben we een hiërarchisch design opgesteld van alle navigatie die in de applicatie "Maät" mogelijk zijn. Dit hebben we gedaan door gewoon alle navigatie uit te proberen en te documenteren naar welke pagina, of eventueel welke sub-pagina, een knop leidt. Zo konden we niet alleen een handig overzicht creëren waarin we konden zien welke schermen het belangrijkste zijn en welke voorlopig minder belangrijk waren. Tegelijkertijd gaf dit het voordeel dat we leerden werken met de applicatie, wat handig werd bij het verdere verloop van het project. 
 
-**"UWP" en "Windows 10"** _(Microsoft)_
+Het hiërarchisch design vertrekt vanuit de "ClinicHubPage". Dit is de hoofdpagina waarop we terecht komen als we de applicatie starten (Na het inloggen). Van hieruit is een boomstructuur getekend naar alle pagina's waarnaar navigatie mogelijk is vanuit de "ClinicHubPage" (Zie afbeelding onder voor voorbeeld). Vervolgens hebben we voor elke hub-pagina - pagina's van waaruit we naar meerdere andere pagina's kunnen navigeren - een nieuw bestand gemaakt waarin we dezelfde werkwijze volgden als bij de "ClinicHubPage", namelijk al deze pagina's laten vertakken uit de respectievelijke pagina. 
 
-UWP of Universal Windows Platform is geintroduceerd met Windows 10. Het is een evolutie uit het Windows Runtime Model en brengt deze in de Windows 10 "Unified Core". Als onderdeel van de "Core" voorziet UWP een gemeenschappelijk applicatie platform voor elk apparaat dat Windows 10 draait. UWP voorziet een gegarandeerde "Core API" over alle apparaten. Dit wil zeggen dat het mogelijk is een enkele applicatie te creëren dat geïnstalleerd kan worden op een waaier van apparaten.Hierbij voorziet Windows Store een distributie kanaal dat alle apparaten kan bereiken waarop de betreffende applicatie kan draaien.
+![Voorbeeld: boomstructuur van "ClinicHubPage"](../OverigeDocumenten/Afbeeldingen/ClinicHub.jpg)
+
+Op elke tak hebben we ook geschreven welke knop of handeling ervoor zorgt dat we op die specifieke pagina terecht komen. Ook hebben we per pagina de belangrijkheid aangeduid in het testgebeuren. Sommige pagina's zijn namelijk nog niet af, of zijn zelfs nog in hun beginfase. Dit zijn dan pagina's die in het totale testproject minder prioriteit hebben ten opzichte van de pagina's die wel al af zijn of belangrijke informatie bevatten.
