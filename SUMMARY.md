@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Abstract](README.md)
 * [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Doelstellingen.md)
 * [Technisch](Scriptie/Technisch.md)
