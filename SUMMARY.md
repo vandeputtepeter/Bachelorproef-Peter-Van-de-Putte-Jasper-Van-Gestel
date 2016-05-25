@@ -2,7 +2,7 @@
 
 * [Cover](cover.jpg)
 * [Inhoudsopgave](SUMMARY.md)
-* Abstract
+* [Abstract](README.md)
 * [Dankwoord](Scriptie/Voorwoord.md)
 * [Introductie](README.md)
 * [Doelstellingen](Scriptie/Doelstellingen.md)
