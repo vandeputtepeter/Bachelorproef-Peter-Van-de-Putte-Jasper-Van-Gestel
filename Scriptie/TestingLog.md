@@ -1,5 +1,3 @@
->Deze bestanden representeren een tijdelijke voorstelling van de scriptie 
-
-### Testing log
+# Testing log
 
 >TODO: Aanvullen
