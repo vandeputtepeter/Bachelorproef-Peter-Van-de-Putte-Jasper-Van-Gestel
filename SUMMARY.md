@@ -15,4 +15,5 @@
    * [Testing log](Scriptie/TestingLog.md)
 * [Bronnen](Scriptie/Sources.md)
 * [Glossary](GLOSSARY.md)
+* Inhoudsopgave
 
