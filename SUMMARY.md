@@ -1,7 +1,7 @@
 # Summary
 
 * [Introductie](README.md)
-* [Voorwoord](Scriptie/Voorwoord.md)
+* [Dankwoord](Scriptie/Voorwoord.md)
 * [Doelstellingen](Scriptie/Doelstellingen.md)
 * [Omkadering](Scriptie/Omkadering.md)
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
