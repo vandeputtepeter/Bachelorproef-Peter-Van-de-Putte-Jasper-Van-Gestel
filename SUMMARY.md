@@ -1,9 +1,9 @@
 # Summary
 
 * Cover
-   * Abstract
 * Inhoudsopgave
 * [Introductie](README.md)
+* Abstract
 * [Dankwoord](Scriptie/Voorwoord.md)
 * [Doelstellingen](Scriptie/Doelstellingen.md)
 * [Omkadering](Scriptie/Omkadering.md)
