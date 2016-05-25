@@ -9,7 +9,7 @@
    * [Ontwikkelingsproces](Scriptie/Ontwikkelingsprocess.md)
    * [Analyse en vereisten](Scriptie/AnalyseVereisten.md)
    * [Design](Scriptie/Design.md)
-   * Implementatie
+   * [Implementatie](Scriptie/Implementatie.md)
    * Test en validatie
    * Gebruikte tools en technologieën
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
