@@ -1,6 +1,7 @@
 # Summary
 
 * [Introductie](README.md)
+* Cover
 * [Dankwoord](Scriptie/Voorwoord.md)
 * [Doelstellingen](Scriptie/Doelstellingen.md)
 * [Omkadering](Scriptie/Omkadering.md)
@@ -14,5 +15,4 @@
    * [Testing log](Scriptie/TestingLog.md)
 * [Bronnen](Scriptie/Sources.md)
 * [Glossary](GLOSSARY.md)
-* Cover
 
