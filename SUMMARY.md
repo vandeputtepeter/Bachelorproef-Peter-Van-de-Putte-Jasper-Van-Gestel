@@ -6,7 +6,7 @@
 * [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Doelstellingen.md)
 * [Technisch](Scriptie/Omkadering.md)
-   * Ontwikkelingsprocess
+   * [Ontwikkelingsprocess](Scriptie/Ontwikkelingsprocess.md)
 * [Methoden en technieken](Scriptie/MethodenEnTechnieken.md)
    * [Hierarchisch navigatie ontwerp](Scriptie/HierarchischNavigatieOntwerp.md)
    * [Benamingen van testmethoden](Scriptie/BenamingenVanTestmethoden.md)
