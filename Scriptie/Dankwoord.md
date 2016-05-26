@@ -1,6 +1,4 @@
->Deze bestanden representeren een tijdelijke voorstelling van de scriptie
-
-## Dankwoord
+# Dankwoord
 
 >TODO: Aanvullen
 
