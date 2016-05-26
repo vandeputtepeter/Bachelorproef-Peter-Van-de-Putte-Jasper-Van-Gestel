@@ -11,5 +11,5 @@
    * [Implementatie](Scriptie/Implementatie.md)
    * [Test en validatie](Scriptie/TestValidatie.md)
    * [Gebruikte tools en technologieën](Scriptie/ToolsTechnologieen.md)
-* [Bibliografie](Scriptie/Bibliografiemd)
+* [Bibliografie](Scriptie/Bibliografie.md)
 
