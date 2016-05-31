@@ -11,7 +11,7 @@
    * [Ontwikkelingsproces](Scriptie/Technisch/Ontwikkelingsproces.md)
    * [Analyse en vereisten](Scriptie/Technisch/AnalyseVereisten.md)
    * [Design](Scriptie/Technisch/Design.md)
-   * [Implementatie](Scriptie/Implementatie.md)
+   * [Implementatie](Scriptie/Technisch/Implementatie.md)
    * [Test en validatie](Scriptie/TestValidatie.md)
    * [Gebruikte tools en technologieën](Scriptie/ToolsTechnologieen.md)
    * [Conclusies](Scriptie/Conclusies.md)
