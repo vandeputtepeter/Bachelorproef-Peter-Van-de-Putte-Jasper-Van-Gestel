@@ -4,7 +4,7 @@
 * [Abstract](README.md)
 * [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Doelstellingen.md)
-   * [Situering](Situering.md)
+   * [Situering](Scriptie/Situering.md)
 * [Technisch](Scriptie/Technisch.md)
    * [Ontwikkelingsproces](Scriptie/MethodenTechnieken.md)
    * [Analyse en vereisten](Scriptie/AnalyseVereisten.md)
