@@ -6,7 +6,7 @@
 * [Introductie](Scriptie/Doelstellingen.md)
    * [Situering](Scriptie/Introductie/Situering.md)
    * [Stagebedrijf](Scriptie/Introductie/Bedrijf.md)
-   * Opgave
+   * [Opgave](Scriptie/Introductie/Opgave.md)
 * [Technisch](Scriptie/Technisch.md)
    * [Ontwikkelingsproces](Scriptie/MethodenTechnieken.md)
    * [Analyse en vereisten](Scriptie/AnalyseVereisten.md)
