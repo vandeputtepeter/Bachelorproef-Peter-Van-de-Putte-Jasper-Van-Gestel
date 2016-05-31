@@ -8,7 +8,7 @@
    * [Stagebedrijf](Scriptie/Introductie/Bedrijf.md)
    * [Opgave](Scriptie/Introductie/Opgave.md)
 * [Technisch](Scriptie/Technisch.md)
-   * [Ontwikkelingsproces](Scriptie/MethodenTechnieken.md)
+   * [Ontwikkelingsproces](Scriptie/Technisch/Ontwikkelingsproces.md)
    * [Analyse en vereisten](Scriptie/AnalyseVereisten.md)
    * [Design](Scriptie/Design.md)
    * [Implementatie](Scriptie/Implementatie.md)
