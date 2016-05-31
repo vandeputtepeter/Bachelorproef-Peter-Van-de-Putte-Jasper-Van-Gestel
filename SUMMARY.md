@@ -9,7 +9,7 @@
    * [Opgave](Scriptie/Introductie/Opgave.md)
 * [Technisch](Scriptie/Technisch.md)
    * [Ontwikkelingsproces](Scriptie/Technisch/Ontwikkelingsproces.md)
-   * [Analyse en vereisten](Scriptie/AnalyseVereisten.md)
+   * [Analyse en vereisten](Scriptie/Technisch/AnalyseVereisten.md)
    * [Design](Scriptie/Design.md)
    * [Implementatie](Scriptie/Implementatie.md)
    * [Test en validatie](Scriptie/TestValidatie.md)
