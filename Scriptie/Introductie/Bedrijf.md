@@ -6,6 +6,7 @@ Calidos is een IT-bedrijf, gevestigd in Mechelen, dat zich specialiseert in soft
 
 Eerder creëerde Calidos al een project genaamd 'Othello' dat een toepassing is voor de MZG-registratie van VG-MZG scores (MVG-II) en personeelsgegevens. Meer dan 8750 ziekenhuisbedden hebben een licentie voor deze toepassing.
 
-Het project waar deze thesis op toegepast wordt is het nieuwste project van Calidos. 
+Het project waar deze thesis op toegepast wordt is het nieuwste project van Calidos, Maät.
+
 
 
