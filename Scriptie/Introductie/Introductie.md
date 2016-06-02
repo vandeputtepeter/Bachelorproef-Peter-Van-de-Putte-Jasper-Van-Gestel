@@ -1,4 +1,4 @@
-### Introductie
+# 1. Introductie
 
 Het onderwerp van onze thesis is 'Coded UI Testing'.
 
