@@ -1,4 +1,4 @@
-# Bibliografie
+# 3 Bibliografie
 
 * http://davidgiard.com/2012/07/24/GettingStartedWithCodedUITests.aspx
 * http://searchsoftwarequality.techtarget.com/definition/automated-software-testing
