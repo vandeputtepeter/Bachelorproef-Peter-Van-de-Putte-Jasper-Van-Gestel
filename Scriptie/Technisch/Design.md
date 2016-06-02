@@ -1,6 +1,6 @@
-## Design
+## 2.3 Design
 
-### Benaming van testmethoden
+### 2.3.1 Benaming van testmethoden
 
 In dit onderdeel beschrijven we een aantal regels, door ons opgesteld, waaraan de namen van alle geschreven testmethodes moeten voldoen. De visie op deze naamgeving is dat je aan de naam van een testmethode alle informatie over wat er getest wordt kan afleiden. De reden hiervoor is dat wanneer we een verslag terug krijgen van alle uitgevoerde tests en bepaalde tests zijn gefaald, we meteen kunnen zien welk paradigma in de applicatie niet werkt zoals het hoort te werken, en dit door gewoon de naam van de testmethode te lezen. Waarom dit paradigma gefaald is wordt weggeschreven in een test-log, waar we later op terugkomen.
 
