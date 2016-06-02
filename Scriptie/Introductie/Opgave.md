@@ -1,6 +1,6 @@
-## Opgave
+## 1.3 Opgave
 
-### Opleveren van een "Testing Guideline"
+### 1.3.1 Opleveren van een "Testing Guideline"
 
 * Hoe moet de applicatie getest worden?
 * Hoe moet testing automation toegepast worden op de applicatie?
@@ -8,7 +8,7 @@
 
 Stap voor stap toelichten hoe je dit doet en wat er nodig is om dit te verwezenlijken.
 
-#### Opleveren van een "Testing Checklist" als onderdeel van de "Testing Guideline"
+#### 1.3.1.1 Opleveren van een "Testing Checklist" als onderdeel van de "Testing Guideline"
 
 * Welke criteria moeten getest zijn om zeker te zijn dat de control / pagina volledig is uitgetest
 
@@ -24,7 +24,7 @@ Opstellen van een lijst criteria, die "afgevinkt" kan worden en zo duidelijk wee
 
 > Als resultaat krijgt men een matrix die opgesteld wordt via het "Definition" document. De cellen worden dan eerst invult volgens het "Target" document en vervolgens overschreven met de resultaten uit het "Result" document.
 
-#### Opleveren van een "Testing Log" als onderdeel van de "Testing Guideline"
+#### 1.3.1.2 Opleveren van een "Testing Log" als onderdeel van de "Testing Guideline"
 
 * Welke bugs en niet werkende elementen / foutjes bij controls zijn er aanwezig in de applicatie
 
