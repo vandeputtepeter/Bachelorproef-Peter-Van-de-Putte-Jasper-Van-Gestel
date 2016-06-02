@@ -1,11 +1,14 @@
 ## 1.1 Situering
 
+### 1.1.1 Maät
+
+Het project "Maät" is vernoemd naar de Oud-Egyptische godin "Maät" of "Ma'at", waar ze staat voor onder meer kosmische orde, waarheid en stabiliteit.
+
+### 1.1.2 Windows 10
+
 Oorspronkelijk is het Maät project gestart met als doelplatform Windows 8, maar door de snelle upgrade van Microsoft naar het veel recentere Windows 10 is Calidos ook overgegaan om Windows 10 tot het doelplatform te maken.
 
-> Het project "Maät" is vernoemd naar de Oud-Egyptische godin "Maät" of "Ma'at", waar ze staat voor onder meer kosmische orde, waarheid en stabiliteit.
-
-
-### 1.1.1 Universal Windows Platform (UWP)
+### 1.1.3 Universal Windows Platform (UWP)
 
 Het Maät project is een Universal Windows Platform (UWP) applicatie opgestelt in C# en XAML
 
