@@ -289,5 +289,54 @@ Resultaat:
   * Alle mogelijke overlay-acties in een overlay state
 
 
+##### D. Control state appearance
+
+Dit was een onderdeel van functionality in de oude checklist, maar het lijkt logischer om ook dit paradigma apart te plaatsen. Onder control state appearance vallen alle tests die de toestand van een control (zowel visueel als functioneel) gaan controleren. Dit kan bijvoorbeeld zijn: de kleur van controls, het feit dat deze ge-enabled zijn, de waarde die zich in de control bevind,... Deze toestand moet voor verschillende handelingen gecontroleerd worden. Volgende handelingen zijn alle handelingen die de state van een control kunnen veranderen:
+
+* Initial (= de oorspronkelijke toestand, voor er een handeling uitgevoerd is)
+* Hovered (= wanneer de muis over de control zweeft)
+* Clicked (= wanneer er op de control geklikt is)
+* Click & hold (= wanneer er op de control geklikt wordt maar de muis ingedrukt gehouden wordt)
+* Filled in (= wanneer er data in de control wordt geplaatst door de gebruiker)
+
+
+##### E. Control functionality
+
+Hieronder vallen alle andere functionality tests van de oude checklist, maar deze zijn anders geördend en meer veralgemeend (niet meer specifiek per type control, maar gewoon algemene tests) aangezien de volledige analyse voor elk type control moet gebeuren. 
+
+De nieuwe indeling is als volgt:
+
+* General: Hieronder vallen alle algemene functionaliteiten, namelijk het selecteren van een control door click/tab/pijltjestoetsen, en het gebruiken van een control met click/enter/spatie.
+* Execution functionality: Hieronder zijn alle functionaliteiten geplaatst die mogelijk zijn met controls in de applicatie. Dit kan gaan van het doen verschijnen van andere controls tot het scrollen doorheen de childs van een control. 
+
+ ##### F. Custom functionality
+
+Deze categorie was oorspronkelijk bedoeld voor de config-pagina's, maar de naam is veralgemeend aangezien er op andere pagina's ook nog speciale functionaliteit zou kunnen bestaan. Deze categorie is echter nog niet voldoende geanalyseerd.
+
+
+### 2.4.2 Testing Maät
+
+Tijdens het schrijven van tests zijn er verschillende moeilijkheden en dingen die het testen moeilijker maken aan het licht gekomen. Daarom bevat de guideline ook een sectie waarin voor elke pagina het testproces beschreven wordt. Hierin wordt dus beschreven hoe er voor de specifieke pagina in kwestie te werk gegaan wordt om alle tests te analyseren en hoe bepaalde tests moeten geschreven worden om deze zo autonoom mogelijk te maken. Ook als duidelijk wordt dat bepaalde tests niet kunnen geschreven worden door gebrek aan ondersteuning of bijvoorbeeld slechte UIMapping, wordt dit in deze sectie uitgelegd. Zo kan de eventuele opvolger van het project makkelijk de draad oppikken. 
+
+
+#### 2.4.2.1 General workmethod
+
+Hierin wordt het algemene plan van aanpak beschreven die voor elke pagina hetzelfde blijft. Zo staat er bijvoorbeeld beschreven hoe de baseclass voor elke pagina moet opgebouwd zijn en wat hier het nut van is (namelijk het aanroepen van variabelen zodat deze in alle testprojecten van deze pagina kunnen gebruikt worden, en eventueel het schrijven van private functies voor de desbetreffende pagina). 
+
+
+#### 2.4.2.2 Page specific workmethod
+
+Hier staat voor elke pagina apart beschreven hoe er te werk gegaan wordt om deze specifieke pagina te testen (of een specifieke groep van pagina's). 
+
+
+ 
+
+
+
+
+
+
+
+
 
 
