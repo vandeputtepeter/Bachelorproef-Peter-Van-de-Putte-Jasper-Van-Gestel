@@ -23,3 +23,5 @@
 * https://blogs.msdn.microsoft.com/tapas_sahoos_blog/2010/12/27/decoding-the-coded-ui-test-playback-failure-search-may-have-failed-at-controlx-as-it-may-have-virtualized-children/
 * http://www.codeproject.com/Articles/172391/UIAutomation-Coded-UI-Tests-AutomationPeer-and-WPF
 * http://stackoverflow.com/questions/10699795/vs-team-test-multiple-test-initialize-methods-in-test-class
+* https://msdn.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide
+* https://nl.wikipedia.org/wiki/Ma%C3%A4t
