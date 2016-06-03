@@ -333,10 +333,29 @@ Hier staat voor elke pagina apart beschreven hoe er te werk gegaan wordt om deze
 
 ### 2.4.3 How to test
 
+In dit onderdeel word algemeen beschreven hoe een test opgebouwd wordt en hoe deze werkt. Hier gaat het dus niet meer om hoe de applicatie Maät getest moet worden, maar echt hoe het Coded UI framework van Visual Studio in elkaar zit. 
 
 
+#### 2.4.3.1 Basics
+
+In de basics wordt beschreven hoe een testproject aangemaakt wordt, welke parameters er in dit project moeten staan om dit te laten runnen, hoe je deze parameters moet aanroepen en dergelijke. 
+Ook hoe controls toegevoegd worden aan een testproject wordt hier beschreven. Dit is dus eigelijk het eerste hoofdstuk dat de eventuele opvolger moet lezen om aan het project te kunnen beginnen. Zonder deze basis is het onmogelijk om de rest van de guideline te begrijpen. 
+
+#### 2.4.3.2 Generating controls 
+
+Onder generating controls staat alles wat nodig is om controls in een test aan te roepen en waardes van deze control te verifiëren. Dit is uiteindelijk de essentie van alle tests, namelijk dat we bepaalde waardes gaan controleren op hun correctheid. 
 
 
+#### 2.4.3.3 Commonly used variables and methods
+
+Hier staan een aantal variabelen en methoden beschreven die vaak nodig zijn om bepaalde tests uit te voeren. Een voorbeeld hiervan is de "StopWatch"-variabele. 
+
+#### 2.4.3.4 Commonly used controls
+
+Dit hoofdstuk gaat al terug iets specifieker. Hier staan een aantal speciale controls beschreven die vaak terugkomen in de applicatie en vaak gebruikt worden in tests. Het kan bijvoorbeeld gaan om de "ProgressBar", die aangeeft wanneer een pagina volledig geladen is. 
+
+
+#### 2.4.3.5 BaseClassCodedUI
 
 
 
