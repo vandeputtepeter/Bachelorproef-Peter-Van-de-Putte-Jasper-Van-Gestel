@@ -357,7 +357,7 @@ Dit hoofdstuk gaat al terug iets specifieker. Hier staan een aantal speciale con
 
 #### 2.4.3.5 BaseClassCodedUI
 
-
+In dit hoofdstuk staan wel iets specifiekere zaken beschreven rond de applicatie Maät. Om het effectieve testen van de applicatie zo efficient mogelijk te laten verlopen, zijn er functies beschreven in een algemene baseclass (namelijk BaseClassCodedUI) die bepaalde tests automatisch uitvoeren. Het is tijdens de analyse de taak van de tester om bepaalde paradigma's te gaan uitzoeken (bvb navigatie naar een andere pagina). Wanneer geanalyseerd is hoe dit moet getest worden wordt dit in een functie geschreven in de BaseClassCodedUI, waardoor dit paradigma bij de volgende test in één of enkele lijnen kan getest worden in plaats van elke keer opnieuw een hele blok code te schrijven. 
 
 
 
