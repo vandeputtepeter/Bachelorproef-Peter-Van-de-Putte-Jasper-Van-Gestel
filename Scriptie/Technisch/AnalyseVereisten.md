@@ -1,6 +1,8 @@
 ## 2.2 Analyse en vereisten
 
-De eerste fase in onze thesis: Uitzoeken waar we juist mee werken, het begrijpen en er mee leren werken. 
+De eerste fase in deze thesis: Het uitzoeken, het begrijpen en het leren werken met Coded UI tests en de Coded UI Testing tools. 
+
+### 2.2.1 Opzoekwerk
 
 **Wat is een "Coded UI Test"?**
 
@@ -15,7 +17,7 @@ Een Coded UI Test stelt developers in staat om tests te creëren die user intera
 
 Software testing automation of gewoon test automation is het gehele proces waarbij software tools voorgedefinieerde tests op een software applicatie uitvoeren vooraleer het betreffende product in productie gaat.
 
-### 2.2.1 Hiërarchisch navigatie ontwerp
+### 2.2.2 Hiërarchisch navigatie ontwerp
 
 In de eerste fase van onze opdracht hebben we een hiërarchisch design opgesteld van alle navigatie die in de applicatie "Maät" mogelijk zijn. Dit hebben we gedaan door gewoon alle navigatie uit te proberen en te documenteren naar welke pagina, of eventueel welke sub-pagina, een knop leidt. Zo konden we niet alleen een handig overzicht creëren waarin we konden zien welke schermen het belangrijkste zijn en welke voorlopig minder belangrijk waren. Tegelijkertijd gaf dit het voordeel dat we leerden werken met de applicatie, wat handig werd bij het verdere verloop van het project. 
 
