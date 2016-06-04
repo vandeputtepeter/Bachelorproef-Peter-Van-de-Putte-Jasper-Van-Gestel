@@ -14,7 +14,10 @@ Dit is de kern van het project. Het was de bedoeling dat er een lijst werd opges
 Er werd gestart met de basispagina’s die de meest gebruikte paradigma's/control ’s bevatten (die zo goed als overal terugkomen). 
 
 Voor elke gevonden control/paradigma werd dan ge-analyseerd hoe deze zo effecient mogelijk getest kon worden. Deze methode werd dan gedocumenteerd zodat eventuele opvolgers deze altijd terug kunnen raadplegen wanneer nodig. Er werd ook gedocumenteerd welke control ’s en paradigma's reeds getest zijn geweest, tot alles getest is voor de specifieke pagina. Op het moment dat alle paradigma's op alle controls die deze paradigma's toepassen getest zijn, wordt een pagina als volledig getest verklaard.
----
+
+**!!!!!Tot hier gecheckt!!!!!**
+
+
 Indien we op een volgende pagina weer een nieuwe control/paradigma tegenkomen, zetten we deze bij onderaan onze checklist met gevonden control ‘s/paradigma's. Het is dan weer opnieuw de bedoeling om uit te zoeken hoe we deze kunnen testen en alle voorgaande pagina’s opnieuw af te gaan en te controleren of ook dit element aanwezig is op de pagina en te testen indien nodig, zodat we de pagina weer als getest kunnen verklaren. 
 
 #### 2.4.1.3 General checklist
