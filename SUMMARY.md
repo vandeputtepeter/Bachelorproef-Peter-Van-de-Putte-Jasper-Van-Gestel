@@ -2,7 +2,6 @@
 
 * [Inhoudsopgave](SUMMARY.md)
 * [Abstract](README.md)
-* Glossary
 * [Dankwoord](Scriptie/Dankwoord.md)
    * Glossary
 * [Introductie](Scriptie/Introductie/Introductie.md)
@@ -18,5 +17,6 @@
    * [Gebruikte tools en technologieën](Scriptie/Technisch/ToolsTechnologieen.md)
    * [Conclusies](Scriptie/Technisch/Conclusies.md)
    * [Appendices](Scriptie/Technisch/Appendices.md)
+* Glossary
 * [Bibliografie](Scriptie/Bibliografie.md)
 
