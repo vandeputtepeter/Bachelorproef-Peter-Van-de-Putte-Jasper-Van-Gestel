@@ -5,16 +5,16 @@
 
 #### 2.4.1.1 Overzicht
 
-Dit is de kern van het project. Het is de bedoeling dat een lijst wordt opgesteld waarin alle paradigma's die getest moeten worden onder elkaar staan weergegeven. In de "testing guideline" staat voor elk element in deze lijst beschreven hoe dat specifieke paradigma moet getest worden. Daarnaast is er in een apart excel document voor elke pagina opgelijst welke specifieke paradigma's op die bepaalde pagina aanwezig zijn. Op die manier wordt er per pagina in een matrix bijgehouden of een bepaald paradigma volledig getest is, moet getest worden of niet van toepassing is. 
+Dit is de kern van het project. Het was de bedoeling dat er een lijst werd opgesteld waarin alle paradigma's die getest moesten worden onder elkaar weergegeven werden. In de "testing guideline" staat voor elk element in deze lijst beschreven hoe dat specifieke paradigma moet getest worden. Daarnaast is er in een apart excel document voor elke pagina opgelijst welke specifieke paradigma's op die bepaalde pagina aanwezig zijn. Op die manier wordt er per pagina in een matrix bijgehouden of een bepaald paradigma volledig getest is, moet getest worden of niet van toepassing is. 
 
 >Naar het einde van de bachelorproef toe werd er een automatisatie van dit process in ontwikkeld, er werd gehoopt dat deze volledig af zou zijn tegen het einde van de stage. Uiteindelijk zijn de tools niet volledig afgeraakt. Al zijn ze wel functioneel. Meer informatie over deze tools vindt je terug in de 'Gebruikte tools en technologieën' sectie van het 'Introductie' hoofdstuk.
  
 #### 2.4.1.2 Werkwijze
 
-Er wordt gestart met de basispagina’s die de meest gebruikte paradigma's/control ’s bevatten (die zo goed als overal terugkomen). 
+Er werd gestart met de basispagina’s die de meest gebruikte paradigma's/control ’s bevatten (die zo goed als overal terugkomen). 
 
-Voor elke gevonden control/paradigma wordt dan ge-analyseerd hoe deze zo effecient mogelijk getest kan worden. Deze methode wordt dan gedocumenteerd zodat wij, en onze eventuele opvolgers, deze altijd terug kunnen raadplegen wanneer nodig. We documenteren ook voor de pagina die we aan het testen zijn welke control ’s en paradigma's reeds getest zijn, tot we ze allemaal hebben gehad. Op het moment dat alle paradigma's op alle controls die deze paradigma's toepassen getest zijn, wordt de pagina als volledig getest verklaard.
-
+Voor elke gevonden control/paradigma werd dan ge-analyseerd hoe deze zo effecient mogelijk getest kon worden. Deze methode werd dan gedocumenteerd zodat eventuele opvolgers deze altijd terug kunnen raadplegen wanneer nodig. Er werd ook gedocumenteerd welke control ’s en paradigma's reeds getest zijn geweest, tot alles getest is voor de specifieke pagina. Op het moment dat alle paradigma's op alle controls die deze paradigma's toepassen getest zijn, wordt een pagina als volledig getest verklaard.
+---
 Indien we op een volgende pagina weer een nieuwe control/paradigma tegenkomen, zetten we deze bij onderaan onze checklist met gevonden control ‘s/paradigma's. Het is dan weer opnieuw de bedoeling om uit te zoeken hoe we deze kunnen testen en alle voorgaande pagina’s opnieuw af te gaan en te controleren of ook dit element aanwezig is op de pagina en te testen indien nodig, zodat we de pagina weer als getest kunnen verklaren. 
 
 #### 2.4.1.3 General checklist
