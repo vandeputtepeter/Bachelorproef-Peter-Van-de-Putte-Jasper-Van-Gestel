@@ -6,23 +6,31 @@ Als bachelorproject hebben we "Coded UI Testing" moeten toepassen op het Maät p
 
 ### 1.3.2 Deliverables: Testing Guideline
 
+De testing guideline moet alle documentatie bevatten voor personen die het project moeten verderzetten. In essentie zullen dus volgende vragen moeten beantwoord worden in dit document:
+
 * Hoe moet de applicatie getest worden?
 * Hoe moet testing automation toegepast worden op de applicatie?
 * Hoe ga je best te werk als je hieraan moet beginnen?
 
-Stap voor stap toelichten hoe je dit doet en wat er nodig is om dit te verwezenlijken.
+Er wordt dus stap voor stap toegelicht hoe dit gebeurt en wat er nodig is om dit te verwezenlijken / op te volgen.
 
 #### 1.3.2.1 Opleveren van een "Testing Checklist" als onderdeel van de "Testing Guideline"
 
-* Welke criteria moeten getest zijn om zeker te zijn dat de control / pagina volledig is uitgetest
+In essentie zal dus volgende vraag moeten beantwoord worden in dit deel van het document:
+
+* Welke criteria moeten getest zijn om zeker te zijn dat de control / pagina volledig is uitgetest?
 
 Opstellen van een lijst criteria, die "afgevinkt" kan worden en zo duidelijk weergeeft in hoeverre de applicatie getest is. De lijst zal dan in een soort matrix worden voorgesteld met langs de ene as een opsomming van paradigma's en sub-paradigma's en langs de andere as een opsomming van pagina's en controls.
 
 Documenteren waar er zich problemen voordoen en wanneer mogelijk ook waarom. Ook problemen die zijn tegengekomen en hoe deze ondertussen verholpen zijn werden gedocumenteerd. Visuele foutjes, dingen die lichtjes verschillen op verschillende pagina's maar in wezen wel dezelfde control zijn,... Al deze dingen staan in dit document beschreven.
 
+> In de laatste weken van de stageperiode is er beslist om Result Management Tools te creëren. Deze tool zou dan dit gehele process automatiseren (zie 'Result Management Tools' sectie).
+
 #### 1.3.2.2 Opleveren van een "Testing Log" als onderdeel van de "Testing Guideline"
 
-* Welke bugs en niet werkende elementen / foutjes bij controls zijn er aanwezig in de applicatie
+In essentie zal dus volgende vraag moeten beantwoord worden in dit deel van het document:
+
+* Welke bugs en niet werkende elementen / foutjes bij controls zijn er aanwezig in de applicatie?
 
 Bijhouden van bugs en problemen en hoe deze initieel opgelost of omzeilt zijn geweest. Ook is er steeds gedocumenteerd welke pogingen ondernomen zijn om het probleem op te lossen zonder succes. Dit omdat het dan makkelijker is om bepaalde redeneringen uit te sluiten wanneer men opnieuw probeert om het probleem aan te pakken.
 
