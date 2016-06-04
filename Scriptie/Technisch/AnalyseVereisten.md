@@ -2,7 +2,7 @@
 
 De eerste fase in deze thesis: Het uitzoeken, het begrijpen en het leren werken met Coded UI tests en de Coded UI Testing tools. 
 
-### 2.2.1 Opzoekwerk
+### 2.2.1 Definities
 
 **Wat is een "Coded UI Test"?**
 
@@ -19,9 +19,9 @@ Software testing automation of gewoon test automation is het gehele proces waarb
 
 ### 2.2.2 Hiërarchisch navigatie ontwerp
 
-In de eerste fase van onze opdracht hebben we een hiërarchisch design opgesteld van alle navigatie die in de applicatie "Maät" mogelijk zijn. Dit hebben we gedaan door gewoon alle navigatie uit te proberen en te documenteren naar welke pagina, of eventueel welke sub-pagina, een knop leidt. Zo konden we niet alleen een handig overzicht creëren waarin we konden zien welke schermen het belangrijkste zijn en welke voorlopig minder belangrijk waren. Tegelijkertijd gaf dit het voordeel dat we leerden werken met de applicatie, wat handig werd bij het verdere verloop van het project. 
+In de eerste fase van onze opdracht is er, zoals eerder vermeld, een hiërarchisch design opgesteld van alle navigatie die in de applicatie "Maät" mogelijk is. Dit gebeurde door alle navigatie uit te proberen en te documenteren naar welke pagina, of eventueel welke sub-pagina, een knop leidt. Zo kon er niet alleen een handig overzicht gecreëerd worden waarin we konden zien welke schermen het belangrijkste zijn, maar ook welke (voorlopig) minder belangrijk waren en gaf dit het bijkomende voordeel dat de applicatie verkend kon worden. Dit werd handig bij het verdere verloop van het project.
 
-Het hiërarchisch design vertrekt vanuit de "ClinicHubPage". Dit is de hoofdpagina waarop we terecht komen als we de applicatie starten (Na het inloggen). Van hieruit is een boomstructuur getekend naar alle pagina's waarnaar navigatie mogelijk is vanuit de "ClinicHubPage" (Zie afbeelding onder voor voorbeeld). Vervolgens hebben we voor elke hub-pagina - pagina's van waaruit we naar meerdere andere pagina's kunnen navigeren - een nieuw bestand gemaakt waarin we dezelfde werkwijze volgden als bij de "ClinicHubPage", namelijk al deze pagina's laten vertakken uit de respectievelijke pagina. 
+Het hiërarchisch design vertrekt vanuit de "ClinicHubPage". Dit is de hoofdpagina waarop we terecht komen als we de applicatie starten (Na het inloggen). Van hieruit is een boomstructuur getekend naar alle pagina's waarnaar navigatie mogelijk is vanuit de "ClinicHubPage" (Zie afbeelding onder voor voorbeeld). Vervolgens hebben we voor elke hub-pagina een nieuw bestand gemaakt waarin we dezelfde werkwijze volgden als bij de "ClinicHubPage", namelijk al deze pagina's laten vertakken uit de respectievelijke pagina. 
 
 ![Voorbeeld: boomstructuur van "ClinicHubPage"](/OverigeDocumenten/Afbeeldingen/ClinicHub.jpg)
 
