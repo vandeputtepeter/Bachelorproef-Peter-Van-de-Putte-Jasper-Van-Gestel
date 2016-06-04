@@ -2,6 +2,7 @@
 
 * [Inhoudsopgave](SUMMARY.md)
 * [Abstract](README.md)
+* Glossary
 * [Dankwoord](Scriptie/Dankwoord.md)
    * Glossary
 * [Introductie](Scriptie/Introductie/Introductie.md)
