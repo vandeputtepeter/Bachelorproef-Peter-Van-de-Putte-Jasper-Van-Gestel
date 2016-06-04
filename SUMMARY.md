@@ -17,6 +17,6 @@
    * [Gebruikte tools en technologieën](Scriptie/Technisch/ToolsTechnologieen.md)
    * [Conclusies](Scriptie/Technisch/Conclusies.md)
    * [Appendices](Scriptie/Technisch/Appendices.md)
-* Glossary
+* [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
 
