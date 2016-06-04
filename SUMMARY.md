@@ -3,7 +3,6 @@
 * [Inhoudsopgave](SUMMARY.md)
 * [Abstract](README.md)
 * [Dankwoord](Scriptie/Dankwoord.md)
-   * Glossary
 * [Introductie](Scriptie/Introductie/Introductie.md)
    * [Situering](Scriptie/Introductie/Situering.md)
    * [Stagebedrijf](Scriptie/Introductie/Bedrijf.md)
