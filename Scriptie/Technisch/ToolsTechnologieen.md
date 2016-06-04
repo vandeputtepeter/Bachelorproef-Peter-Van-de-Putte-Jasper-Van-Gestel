@@ -1,4 +1,4 @@
-## 2.6 Gebruikte tools en technologieën
+## 1.2 Gebruikte tools en technologieën
 
 **Wat is de "Coded UI Test Builder"?** _(Visual Studio 2015)_
 
