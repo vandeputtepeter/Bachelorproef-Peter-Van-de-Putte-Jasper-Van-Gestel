@@ -26,3 +26,5 @@
 * https://msdn.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide
 * https://nl.wikipedia.org/wiki/Ma%C3%A4t
 * http://www.calidos.be/site/public/nl/Home/Home.aspx
+* http://stackoverflow.com/questions/14304449/why-coded-ui-test-automation-is-important
+* 
