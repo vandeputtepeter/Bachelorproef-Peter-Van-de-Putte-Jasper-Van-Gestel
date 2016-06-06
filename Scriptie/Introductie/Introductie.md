@@ -164,7 +164,11 @@ Team Foundation Server 2013 is een server die het praktisch maakt om code te del
 
 ### 1.3.5 Maät
 
->TODO
+De applicatie "Maät" is, zoals al eerder vermeld, een Windows 10 UWP applicatie die nog steeds onder ontwikkeling is. De applicatie maakt het mogelijk om clinical trials te plannen, te organiseren en op te volgen in ziekenhuizen.
+
+De applicatie bevat heel wat data die gestructureerd en overzichtelijk wordt weergegeven op zijn verschillende schermen. Er zijn Hub-schermen die het mogelijk maken om een overzicht van een bepaald deel informatie te krijgen zoals bijvoorbeeld alle clinical trials. En er zijn dan weer andere schermen die veel specifieker data weergeven zoals bijvoorbeeld een specifieke trial.
+
+  De applicatie werkt op alle Windows-10-draaiende apparaten en vereist een internetverbinding om de connecties met de database live te houden. Dit zodat alle data die aangepast wordt via een scherm, rechtstreeks aangepast kan worden in de database zelf.
 
 ### 1.3.6 Coded UI Test Builder _(Test Tool from Visual Studio 2015)_
 
