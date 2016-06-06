@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* Dankwoord
+* [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Introductie/Introductie.md)
 * [Ontwikkelingsproces](Scriptie/Technisch/Ontwikkelingsproces.md)
 * [Analyse en vereisten](Scriptie/Technisch/AnalyseVereisten.md)
