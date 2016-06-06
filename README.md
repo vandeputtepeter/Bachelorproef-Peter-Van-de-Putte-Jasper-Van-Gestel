@@ -30,3 +30,5 @@ De set doelstellingen bestaat onder meer uit:
 * Het gehele proces zo automatisch mogelijk te maken. (test automation)
 
 * Een *'Guideline voor de tester'* afleveren aan het eind van de stage die alle belangrijke informatie bevat omtrent gebruik, opstellen en werking van tests. Deze zal initieel kort zijn, maar zal in de loop van de bachelorproef verder aangroeien.
+
+>TODO UPDATEN!!!!!!!!!!!!!!!!!!!!
