@@ -139,6 +139,8 @@ Er zijn echter ook nadelen bij coded UI tests:
 
 ## 1.3 Gebruikte tools en technologieën
 
+Hieronder volgt een korte opsomming van de voornaamste technologieën die gebruikt zijn tijdens de stage.
+
 ### 1.3.1 Windows 10
 
 Oorspronkelijk is het Maät project gestart met als doelplatform Windows 8, maar door de snelle upgrade van Microsoft naar het veel recentere Windows 10 is Calidos ook overgegaan om Windows 10 tot het doelplatform te maken.
