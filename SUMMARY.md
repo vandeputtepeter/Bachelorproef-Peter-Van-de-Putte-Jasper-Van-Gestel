@@ -8,6 +8,6 @@
 * [Implementatie](Scriptie/Technisch/Implementatie.md)
 * [Conclusies](Scriptie/Technisch/Conclusies.md)
 * [Appendices](Scriptie/Technisch/Appendices.md)
-* [Bibliografie](Scriptie/Bibliografie.md)
 * [Glossary](GLOSSARY.md)
+* [Bibliografie](Scriptie/Bibliografie.md)
 
