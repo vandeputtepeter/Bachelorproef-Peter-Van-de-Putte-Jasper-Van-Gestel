@@ -1,7 +1,7 @@
 # Summary
 
-* [Abstract](README.md)
 * [Inhoudstabel](SUMMARY.md)
+* [Abstract](README.md)
 * [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Introductie/Introductie.md)
 * [Ontwikkelingsproces](Scriptie/Technisch/Ontwikkelingsproces.md)
