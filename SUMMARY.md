@@ -11,4 +11,5 @@
 * [Appendices](Scriptie/Technisch/Appendices.md)
 * [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
+* Inhoudstabel
 
