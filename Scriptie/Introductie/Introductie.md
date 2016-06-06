@@ -2,7 +2,7 @@
 
 Het onderwerp van onze thesis is 'Coded UI Testing'.
 
-We gaan dit toepassen op een programma, het "Maät" project , een Windows 10 applicatie dat momenteel nog in ontwikkeling is door "Calidos".
+We gaan dit toepassen op een programma, het "Maät" project , een Windows 10 applicatie die momenteel nog in ontwikkeling is door "Calidos".
 
 De eerste fasen in onze thesis zijn:
 
