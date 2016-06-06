@@ -4,7 +4,6 @@
 * [Abstract](README.md)
 * [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Introductie/Introductie.md)
-   * [Stagebedrijf](Scriptie/Introductie/Bedrijf.md)
    * [Opgave](Scriptie/Introductie/Opgave.md)
 * [Technisch](Scriptie/Technisch/Technisch.md)
    * [Ontwikkelingsproces](Scriptie/Technisch/Ontwikkelingsproces.md)
