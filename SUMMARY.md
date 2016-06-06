@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* Inhoudstabel
 * [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Introductie/Introductie.md)
 * [Ontwikkelingsproces](Scriptie/Technisch/Ontwikkelingsproces.md)
@@ -11,5 +12,4 @@
 * [Appendices](Scriptie/Technisch/Appendices.md)
 * [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
-* Inhoudstabel
 
