@@ -8,7 +8,6 @@
 * [Analyse en vereisten](Scriptie/Technisch/AnalyseVereisten.md)
 * [Design](Scriptie/Technisch/Design.md)
 * [Implementatie](Scriptie/Technisch/Implementatie.md)
-* [Test en validatie](Scriptie/Technisch/TestValidatie.md)
 * [Conclusies](Scriptie/Technisch/Conclusies.md)
 * [Appendices](Scriptie/Technisch/Appendices.md)
 * [Glossary](GLOSSARY.md)
