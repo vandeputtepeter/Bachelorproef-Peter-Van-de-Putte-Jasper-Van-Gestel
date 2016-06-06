@@ -26,3 +26,9 @@ De twee grote doelen zijn:
 * Er werd ook gevraag om een bijkomstig document op te stellen dat bugs en niet werkende elementen of foutjes bij controls definieert. Dit document zal ook deel uitmaken van de "Testing Guideline".
 
 Initieel zullen deze documenten korte beschrijvingen zijn, maar gedurende ons verblijf bij "Calidos" zullen deze drastisch aangroeien tot een duidelijk geheel dat in detail beschrijft hoe testing op "Maät" moet worden verwezenlijkt.
+
+## 1.1 Situering
+
+### 1.1.1 Maät
+
+Het project "Maät" is vernoemd naar de Oud-Egyptische godin "Maät" of "Ma'at", waar ze staat voor onder meer kosmische orde, waarheid en stabiliteit.
