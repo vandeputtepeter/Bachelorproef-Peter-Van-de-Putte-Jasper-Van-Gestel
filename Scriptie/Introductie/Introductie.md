@@ -115,27 +115,27 @@ Er zijn echter ook nadelen bij coded UI tests:
 
 ### 1.2.1 Ontwikkelingsproces
 
->korte beschrijving
+In dit deel wordt gesproken over de denkwijze die toegepast werd op alles rondom de thesis. Zo zal er aandacht geschonken worden aan onder andere de benamingen van tests, de hiërarchische opbouw van de applicatie "Maät" en de documentstructuur van het Coded UI Test project op de TFS.
 
 ### 1.2.2 Analyse
 
->korte beschrijving
+>TODO korte beschrijving
 
 ### 1.2.3 Design
 
->korte beschrijving
+>TODO korte beschrijving
 
 ### 1.2.4 Implementatie
 
->korte beschrijving
+In dit hoofdstuk worden de denkwijze en opbouw van de testing guideline beschreven. Zo zal er aandacht geschonken worden hoe de testing checklist opgebouwd is, telkens kort toegelicht per paradigma / sub-paradigma.
 
 ### 1.2.5 Conclusies
 
->korte beschrijving
+Hierin zal uitgebreid uitgelegd worden wat de conclusies zijn die men kan trekken uit deze bachelorproef. Alsook kort toelichten wat er in de toekomst gepland was als bepaalde zaken sneller en/of vlotter hadden vooruitgegaan.
 
 ### 1.2.6 Appendices
 
->korte beschrijving
+>TODO korte beschrijving
 
 ## 1.3 Gebruikte tools en technologieën
 
@@ -151,13 +151,22 @@ Het Maät project is een Universal Windows Platform (UWP) applicatie opgestelt i
 
 ![Windows Core](/OverigeDocumenten/Afbeeldingen/windowscore.png)
 
-Met de komst van Windows 10 werd UWP geïntroduceerd, dat het Windows Runtime model verder evolueert en het zo naar een verenigde Windows 10 core brengt. Als onderdeel van de core, brengt UWP een gezamenlijk app platform dat beschikbaar is op alle apparaten die Windows 10 runnen. Het UWP voorziet een gegarandeerde core API laag over apparaten. Dit wil zeggen dat men een enkel applicatie pakket kan maken dat kan geinstalleerd worden op een waaier van apparaten. Bovendien voorziet de Windows Store een verenigd distributie kanaal dat, met dit single app pakket, alle apparaten waarop de applicatie kan draaien bereikbaar wordt.
+Met de komst van Windows 10 werd UWP geïntroduceerd, dat het Windows Runtime model verder evolueert en het zo naar een verenigde Windows 10 core brengt. Als onderdeel van de core, brengt UWP een gezamenlijk app platform dat beschikbaar is op alle apparaten die Windows 10 runnen. Het UWP voorziet een gegarandeerde core API laag over apparaten. Dit wil zeggen dat men een enkel applicatie pakket kan maken dat kan geïnstalleerd worden op een waaier van apparaten. Bovendien voorziet de Windows Store een verenigd distributie kanaal dat, met dit single app pakket, alle apparaten waarop de applicatie kan draaien bereikbaar wordt.
 
 ### 1.3.3 Visual Studio 2015
 
 Visual Studio 2015 is een rijk, geïntegreerd ontwikkelingsplatform om applicaties te creëren voor Windows, Andriod en iOS. Maar ook webapplicaties en cloud services vallen onder deze noemer.
 
-### 1.3.4 Coded UI Test Builder _(Test Tool from Visual Studio 2015)_
+
+### 1.3.4 Team Foundation Server (TFS) 2013
+
+Team Foundation Server 2013 is een server die het praktisch maakt om code te delen binnen een bedrijf/groep. Het is te vergelijken met bijvoorbeeld GitHub. Het maakt het mogelijk om code te mergen naar de server vanop ieders eigen branch, alsook de historie bekijken van elke methode/project. De ideale uitbreiding op de Visual Studio IDE wanneer men in een team aan een groot project werkt.
+
+### 1.3.5 Maät
+
+>TODO
+
+### 1.3.6 Coded UI Test Builder _(Test Tool from Visual Studio 2015)_
 
 De Coded UI Test Builder is een onderdeel van het testing framework dat voorzien is door Visual Studio. Het is meer bepaald een testing tool die de ontwikkelaar in staat stelt om controls te mappen via UIMap's. De UIMap is een partial klasse die voor de helft automatisch gegenereerd wordt. Dit deel zorgt voor de mapping en eventueel voor assertions (beweringen) die kunnen controleren of een bepaalde voorwaarde voldoet. Een soort van "if" statement, maar dan voor het testing framework. De andere helft van de partial klasse is voor manuele aanpassingen. Hier komen we later duidelijker op terug.
 
