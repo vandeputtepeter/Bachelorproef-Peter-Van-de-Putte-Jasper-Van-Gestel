@@ -9,7 +9,6 @@
 * [Design](Scriptie/Technisch/Design.md)
 * [Implementatie](Scriptie/Technisch/Implementatie.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
-* Gebruikte tools en technologieën
 * [Conclusies](Scriptie/Technisch/Conclusies.md)
 * [Appendices](Scriptie/Technisch/Appendices.md)
 * [Glossary](GLOSSARY.md)
