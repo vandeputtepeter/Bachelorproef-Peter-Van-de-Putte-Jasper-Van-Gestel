@@ -1,15 +1,13 @@
 # Summary
 
-* [Inhoudsopgave](SUMMARY.md)
-* [Abstract](README.md)
-* [Dankwoord](Scriptie/Dankwoord.md)
-* [Introductie](Scriptie/Introductie/Introductie.md)
-* [Ontwikkelingsproces](Scriptie/Technisch/Ontwikkelingsproces.md)
-* [Analyse en vereisten](Scriptie/Technisch/AnalyseVereisten.md)
-* [Design](Scriptie/Technisch/Design.md)
-* [Implementatie](Scriptie/Technisch/Implementatie.md)
-* [Bibliografie](Scriptie/Bibliografie.md)
-* [Conclusies](Scriptie/Technisch/Conclusies.md)
-* [Appendices](Scriptie/Technisch/Appendices.md)
-* [Glossary](GLOSSARY.md)
+
+1. [Introductie](Scriptie/Introductie/Introductie.md)
+2. [Ontwikkelingsproces](Scriptie/Technisch/Ontwikkelingsproces.md)
+3. [Analyse en vereisten](Scriptie/Technisch/AnalyseVereisten.md)
+4. [Design](Scriptie/Technisch/Design.md)
+5. [Implementatie](Scriptie/Technisch/Implementatie.md)
+6. [Bibliografie](Scriptie/Bibliografie.md)
+7. [Conclusies](Scriptie/Technisch/Conclusies.md)
+8. [Appendices](Scriptie/Technisch/Appendices.md)
+9. [Glossary](GLOSSARY.md)
 
