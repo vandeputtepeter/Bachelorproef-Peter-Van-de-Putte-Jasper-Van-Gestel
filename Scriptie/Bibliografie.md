@@ -28,5 +28,5 @@
 * http://www.calidos.be/site/public/nl/Home/Home.aspx
 * http://stackoverflow.com/questions/14304449/why-coded-ui-test-automation-is-important
 * https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx
-* 
+* https://www.visualstudio.com/en-us/products/tfs-overview-vs.aspx
 * 
