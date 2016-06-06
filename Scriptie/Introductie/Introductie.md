@@ -38,10 +38,13 @@ De eerste fasen in onze thesis zijn dus:
 
 Wanneer de basiskennis opgenomen is, kan er gestart worden met het eigenlijke eindwerk dat ons gegeven is door Mark Devos.
 
+### 1.1.3 Achtergrond: Voordelen van Coded UI Testing
 
-### 1.1.3 Achtergrond
+Het gebruik van coded UI tests en test automation kan heel wat voordelen hebben voor een project. Om een beter idee te krijgen zijn ze hieronder opgelijst.
 
-
+* Coded UI Tests zorgen voor stabiliteit in het project
+  * Als het project veranderd blijven de tests nog steeds hetzelfde doel nastreven. Dit heeft als voordeel dat als je iets veranderd aan de code, er altijd bekeken wordt via coded UI testing of er nog steeds gebeurt wat verwacht wordt.
+* 
 
 ## 1.2 Gebruikte tools en technologieën
 
