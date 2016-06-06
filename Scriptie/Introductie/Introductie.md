@@ -6,11 +6,23 @@ Het onderwerp van onze thesis is 'Coded UI Testing'.
 
 Dit onderwerp werd toegepast op het "Maät" project, een Windows 10 applicatie die momenteel nog in ontwikkeling is door "Calidos".
 
-### 1.1.1 Maät
+### 1.1.1 Stagebedrijf
+
+Calidos is een IT-bedrijf, gevestigd in Mechelen, dat zich specialiseert in software voor de healthcare sector. Een KMO met veel groeipotentieel en een duidelijke visie op hoe de software nuttig en tegelijk overzichtelijk informatie moet weergeven om het dagelijkse werk bij ziekenhuizen praktisch en efficiënt te laten verlopen.
+
+![Logo calidos](/OverigeDocumenten/Afbeeldingen/thumbnail_CalidosTouchIT.jpg)
+
+Eerder creëerde Calidos al een oplossing genaamd 'Othello' dat een toepassing is voor de MZG-registratie van VG-MZG scores (MVG-II) en personeelsgegevens. Meer dan 8750 ziekenhuisbedden hebben een licentie voor deze toepassing.
+ 
+Het product ‘Team n Time’ laat ziekenhuizen toe personeel uit de mobiele equipe flexibel in te zetten in functie van hoe druk het is op een afdeling.
+
+Het project waar deze thesis op toegepast wordt is het nieuwste project van Calidos, genaamd 'Maät'. Het Maät project is een Windows 10 applicatie die bedoelt is om clinical trials te plannen, te organiseren en op te volgen in ziekenhuizen.
+
+### 1.1.2 Maät
 
 Het project "Maät" is vernoemd naar de Oud-Egyptische godin "Maät" of "Ma'at", waar ze staat voor onder meer kosmische orde, waarheid en stabiliteit.
 
-### 1.1.2 Doelen
+### 1.1.3 Doelen
 
 De vooropgestelde doelen van dit stageproject zijn:
 
@@ -38,7 +50,7 @@ De eerste fasen in onze thesis zijn dus:
 
 Wanneer de basiskennis opgenomen is, kan er gestart worden met het eigenlijke eindwerk dat ons gegeven is door Mark Devos.
 
-### 1.1.3 Achtergrond: Voor- en nadelen van Coded UI Testing
+### 1.1.4 Achtergrond: Voor- en nadelen van Coded UI Testing
 
 Het gebruik van coded UI tests en test automation kan heel wat voordelen hebben voor een project. Om een  idee te krijgen zijn hieronder de voornaamste opgelijst.
 
@@ -66,13 +78,13 @@ Er zijn echter ook nadelen bij coded UI tests:
 
 ### 1.2.4 Implementatie
 
-### 1.2.4 Gebruikte tools en technologieën
+### 1.2.5 Gebruikte tools en technologieën
 
-#### 1.2.4.1 Windows 10
+#### 1.2.5.1 Windows 10
 
 Oorspronkelijk is het Maät project gestart met als doelplatform Windows 8, maar door de snelle upgrade van Microsoft naar het veel recentere Windows 10 is Calidos ook overgegaan om Windows 10 tot het doelplatform te maken.
 
-#### 1.2.4.2 Universal Windows Platform (UWP)
+#### 1.2.5.2 Universal Windows Platform (UWP)
 
 Het Maät project is een Universal Windows Platform (UWP) applicatie opgestelt in C# en XAML
 
@@ -80,33 +92,25 @@ Het Maät project is een Universal Windows Platform (UWP) applicatie opgestelt i
 
 Met de komst van Windows 10 werd UWP geïntroduceerd, dat het Windows Runtime model verder evolueert en het zo naar een verenigde Windows 10 core brengt. Als onderdeel van de core, brengt UWP een gezamenlijk app platform dat beschikbaar is op alle apparaten die Windows 10 runnen. Het UWP voorziet een gegarandeerde core API laag over apparaten. Dit wil zeggen dat men een enkel applicatie pakket kan maken dat kan geinstalleerd worden op een waaier van apparaten. Bovendien voorziet de Windows Store een verenigd distributie kanaal dat, met dit single app pakket, alle apparaten waarop de applicatie kan draaien bereikbaar wordt.
 
-#### 1.2.4.3 Visual Studio 2015
+#### 1.2.5.3 Visual Studio 2015
 
+Visual Studio 2015 is een rijk, geïntegreerd ontwikkelingsplatform om applicaties te creëren voor Windows, Andriod en iOS. Maar ook webapplicaties en cloud services vallen onder deze noemer.
 
-
-#### 1.2.4.4 Coded UI Test Builder _(Test Tool from Visual Studio 2015)_
+#### 1.2.5.4 Coded UI Test Builder _(Test Tool from Visual Studio 2015)_
 
 De Coded UI Test Builder is een onderdeel van het testing framework dat voorzien is door Visual Studio. Het is meer bepaald een testing tool die de ontwikkelaar in staat stelt om controls te mappen via UIMap's. De UIMap is een partial klasse die voor de helft automatisch gegenereerd wordt. Dit deel zorgt voor de mapping en eventueel voor assertions (beweringen) die kunnen controleren of een bepaalde voorwaarde voldoet. Een soort van "if" statement, maar dan voor het testing framework. De andere helft van de partial klasse is voor manuele aanpassingen. Hier komen we later duidelijker op terug.
 
-## 1.3 Stagebedrijf
+### 1.2.6 Conclusies
 
-Calidos is een IT-bedrijf, gevestigd in Mechelen, dat zich specialiseert in software voor de healthcare sector. Een KMO met veel groeipotentieel en een duidelijke visie op hoe de software nuttig en tegelijk overzichtelijk informatie moet weergeven om het dagelijkse werk bij ziekenhuizen praktisch en efficiënt te laten verlopen.
+### 1.2.7 Appendices
 
-![Logo calidos](/OverigeDocumenten/Afbeeldingen/thumbnail_CalidosTouchIT.jpg)
+## 1.3 Opgave
 
-Eerder creëerde Calidos al een oplossing genaamd 'Othello' dat een toepassing is voor de MZG-registratie van VG-MZG scores (MVG-II) en personeelsgegevens. Meer dan 8750 ziekenhuisbedden hebben een licentie voor deze toepassing.
- 
-Het product ‘Team n Time’ laat ziekenhuizen toe personeel uit de mobiele equipe flexibel in te zetten in functie van hoe druk het is op een afdeling.
-
-Het project waar deze thesis op toegepast wordt is het nieuwste project van Calidos, genaamd 'Maät'. Het Maät project is een Windows 10 applicatie die bedoelt is om clinical trials te plannen, te organiseren en op te volgen in ziekenhuizen.
-
-## 1.4 Opgave
-
-### 1.4.1 Doel
+### 1.3.1 Doel
 
 Als bachelorproject hebben we "Coded UI Testing" moeten toepassen op het Maät project, dat nog steeds in ontwikkeling is door "Calidos".
 
-### 1.4.2 Deliverables: Testing Guideline
+### 1.3.2 Deliverables: Testing Guideline
 
 De testing guideline moet alle documentatie bevatten voor personen die het project moeten verderzetten. In essentie zullen dus volgende vragen moeten beantwoord worden in dit document:
 
@@ -116,7 +120,7 @@ De testing guideline moet alle documentatie bevatten voor personen die het proje
 
 Er wordt dus stap voor stap toegelicht hoe dit gebeurt en wat er nodig is om dit te verwezenlijken / op te volgen.
 
-#### 1.4.2.1 Opleveren van een "Testing Checklist" als onderdeel van de "Testing Guideline"
+#### 1.3.2.1 Opleveren van een "Testing Checklist" als onderdeel van de "Testing Guideline"
 
 In essentie zal dus volgende vraag moeten beantwoord worden in dit deel van het document:
 
@@ -128,7 +132,7 @@ Documenteren waar er zich problemen voordoen en wanneer mogelijk ook waarom. Ook
 
 > In de laatste weken van de stageperiode is er beslist om Result Management Tools te creëren. Deze tool zou dan dit gehele process automatiseren (zie 'Result Management Tools' sectie).
 
-#### 1.4.2.2 Opleveren van een "Testing Log" als onderdeel van de "Testing Guideline"
+#### 1.3.2.2 Opleveren van een "Testing Log" als onderdeel van de "Testing Guideline"
 
 In essentie zal dus volgende vraag moeten beantwoord worden in dit deel van het document:
 
@@ -136,7 +140,7 @@ In essentie zal dus volgende vraag moeten beantwoord worden in dit deel van het 
 
 Bijhouden van bugs en problemen en hoe deze initieel opgelost of omzeilt zijn geweest. Ook is er steeds gedocumenteerd welke pogingen ondernomen zijn om het probleem op te lossen zonder succes. Dit omdat het dan makkelijker is om bepaalde redeneringen uit te sluiten wanneer men opnieuw probeert om het probleem aan te pakken.
 
-### 1.4.3 Result Management Tools
+### 1.3.3 Result Management Tools
 
 Als "zij-project" werd er de laatste 5 weken gevraagd of het mogelijk was om een kleine applicatie te schrijven die het mogelijk maakt om, via de DOBT, deze matrix weer te geven in "real-time". Waar we mee willen zeggen dat de matrix het resultaat zal zijn van drie afzonderlijke bestanden.
 * Een "Definition" document
