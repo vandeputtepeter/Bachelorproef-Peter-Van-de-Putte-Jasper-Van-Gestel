@@ -1,4 +1,4 @@
-# 3 Bibliografie
+# 10 Bibliografie
 
 * http://davidgiard.com/2012/07/24/GettingStartedWithCodedUITests.aspx
 * http://searchsoftwarequality.techtarget.com/definition/automated-software-testing
@@ -27,4 +27,6 @@
 * https://nl.wikipedia.org/wiki/Ma%C3%A4t
 * http://www.calidos.be/site/public/nl/Home/Home.aspx
 * http://stackoverflow.com/questions/14304449/why-coded-ui-test-automation-is-important
+* https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx
+* 
 * 
