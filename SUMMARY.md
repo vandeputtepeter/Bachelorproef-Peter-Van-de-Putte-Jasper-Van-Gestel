@@ -4,7 +4,7 @@
 * [Abstract](README.md)
 * [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Introductie/Introductie.md)
-* [Analyse en vereisten](Scriptie/Technisch/AnalyseVereisten.md)
+* [Analyse](Scriptie/Technisch/AnalyseVereisten.md)
 * [Design](Scriptie/Technisch/Design.md)
 * [Implementatie](Scriptie/Technisch/Implementatie.md)
 * [Conclusies](Scriptie/Technisch/Conclusies.md)
