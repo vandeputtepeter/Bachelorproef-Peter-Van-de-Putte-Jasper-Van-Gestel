@@ -49,8 +49,10 @@ Door bovenstaande regels in acht te nemen, bekwamen we volgende file structuur:
     * Base klassen die methoden definieert die overal terugkomen
   * **Groepering**
     * Bijvoorbeeld: Clinic, Patient, ...
+    * **BaseClass per groepering (bvb BaseClassConfigPages)**
     * **Pagina**
       * Bijvoorbeeld: ClinicContactsPage, ClinicHubPage,...
+      * **BaseClass per pagina (bvb BaseClassWorkbookConfig)**
       * **UIMap**
         * UIMap van de betreffende pagina
       * **Klasse per hoofdparadigma**
