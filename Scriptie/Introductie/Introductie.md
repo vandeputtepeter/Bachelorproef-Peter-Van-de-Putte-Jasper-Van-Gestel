@@ -113,27 +113,23 @@ Er zijn echter ook nadelen bij coded UI tests:
 
 ## 1.2 Algemeen overzicht
 
-### 1.2.1 Ontwikkelingsproces
+### 1.2.1 Analyse
+
+>TODO korte beschrijving
+
+### 1.2.2 Design
 
 In dit deel wordt gesproken over de denkwijze die toegepast werd op alles rondom de thesis. Zo zal er aandacht geschonken worden aan onder andere de benamingen van tests, de hiërarchische opbouw van de applicatie "Maät" en de documentstructuur van het Coded UI Test project op de TFS.
 
-### 1.2.2 Analyse
-
->TODO korte beschrijving
-
-### 1.2.3 Design
-
->TODO korte beschrijving
-
-### 1.2.4 Implementatie
+### 1.2.3 Implementatie
 
 In dit hoofdstuk worden de denkwijze en opbouw van de testing guideline beschreven. Zo zal er aandacht geschonken worden hoe de testing checklist opgebouwd is, telkens kort toegelicht per paradigma / sub-paradigma.
 
-### 1.2.5 Conclusies
+### 1.2.4 Conclusies
 
 Hierin zal uitgebreid uitgelegd worden wat de conclusies zijn die men kan trekken uit deze bachelorproef. Alsook kort toelichten wat er in de toekomst gepland was als bepaalde zaken sneller en/of vlotter hadden vooruitgegaan.
 
-### 1.2.6 Appendices
+### 1.2.5 Appendices
 
 >TODO korte beschrijving
 
