@@ -47,6 +47,8 @@ $$Page name + Paradigm (+ Context) (+ Xaml Control Type Property) (+ Specific In
 
 ## 3.3 Bestandsstructuur
 
+>>TODO UPDATEN!!!!!!!!!!!!!!!!!!!!!!
+
 In dit onderdeel zijn een aantal regels opgesteld voor de onderverdeling van de verschillende testprojecten. De visie hier is dat niet alle tests van het gehele project in één grote klasse mogen geschreven worden (wat de onderhoudbaarheid nagenoeg onmogelijk maakt). Tegelijkertijd mocht er ook niet voor elke testmethode een nieuwe klasse aangemaakt worden, aangezien er dan teveel files zouden ontstaan. Als gulden middenweg werd gekozen voor het aanmaken van een nieuwe klasse voor elk hoofdparadigma, per pagina. Voor elke pagina werd ook één UIMap-klasse gemaakt die gebruikt werd in alle testprojecten voor de betreffende pagina. Daarnaast werd beslist dat bij elke pagina die verschillende sub-tabs bevat, elke sub-tab als één volledige pagina beschouwd werd. Deze worden dus onderverdeeld alsof het aparte pagina's zijn. 
 
 Door bovenstaande regels in acht te nemen, bekwamen we volgende file structuur: 
@@ -74,7 +76,5 @@ Door bovenstaande regels in acht te nemen, bekwamen we volgende file structuur:
           * Klasse die alle testen betreffende de staat van controls bevat
         * **Content**
           * Klasse die alle testen betreffende data in de database of applicatie bevat
-
->TODO UPDATEN!!!!!!!!!!!!!!!!!!!!!!
 
 
