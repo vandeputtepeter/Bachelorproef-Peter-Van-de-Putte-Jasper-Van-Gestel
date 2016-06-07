@@ -1,6 +1,6 @@
-# 4 Design
+# 3 Design
 
-## 4.1 Hiërarchisch navigatie ontwerp
+## 3.1 Hiërarchisch navigatie ontwerp
 
 In de eerste fase van onze opdracht is er, zoals eerder vermeld, een hiërarchisch design opgesteld van alle navigatie die in de applicatie "Maät" mogelijk is. Dit gebeurde door alle navigatie uit te proberen en te documenteren naar welke pagina, of eventueel welke sub-pagina, een knop leidt. Zo kon er niet alleen een handig overzicht gecreëerd worden waarin we konden zien welke schermen het belangrijkste zijn, maar ook welke (voorlopig) minder belangrijk waren en gaf dit het bijkomende voordeel dat de applicatie verkend kon worden. Dit werd handig bij het verdere verloop van het project.
 
@@ -12,7 +12,7 @@ Bij elke tak is (op de pijl) geschreven welke knop of handeling ervoor zorgt dat
 
 >De rode vakken stellen data-heavy pagina's voor die vrij uitgebreid zijn. Dit type pagina's is vrij belangrijk in de applicatie omdat deze data vaak andere pagina's kan beïnvloeden.
 
-## 4.2 Benaming van testmethoden
+## 3.2 Benaming van testmethoden
 
 In dit onderdeel worden een aantal regels beschreven waaraan de namen van alle geschreven testmethodes moeten voldoen. De visie op deze naamgeving is dat men aan de naam van een testmethode alle informatie over wat er getest wordt kan afleiden. De reden hiervoor is, dat wanneer een verslag terugkomt van alle uitgevoerde tests en er bepaalde tests gefaald zijn, er meteen kan worden gezien welk paradigma in de applicatie niet werkt zoals het hoort te werken door gewoon de naam van de testmethode te lezen. Waarom dit paradigma gefaald is wordt weggeschreven in een test-log, waar we later op terugkomen.
 
@@ -45,7 +45,7 @@ $$Page name + Paradigm (+ Context) (+ Xaml Control Type Property) (+ Specific In
 
 >Het is noodzakelijk dat minstens één van de optionele parameters ook aanwezig is in de testmethodebenaming om verduidelijking te geven over de betreffende testmethode.
 
-## 4.3 Bestandsstructuur
+## 3.3 Bestandsstructuur
 
 In dit onderdeel zijn een aantal regels opgesteld voor de onderverdeling van de verschillende testprojecten. De visie hier is dat niet alle tests van het gehele project in één grote klasse mogen geschreven worden (wat de onderhoudbaarheid nagenoeg onmogelijk maakt). Tegelijkertijd mocht er ook niet voor elke testmethode een nieuwe klasse aangemaakt worden, aangezien er dan teveel files zouden ontstaan. Als gulden middenweg werd gekozen voor het aanmaken van een nieuwe klasse voor elk hoofdparadigma, per pagina. Voor elke pagina werd ook één UIMap-klasse gemaakt die gebruikt werd in alle testprojecten voor de betreffende pagina. Daarnaast werd beslist dat bij elke pagina die verschillende sub-tabs bevat, elke sub-tab als één volledige pagina beschouwd werd. Deze worden dus onderverdeeld alsof het aparte pagina's zijn. 
 
