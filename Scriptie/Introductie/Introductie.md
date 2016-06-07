@@ -6,6 +6,8 @@ Het onderwerp van onze thesis is 'Coded UI Testing'.
 
 Dit onderwerp werd toegepast op het "Maät" project, een Windows 10 applicatie die momenteel nog in ontwikkeling is door "Calidos".
 
+Het project "Maät" is vernoemd naar de Oud-Egyptische godin "Maät" of "Ma'at", waar ze staat voor onder meer kosmische orde, waarheid en stabiliteit.
+
 ### 1.1.1 Stagebedrijf
 
 Calidos is een IT-bedrijf, gevestigd in Mechelen, dat zich specialiseert in software voor de healthcare sector. Een KMO met veel groeipotentieel en een duidelijke visie op hoe de software nuttig en tegelijk overzichtelijk informatie moet weergeven om het dagelijkse werk bij ziekenhuizen praktisch en efficiënt te laten verlopen.
@@ -18,11 +20,7 @@ Het product ‘Team n Time’ laat ziekenhuizen toe personeel uit de mobiele equ
 
 Het project waar deze thesis op toegepast wordt is het nieuwste project van Calidos, genaamd 'Maät'. Het Maät project is een Windows 10 applicatie die bedoelt is om clinical trials te plannen, te organiseren en op te volgen in ziekenhuizen.
 
-### 1.1.2 Maät
-
-Het project "Maät" is vernoemd naar de Oud-Egyptische godin "Maät" of "Ma'at", waar ze staat voor onder meer kosmische orde, waarheid en stabiliteit.
-
-### 1.1.3 Doelen
+### 1.1.2 Doelen
 
 De vooropgestelde doelen van dit stageproject zijn:
 
@@ -33,7 +31,7 @@ De vooropgestelde doelen van dit stageproject zijn:
 
 Initieel waren deze documenten korte beschrijvingen, maar gedurende het verblijf bij "Calidos" zijn deze drastisch aangegroeid tot een duidelijk geheel dat in detail beschrijft hoe testing op "Maät" moet worden of, tot op zekere hoogte, werd verwezenlijkt.
 
-#### 1.1.3.1 Deliverables: Testing Guideline
+#### 1.1.2.1 Deliverables: Testing Guideline
 
 De testing guideline moet alle documentatie bevatten voor personen die het project moeten verderzetten. In essentie zullen dus volgende vragen moeten beantwoord worden in dit document:
 
@@ -43,7 +41,7 @@ De testing guideline moet alle documentatie bevatten voor personen die het proje
 
 Er wordt dus stap voor stap toegelicht hoe dit gebeurt en wat er nodig is om dit te verwezenlijken / op te volgen.
 
-#### 1.1.3.2 Opleveren van een "Testing Checklist" als onderdeel van de "Testing Guideline"
+#### 1.1.2.2 Opleveren van een "Testing Checklist" als onderdeel van de "Testing Guideline"
 
 In essentie zal dus volgende vraag moeten beantwoord worden in dit deel van het document:
 
@@ -55,7 +53,7 @@ Documenteren waar er zich problemen voordoen en wanneer mogelijk ook waarom. Ook
 
 > In de laatste weken van de stageperiode is er beslist om Result Management Tools te creëren. Deze tool zou dan dit gehele process automatiseren (zie 'Result Management Tools' sectie).
 
-#### 1.1.3.3 Opleveren van een "Testing Log" als onderdeel van de "Testing Guideline"
+#### 1.1.2.3 Opleveren van een "Testing Log" als onderdeel van de "Testing Guideline"
 
 In essentie zal dus volgende vraag moeten beantwoord worden in dit deel van het document:
 
@@ -63,7 +61,7 @@ In essentie zal dus volgende vraag moeten beantwoord worden in dit deel van het 
 
 Bijhouden van bugs en problemen en hoe deze initieel opgelost of omzeilt zijn geweest. Ook is er steeds gedocumenteerd welke pogingen ondernomen zijn om het probleem op te lossen zonder succes. Dit omdat het dan makkelijker is om bepaalde redeneringen uit te sluiten wanneer men opnieuw probeert om het probleem aan te pakken.
 
-#### 1.1.3.4 Result Management Tools
+#### 1.1.2.4 Result Management Tools
 
 Als "zij-project" werd er de laatste 5 weken gevraagd of het mogelijk was om een kleine applicatie te schrijven die het mogelijk maakt om, via de DOBT, deze matrix weer te geven in "real-time". Waar we mee willen zeggen dat de matrix het resultaat zal zijn van drie afzonderlijke bestanden.
 * Een "Definition" document
@@ -75,7 +73,7 @@ Als "zij-project" werd er de laatste 5 weken gevraagd of het mogelijk was om een
 
 Als resultaat krijgt men een matrix die opgesteld wordt via het "Definition" document. De cellen worden dan eerst ingevuld met het "Target" document en vervolgens overschreven (wanneer data beschikbaar is) met de resultaten uit het "Result" document.
 
-#### 1.1.3.5 Basiskennis
+#### 1.1.2.5 Basiskennis
 
 Vooraleer de echte doelen kunnen worden voltooid is het belangrijk te leren werken en te begrijpen met welk onderwerp we bezig zijn. Aangezien dit de eerste keer was dat we met testing in contact kwamen.
 De eerste fasen in onze thesis zijn dus:
@@ -91,9 +89,9 @@ De eerste fasen in onze thesis zijn dus:
 
 Wanneer de basiskennis opgenomen is, kan er gestart worden met het eigenlijke eindwerk dat ons gegeven is door Mark Devos.
 
-### 1.1.4 Achtergrond
+### 1.1.3 Achtergrond
 
-#### 1.1.4.1 Voor- en nadelen van Coded UI Testing
+#### 1.1.3.1 Voor- en nadelen van Coded UI Testing
 
 Het gebruik van coded UI tests en test automation kan heel wat voordelen hebben voor een project. Om een  idee te krijgen zijn hieronder de voornaamste opgelijst.
 
