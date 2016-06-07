@@ -70,8 +70,10 @@ Door bovenstaande regels in acht te nemen, bekwamen we volgende file structuur:
           *  Klasse die alle testen betreffende verschillende staten van een pagina bevat
         * **Navigatie**
           * Klasse die alle testen betreffende voorwaartse en achterwaartse navigatie naar pagina's bevat
-        * **Functionaliteit**
+        * **Funtionaliteit**
           * Klasse die alle testen betreffende functionaliteit / inter-functionaliteit van controls bevat
+        * **Control state appearance**
+          * Klasse die alle testen betreffende de staat van controls bevat
         * **Content**
           * Klasse die alle testen betreffende data in de database of applicatie bevat
 
