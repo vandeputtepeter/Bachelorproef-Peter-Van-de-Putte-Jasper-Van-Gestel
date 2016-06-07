@@ -1,4 +1,4 @@
-# 2 Analyse en vereisten
+# 2 Analyse
 
 De eerste fase in deze thesis: Het uitzoeken, het begrijpen en het leren werken met Coded UI tests, de Coded UI Testing tools en de Maät applicatie. 
 
@@ -19,6 +19,8 @@ Software testing automation of gewoon test automation is het gehele proces waarb
 
 ## 2.2 
 
+
+
 ## 2.3 Maät Ontdekken
 
 ### 2.3.1 Hiërarchisch navigatie ontwerp
@@ -32,4 +34,6 @@ Het hiërarchisch design vertrekt vanuit de "ClinicHubPage". Dit is de hoofdpagi
 Bij elke tak is (op de pijl) geschreven welke knop of handeling ervoor zorgt dat we op die specifieke pagina terecht komen. Ook is er per pagina de belangrijkheid aangeduid in het testgebeuren. Sommige pagina's zijn namelijk nog niet af, of zijn zelfs nog in hun beginfase. Dit zijn dan pagina's die in het totale testproject minder prioriteit hebben ten opzichte van de pagina's die wel al af zijn of belangrijke informatie bevatten.
 
 >De rode vakken stellen data-heavy pagina's voor die vrij uitgebreid zijn. Dit type pagina's is vrij belangrijk in de applicatie omdat deze data vaak andere pagina's kan beïnvloeden.
+
+## 2.4 Planning
 
