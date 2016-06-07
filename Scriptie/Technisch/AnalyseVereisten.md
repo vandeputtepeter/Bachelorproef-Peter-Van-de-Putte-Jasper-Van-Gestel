@@ -1,8 +1,8 @@
-# 3 Analyse en vereisten
+# 2 Analyse en vereisten
 
 De eerste fase in deze thesis: Het uitzoeken, het begrijpen en het leren werken met Coded UI tests en de Coded UI Testing tools. 
 
-## 3.1 Definities
+## 2.1 Definities
 
 **Wat is een "Coded UI Test"?**
 
