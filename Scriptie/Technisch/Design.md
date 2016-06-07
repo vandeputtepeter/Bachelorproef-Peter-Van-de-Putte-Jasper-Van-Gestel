@@ -65,7 +65,7 @@ Door bovenstaande regels in acht te nemen, bekwamen we volgende file structuur:
       * Bijvoorbeeld: ClinicContactsPage, ClinicHubPage,...
       * **UIMap**
         * UIMap van de betreffende pagina
-      * **Klasse per paradigma**
+      * **Klasse per hoofdparadigma**
         * **Staten**
           *  Klasse die alle testen betreffende verschillende staten van een pagina bevat
         * **Navigatie**
