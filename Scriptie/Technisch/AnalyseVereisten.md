@@ -28,19 +28,19 @@ In deze sectie wordt beschreven hoe de coded UI Test Builder werkt en hoe UI Map
 Om een Coded UI Test klasse toe te voegen aan het project zijn volgende stappen noodzakelijk:
 
 * Rechtsklik op de map in het project waar de Coded UI Test gewenst wordt
-* Selecteer ‘Add’
-* Selecteer ‘New Item’
+* Selecteer "Add"
+* Selecteer "New Item"
 
- ![CUITBuilder1](/OverigeDocumenten/Afbeeldingen/CUITBuilder1.PNG)
+ ![toevoegen van een 'new item'](/OverigeDocumenten/Afbeeldingen/CUITBuilder1.PNG)
 * Selecteer "Test"
 * Selecteer "Coded UI Test (Windows Store apps)"
 
- ![CUITBuilder2](/OverigeDocumenten/Afbeeldingen/CUITBuilder2.PNG)
+ ![Toevoegen van een Coded UI Test klasse](/OverigeDocumenten/Afbeeldingen/CUITBuilder2.PNG)
 
 Om een UI map toe te voegen:
 
 * Doe dezelfde stappen als hiervoor
-* Selecteer ‘Coded UI Test Map’ in plaats van ‘Coded UI Test (Windows Store apps)’
+* Selecteer "Coded UI Test Map" in plaats van "Coded UI Test (Windows Store apps)"
 
 Wanneer men een Coded UI Test toevoegd aan het project is het belangrijk om steeds de juiste UI Map toe te voegen als variabele. Bovenaan de Coded UI Test klasse moet steeds een "using" statement toegevoegd worden voor de gecreerde UI Map. Als bijvoorbeeld de UI Map de naam “UIMap_ClinicHubPage” heeft moet er bovenaan staan:
 
@@ -48,7 +48,7 @@ Wanneer men een Coded UI Test toevoegd aan het project is het belangrijk om stee
 
 Onderaan de Coded UI Test klasse moet ook de UI Map property veranderd worden naar iets zoals volgende lijnen code:
  
-```public UIMap_ClinicHubPage UIMapClinicHub
+`public UIMap_ClinicHubPage UIMapClinicHub
 {
   get
   {
@@ -59,36 +59,41 @@ Onderaan de Coded UI Test klasse moet ook de UI Map property veranderd worden na
     return map;
   }
 }
-private UIMap_ClinicHubPage map;```
- 
+private UIMap_ClinicHubPage map;`
 
+Als dit gebeurt is, is het mogelijk om tests te beginnen schrijven. Om een test te schrijven moet men eerst controls toevoegen aan de UI Map, het zogenaamde "Mappen van controls". Om dit te doen:
 
-After doing this you can start writing tests. To write a test you first have to add the controls you want to use to the UI Map you created. To do this, right click on your ‘.uitest’ file and select “Edit with Coded UI Test Builder”.
+* Rechtsklik op het ".uitest" bestand
+* Selecteer “Edit with Coded UI Test Builder”
 
-The Coded UI Test Builder will launch itself. Dont worry if it minimizes your Visual Studio, the Builder just wants to indicate that you can start up your application you want to be mapping. By dragging the circular marker (‘Add Assertions’) onto the control you want to map you can add it to the UI Map. When you release the marker it will open another window, seen below. 
+De Coded UI Test Builder zal nu opstarten. Men moet zich vooral geen zorgen maken wanneer Visual Studio geminimaliseerd wordt. De Builder maakt hiermee duidelijk dat je eventueel een applicatie kan opstarten waarbij men controls wil mappen.
 
- ![CUITBuilder3](/OverigeDocumenten/Afbeeldingen/CUITBuilder3.PNG)
+Het mappen van een control naar de UI Map gebeurt door de cirkelvormige marker ("add Assertions") te slepen naar de control. Wanneer de marker losgelaten wordt, wordt deze control opgelicht met een blauwe rand en zal er een nieuw venster verschijnen (Zie afbeelding onder).
 
-The control you selected will be higlighted within the application with a blue borded and on the right side of the new window you can see more detailed information about the currently selected control. If you click the arrow button in the top left hand corner you can see the hiërarchy in which the control is embedded as well.
+ ![Add Assertions venster](/OverigeDocumenten/Afbeeldingen/CUITBuilder3.PNG)
 
-> **Note:**
-Because the Clinical Trials application ‘Maät’  is created as a Windows 10 Metro App, the Coded UI technology, mainly the Coded UI Test Builder, is not yet fully adapted for optimal hiërarchy detection. To properly recognize the correct hiërarchy, every control has to have a unique AutomationId. However, almost no control in the application has this Id. For example, to add ListItems we needed to figure out special techniques and workarounds in the test methods, which we will discuss later.
+Op het nieuwe venster kan meer informatie teruggevonden worden in verband met de geselecteerde control (eigenschappen). Als men op de pijl klikt bovenaan links in dit venster, zal het venster uitbreiden met een hiërarchie waarin de control zichtbaar wordt.
 
-> To make sure control’s or lists are properly mapped and easy to find by the testprogram itself, we sometimes gave AutomationId’s to the control’s ourselves. To do this, open the XAML file of the page you want to test, and then search for an indication out of which you can derive this section is the section you want to give an AutomationId.
+> **Nota:**
+Omdat de Clinical Trials applicatie ‘Maät’ gecreëerd is als een Windows 10 Metro App, is de Coded UI technology (voornamelijk de Coded UI Test Builder) nog niet volledig aangepast om de hiërarchie van controls correct te detecteren. 
 
-> Example: I gave a unique Id to a list, so I can later easily access the childs of that list
+>Om de hiërarchie van controls correct te laten detecteren is het noodzakelijk om elke control een unieke automatisatie ID (UID) te geven. Op het moment van de stageopdracht was deze bij veel controls niet aanwezig, wat een bijkomend probleem opleverde. Meer hierover later.
 
->  ![CUITBuilder4](/OverigeDocumenten/Afbeeldingen/CUITBuilder4.PNG)
+To make sure control’s or lists are properly mapped and easy to find by the testprogram itself, we sometimes gave AutomationId’s to the control’s ourselves. To do this, open the XAML file of the page you want to test, and then search for an indication out of which you can derive this section is the section you want to give an AutomationId.
 
-> I wanted to give a unique Id to the list of Studies-searchresults, so I searched the XAML file for a while, tried naming some different grid’s and gridviews, untill I named the right one. Now if I select that list with the Coded UI Test Builder, the name I gave to it will appear as AutomationId, as seen below.
+Example: I gave a unique Id to a list, so I can later easily access the childs of that list
 
->  ![CUITBuilder5](/OverigeDocumenten/Afbeeldingen/CUITBuilder5.PNG)
+ ![Add Assertions met hiërarchie](/OverigeDocumenten/Afbeeldingen/CUITBuilder4.PNG)
+
+I wanted to give a unique Id to the list of Studies-searchresults, so I searched the XAML file for a while, tried naming some different grid’s and gridviews, untill I named the right one. Now if I select that list with the Coded UI Test Builder, the name I gave to it will appear as AutomationId, as seen below.
+
+ ![CUITBuilder5](/OverigeDocumenten/Afbeeldingen/CUITBuilder5.PNG)
 
 ##### Adding popup controls to the UIMap
 Sometimes, we have to add control’s or menu’s to the UIMap that are only visible after clicking a certain button/control. If we just drag the croshair of the CodedUITestBuilder onto the screen, the popupmenu will disappear. A solution for this is using the “Ctrl-i”-combination while hovering over the menu, which will directly select the menu. 
 
-![CUITBuilder6](/OverigeDocumenten/Afbeeldingen/croshair.png)
 
+![crosshair](/OverigeDocumenten/Afbeeldingen/croshair.png)
 
 
 ## 2.3 Maät ontdekken
