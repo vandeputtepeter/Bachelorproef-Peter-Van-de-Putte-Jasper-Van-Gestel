@@ -125,7 +125,7 @@ In dit hoofdstuk worden de denkwijze en opbouw van de testing guideline beschrev
 
 ### 1.2.4 Research
 
-
+Er was heel wat onderzoekwerk gebeurd die uiteindelijk niet geïmplementeerd is geweest omdat de uitkomst van het onderzoek niet positief was. In dit hoofdstuk worden deze onderzoeken besproken en bevindingen hieromtrent neergeschreven.
 
 ### 1.2.5 Conclusies
 
