@@ -109,7 +109,6 @@ Soms moeten er pop-up controls toegevoegd worden aan de UI Map. Dit kan niet zom
 
 ![crosshair](/OverigeDocumenten/Afbeeldingen/croshair.png)
 
-
 ## 2.3 Maät ontdekken
 
 ### 2.3.1 Hiërarchisch navigatie ontwerp
