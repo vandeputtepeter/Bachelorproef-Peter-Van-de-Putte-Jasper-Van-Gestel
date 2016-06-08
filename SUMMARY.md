@@ -9,6 +9,7 @@
 * [Implementatie](Scriptie/Technisch/Implementatie.md)
 * [Conclusies](Scriptie/Technisch/Conclusies.md)
 * [Appendices](Scriptie/Technisch/Appendices.md)
+   * Testing Log
 * [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
 
