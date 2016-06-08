@@ -6,7 +6,7 @@ Het onderwerp van onze thesis is 'Coded UI Testing'.
 
 Dit onderwerp werd toegepast op het "Maät" project, een Windows 10 applicatie die momenteel nog in ontwikkeling is door "Calidos".
 
-Het project "Maät" is vernoemd naar de Oud-Egyptische godin "Maät" of "Ma'at", waar ze staat voor onder meer kosmische orde, waarheid en stabiliteit.
+>De naam "Maät" komt van de Oud-Egyptische godin "Maät" of "Ma'at", waar ze staat voor onder meer kosmische orde, waarheid en stabiliteit.
 
 ### 1.1.1 Stagebedrijf
 
