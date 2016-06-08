@@ -7,6 +7,7 @@
 * [Analyse](Scriptie/Analyse.md)
 * [Design](Scriptie/Design.md)
 * [Implementatie](Scriptie/Implementatie.md)
+* Research
 * [Conclusies](Scriptie/Conclusies.md)
 * [Appendices](Scriptie/Appendices.md)
    * [Testing Guideline](Scriptie/Documenten/Guideline_CUITV2.0.docx)
@@ -16,5 +17,4 @@
    * [Tijdsschatting](Scriptie/Documenten/Tijdschattingcalidos.docx)
 * [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
-* Research
 
