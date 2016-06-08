@@ -21,9 +21,7 @@ Software testing automation of gewoon test automation is het gehele proces waarb
 
 In deze sectie wordt beschreven hoe de coded UI Test Builder werkt en hoe UI Mapping gebeurt voor elk control. Er is heel wat tijd over gegaan vooraleer het duidelijk werd hoe deze testing tool werkte. Daarom zijn er ook regels en beschreven om de (toekomstige) code leesbaar en makkelijk aanpasbaar te maken en houden.
 
-### 2.2.1 Hoe werkt het
-
-#### 2.2.1.1 Een Coded UI Test klasse toevoegen aan het project
+### 2.2.1 Een Coded UI Test klasse toevoegen aan het project
 
 Om een Coded UI Test klasse toe te voegen aan het project zijn volgende stappen noodzakelijk:
 
@@ -37,9 +35,11 @@ Om een Coded UI Test klasse toe te voegen aan het project zijn volgende stappen 
 
  ![Toevoegen van een Coded UI Test klasse](/OverigeDocumenten/Afbeeldingen/CUITBuilder2.PNG)
 
+### 2.2.2 Een UI Map toevoegen aan het project
+
 Om een UI map toe te voegen:
 
-* Doe dezelfde stappen als hiervoor
+* Doe dezelfde stappen als bij "Coded UI Test klasse toevoegen"
 * Selecteer "Coded UI Test Map" in plaats van "Coded UI Test (Windows Store apps)"
 
 Wanneer men een Coded UI Test toevoegd aan het project is het belangrijk om steeds de juiste UI Map toe te voegen als variabele. Bovenaan de Coded UI Test klasse moet steeds een "using" statement toegevoegd worden voor de gecreerde UI Map. Als bijvoorbeeld de UI Map de naam “UIMap_ClinicHubPage” heeft moet er bovenaan staan:
@@ -61,6 +61,8 @@ Onderaan de Coded UI Test klasse moet ook de UI Map property veranderd worden na
 }
 private UIMap_ClinicHubPage map;`
 
+### 2.2.3 Mappen van controls
+
 Als dit gebeurt is, is het mogelijk om tests te beginnen schrijven. Om een test te schrijven moet men eerst controls toevoegen aan de UI Map, het zogenaamde "Mappen van controls". Om dit te doen:
 
 * Rechtsklik op het ".uitest" bestand
@@ -79,19 +81,25 @@ Omdat de Clinical Trials applicatie ‘Maät’ gecreëerd is als een Windows 10
 
 >Om de hiërarchie van controls correct te laten detecteren is het noodzakelijk om elke control een unieke automatisatie ID (UID) te geven. Op het moment van de stageopdracht was deze bij veel controls niet aanwezig, wat een bijkomend probleem opleverde. Meer hierover later.
 
-To make sure control’s or lists are properly mapped and easy to find by the testprogram itself, we sometimes gave AutomationId’s to the control’s ourselves. To do this, open the XAML file of the page you want to test, and then search for an indication out of which you can derive this section is the section you want to give an AutomationId.
+### 2.2.4 Manueel UID's toewijzen
 
-Example: I gave a unique Id to a list, so I can later easily access the childs of that list
+Om zeker te zijn dat controls juist gemapt zullen worden en makkelijk terug te vinden zijn in de toekomst door het testprogramma zelf, is het soms noodzakelijk dat men zelf de UID toewijst. Om dit te doen op een UWP applicatie:
+
+* Open het XAML bestand waar de control zich bevindt
+* Zoek naar de control in het XAML bestand
+* Geef een AutomationId (UID) aan de control
+
+In het voorbeeld hieronder werd een UID gegeven aan een list control. zodat de children van deze list later makkelijker gevonden kunnen worden.
 
  ![Add Assertions met hiërarchie](/OverigeDocumenten/Afbeeldingen/CUITBuilder4.PNG)
 
-I wanted to give a unique Id to the list of Studies-searchresults, so I searched the XAML file for a while, tried naming some different grid’s and gridviews, untill I named the right one. Now if I select that list with the Coded UI Test Builder, the name I gave to it will appear as AutomationId, as seen below.
+Wanneer de UID toegewezen is en men opnieuw de control selecteert met de marker zal de toegewezen naam zichtbaar zijn tussen de eigenschappen van de control.
 
- ![CUITBuilder5](/OverigeDocumenten/Afbeeldingen/CUITBuilder5.PNG)
+ ![AutomationId in Add Assertions venster](/OverigeDocumenten/Afbeeldingen/CUITBuilder5.PNG)
 
-##### Adding popup controls to the UIMap
-Sometimes, we have to add control’s or menu’s to the UIMap that are only visible after clicking a certain button/control. If we just drag the croshair of the CodedUITestBuilder onto the screen, the popupmenu will disappear. A solution for this is using the “Ctrl-i”-combination while hovering over the menu, which will directly select the menu. 
+### 2.2.5 Pop-up controls toevoegen aan de UI Map
 
+Soms moeten er pop-up controls toegevoegd worden aan de UI Map. Dit kan niet zomaar door de marker te gebruiken. Een oplossing hiervoor is het gebruik van "Ctrl + i" wanneer men over de control zweeft die de pop-up voortbrengt. De Coded UI Test Builder zal hierdoor herkennen dat men de pop-up control wil selecteren.
 
 ![crosshair](/OverigeDocumenten/Afbeeldingen/croshair.png)
 
