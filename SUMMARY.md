@@ -11,7 +11,7 @@
 * [Appendices](Scriptie/Appendices.md)
    * [Testing Guideline](Scriptie/Apendices/Guideline_CUITV2.0.docx)
    * Testing Checklist
-   * Testing Log
+   * [Testing Log](Scriptie/Apendices/Log.docx)
    * Bevindingen
    * Tijdsschatting
 * [Glossary](GLOSSARY.md)
