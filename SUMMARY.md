@@ -16,4 +16,5 @@
    * [Tijdsschatting](Scriptie/Documenten/Tijdschattingcalidos.docx)
 * [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
+* Research
 
