@@ -123,11 +123,15 @@ In dit deel wordt gesproken over de denkwijze die toegepast werd op alles rondom
 
 In dit hoofdstuk worden de denkwijze en opbouw van de testing guideline beschreven. Zo zal er aandacht geschonken worden hoe de testing checklist opgebouwd is, telkens kort toegelicht per paradigma / sub-paradigma.
 
-### 1.2.4 Conclusies
+### 1.2.4 Research
+
+
+
+### 1.2.5 Conclusies
 
 Hierin zal uitgebreid uitgelegd worden wat de conclusies zijn die men kan trekken uit deze bachelorproef. Alsook kort toelichten wat er in de toekomst gepland was als bepaalde zaken sneller en/of vlotter hadden vooruitgegaan.
 
-### 1.2.5 Appendices
+### 1.2.6 Appendices
 
 De appendices bestaan voornamelijk uit alle documenten die als "deliverable" worden gezien. We hebben het dus over de Testing Guideline, de Testing Checklist, de Testing Log, de bevindingen voor de ontwikkelaar en de tijdschatting om de applicatie volledig te testen.
 
