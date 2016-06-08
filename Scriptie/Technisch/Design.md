@@ -2,7 +2,7 @@
 
 ## 3.1 Benaming van testmethoden
 
-In dit onderdeel worden een aantal regels beschreven waaraan de namen van alle geschreven testmethodes moeten voldoen. De visie op deze naamgeving is dat men aan de naam van een testmethode alle informatie over wat er getest wordt kan afleiden. De reden hiervoor is, dat wanneer een verslag terugkomt van alle uitgevoerde tests en er bepaalde tests gefaald zijn, er meteen kan worden gezien welk paradigma in de applicatie niet werkt zoals het hoort te werken door gewoon de naam van de testmethode te lezen. Waarom dit paradigma gefaald is wordt weggeschreven in een test-log, waar we later op terugkomen.
+In dit onderdeel worden een aantal regels beschreven waaraan de namen van alle geschreven testmethodes moeten voldoen. De visie op deze naamgeving is dat men aan de naam van een testmethode alle informatie over wat er getest wordt kan afleiden. Wanneer een verslag terugkomt van alle uitgevoerde tests en er bepaalde tests gefaald zijn, kan er meteen worden gezien welk paradigma in de applicatie niet werkt zoals het hoort door gewoon de naam van de testmethode te lezen. Waarom dit paradigma dan gefaald is wordt weggeschreven in een test-log, waar we later op terugkomen.
 
 Na meerdere brainstorm sessies over de benaming van testmethoden zijn we tot het volgende resultaat gekomen:
 
@@ -35,9 +35,9 @@ $$Page name + Paradigm (+ Context) (+ Xaml Control Type Property) (+ Specific In
 
 ## 3.2 Bestandsstructuur
 
->>TODO UPDATEN!!!!!!!!!!!!!!!!!!!!!!
+In dit onderdeel zijn een aantal regels opgesteld voor de onderverdeling van de verschillende testprojecten. De visie hier is dat niet alle tests van het gehele project in één grote klasse mogen geschreven worden (wat de onderhoudbaarheid nagenoeg onmogelijk maakt). Tegelijkertijd mocht er ook niet voor elke testmethode een nieuwe klasse aangemaakt worden, aangezien er dan teveel files zouden ontstaan.
 
-In dit onderdeel zijn een aantal regels opgesteld voor de onderverdeling van de verschillende testprojecten. De visie hier is dat niet alle tests van het gehele project in één grote klasse mogen geschreven worden (wat de onderhoudbaarheid nagenoeg onmogelijk maakt). Tegelijkertijd mocht er ook niet voor elke testmethode een nieuwe klasse aangemaakt worden, aangezien er dan teveel files zouden ontstaan. Als gulden middenweg werd gekozen voor het aanmaken van een nieuwe klasse voor elk hoofdparadigma, per pagina. Voor elke pagina werd ook één UIMap-klasse gemaakt die gebruikt werd in alle testprojecten voor de betreffende pagina. Daarnaast werd beslist dat bij elke pagina die verschillende sub-tabs bevat, elke sub-tab als één volledige pagina beschouwd werd. Deze worden dus onderverdeeld alsof het aparte pagina's zijn. 
+Als gulden middenweg werd gekozen voor het aanmaken van een nieuwe klasse voor elk hoofdparadigma, per pagina. Voor elke pagina werd ook één UIMap-klasse gemaakt die gebruikt werd in alle testprojecten voor de betreffende pagina. Daarnaast werd beslist dat bij elke pagina die verschillende sub-tabs bevat, elke sub-tab als één volledige pagina beschouwd werd. Deze worden dus onderverdeeld alsof het aparte pagina's zijn. 
 
 Door bovenstaande regels in acht te nemen, bekwamen we volgende file structuur: 
 
@@ -49,10 +49,12 @@ Door bovenstaande regels in acht te nemen, bekwamen we volgende file structuur:
     * Base klassen die methoden definieert die overal terugkomen
   * **Groepering**
     * Bijvoorbeeld: Clinic, Patient, ...
-    * **BaseClass per groepering (bvb BaseClassConfigPages)**
+    * **Base-klassen per groepering**
+      * Bijvoorbeeld: BaseClassConfigPages
     * **Pagina**
       * Bijvoorbeeld: ClinicContactsPage, ClinicHubPage,...
-      * **BaseClass per pagina (bvb BaseClassWorkbookConfig)**
+      * **Base-klassen per pagina**
+        * Bijvoorbeeld: BaseClassWorkbookConfig
       * **UIMap**
         * UIMap van de betreffende pagina
       * **Klasse per hoofdparadigma**
