@@ -18,19 +18,19 @@ Voor elke gevonden control/paradigma werd dan ge-analyseerd hoe deze zo effecien
 **!!!!!Tot hier gecheckt!!!!!**
 
 
-Indien we op een volgende pagina weer een nieuwe control/paradigma tegenkomen, zetten we deze bij onderaan onze checklist met gevonden control ‘s/paradigma's. Het is dan weer opnieuw de bedoeling om uit te zoeken hoe we deze kunnen testen en alle voorgaande pagina’s opnieuw af te gaan en te controleren of ook dit element aanwezig is op de pagina en te testen indien nodig, zodat we de pagina weer als getest kunnen verklaren. 
+Indien er op een volgende pagina weer een nieuwe control/paradigma tevoorschijn komt, zetten we deze bij onderaan onze checklist met gevonden control ‘s/paradigma's. Het is dan weer opnieuw de bedoeling om uit te zoeken hoe deze getest kan worden en alle voorgaande pagina’s opnieuw af te gaan en te controleren of ook dit element aanwezig is op de pagina en te testen indien nodig, zodat de pagina weer als getest verklaard kan worden. 
 
 ### 4.1.3 General checklist
 
 Deze checklist bevat de algemene paradigma's die op elke pagina aanwezig zijn. Deze zijn onderverdeeld in een aantal subcategorieën, die later verder onderverdeeld zullen worden.
 
-Op de general checklist staat voor elke pagina een kolom, met daaronder voor elk paradigma of dit volledig getest is voor deze pagina of niet. Het volledig getest-zijn hangt af van de pagina specifieke checklist die we zo meteen gaan bespreken. 
+Op de general checklist staat voor elke pagina een kolom, met daaronder voor elk paradigma of dit volledig getest is voor deze pagina of niet. Het volledig getest-zijn hangt af van de pagina specifieke checklist die verder besproken wordt. 
 
 Onderaan de general checklist staat ook een legende met een letter en een kleur voor elke toestand van het "getest-zijn" van een paradigma (bvb Y van Yes = getest, D van Do = nog te doen, E van Error = probleem bij testen,...)
 
 ### 5.1.4 Paradigm checklist
 
-Aangezien het de bedoeling is dat we paradigma's gaan zoeken, en dan voor elk paradigma uitzoeken hoe we dit moeten gaan testen en nadien documenteren, leek het ons handig om een aparte paradigma-checklist te maken. Hier staan alle paradigma's, onderverdeeld tot op het niveau van specifieke scenario's, die getest moeten worden. Vervolgens staat er een kolom naast deze lijst, met dezelfde kleurcode als in de legende. Deze geeft dus aan of dit paradigma ge-analyseerd is en we dus weten hoe we dit moeten gaan testen. 
+Aangezien het de bedoeling is dat er paradigma's gaan gezocht worden, en dat er dan voor elk paradigma uitgezocht wordt hoe dit moet getest worden, en dit nadien gedocumenteerd moet worden, leek het handig om een aparte paradigma-checklist te maken. Hier staan alle paradigma's, onderverdeeld tot op het niveau van specifieke scenario's, die getest moeten worden. Vervolgens staat er een kolom naast deze lijst, met dezelfde kleurcode als in de legende. Deze geeft dus aan of dit paradigma ge-analyseerd is en dus bekend is hoe dit moet getest worden. 
 
 Wanneer er een nieuw paradigma bijkomt, zal deze dus altijd eerst op groen moeten komen in de paradigma-checklist, vooraleer we dit kunnen gaan testen op de rest van de pagina's. Uiteraard zullen we dit dan wel op één pagina al getest hebben, namelijk de pagina waarop we dit paradigma gevonden en ge-analyseerd hebben. 
 
