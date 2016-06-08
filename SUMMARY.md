@@ -12,6 +12,7 @@
    * Testing Log
    * Testing Guideline
    * Testing Checklist
+   * Tijdsschatting
 * [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
 
