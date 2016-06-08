@@ -13,7 +13,7 @@
    * Testing Checklist
    * [Testing Log](Scriptie/Apendices/Log.docx)
    * [Rapport](Scriptie/Apendices/RapportCalidos.docx)
-   * Tijdsschatting
+   * [Tijdsschatting](Scriptie/Apendices/Tijdschattingcalidos.docx)
 * [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
 
