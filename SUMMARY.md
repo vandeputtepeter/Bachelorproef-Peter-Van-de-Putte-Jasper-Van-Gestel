@@ -9,7 +9,7 @@
 * [Implementatie](Scriptie/Implementatie.md)
 * [Conclusies](Scriptie/Conclusies.md)
 * [Appendices](Scriptie/Appendices.md)
-   * Testing Guideline
+   * [Testing Guideline](Scriptie/Apendices/Guideline_CUITV2.0.docx)
    * Testing Checklist
    * Testing Log
    * Bevindingen
