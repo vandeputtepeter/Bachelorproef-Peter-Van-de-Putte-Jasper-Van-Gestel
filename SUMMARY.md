@@ -8,7 +8,7 @@
 * [Design](Scriptie/Design.md)
 * [Implementatie](Scriptie/Implementatie.md)
 * [Conclusies](Scriptie/Conclusies.md)
-* [Appendices](Scriptie/Technisch/Appendices.md)
+* [Appendices](Scriptie/Appendices.md)
    * Testing Guideline
    * Testing Checklist
    * Testing Log
