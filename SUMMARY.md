@@ -12,8 +12,8 @@
    * Testing Log
    * Testing Guideline
    * Testing Checklist
-   * Tijdsschatting
    * Bevindingen
+   * Tijdsschatting
 * [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
 
