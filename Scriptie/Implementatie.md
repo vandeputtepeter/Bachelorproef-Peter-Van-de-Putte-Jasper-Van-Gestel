@@ -158,7 +158,7 @@ Op pagina's die data bevatten die te maken heeft met één bepaalde studie of é
 Het schrijven van navigatiecode zal hier opnieuw lichtjes verschillen omdat de toegankelijkheid van de hyperlink lichtjes verschilt van de vorige navigaties. De controle gebeurt opnieuw op de titel.
 
 >Voor al deze verschillende navigaties wordt steeds onderzocht hoe de control gevonden kan worden in code, hoe een verwachte waarde gecreëerd kan worden aan de hand van welke gecontroleerd kan worden of de juiste navigatie uitgevoerd werd, hoe dan deze control gebruikt kan worden (meestal klikken, aangezien de verschillende functionaliteiten zoals tab-enter bij navigaties nog niet van belang zijn, deze komen later terug bij functionality) en hoe dan gecontroleerd kan worden dat deze verwachtte waarde aanwezig is na de navigatie. Na elk van deze tests wordt dan ook nog de omgekeerde test gedaan met de backbutton, opnieuw met een verwachtte waarde en een effectieve waarde. Dit zorgt ervoor dat alle mogelijke back-navigaties in de applicatie uiteindelijk getest zijn. Dit geheel wordt zoveel mogelijk in één grote functie per soort navigatie geschreven, zodat als nadien dit soort navigatie nog tevoorschijn komt, de geschreven functie gewoon éénmaal aangeroepen moet worden en er dus geen extra werk meer is.
-!!!!!!!! **tot hier gechecked!!!!!!!**
+
 #### 4.1.6.3 States
 
 De verschillende states van een pagina zijn de verschillende soorten toestanden waarin die pagina zich kan bevinden. Dit zijn:
@@ -177,31 +177,31 @@ De verschillende states van een pagina zijn de verschillende soorten toestanden 
 
 De semantic zoom is een parent-control, die de mogelijkheid bezit om zichzelf in en uit te zoomen. Meestal bevind er zich in de semantic zoom een hub, die onderverdeeld wordt in verschillende hubsecties. Dit zijn allemaal aparte blokken waarin zich een aantal controls bevinden. Bovenaan een hubsectie staat dan de titel van deze hubsectie. Het aantal hubsecties is niet van belang, en ook het aantal controls die in een hubsectie geimplementeerd worden is niet van belang. Dat zijn er zoveel of zo weinig als je zelf wil. 
 
-Wanneer we naar een pagina navigeren met een semantic zoom, staat deze automatisch ingezoomd. Alle hubsecties zijn dan volledig zichtbaar met hun titel en alle controls. Uitzoomen kunnen we doen door "Ctrl-", Ctrl & scrollen, klikken op de hubsectie-titels, PgUp/PgDn&Enter en Tab&Enter. Wanneer we uitzoomen verdwijnen alle volledige hubsecties en komt er in de plaats een lijst met listitems tevoorschijn, waarin alle titels van de hubsecties weergegeven zijn. Zo kunnen we makkelijk navigeren naar een hubsectie die helemaal rechts op het scherm staat en dus nog niet zichtbaar was in de zoomed-in state (toen moesten we er naartoe scrollen). 
+Wanneer naar een pagina met een semantic zoom genavigeerd wordt, staat deze automatisch ingezoomd. Alle hubsecties zijn dan volledig zichtbaar met hun titel en alle controls. Uitzoomen wordt gedaan door "Ctrl-", Ctrl & scrollen, klikken op de hubsectie-titels, PgUp/PgDn&Enter en Tab&Enter. Wanneer uitgezoomd wordt verdwijnen alle volledige hubsecties en komt er in de plaats een lijst met listitems tevoorschijn, waarin alle titels van de hubsecties weergegeven zijn. Zo kan er makkelijk genavigeerd worden naar een hubsectie die helemaal rechts op het scherm staat en dus nog niet zichtbaar was in de zoomed-in state (toen moest er naartoe gescrolld worden). 
 
-Het terug inzoomen kan op dezelfde manier, door te klikken op de listitems, "Ctrl+", Ctrl & scrollen, , PgUp/PgDn&Enter en Tab&Enter. Als we terug inzoomen op een bepaalde hubsectie zal deze links van het scherm getoond worden. 
+Het terug inzoomen kan op dezelfde manier, door te klikken op de listitems, "Ctrl+", Ctrl & scrollen, , PgUp/PgDn&Enter en Tab&Enter. Als er terug ingezoomd wordt op een bepaalde hubsectie zal deze links van het scherm getoond worden. 
 
-Wat we dus moeten testen is dat deze semantic zoom altijd in- en uitzoomt wanneer we de beschreven acties uitvoeren. We gaan dit opnieuw één keer volledig manueel analyseren, en nadien proberen op zo een manier te schrijven in een functie dat we deze functie voor alle pagina's die een semantic zoom bevatten kunnen gebruiken zonder moeite. 
+Wat er dus moet getest worden is dat deze semantic zoom altijd in- en uitzoomt wanneer de beschreven actie uitgevoerd wordt. Dit moet opnieuw één keer volledig manueel ge-analyseerd worden, en nadien op zo een manier beschreven worden in een functie dat deze functie voor alle pagina's die een semantic zoom bevatten bruikbaar is zonder moeite. 
 
-Wat echter ook moet getest worden bij de semantic zoom, is het feit dat de hubsectietitels die in de zoomed-in state weergegeven zijn, ook overeenkomen met de titels die we in de lijst te zien krijgen als we uitzoomen. Ook moeten we controleren of alle hubsecties aanwezig zijn in de zoomed-in en zoomed-out state en dat deze aantallen dus overeen komen. 
+Wat echter ook moet getest worden bij de semantic zoom, is het feit dat de hubsectietitels die in de zoomed-in state weergegeven zijn, ook overeenkomen met de titels die te zien is in de lijst als we uitzoomen. Ook moet gecontroleerd worden of alle hubsecties aanwezig zijn in de zoomed-in en zoomed-out state en dat deze aantallen dus overeen komen. 
 
-Op sommige pagina's bevat de semantic zoom dan ook nog eens content die gebaseerd is op de content veranderingen in de gehele pagina. Zo is het bijvoorbeeld zo dat op de PatientScript page een checkbox in de semantic zoom staat, die aan uit uitgevinkt staat afhankelijk van het feit dat bepaalde info in de pagina is ingevuld of nog leeg is. We moeten dus ook testen dat deze checkboxes bij de zoomed-in en de zoomed-out state overeen komen.
+Op sommige pagina's bevat de semantic zoom dan ook nog eens content die gebaseerd is op de content veranderingen in de gehele pagina. Zo is het bijvoorbeeld zo dat op de PatientScript page een checkbox in de semantic zoom staat, die aan uit uitgevinkt staat afhankelijk van het feit dat bepaalde info in de pagina is ingevuld of nog leeg is. Er moet dus ook getest worden dat deze checkboxes bij de zoomed-in en de zoomed-out state overeen komen.
 
-Ook deze inhoudelijke tests gaan we eerst manueel uitvoeren en daarna in een functie wegschrijven zodat deze later hergebruikt kan worden zonder teveel denkwerk. 
+Ook deze inhoudelijke tests moeten eerst manueel uitgevoerd worden en daarna in een functie weggeschreven worden zodat deze later hergebruikt kan worden zonder teveel denkwerk. 
 
 ##### B. Overlay
 
-Een overlay is een extra stuk scherm dat bovenop een weergegeven scherm komt, wanneer we op een bepaalde knop klikken. De intentie van de overlay is dat we bepaalde data kunnen toevoegen (create) of aanpassen (Update). Meestal bestaat de overlay uit een aantal inputveldjes en een uitvoer-knop. Door deze inputveldjes in te vullen en op de uitvoer-knop te klikken wordt de data die jij net hebt ingevuld toegevoegd of aangepast in de database. 
+Een overlay is een extra stuk scherm dat bovenop een weergegeven scherm komt, wanneer er op een bepaalde  knop geklikt wordt. De intentie van de overlay is dat bepaalde data toegevoegd kan worden (create) of aangepast kan worden (Update). Meestal bestaat de overlay uit een aantal inputveldjes en een uitvoer-knop. Door deze inputveldjes in te vullen en op de uitvoer-knop te klikken wordt de data die jij net hebt ingevuld toegevoegd of aangepast in de database. 
 
-Wat we hier moeten testen zijn verschillende dingen. Eerst en vooral moeten we testen of de overlay initieel niet zichtbaar is. Dan moeten we gaan kijken dat de knop die de bedoeling heeft de overlay te openen dit ook effectief doet. Dan moeten we controleren of de functionaliteit op de overlay zelf werkt naar behoren. Dit kan bijvoorbeeld zijn dat de uitvoer-knop pas actief wordt als bepaalde veldjes zijn ingevuld. Als laatste moeten we dan gaan testen of de overlay ook terug sluit als we op de sluit-knop of de uitvoer-knop klikken. Als we op de uitvoerknop hebben geklikt moeten we controleren of de data die wij hebben ingevoerd doorgevoerd wordt naar de applicatie. 
+Wat hier moet getest worden zijn verschillende dingen. Eerst en vooral moet getest worden of de overlay initieel niet zichtbaar is. Dan moet er gekeken worden dat de knop die de bedoeling heeft de overlay te openen dit ook effectief doet. Dan moeten er gecontroleerd worden of de functionaliteit op de overlay zelf werkt naar behoren. Dit kan bijvoorbeeld zijn dat de uitvoer-knop pas actief wordt als bepaalde veldjes zijn ingevuld. Als laatste moet er getest worden of de overlay ook terug sluit als er op de sluit-knop of de uitvoer-knop geklikt wordt. Als er op de uitvoerknop geklikt wordt moet er gecontroleerd worden of de data die ingevoerd is doorgevoerd wordt naar de applicatie. 
 
 #### 4.1.6.4 Functionality
 
-Onder functionaliteit verstaan we: alles dat te maken heeft met hoe de applicatie werkt, hoe controls werken,...
+Onder functionaliteit valt: alles dat te maken heeft met hoe de applicatie werkt, hoe controls werken,...
 
 ##### A. Speed
 
-Speed heeft alles te maken met de snelheid waarmee de pagina's geladen zijn. Er zijn twee speed paradigmas die we gaan testen. 
+Speed heeft alles te maken met de snelheid waarmee de pagina's geladen zijn. Er zijn twee speed paradigmas die getest worden. 
 * Reaction-speed
 * Reactivity
 
@@ -209,42 +209,42 @@ Speed heeft alles te maken met de snelheid waarmee de pagina's geladen zijn. Er 
 
 De "reaction-speed" of reactiesnelheid is de snelheid waarmee een pagina geladen wordt. Dit is een speciaal soort test, die niet slaagt of faalt, maar een bepaalde waarde moet teruggeven. 
 
-Om dit te testen moeten we dus eerst gaan uitzoeken hoe je nagaat of een pagina geladen is of niet. Vervolgens moeten we uitzoeken hoe we dit kunnen timen en tot slot hoe we deze getimede tijd kunnen opslaan en rapporteren.
+Om dit te testen moet dus eerst uitgezocht worden hoe je nagaat of een pagina geladen is of niet. Vervolgens moet er uitgezocht worden hoe dit kan getimed worden en tot slot hoe deze getimede tijd opgeslagen en gerapporteerd kan worden.
 
 **Reactivity**
 
 Reactiviteit is het kunnen gebruiken van controls vooraleer de pagina volledig geladen is. 
 
-Om dit te testen moeten we dus een manier vinden om te controleren of de pagina al geladen is of nog niet, nadat we de control gebruikt hebben. Als we vorige test succesvol hebben uitgevoerd, weten we hoe we moeten controleren of een pagina geladen is of niet, dus zou dit voor deze test geen probleem mogen zijn. 
+Om dit te testen moet een manier gevonden worden om te controleren of de pagina al geladen is of nog niet, nadat de control gebruikt is. Als de vorige test succesvol uitgevoerd is, is bekend hoe gecontroleerd moet worden of een pagina geladen is of niet, dus zou dit voor deze test geen probleem mogen zijn. 
 
 ##### B. Scrolling
 
 De scroll-functie wordt bij heel veel verschillende soorten vensters gebruikt. Het wordt gebruikt binnen een hub, binnen een combobox, sommige dropdown of popup-menus,...
 
-Om de scroll-functie te testen, moeten we een manier vinden om te controleren of het de controls op het scherm dat we proberen te testen verplaatsen of zijn verplaatst. Vervolgens moeten we dan een manier zoeken om de verschillende soorten scroll-functies uit te voeren. Deze zijn onderandere het muis-scroll-wiel, de scrollbar,...
+Om de scroll-functie te testen, moet een manier gevonden worden om te controleren of de controls op het scherm dat getest wordt verplaatsen of zijn verplaatst. Vervolgens moet dan een manier gezocht worden om de verschillende soorten scroll-functies uit te voeren. Deze zijn onderandere het muis-scroll-wiel, de scrollbar,...
 
 ##### C. Control state verification
 
 Dit is het controleren of de visuele toestand van de controls is hoe deze hoort te zijn. Enkele toestanden kunnen zijn: enabled/disabled, de kleur, de helptext,...
 
-Er zijn ook verschillende scenarios waarvoor we deze toestanden moeten controleren. Je kunt klikken op een control, klikken en vasthouden, hoveren over de control, ... Ook heb je nog de initiele toestand waarin de control zich bevind. 
+Er zijn ook verschillende scenarios waarvoor deze toestanden moeten gecontroleerd worden. Je kunt klikken op een control, klikken en vasthouden, hoveren over de control, ... Ook heb je nog de initiele toestand waarin de control zich bevind. 
 
-De tests zullen dus bestaan uit 2 delen, in het eerste deel creëren we het scenario dat we gaan testen (initeel, hover,...)
-In het tweede deel controleren we de toestand van de control, zich bevindend in dit scenario. 
+De tests zullen dus bestaan uit 2 delen, in het eerste deel wordt het scenario gecreëerd dat getest gaat worden (initeel, hover,...)
+In het tweede deel wordt de toestand van de control gecontroleerd, zich bevindend in dit scenario. 
 
 ##### D. Control accessibility
 
-Als we de toestand van een control gaan testen, gaan we natuurlijk ook de toegankelijkheid testen. Dit wil zeggen dat we gaan testen of je de control kan selecteren door middel van de tab en pijltjes toetsen. We hebben gemerkt dat dit voor sommige controls mogelijk is maar voor andere niet. Indien het mogelijk is moeten we dus uitzoeken hoe we kunnen controleren of er een stippelijn rondom de control zichtbaar is wanneer deze geselecteerd is. Vervolgens kunnen we dan automatisch beginnen tabben of op de pijltjestoetsen drukken in code en controleren of op een gegeven moment deze control geselecteerd is. 
+Als de toestand van een control getest wordt, wordt natuurlijk ook de toegankelijkheid getest. Dit wil zeggen dat er getest wordt of je de control kan selecteren door middel van de tab en pijltjes toetsen. Het werd duidelijk dat dit voor sommige controls mogelijk is maar voor andere niet. Indien het mogelijk is moet er uitgezocht worden hoe er gecontroleerd kan worden of er een stippelijn rondom de control zichtbaar is wanneer deze geselecteerd is. Vervolgens moet er automatisch getabt worden of op de pijltjestoetsen gedrukt worden in code en gecontroleerd worden of op een gegeven moment deze control geselecteerd is. 
 
-Later gaan we ook controleren of we de control kunnen gebruiken met enkele toetsen op het toetsenbord als deze geselecteerd is. 
+Later wordt er ook gecontroleerd of de control gebruikt kan worden met enkele toetsen op het toetsenbord als deze geselecteerd is. 
 
 ##### E. Custom
 
-Onder custom plaatsen we alle functionaliteit die specifiek te maken heeft met de controls zelf, en voor elk type van control alle tests die enkel gelden voor dit soort control. 
+Onder custom valt alle functionaliteit die specifiek te maken heeft met de controls zelf, en voor elk type van control alle tests die enkel gelden voor dit soort control. 
 
 #### 4.1.6.5 Config
 
-Alle config-pagina's van Maät, zijn veruit de meest unieke pagina's in de applicatie. Dit zijn de pagina's met de meeste maar ook de meest complexe functionaliteit, die nergens anders in de applicatie te vinden is. Daarom hebben we beslist om voor deze pagina's een apart paradigma te maken, waarin we al deze unieke gevallen beschrijven en er automatische functies van maken. Deze functies kunnen we dan op alle config-pagina's toepassen. Dit is mogelijk omdat veel controls en elementen op exact dezelfde plaats en in exact dezelfde hiërarchie voorkomen op al deze pagina's. 
+Alle config-pagina's van Maät, zijn veruit de meest unieke pagina's in de applicatie. Dit zijn de pagina's met de meeste maar ook de meest complexe functionaliteit, die nergens anders in de applicatie te vinden is. Daarom is er beslist om voor deze pagina's een apart paradigma te maken, waarin al deze unieke gevallen beschreven worden en er automatische functies van gemaakt worden. Deze functies kunnen dan op alle config-pagina's toepast worden. Dit is mogelijk omdat veel controls en elementen op exact dezelfde plaats en in exact dezelfde hiërarchie voorkomen op al deze pagina's. 
 
 ### 4.1.7 Full checklist (nieuw)
 
