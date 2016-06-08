@@ -3,7 +3,7 @@
 * [Inhoudstabel](SUMMARY.md)
 * [Abstract](README.md)
 * [Dankwoord](Scriptie/Dankwoord.md)
-* [Introductie](Scriptie/Introductie/Introductie.md)
+* [Introductie](Scriptie/Introductie.md)
 * [Analyse](Scriptie/Technisch/AnalyseVereisten.md)
 * [Design](Scriptie/Technisch/Design.md)
 * [Implementatie](Scriptie/Technisch/Implementatie.md)
