@@ -4,9 +4,11 @@ De eerste fase in deze thesis: Het uitzoeken, het begrijpen en het leren werken 
 
 ## 2.1 Definities
 
+Om te kunnen begrijpen waar de thesis om draait is het dus essentieel te weten wat het onderwerp juist is. Daarom zijn volgende termen belangrijk:
+
 **Wat is een "Coded UI Test"?**
 
-Een Coded UI Test stelt developers in staat om tests te creëren die user interaction (UI) kunnen nabootsen / simuleren op software applicaties. De tests hebben onder meer betrekkingen tot:
+Een Coded UI Test stelt ontwikkelaars in staat om tests te creëren die user interaction (UI) kunnen nabootsen / simuleren op software applicaties. De tests hebben onder meer betrekkingen tot:
 
 * Controleren of de applicatie correct opstart
 * Controleren of de navigatie naar specifieke pagina's / modules correct verloopt
@@ -108,7 +110,7 @@ Soms moeten er pop-up controls toegevoegd worden aan de UI Map. Dit kan niet zom
 
 ### 2.3.1 Hiërarchisch navigatie ontwerp
 
-In de eerste fase van onze opdracht is er, zoals eerder vermeld, een hiërarchisch design opgesteld van alle navigatie die in de applicatie "Maät" mogelijk is. Dit gebeurde door alle navigatie uit te proberen en te documenteren naar welke pagina, of eventueel welke sub-pagina, een knop leidt. Zo kon er niet alleen een handig overzicht gecreëerd worden waarin we konden zien welke schermen het belangrijkste zijn, maar ook welke (voorlopig) minder belangrijk waren en gaf dit het bijkomende voordeel dat de applicatie verkend kon worden. Dit werd handig bij het verdere verloop van het project.
+In de eerste fase van de opdracht is er, zoals eerder vermeld, een hiërarchisch design opgesteld van alle navigatie die in de applicatie "Maät" mogelijk is. Dit gebeurde door alle navigatie uit te proberen en te documenteren naar welke pagina, of eventueel welke sub-pagina, een knop leidt. Zo kon er niet alleen een handig overzicht gecreëerd worden waarin we konden zien welke schermen het belangrijkste zijn, maar ook welke (voorlopig) minder belangrijk waren en gaf het een bijkomend voordeel, namelijk: de applicatie kon verkend worden. Wat dan weer handig was voor het verdere verloop van het project.
 
 Het hiërarchisch design vertrekt vanuit de "ClinicHubPage". Dit is de hoofdpagina waarop men terecht komt als de applicatie gestart wordt (Na het inloggen). Van hieruit is een boomstructuur getekend naar alle pagina's waarnaar navigatie mogelijk is vanuit de "ClinicHubPage" (Zie afbeelding onder voor voorbeeld). Vervolgens is er voor elke hub-pagina een nieuw bestand gemaakt waarin dezelfde werkwijze gevolgd is als bij de "ClinicHubPage", namelijk al deze pagina's laten vertakken vanuit de respectievelijke pagina. 
 
