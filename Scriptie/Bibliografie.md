@@ -24,7 +24,7 @@
 * http://www.codeproject.com/Articles/172391/UIAutomation-Coded-UI-Tests-AutomationPeer-and-WPF
 * http://stackoverflow.com/questions/10699795/vs-team-test-multiple-test-initialize-methods-in-test-class
 * https://msdn.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide
-* https://nl.wikipedia.org/wiki/Ma%C3%A4t
+* https://www.wikipedia.org/
 * http://www.calidos.be/site/public/nl/Home/Home.aspx
 * http://stackoverflow.com/questions/14304449/why-coded-ui-test-automation-is-important
 * https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx
