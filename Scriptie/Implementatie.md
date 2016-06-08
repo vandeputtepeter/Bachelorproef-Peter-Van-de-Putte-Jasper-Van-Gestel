@@ -328,7 +328,7 @@ Hierin wordt het algemene plan van aanpak beschreven die voor elke pagina hetzel
 
 Hier staat voor elke pagina apart beschreven hoe er te werk gegaan wordt om deze specifieke pagina te testen (of een specifieke groep van pagina's). 
 
-## 4.3 How to test
+## 4.3 How To Test
 
 In dit onderdeel word algemeen beschreven hoe een test opgebouwd wordt en hoe deze werkt. Hier gaat het dus niet meer om hoe de applicatie Maät getest moet worden, maar echt hoe het Coded UI framework van Visual Studio in elkaar zit. 
 
