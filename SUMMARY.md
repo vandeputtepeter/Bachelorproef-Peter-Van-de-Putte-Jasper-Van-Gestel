@@ -7,7 +7,7 @@
 * [Analyse](Scriptie/Analyse.md)
 * [Design](Scriptie/Design.md)
 * [Implementatie](Scriptie/Implementatie.md)
-* Research
+* [Research](Scriptie/research.md)
 * [Conclusies](Scriptie/Conclusies.md)
 * [Appendices](Scriptie/Appendices.md)
    * [Testing Guideline](Scriptie/Documenten/Guideline_CUITV2.0.docx)
