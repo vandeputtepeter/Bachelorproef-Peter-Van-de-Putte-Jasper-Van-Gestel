@@ -113,7 +113,7 @@ Er zijn echter ook nadelen bij coded UI tests:
 
 ### 1.2.1 Analyse
 
->TODO korte beschrijving
+Hier wordt beschreven hoe testing op de applicatie moet gebeuren. Om tot deze bevindingen te komen was het noodzakelijk de Coded UI Test Builder te leren kennen en gebruiken.
 
 ### 1.2.2 Design
 
