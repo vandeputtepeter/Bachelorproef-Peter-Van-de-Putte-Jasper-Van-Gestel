@@ -29,4 +29,12 @@
 * http://stackoverflow.com/questions/14304449/why-coded-ui-test-automation-is-important
 * https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx
 * https://www.visualstudio.com/en-us/products/tfs-overview-vs.aspx
-* 
+* https://msdn.microsoft.com/en-us/library/windows/apps/hh454036.aspx
+* https://technet.microsoft.com/en-us/windows/store-for-business.aspx?f=255&MSPPError=-2147217396
+* https://blogs.windows.com/buildingapps/2015/11/16/increase-your-apps-reach-with-windows-store-for-business/
+* http://www.comparex-group.com/web/com/about/press/2016/setting-up-a-store-with-microsoft-store-for-business.htm
+* https://technet.microsoft.com/nl-nl/library/mt592935%28v=vs.85%29.aspx
+* https://channel9.msdn.com/Events/Windows/Developers-Guide-to-Windows-10-Version-1511/Windows-10-for-Business-Publishing-apps-to-the-Business-Store
+* https://www.microsoft.com/nl-be/server-cloud/products/microsoft-intune/features.aspx
+* https://www.youtube.com/watch?v=Hk8OmXWbG30
+* https://technet.microsoft.com/en-us/library/hh441740.aspx
