@@ -12,7 +12,7 @@
    * [Testing Guideline](Scriptie/Documenten/Guideline_CUITV2.0.docx)
    * [Testing Checklist](Scriptie/Apendices/TestingChecklistNotes.md)
    * [Testing Log](Scriptie/Documenten/Log.docx)
-   * [Rapport](Scriptie/Apendices/RapportCalidos.docx)
+   * [Rapport](Scriptie/Documenten/RapportCalidos.docx)
    * [Tijdsschatting](Scriptie/Apendices/Tijdschattingcalidos.docx)
 * [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
