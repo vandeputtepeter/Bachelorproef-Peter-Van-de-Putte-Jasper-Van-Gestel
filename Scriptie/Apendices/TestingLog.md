@@ -1,3 +1,0 @@
-# Testing log
-
->TODO: Aanvullen
