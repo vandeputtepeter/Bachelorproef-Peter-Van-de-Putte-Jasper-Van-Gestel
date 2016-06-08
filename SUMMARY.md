@@ -10,8 +10,8 @@
 * [Conclusies](Scriptie/Technisch/Conclusies.md)
 * [Appendices](Scriptie/Technisch/Appendices.md)
    * Testing Guideline
-   * Testing Log
    * Testing Checklist
+   * Testing Log
    * Bevindingen
    * Tijdsschatting
 * [Glossary](GLOSSARY.md)
