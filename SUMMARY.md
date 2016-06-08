@@ -10,7 +10,7 @@
 * [Conclusies](Scriptie/Conclusies.md)
 * [Appendices](Scriptie/Appendices.md)
    * [Testing Guideline](Scriptie/Apendices/Guideline_CUITV2.0.docx)
-   * Testing Checklist
+   * [Testing Checklist](Scriptie/Apendices/TestingChecklistNotes.md)
    * [Testing Log](Scriptie/Apendices/Log.docx)
    * [Rapport](Scriptie/Apendices/RapportCalidos.docx)
    * [Tijdsschatting](Scriptie/Apendices/Tijdschattingcalidos.docx)
