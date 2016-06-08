@@ -9,8 +9,8 @@
 * [Implementatie](Scriptie/Technisch/Implementatie.md)
 * [Conclusies](Scriptie/Technisch/Conclusies.md)
 * [Appendices](Scriptie/Technisch/Appendices.md)
-   * Testing Log
    * Testing Guideline
+   * Testing Log
    * Testing Checklist
    * Bevindingen
    * Tijdsschatting
