@@ -6,7 +6,7 @@
 * [Introductie](Scriptie/Introductie.md)
 * [Analyse](Scriptie/Analyse.md)
 * [Design](Scriptie/Design.md)
-* [Implementatie](Scriptie/Technisch/Implementatie.md)
+* [Implementatie](Scriptie/Implementatie.md)
 * [Conclusies](Scriptie/Technisch/Conclusies.md)
 * [Appendices](Scriptie/Technisch/Appendices.md)
    * Testing Guideline
