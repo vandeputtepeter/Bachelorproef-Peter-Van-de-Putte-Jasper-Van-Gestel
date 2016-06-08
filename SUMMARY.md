@@ -13,6 +13,7 @@
    * Testing Guideline
    * Testing Checklist
    * Tijdsschatting
+   * Bevindingen
 * [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
 
