@@ -46,11 +46,14 @@ Om een UI map toe te voegen:
 
 Wanneer men een Coded UI Test toevoegd aan het project is het belangrijk om steeds de juiste UI Map toe te voegen als variabele. Bovenaan de Coded UI Test klasse moet steeds een "using" statement toegevoegd worden voor de gecreerde UI Map. Als bijvoorbeeld de UI Map de naam “UIMap_ClinicHubPage” heeft moet er bovenaan staan:
 
- `using Calidos.Maat.CodedUITests.Screens.Clinic.ClinicHub.UIMap_ClinicHubPageClasses;`
+ ```
+ using Calidos.Maat.CodedUITests.Screens.Clinic.ClinicHub.UIMap_ClinicHubPageClasses;
+ ```
 
 Onderaan de Coded UI Test klasse moet ook de UI Map property veranderd worden naar iets zoals volgende lijnen code:
  
-`public UIMap_ClinicHubPage UIMapClinicHub
+```
+public UIMap_ClinicHubPage UIMapClinicHub
 {
   get
   {
@@ -61,7 +64,8 @@ Onderaan de Coded UI Test klasse moet ook de UI Map property veranderd worden na
     return map;
   }
 }
-private UIMap_ClinicHubPage map;`
+private UIMap_ClinicHubPage map;
+```
 
 ### 2.2.3 Mappen van controls
 
