@@ -11,6 +11,7 @@
 * [Appendices](Scriptie/Technisch/Appendices.md)
    * Testing Log
    * Testing Guideline
+   * Testing Checklist
 * [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
 
