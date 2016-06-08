@@ -33,30 +33,30 @@ Onderaan de general checklist staat ook een legende met een letter en een kleur 
 Aangezien het de bedoeling is dat er paradigma's gaan gezocht worden, en dat er dan voor elk paradigma uitgezocht wordt hoe dit moet getest worden, en dit nadien gedocumenteerd moet worden, leek het handig om een aparte paradigma-checklist te maken. Hier staan alle paradigma's, onderverdeeld tot op het niveau van specifieke scenario's, die getest moeten worden. Vervolgens staat er een kolom naast deze lijst, met dezelfde kleurcode als in de legende. Deze geeft dus aan of dit paradigma ge-analyseerd is en dus bekend is hoe dit moet getest worden. 
 
 Wanneer er een nieuw paradigma bijkomt, zal deze dus altijd eerst op groen moeten komen in de paradigma-checklist, vooraleer dit getest kan worden op de rest van de pagina's. Uiteraard zal dit dan wel op één pagina al getest zijn, namelijk de pagina waarop dit paradigma gevonden is en ge-analyseerd is. 
-**!!!!!Tot hier gecheckt!!!!!**
+
 ### 4.1.5 Example-page + Page checklists
 
-Vervolgens komen we dan tot de pagina-specifieke checklist. Hierin staan de algemene paradigma's van de general checklist verder onderverdeeld zoals bij de paradigma-checklist. Bovenaan splitsen we de pagina dan op in al zijn aparte control's, die we gaan gebruiken om tests uit te voeren. Voor elke control hebben we ook de parent-control gedocumenteerd, zodat het duidelijk is over welke control het gaat. 
+Vervolgens is er de pagina-specifieke checklist. Hierin staan de algemene paradigma's van de general checklist verder onderverdeeld zoals bij de paradigma-checklist. Bovenaan wordt de pagina dan opgesplitst in al zijn aparte control's, die worden gebruikt om tests uit te voeren. Voor elke control is ook de parent-control gedocumenteerd, zodat het duidelijk is over welke control het gaat. 
 
-Op de example-page hebben we enkele control's gezet die op elke pagina terugkomen, zoals de backbutton of de home-knop. 
+Op de example-page zijn enkele control's aanwezig die op elke pagina terugkomen, zoals de backbutton of de home-knop. 
 
-Wanneer we dus een nieuw paradigma vinden, zal dit eerst in de paradigm checklist terecht komen. Vervolgens zetten we dit paradigma over op de example-page en nadien op alle andere page-checklists. Wanneer we beginnen met een nieuwe pagina te testen en dus een page-checklist maken voor deze pagina, kunnen we gewoon rechtstreeks de example-page kopiëren en plakken, en vervolgens alle pagina-specifieke control's toevoegen.
+Wanneer een nieuw paradigma gevonden wordt, zal dit eerst in de paradigm checklist terecht komen. Vervolgens komt paradigma op de example-page en nadien op alle andere page-checklists. Wanneer er begonnen wordt met een nieuwe pagina te testen en dus een page-checklist gemaakt wordt voor deze pagina, kan de example-page rechtstreeks gekopiërd en geplakt worden, en kunnen vervolgens alle pagina-specifieke control's toegevoegd worden.
 
-Op de page checklist staat opnieuw aangeduid welk paradigma getest is en welk niet, volgens de kleurcode in de legende op de general checklist, met als verschil dat deze hier nog eens onderverdeeld worden per control. We analyseren dus voor elke control welk paradigma van toepassing is en duiden dan de status aan volgens de kleurcode. 
+Op de page checklist staat opnieuw aangeduid welk paradigma getest is en welk niet, volgens de kleurcode in de legende op de general checklist, met als verschil dat deze hier nog eens onderverdeeld worden per control. Er wordt dus voor elke control ge-analyseerd welk paradigma van toepassing is en dan wordt de status volgens de kleurcode aangeduid. 
 
 ### 4.1.6 Full checklist (eerste versie)
 
-In onze guideline staat de volledig uitgeschreven versie van de checklist. Hierin staat voor elk puntje in de lijst beschreven wat het exact inhoud onder "what?". Dit is een korte beschrijving van wat er getest wordt en wat de elementen die in de test gebruikt worden horen te doen. 
+In de guideline staat de volledig uitgeschreven versie van de checklist. Hierin staat voor elk puntje in de lijst beschreven wat het exact inhoud onder "what?". Dit is een korte beschrijving van wat er getest wordt en wat de elementen die in de test gebruikt worden horen te doen. 
 
 Vervolgens staat onder "how?" een stappenplan beschreven dat je moet volgen om die specifieke test uit te voeren. 
 
-In deze checklist proberen we zo specifiek en zo duidelijk mogelijk te zijn, zodat het ook voor een eventuele opvolger helemaal duidelijk is wat exact de bedoeling is van deze test en wat de verschillende control's en elementen horen te doen wanneer ze gebruikt worden op de beschreven manier. 
+In deze checklist hoort zo specifiek en zo duidelijk mogelijk te zijn, zodat het ook voor een eventuele opvolger helemaal duidelijk is wat exact de bedoeling is van deze test en wat de verschillende control's en elementen horen te doen wanneer ze gebruikt worden op de beschreven manier. 
 
 Merk op dat deze checklist later nogmaals veranderd is. Bij deze de uitleg over de eerste versie van de checklist (de uiteindelijke volgt nog): 
 
 #### 4.1.6.1 Content
 
-In deze sectie gaan we alle paradigma's beschrijven die betrekking hebben tot de inhoud van control's en tekstvelden. Alle informatie die in de user-interface beschikbaar is die uit de database komt, of aangepast kan worden, komt onder het paradigma "content". 
+In deze sectie worden alle paradigma's beschreven die betrekking hebben tot de inhoud van control's en tekstvelden. Alle informatie die in de user-interface beschikbaar is die uit de database komt, of aangepast kan worden, komt onder het paradigma "content". 
 
 Er zijn 4 verschillende handelingen die uitgevoerd kunnen worden op info in de control's. Deze 4 staan beter bekend als de CRUD-acties. (Create, Read, Update, Delete)
 
@@ -64,13 +64,13 @@ Er zijn 4 verschillende handelingen die uitgevoerd kunnen worden op info in de c
 
 "Create" wil zeggen dat je nieuwe data gaat toevoegen aan de database. Een voorbeeld hiervan is het toevoegen van een nieuwe patiënt of een nieuwe studie. Je vult alle velden in die relevant zijn en klikt dan op "toevoegen", wat ervoor zorgt dat er in de database een patiënt bijkomt die nog niet bestond.
 
-Om dit paradigma te testen, moeten we eerst gaan uitzoeken op welk deel van de applicatie het toevoegen van nieuwe data invloed heeft. Vervolgens kunnen we dan data toevoegen (door tekstveldjes in te vullen, staat beschreven in de guideline). tot slot moeten we dan gaan controleren of de data veranderd is waar deze moest veranderen. Voor die controle hebben we een "Read"-functie nodig, dus create en read zijn deels verweven met elkaar. 
+Om dit paradigma te testen, moet eerst uitgezocht worden op welk deel van de applicatie het toevoegen van nieuwe data invloed heeft. Vervolgens kan data toegevoegd worden (door tekstveldjes in te vullen, staat beschreven in de guideline). tot slot moet gecontroleerd worden of de data veranderd is waar deze moest veranderen. Voor die controle is een "Read"-functie nodig, dus create en read zijn deels verweven met elkaar. 
 
 >Voorbeeld: Ik voeg een nieuwe studie toe. Dit doe ik door een overlay te openen waarin een aantal tekstveldjes staan en een knop "toevoegen". Ik vul deze veldjes in en klik op de knop. Vervolgens navigeer ik naar de pagina waar de lijst met alle studies staat en loop ik over deze lijst om te controleren dat de studie die ik net heb toegevoegd aanwezig is in de lijst. Wanneer al deze stappen succesvol zijn uitgevoerd, is mijn test geslaagd.
 
 ##### B. Read
 
-"Read" wil zeggen dat je gaat controleren of bestaande data, die aanwezig zou moeten zijn in de user-interface, ook effectief aanwezig is. Om dit te testen moeten we gaan uitzoeken hoe we enerzijds tekstvelden en eventueel andere control's kunnen gaan uitlezen, en anderzijds hoe we deze kunnen vergelijken met de effectieve data in de database. 
+"Read" wil zeggen dat je gaat controleren of bestaande data, die aanwezig zou moeten zijn in de user-interface, ook effectief aanwezig is. Om dit te testen moet uitgezocht worden hoe enerzijds tekstvelden en eventueel andere control's uitgelezen kunnen worden, en anderzijds hoe deze vergeleken kunnen worden met de effectieve data in de database. 
 
 Er zijn verschillende scenario's die onder "Read" vallen.
 
@@ -78,9 +78,9 @@ Er zijn verschillende scenario's die onder "Read" vallen.
 
 Buiten het zoek-algoritme, welke een speciaal geval van "read" is, bestaat een read-test eruit om te gaan controleren dat de data die weergegeven wordt in de user-interface correct is. 
 
-Een voorbeeld is dat we naar de TrialHubPage navigeren. Hierin staat alle data die te maken heeft met een bepaalde studie. Deze pagina gedraagt zich qua functionaliteit altijd hetzelfde, maar de data die weergegeven wordt hangt af van de studie waarop we geklikt hebben. De bedoeling van de read-test is dan om te gaan controleren of de data die we te zien krijgen in de user-interface dezelfde is als de data die we verwachten na een bepaalde navigatie. 
+Een voorbeeld is dat er naar de TrialHubPage genavigeerd wordt. Hierin staat alle data die te maken heeft met een bepaalde studie. Deze pagina gedraagt zich qua functionaliteit altijd hetzelfde, maar de data die weergegeven wordt hangt af van de studie waarop geklikt is. De bedoeling van de read-test is dan om te gaan controleren of de data die zichtbaar is in de user-interface dezelfde is als de data die verwacht wordt na een bepaalde navigatie. 
 
-We kunnen dit enerzijds hardcoded controleren, door eerst manueel de navigatie uit te voeren en dan alle data die we zien in code te schrijven als assertions (assertions worden later uitgelegd). Anderzijds kunnen we datadriven tests schrijven, waarbij de data die we gebruiken in de test afkomstig is van een database (wordt ook later uitgelegd). 
+Dit kan enerzijds hardcoded gecontroleerd worden, door eerst manueel de navigatie uit te voeren en dan alle data die zichtbaar is in code te schrijven als assertions (assertions worden later uitgelegd). Anderzijds kunnen datadriven tests geschreven worden, waarbij de data die we gebruiken in de test afkomstig is van een database (wordt ook later uitgelegd). 
 
 ##### C. Update/delete
 
@@ -92,16 +92,16 @@ Update en delete vallen binnen deze applicatie onder dezelfde tab, aangezien het
 
 ##### D. Custom
 
-Onder deze tab gaan we alle speciale gevallen plaatsen die nog bij content horen. Onder deze speciale gevallen horen bijvoorbeeld: het zoek-algoritme, de partpickers (wordt zo meteen besproken),...
+Onder deze tab worden alle speciale gevallen geplaatst die nog bij content horen. Onder deze speciale gevallen horen bijvoorbeeld: het zoek-algoritme, de partpickers (wordt zo meteen besproken),...
 
 **Zoek-algoritme**
 
-Dit het algoritme dat de zoekfunctie doet werken. Er zijn 3 verschillende testscenario's die we hierop gaan moeten uitvoeren.
-1. We moeten testen of alle mogelijke parameters waarop we kunnen zoeken zoekresultaten opleveren. Het kan bijvoorbeeld zijn dat het zoekalgoritme zo is ingesteld dat je kan zoeken op de studienaam, patientnaam,... 
+Dit het algoritme dat de zoekfunctie doet werken. Er zijn 3 verschillende testscenario's die hierop uitgevoerd moeten worden.
+1. Er moet getest worden of alle mogelijke parameters waarop we kunnen zoeken zoekresultaten opleveren. Het kan bijvoorbeeld zijn dat het zoekalgoritme zo is ingesteld dat je kan zoeken op de studienaam, patientnaam,... 
 
-  Het soort parameters waarop we kunnen zoeken gaan we zelf analyseren. Nadien schrijven we hier tests voor.
-2. Vervolgens moeten we controleren of alle zoekresultaten die weergegeven worden het zoekwoord bevatten dat we hebben ingegeven. Hiervoor moeten we een speciaal soort read-functie schrijven, waar we later meer over zullen vertellen. 
-3. Als derde moeten we controleren of alle objecten in de database, die voldoen aan onze zoekterm, ook effectief worden weergegeven. Het is één ding dat alle zoekresultaten de zoekterm bevatten, maar het zou natuurlijk altijd kunnen dat een aantal zoekresultaten die in de database wel effectief bestaan, niet worden weergegeven. In dat geval zou de vorige test wel werken, maar zou er toch nog een fout in het zoek-algoritme zitten. Vandaar dat deze derde test noodzakelijk is om het zoek-algoritme volledig te testen.
+  Het soort parameters waarop gezocht kan worden moet manueel ge-analyseerd worden. Nadien worden hier tests voor geschreven.
+2. Vervolgens moet gecontroleerd worden of alle zoekresultaten die weergegeven worden het zoekwoord bevatten dat ingegeven is. Hiervoor moet een speciaal soort read-functie geschreven worden, waar later meer over verteld wordt. 
+3. Als derde moeten gecontroleerd worden of alle objecten in de database, die voldoen aan de zoekterm, ook effectief worden weergegeven. Het is één ding dat alle zoekresultaten de zoekterm bevatten, maar het zou natuurlijk altijd kunnen dat een aantal zoekresultaten die in de database wel effectief bestaan, niet worden weergegeven. In dat geval zou de vorige test wel werken, maar zou er toch nog een fout in het zoek-algoritme zitten. Vandaar dat deze derde test noodzakelijk is om het zoek-algoritme volledig te testen.
 
 ##### E. Part-pickers
 
@@ -113,27 +113,27 @@ De aangepaste waarde accepteren kan ook door op enter te klikken.
 
 Telkens je een waarde accepteert/weigert verdwijnt het popup-venster terug. 
 
-Het testen van deze partpickers is tot nu toe nog niet gelukt, aangezien we geen enkele manier hebben gevonden om in testcode de partpicker te kunnen zien. 
+Het testen van deze partpickers is tot nu toe nog niet gelukt, aangezien er geen enkele manier gevonden is om in testcode de partpicker te kunnen zien. 
 
 #### 4.1.6.2 Navigations
 
-Het volgende grote paradigma zijn de navigaties binnen de applicatie. Onder navigaties verstaan we alle acties die ervoor zorgen dat de applicatie een ander scherm opendoet. Ook de zoekfunctie behoort tot navigaties, aangezien we hier ook naar een ander scherm gaan. Het verschil tussen de CRUD-tests voor de zoekfunctie en de navigatietests is echter dat we bij de navigatietests niet gaan controleren welke zoekdata weergegeven wordt, maar enkel of we op de zoekresultatenpagina terecht komen (ClinicSearch). 
+Het volgende grote paradigma zijn de navigaties binnen de applicatie. Onder navigaties vallen alle acties die ervoor zorgen dat de applicatie een ander scherm opendoet. Ook de zoekfunctie behoort tot navigaties, aangezien we hier ook naar een ander scherm gaan. Het verschil tussen de CRUD-tests voor de zoekfunctie en de navigatietests is echter dat bij de navigatietests niet gecontroleerd wordt welke zoekdata weergegeven wordt, maar enkel of er naar de zoekresultatenpagina genavigeerd wordt (ClinicSearch). 
 
-Om een navigatie te testen zijn er dus in grote lijnen 2 handelingen die we moeten uitvoeren. Enerzijds moeten we de actie uitvoeren die zorgt voor de navigatie (meestal klikken op een control). Anderzijds moeten we gaan controleren of de juiste pagina wordt geopend nadat deze actie is uitgevoerd. 
+Om een navigatie te testen zijn er dus in grote lijnen 2 handelingen die we moeten uitvoeren. Enerzijds moete de actie uitvoerd worden die zorgt voor de navigatie (meestal klikken op een control). Anderzijds moeten gecontroleerd worden of de juiste pagina wordt geopend nadat deze actie is uitgevoerd. 
 
-Deze controle kan voor elke pagina anders zijn, maar de werkwijze is steeds dezelfde: we zoeken een control of een set van controls die uniek zijn voor de desbetreffende pagina, en controleren dan of deze controls aanwezig zijn, of dat ze de juiste waarde bevatten (bvb titels). 
+Deze controle kan voor elke pagina anders zijn, maar de werkwijze is steeds dezelfde: er wordt een control of een set van controls die uniek zijn voor de desbetreffende pagina gezocht, en gecontroleerd of deze controls aanwezig zijn, of dat ze de juiste waarde bevatten (bvb titels). 
 
 ##### A. Soorten navigations
 
-Paradigmagewijs zijn alle navigations natuurlijk hetzelfde. Maar in manier van testen hebben we de navigaties verder onderverdeeld in sub-paradigma's, waarbij elk sub-paradigma een lichtjes andere manier van testen omvat. 
+Paradigmagewijs zijn alle navigations natuurlijk hetzelfde. Maar in manier van testen zijn de navigaties verder onderverdeeld in sub-paradigma's, waarbij elk sub-paradigma een lichtjes andere manier van testen omvat. 
 
 **Variabele controls**
 
-Hieronder verstaan we het concept van een lijst, waarin zich allemaal verschillende gevallen bevinden van een bepaald opject. Dit kan bijvoorbeeld zijn: een lijst van studies, een lijst van patienten,... Het aantal items in de lijst staat nooit vast, aangezien het afhangt van hoeveel studies/patienten/... er zich in de database bevinden. Dit kan voortdurend wijzigen. Ook de tekst op deze controls hangt af van de data in de database. 
+Hieronder valt het concept van een lijst, waarin zich allemaal verschillende gevallen bevinden van een bepaald opject. Dit kan bijvoorbeeld zijn: een lijst van studies, een lijst van patienten,... Het aantal items in de lijst staat nooit vast, aangezien het afhangt van hoeveel studies/patienten/... er zich in de database bevinden. Dit kan voortdurend wijzigen. Ook de tekst op deze controls hangt af van de data in de database. 
 
 Als je op één van de controls in deze lijst klikt, zal je altijd op dezelfde pagina terecht komen. Hoe deze pagina is ingevuld hangt echter af van de control waarop je geklikt hebt.
 
-Om dit te testen moeten we dus enerzijds zorgen dat we kunnen klikken op de control, en nadien moeten we controleren of de titel van de pagina naarwaar we genavigeerd zijn overeen stemt met de control waarop we geklikt hebben. 
+Om dit te testen moet er dus enerzijds voor gezorgd worden dat de control aanklikbaar is, en nadien moet gecontroleerd worden of de titel van de pagina naarwaar genavigeerd werd overeen stemt met de control waarop geklikt is. 
 
 **Vaste controls**
 
@@ -141,24 +141,24 @@ Vaste controls zijn controls die altijd op een pagina aanwezig zijn, ongeacht de
 
 Het aantal vaste controls op een pagina is altijd dezelfde, en deze staan ook altijd op dezelfde plaats gepositioneerd, enkel kan het zijn dat de tekst in deze controls varieert op basis van de data die zich in de database bevind. 
 
-Om deze controls te testen moeten we ook klikken op de control, maar de concrete klikfunctie voor deze testmethode zal lichtjes verschillen van de variabele controls, aangezien de manier om toegang te krijgen tot de control anders zal zijn. De controle of de navigatie juist gebeurd is is opnieuw een controle op de titel van de pagina waarnaar we genavigeerd hebben, en eventueel een controle op de state van deze pagina (bvb: staat de juiste tab open? Staan de elementen in de pagina juist ge-ordend? ...).
+Om deze controls te testen moet ook geklikt worden op de control, maar de concrete klikfunctie voor deze testmethode zal lichtjes verschillen van de variabele controls, aangezien de manier om toegang te krijgen tot de control anders zal zijn. De controle of de navigatie juist gebeurd is is opnieuw een controle op de titel van de pagina waarnaar genavigeerd werd, en eventueel een controle op de state van deze pagina (bvb: staat de juiste tab open? Staan de elementen in de pagina juist ge-ordend? ...).
 
 **Zoekfunctie**
 
-De zoekfunctie vanuit de ClinicHubPage kan ook beschouwd worden als een navigatie. Als we puur het navigatiegedeelte gaan testen hiervan, moeten we geen rekening meer houden met het algoritme dat zorgt voor de correcte zoekresultaten, maar enkel met het feit dat er genavigeerd wordt naar de zoekresultatenpagina. 
+De zoekfunctie vanuit de ClinicHubPage kan ook beschouwd worden als een navigatie. Als puur het navigatiegedeelte hiervan getest wordt, moet er geen rekening gehouden worden met het algoritme dat zorgt voor de correcte zoekresultaten, maar enkel met het feit dat er genavigeerd wordt naar de zoekresultatenpagina. 
 
-Opnieuw zal dit een klein verschil geven in het schrijven van code, aangezien we deze keer niet moeten klikken op een control, maar eerst een zoekwoord moeten ingeven en nadien enteren of klikken op het vergrootglas naast het zoekvak. 
+Opnieuw zal dit een klein verschil geven in het schrijven van code, aangezien er deze keer niet moet geklikt worden op een control, maar er eerst een zoekwoord moet ingeven worden en nadien ge-enterd moet worden of geklikt moet worden op het vergrootglas naast het zoekvak. 
 
-De controle gaan we opnieuw doen op de titel van de zoekresultatenpagina. 
+De controle gebeurt opnieuw op de titel van de zoekresultatenpagina. 
 
 **Hyperlink-navigatie**
 
-Op pagina's die data bevatten die te maken heeft met één bepaalde studie of één bepaalde patiënt (of eventueel nog andere objecten die we in de toekomst nog zouden kunnen tegenkomen), staat bovenaan steeds een hyperlink met de naam van dit object. Als we hierop klikken, komen we op de overzichtpagina van dat object (bvb studie->TrialHub, patiënt->PatientHub, ...)
+Op pagina's die data bevatten die te maken heeft met één bepaalde studie of één bepaalde patiënt (of eventueel nog andere objecten die in de toekomst zouden kunnen tevoorschijn komen), staat bovenaan steeds een hyperlink met de naam van dit object. Als hierop geklikt wordt, verschijnt de overzichtpagina van dat object (bvb studie->TrialHub, patiënt->PatientHub, ...)
 
 Het schrijven van navigatiecode zal hier opnieuw lichtjes verschillen omdat de toegankelijkheid van de hyperlink lichtjes verschilt van de vorige navigaties. De controle gebeurt opnieuw op de titel.
 
->Voor al deze verschillende navigaties gaan we steeds onderzoeken hoe we de control kunnen vinden in code, hoe we een verwachte waarde kunnen creëren aan de hand van welke we kunnen controleren of de juiste navigatie uitgevoerd werd, hoe we dan deze control kunnen gebruiken (meestal klikken, aangezien de verschillende functionaliteiten zoals tab-enter bij navigaties nog niet van belang zijn, deze komen later terug bij functionality) en hoe we dan kunnen controleren dat deze verwachtte waarde aanwezig is na de navigatie. Na elk van deze tests gaan we dan ook nog de omgekeerde test doen met de backbutton, opnieuw met een verwachtte waarde en een effectieve waarde. Dit zorgt ervoor dat alle mogelijke back-navigaties in de applicatie uiteindelijk getest zijn. Dit geheel gaan we zoveel mogelijk in één grote functie per soort navigatie proberen te schrijven, zodat als we nadien dit soort navigatie nog tegenkomen, we gewoon éénmaal de geschreven functie kunnen aanroepen en dus geen extra werk meer hebben.
-
+>Voor al deze verschillende navigaties wordt steeds onderzocht hoe de control gevonden kan worden in code, hoe een verwachte waarde gecreëerd kan worden aan de hand van welke gecontroleerd kan worden of de juiste navigatie uitgevoerd werd, hoe dan deze control gebruikt kan worden (meestal klikken, aangezien de verschillende functionaliteiten zoals tab-enter bij navigaties nog niet van belang zijn, deze komen later terug bij functionality) en hoe dan gecontroleerd kan worden dat deze verwachtte waarde aanwezig is na de navigatie. Na elk van deze tests wordt dan ook nog de omgekeerde test gedaan met de backbutton, opnieuw met een verwachtte waarde en een effectieve waarde. Dit zorgt ervoor dat alle mogelijke back-navigaties in de applicatie uiteindelijk getest zijn. Dit geheel wordt zoveel mogelijk in één grote functie per soort navigatie geschreven, zodat als nadien dit soort navigatie nog tevoorschijn komt, de geschreven functie gewoon éénmaal aangeroepen moet worden en er dus geen extra werk meer is.
+!!!!!!!! **tot hier gechecked!!!!!!!**
 #### 4.1.6.3 States
 
 De verschillende states van een pagina zijn de verschillende soorten toestanden waarin die pagina zich kan bevinden. Dit zijn:
