@@ -7,7 +7,7 @@
 * [Analyse](Scriptie/Analyse.md)
 * [Design](Scriptie/Design.md)
 * [Implementatie](Scriptie/Implementatie.md)
-* [Conclusies](Scriptie/Technisch/Conclusies.md)
+* [Conclusies](Scriptie/Conclusies.md)
 * [Appendices](Scriptie/Technisch/Appendices.md)
    * Testing Guideline
    * Testing Checklist
