@@ -113,7 +113,7 @@ Er zijn echter ook nadelen bij coded UI tests:
 
 ### 1.2.1 Analyse
 
-Hier wordt beschreven hoe testing op de applicatie moet gebeuren. Om tot deze bevindingen te komen was het noodzakelijk de Coded UI Test Builder te leren kennen en gebruiken.
+Om tot de bevindingen te komen in dit onderdeel was het noodzakelijk de testing tools en de applicatie te leren kennen en gebruiken. Wanneer men een basisbegrip heeft van deze onderwerpen kunnen we dieper ingaan op hoe testing effectief gebeurd.
 
 ### 1.2.2 Design
 
@@ -129,7 +129,7 @@ Hierin zal uitgebreid uitgelegd worden wat de conclusies zijn die men kan trekke
 
 ### 1.2.5 Appendices
 
->TODO korte beschrijving
+De appendices bestaan voornamelijk uit alle documenten die als "deliverable" worden gezien. We hebben het dus over de Testing Guideline, de Testing Checklist, de Testing Log, de bevindingen voor de ontwikkelaar en de tijdschatting om de applicatie volledig te testen.
 
 ## 1.3 Gebruikte tools en technologieën
 
