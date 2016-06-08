@@ -5,7 +5,7 @@
 * [Dankwoord](Scriptie/Dankwoord.md)
 * [Introductie](Scriptie/Introductie.md)
 * [Analyse](Scriptie/Analyse.md)
-* [Design](Scriptie/Technisch/Design.md)
+* [Design](Scriptie/Design.md)
 * [Implementatie](Scriptie/Technisch/Implementatie.md)
 * [Conclusies](Scriptie/Technisch/Conclusies.md)
 * [Appendices](Scriptie/Technisch/Appendices.md)
