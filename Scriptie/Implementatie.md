@@ -377,7 +377,7 @@ Omdat er manueel nog variabelen moeten meegegeven worden in het stadium waar de 
 
 #### 4.4.1.4 Result XML
 
-Deze XML zal het gegenereerde XML bestand zijn dat voortkomt uit het .trx bestand dat de tests zelf op hun beurt voortbrachten. Belangrijk is om te weten wat er in dit bestand aanwezig is. Het bevat volgende syntax:
+Deze XML zal het gegenereerde XML bestand zijn dat voortkomt uit het .trx bestand dat de tests zelf op hun beurt voortbrachten. Belangrijk is om te weten wat er in dit bestand aanwezig is. Het Result XML bestand bevat volgende syntax:
 
 ```
 <Test TestId=”Test Name” CategoryId =”Category GUID” ObjectId=”Object GUID” ResultLabel=”Outcome”>
@@ -412,11 +412,51 @@ Om te begrijpen hoe de tool werkt is het noodzakelijk de output te begrijpen. In
 
 #### 4.4.2.2 Definition XML
 
-De Definition XML is het document waar manueel de assen van de tabel worden gedefineerd. 
+De Definition XML is het document waar manueel de assen van de tabel worden gedefineerd. Hier worden de GUID's toegewezen aan elk scherm of control en elke paradigma. Het Definition XML bestand bevat volgende syntax:
 
 ```
 <Category id="Category GUID" name="Paradigm" info="Description" level="">
 <Object id="Object GUID" name="Screen / Control" info="Description" level="">
 ```
+
+* CategoryId / ObjectId
+  * Het ID, geschreven als een GUID
+* Name
+  * Paradigma of scherm/control naam
+  * Moet uniek zijn
+* Level
+  * Het level object zal gecalculeerd worden en moet daarom dus niet gedefineerd worden aangezien het toch overschreven zal worden
+
+#### 4.4.2.3 Target XML
+
+Het Target XML bestand defineerd een doel voor elke testcase. Het Target XML bestand bevat volgende syntax:
+
+```
+<Target TargetName="Description" CategoryId="Category GUID" ObjectId="Object GUID" TargetLabel="Label"/>
+```
+
+* TargetName
+  * Descriptieve naam van de category of het object (in leesbare tekst)
+  * Gedaan, enkel om het beter begrijpbaar te maken (GUID alleen is niet leesbaar genoeg)
+* CategoryId
+  * Het ID van de category, geschreven als een GUID
+* ObjectId
+  * Het ID van het object, geschreven als een GUID
+* TargetLabel
+  * Bevat één van vier mogelijke staten:
+    * To Do (Deze testcase vereist een test)
+    * Not To Do (Deze testcase vereist geen test)
+    * Unknown (Deze testcase is nog niet geanalyseerd)
+    * Done (Deze testcase is manueel toegekend als zijnde 100% compleet)
+
+#### 4.4.2.4 XSD bestanden
+
+
+
+
+
+
+
+
 
 
