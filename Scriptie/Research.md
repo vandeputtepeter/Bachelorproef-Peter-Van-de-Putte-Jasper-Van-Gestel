@@ -1,58 +1,10 @@
 # 5 Research
 
-## 5.1 Geïmplementeerde research
+## 5.1 Niet-geïmplementeerde research
 
-### 5.1.1 Self-extracting zip
+### 5.1.1 Windows Store For Business (SFB)
 
-#### 5.1.1.1 Probleemstelling
-
-
-
-#### 5.1.1.2 Oplossing
-
-- ionic zip
-- dotnetzip
-
-
-
-```
-private static void CreateZip(DirectoryInfo dirToZip, FileInfo zipFile, FileInfo exe)
-{
-    //Location where the SFX will extract to:
-    string extractDir = @"%TEMP%/Maat";
-
-    //We can't create an SFX with SharpZipLib (we do have added a 3rd party way to do this, but this doesn't open the dir after unzipping.
-    //DotNetZip nowadays allows for SFX's as well:
-    using (ZipFile zip = new Ionic.Zip.ZipFile(zipFile.FullName))
-    {
-        zip.AddDirectory(dirToZip.FullName);
-        zip.Comment = "Calidos Maät";
-        var options = new SelfExtractorSaveOptions
-        {
-            Flavor = SelfExtractorFlavor.WinFormsApplication,
-            DefaultExtractDirectory = extractDir,
-            ExtractExistingFile = ExtractExistingFileAction.OverwriteSilently,
-            RemoveUnpackedFilesAfterExecute = false,
-
-            //Set to non-interactive, so the user doesn't have to do anything. We do define the location where the files will be extracted to though.
-            Quiet = true,
-
-            //Launch the extracted path after unzipping:
-            PostExtractCommandLine = "cmd /c start \"\" \"" + extractDir + "\"",
-            
-            SfxExeWindowTitle = "Extracting Maät Client...",
-        };
-
-        zip.SaveSelfExtractor(exe.FullName, options);
-    }
-}
-```
-
-## 5.2 Niet-geïmplementeerde research
-
-### 5.2.1 Windows Store For Business (SFB)
-
-#### 5.2.1.1 Opdracht
+#### 5.1.1.1 Opdracht
 
 Tijdens de stage is er de vraag geweest van Calidos om een diepere kijk te nemen betreffende de Windows Store For Business met het oog op het distribueren van de applicatie. Enkele doelen werden opgelijst
 
@@ -67,7 +19,7 @@ Bijkomend na eerste fase in research:
 
 - Hoe kan Windows Intune ons hierbij helpen
 
-#### 5.2.1.2 Resultaten van research
+#### 5.1.1.2 Resultaten van research
 
 Hieronder de conclusies die opgelijst werden na diepgaand onderzoek naar de Store For Business.
 
@@ -101,19 +53,19 @@ Hieronder de conclusies die opgelijst werden na diepgaand onderzoek naar de Stor
           - Ook meteen verwijderd wanneer werknemer of device niet meer in het bedrijf werkt/hoort
       - Kostprijs: Rond de 5 euro per maand per gebruiker (volgens Microsoft website, maar is onderhevig aan veranderingen.)
 
-#### 5.2.1.3 Bevindingen van Calidos
+#### 5.1.1.3 Bevindingen van Calidos
 
 Er waren teveel factoren die verhinderde om de applicatie te distribueren en de applicatie tegelijk aan alle voorwaarden te laten voldoen die noodzakelijk waren. Er werd dus gekozen om deze weg niet op te gaan en het probleem op te lossen via een side-loading verhaal.
 
-### 5.2.2 Data Driven UI Tests
+### 5.1.2 Data Driven UI Tests
 
-#### 5.2.2.1 Wat zijn data driven UI tests
+#### 5.1.2.1 Wat zijn data driven UI tests
 
 Alle variabele logica binnen de code van de UI tests zou altijd apart moeten worden gehouden, bijvoorbeeld in een database of datatabel. Deze data noemt men dan de test dataset of dataconfiguratie. Het voordeel hierbij is, dat men een grotere code coverage zal creëren op de betreffende UI test. Data driven tests zijn dus tests die op zich maar 1 enkele functie uittesten (gewoonlijk zijn dit lees en verificatietests) maar toegepast worden op een breed stuk code dankzij de dataset die ter beschikking gesteld wordt.
 
 > In het onderzoek naar data driven tests is er gebruik gemaakt van CSV bestanden als datatabel (via Excel)
 
-#### 5.2.2.2 Hoe gebruik ik data driven UI tests
+#### 5.1.2.2 Hoe gebruik ik data driven UI tests
 
 normale testmethode:
 
@@ -161,11 +113,73 @@ TestContext.DataRow["columnName"].ToString();
 ```
 De testmethode zal de rest van de test herhalen voor elke rij data in de datafile.
 
-#### 5.2.2.3 Bevindingen
+#### 5.1.2.3 Bevindingen
 
 Er is vroeg gekeken naar data driven tests omdat het mogelijk was dat er van bij de start dan op een bepaalde manier gewerkt moest worden om de tests op te stellen. Er is heel kort de intentie geweest om zoveel mogelijk data driven te gaan doen. Hoewel dit absoluut aan de orde was geweest op lange termijn was het niet interessant genoeg om heel diep in het data-driven-test-wereldje te duiken en te concluderen dat alles getest zou zijn geweest van een welbepaald onderwerp, maar praktisch niets van de gehele applicatie. De documentatie over data driven tests is dus geen verloren moeite, maar het uitvoeren en in gebruik nemen van dit type tests zou eerder voor de toekomst zijn. 
 
-### 5.2.3 Test Automation (Integratie in Build-straat)
+### 5.1.3 Test Automation (Integratie in Build-straat)
 
-#### 5.2.3.1 
+#### 5.1.3.1 
 
+## 5.2 Geïmplementeerde research
+
+### 5.2.1 Self-extracting zip
+
+#### 5.2.1.1 Probleemstelling
+
+Door het update probleem dat zich nog steeds voordeed na de research naar de Windows Store For Business bleef het grootste probleem dat er niet genoeg vertrouwen is in de gebruiker om het update proces juist en makkelijk te laten verlopen. Calidos vroeg hierdoor om een oplossing te creëren in verband met het extracten van de geüpdate vesie.
+
+Van Calidos uit gaven ze ook de hint mee om de "self-extracting zip" even te bekijken als oplossing voor dit probleem.
+
+#### 5.2.1.2 Oplossing
+
+De self-extracting zip of SFX is een zip bestand dat zichzelf uitpakt en daarna zichzelf, via een extra script, kan installeren. Het voordeel hierbij is dat men zo veel mogelijk user interaction vermijd en garandeert dat alles correct geïnstalleerd wordt. De enige user interaction zal de bevestiging van uitpakken en installeren zijn.
+
+Bij het uitzoeken naar welke library hiervoor  het meest geschikt was zijn er 2 libraries de revue gepasseerd:
+
+ - SharpZipLib
+   - 
+ - DotNetZip
+   - 
+
+
+Origineel is er gewerkt met de DotNetZip
+
+- sharpziplib
+- ionic zip
+- dotnetzip
+
+
+
+```
+private static void CreateZip(DirectoryInfo dirToZip, FileInfo zipFile, FileInfo exe)
+{
+    //Location where the SFX will extract to:
+    string extractDir = @"%TEMP%/Maat";
+
+    //We can't create an SFX with SharpZipLib (we do have added a 3rd party way to do this, but this doesn't open the dir after unzipping.
+    //DotNetZip nowadays allows for SFX's as well:
+    using (ZipFile zip = new Ionic.Zip.ZipFile(zipFile.FullName))
+    {
+        zip.AddDirectory(dirToZip.FullName);
+        zip.Comment = "Calidos Maät";
+        var options = new SelfExtractorSaveOptions
+        {
+            Flavor = SelfExtractorFlavor.WinFormsApplication,
+            DefaultExtractDirectory = extractDir,
+            ExtractExistingFile = ExtractExistingFileAction.OverwriteSilently,
+            RemoveUnpackedFilesAfterExecute = false,
+
+            //Set to non-interactive, so the user doesn't have to do anything. We do define the location where the files will be extracted to though.
+            Quiet = true,
+
+            //Launch the extracted path after unzipping:
+            PostExtractCommandLine = "cmd /c start \"\" \"" + extractDir + "\"",
+            
+            SfxExeWindowTitle = "Extracting Maät Client...",
+        };
+
+        zip.SaveSelfExtractor(exe.FullName, options);
+    }
+}
+```
