@@ -174,3 +174,4 @@ De Coded UI Test Builder is een onderdeel van het testing framework dat voorzien
 
 ### 1.3.7 Xsd2Code++
 
+Xsd2code++ is een Add-in voor Microsoft Visual Studio die code genereerd uit XSD bestanden. Het maakt als het ware objecten in Visual Studio die beschreven zijn in XML-vorm in de XSD schema's. Deze tool is gebruikt in de thesis bij het creëren van HTML in de Result Management Tools.
