@@ -140,6 +140,8 @@ Omdat de testcontroller op de TFS moest aangemaakt worden (om zo meerdere testag
 
 Vanwege het laatste probleem is ook dit onderzoek aan de kant geschoven. Al leverde dit wel een extra stimulans op voor Calidos om te overwegen om de TFS 2013 te upgraden naar TFS 2015 of TFS "in the Cloud".
 
+Dit stukje kan ook teruggevonden worden in de Testing Guideline onder het hoofdstuk "Automation: Adding Coded UI Tests to the build street"
+
 ## 5.2 Geïmplementeerde research
 
 ### 5.2.1 Self-extracting zip
