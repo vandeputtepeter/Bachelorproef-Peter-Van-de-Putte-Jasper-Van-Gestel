@@ -55,7 +55,7 @@ Hieronder de conclusies die opgelijst werden na diepgaand onderzoek naar de Stor
 
 #### 5.1.1.3 Bevindingen van Calidos
 
-Er waren teveel factoren die verhinderde om de applicatie te distribueren en de applicatie tegelijk aan alle voorwaarden te laten voldoen die noodzakelijk waren. Er werd dus gekozen om deze weg niet op te gaan en het probleem op te lossen via een side-loading verhaal.
+Er waren teveel factoren die verhinderde om de applicatie te distribueren en de applicatie tegelijk aan alle voorwaarden te laten voldoen die noodzakelijk waren. De Windows Store For Business nam 12 uur de tijd om een nieuwe versie te distribueren. Dit was te lang. Er werd dan gevraagd om het "Windows Intune" verhaal te bekijken. Deze deed ook niet volledig naar wens wat gezocht werd. Daarom is er beslist om andere mogelijkheden te bekijken.
 
 ### 5.1.2 Data Driven UI Tests
 
@@ -121,6 +121,8 @@ Er is vroeg gekeken naar data driven tests omdat het mogelijk was dat er van bij
 
 #### 5.1.3.1 
 
+
+
 ## 5.2 Geïmplementeerde research
 
 ### 5.2.1 Self-extracting zip
@@ -138,18 +140,20 @@ De self-extracting zip of SFX is een zip bestand dat zichzelf uitpakt en daarna 
 Bij het uitzoeken naar welke library hiervoor  het meest geschikt was zijn er 2 libraries de revue gepasseerd:
 
  - SharpZipLib
-   - 
+   - GNU GPL Library voor .NET dat het mogelijk maakt om Zip's, GZip's, Tar's en BZip2's te creëren en uit te pakken
+   - Volledig in C# geschreven.
+
+
  - DotNetZip
-   - 
+   - Open software (Ms-PL) library voor .NET dat het mogelijk maakt om Zip's, BZip2's, CRC's en Zipstreams te creëren en uit te pakken.
+   - Maakt gebruik van ionic Zip DLL.
 
 
-Origineel is er gewerkt met de DotNetZip
+Origineel is er gewerkt met de DotNetZip om Zip's aan te maken in het Maät project. Omdat er na een eerste onderzoek niet heel veel informatie beschikbaar was over een SFX binnen deze library, is geprobeerd met de SharpZipLib library te werken. Deze werkte vrijwel goed. Het nadeel was echter dat deze gebruik maakte van een extern opgestelde bitstream om de Zip te genereren. Deze bitstream zorgde voor problemen na enkele tests.
 
-- sharpziplib
-- ionic zip
-- dotnetzip
+Na verder onderzoek is er beslist om toch met de DotNetZip library te werken. Er is verder gezocht naar bruikbare informatie omtrent het creëren van Zip's, die uiteindelijk ook werd gevonden. Na enkele tests met deze library werkte de code zoals gewenst. De code is hieronder terug te vinden. Belangrijk om te weten is, dat de PostExtractCommandLine enkele keren herschreven is moeten worden omdat er enkele " **/** " of " **"** " misten of teveel geschreven waren.
 
-
+#### 5.2.1.3 Code: SFX creatie
 
 ```
 private static void CreateZip(DirectoryInfo dirToZip, FileInfo zipFile, FileInfo exe)
