@@ -10,7 +10,6 @@
 * [Research](Scriptie/Research.md)
 * [Conclusies](Scriptie/Conclusies.md)
 * [Appendices](Scriptie/Appendices.md)
-   * [Testing Checklist](Scriptie/Apendices/TestingChecklistNotes.md)
    * [Testing Log](Scriptie/Documenten/Log.docx)
    * [Rapport](Scriptie/Documenten/RapportCalidos.docx)
    * [Tijdsschatting](Scriptie/Documenten/Tijdschattingcalidos.docx)
