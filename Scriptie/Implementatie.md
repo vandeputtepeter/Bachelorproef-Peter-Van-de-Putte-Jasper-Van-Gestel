@@ -402,13 +402,21 @@ Deze tool is de tool waar het allemaal om te doen is als men spreekt over het we
 
 #### 4.4.2.1 HTML bestand: Result tabel
 
-Om te begrijpen hoe de tool werkt is het noodzakelijk de output te begrijpen. In dit geval genereerd de tool een HTML bestand. Hierin wordt een tabel weergegeven die de progressie van het testen van de applicatie weergeeft. 
+Om te begrijpen hoe de tool werkt is het noodzakelijk de output te begrijpen. In dit geval genereerd de tool een HTML bestand. Hierin wordt een tabel weergegeven die de progressie van het testen van de applicatie weergeeft. De tabel is opgebouwd uit twee assen die de schermen en paradigma's weerrgeven en heel wat cellen die de status van elke testcase weergeven. Een cel kent 5 staten:
 
+* Passed (100% Completion of test case)
+* Failed (< 100% Completion of test case)
+* To Do	(This test case does not have a test written for it)
+* Not To Do (This test case does not need a test written for it)
+* Unknown (This test case is not yet been analyzed)
 
+#### 4.4.2.2 Definition XML
 
+De Definition XML is het document waar manueel de assen van de tabel worden gedefineerd. 
 
-
-
-
+```
+<Category id="Category GUID" name="Paradigm" info="Description" level="">
+<Object id="Object GUID" name="Screen / Control" info="Description" level="">
+```
 
 
