@@ -38,3 +38,6 @@
 * https://www.microsoft.com/nl-be/server-cloud/products/microsoft-intune/features.aspx
 * https://www.youtube.com/watch?v=Hk8OmXWbG30
 * https://technet.microsoft.com/en-us/library/hh441740.aspx
+* https://icsharpcode.github.io/SharpZipLib/
+* https://dotnetzip.codeplex.com/
+* 
