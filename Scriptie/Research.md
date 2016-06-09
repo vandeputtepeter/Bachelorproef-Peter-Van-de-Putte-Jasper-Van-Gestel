@@ -128,15 +128,17 @@ Omdat er een hele hoop tests geschreven waren en de tijdsduur van deze tests te 
 - Is het mogelijk om de tests op virtual machines uit te voeren
 - Zijn er speciale vereisten om dit mogelijk te maken
 
-#### 5.1.3.2 Bevindingen
+#### 5.1.3.2 Onderzoek naar implementatie in de build-straat
 
-**Is het mogelijk om de tests op virtual machines uit te voeren**
+Er werd een virtual machine opgezet om dit te kunnen testen. Het zou te makkelijk geweest zijn als er geen probleem zou opduiken: Al doet men de uitvoer van de tests op een virtual machine, men heeft altijd een scherm, muis en toetsenbord nodig. Deze tests kunnen niet op de achtergrond worden uitgevoerd omdat deze dan niet meer overeenkomen met een "werkelijke" testomgeving.
 
-Ja. Dat was meteen duidelijk. Er werd een virtual machine opgezet om dit te laten gebeuren. Maar het zou te makkelijk geweest zijn als er geen probleem zou opduiken. Ook al doet men de uitvoer van de tests op een virtual machine, men heeft altijd een scherm, muis en toetsenbord nodig. Deze tests kunnen niet op de achtergrond worden uitgevoerd omdat deze dan niet meer overeenkomen met een "werkelijke" testomgeving.
+Er was dus nood aan een beter concept om deze testing uit te voeren. Daarom werd gekeken naar testsettings, test agents en test controllers. Wanneer hiermee getest is geweest, doken er al snel (nog meer) problemen op. Het voornaamste en grootste probleem was, dat men een omgeving moest opstarten waar de applicatie kon gedeployed worden. Dit hield in dat men een virtual machine moest creëren waarop Windows 10 OS geïnstalleerd stond. Visual Studio 2015 moest ook aanwezig zijn om de test agents en test controllers op toe te kennen.
 
-Er was dus nood aan een beter concept om deze testing uit te voeren. Daarom werd gekeken naar testsettings, 
+Omdat de testcontroller op de TFS moest aangemaakt worden (om zo meerdere testagents toe te wijzen) werd dit geprobeerd op de TFS 2013 van Calidos. Wanneer we spreken over 2013 wil dit zeggen dat in dit jaar nog helemaal geen spraken was van Windows 10. Met andere woorden. Een testcontroller aanmaken die Windows 10 als doel-OS heeft is hier dus onmogelijk.
 
+#### 5.1.3.3 Bevindingen
 
+Vanwege het laatste probleem is ook dit onderzoek aan de kant geschoven. Al leverde dit wel een extra stimulans op voor Calidos om te overwegen om de TFS 2013 te upgraden naar TFS 2015 of TFS "in the Cloud".
 
 ## 5.2 Geïmplementeerde research
 
