@@ -125,3 +125,19 @@ Bij elke tak is (op de pijl) geschreven welke knop of handeling ervoor zorgt dat
 
 ## 2.4 Planning
 
+
+### Testing + checklist
+
+
+Om de applicatie Maät te testen, moeten verschillende stappen doorlopen worden. Stap 1 is het leren werken met de coded-UI technologie zelf, er kan immers niet getest worden zonder kennis over de werking van deze technologie. Vervolgens is het de bedoeling om deze technologie toe te passen op enkele kleine projectjes, om zo vertrouwd te geraken met de code en technieken. 
+
+Vervolgens is het de bedoeling om uit te zoeken hoe de tests voor Maät het beste kunnen geschreven worden. Er wordt dan rekening gehouden met hoe de applicatie is opgebouwd, eventuele moeilijkheden die zich voordoen, wat de belangrijkste dingen zijn die getest moeten worden. Dit gebeurt simultaan met het opstellen van de testing checklist, waarbij alle elementen die getest moeten worden onder elkaar geschreven worden in verschillende categoriën. Bij het opstellen van de checklist zullen al een aantal tests geschreven worden (voor elk paradigma een aantal tests) maar wordt er nog niet zoveel in de breedte getest. 
+
+Tot slot wanneer de checklist volledig af is, wordt de applicatie in de breedte getest. Dit wil zeggen dat alle elementen in de checklist voor elke pagina geanalyseerd worden (moet dit getest worden of niet) en nadien ook allemaal getest worden. Deze kunnen dan allemaal als getest gemarkeerd worden in de checklist. 
+
+
+### Testresultaten
+
+Het schrijven van de tests is één ding. Maar wanneer deze tests zijn uitgevoerd, is het uiteraard ook de bedoeling dat er resultaten weergegeven kunnen worden. Daarom is het noodzakelijk om een tool te ontwikkelen die de testresultaten kan verwerken en op een overzichtelijke en eenvoudige manier kan rapporteren aan de projectleider. 
+
+
