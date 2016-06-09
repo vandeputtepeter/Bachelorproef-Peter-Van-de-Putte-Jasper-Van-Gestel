@@ -40,4 +40,5 @@
 * https://technet.microsoft.com/en-us/library/hh441740.aspx
 * https://icsharpcode.github.io/SharpZipLib/
 * https://dotnetzip.codeplex.com/
+* https://www.visualstudio.com/en-us/docs/test/lab-management/test-machines/install-configure-test-agents
 * 
