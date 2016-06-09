@@ -498,7 +498,13 @@ Bestaat uit nog eens acht verschillende methoden
   * CreateFailedDiv
     * Maken van gefaalde tests wrapper
 
-#### 4.4.2.5 Resultaat
+#### 4.4.2.5 Extra functionaliteit
+
+Er is ook veel tijd gekropen in het "bruikbaar" maken van de matrix. Een oneindig doorlopende reeks van schermen en controls langs de ene, en een hele hoop paradigmas op de andere as zou resulteren in miljoenen cellen. Deze moeten allemaal zichtbaar gemaakt **kunnen** worden. Maar het is niet handig om een overzicht te krijgen met miljoenen cellen als we maar kort willen kijken hoe de testprocedure ervoor staat. Dus, als oplossing, was het noodzakelijk dat de schermen en controls, alsook de paradigmas inklapbaar werden gemaakt zodat er een beter overzicht kon gecreërd worden indien de gebruiker dit wenst.
+
+In de toekomst was het ook gepland om de headers te laten zweven, zodat het ten alle tijden duidelijk was waar men zich bevond tijdens het scrollen. Heirvoor was echter niet genoeg tijd weggelegd.
+
+#### 4.4.2.6 Resultaat
 
 Het resultaat is dan de HTML tabel met alle resultaten van de tests, zichtbaar in onderstaande afbeelding.
 
