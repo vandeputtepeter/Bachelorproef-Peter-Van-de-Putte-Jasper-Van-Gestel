@@ -15,18 +15,15 @@ Er werd gestart met de basispagina’s die de meest gebruikte paradigma's/contro
 
 Voor elke gevonden control/paradigma werd dan ge-analyseerd hoe deze zo effecient mogelijk getest kon worden. Deze methode werd dan gedocumenteerd zodat eventuele opvolgers deze altijd terug kunnen raadplegen wanneer nodig. Er werd ook gedocumenteerd welke control ’s en paradigma's reeds getest zijn geweest, tot alles getest is voor de specifieke pagina. Op het moment dat alle paradigma's op alle controls die deze paradigma's toepassen getest zijn, wordt een pagina als volledig getest verklaard.
 
-
-
-
 Indien er op een volgende pagina weer een nieuwe control/paradigma tevoorschijn komt, zetten we deze bij onderaan onze checklist met gevonden control ‘s/paradigma's. Het is dan weer opnieuw de bedoeling om uit te zoeken hoe deze getest kan worden en alle voorgaande pagina’s opnieuw af te gaan en te controleren of ook dit element aanwezig is op de pagina en te testen indien nodig, zodat de pagina weer als getest verklaard kan worden. 
 
 ### 4.1.3 General checklist
 
-Deze checklist bevat de algemene paradigma's die op elke pagina aanwezig zijn. Deze zijn onderverdeeld in een aantal subcategorieën, die later verder onderverdeeld zullen worden.
+Deze checklist bevat de algemene paradigma's die op elke pagina aanwezig zijn. Ze zijn onderverdeeld in een aantal subcategorieën, die later verder onderverdeeld zullen worden.
 
-Op de general checklist staat voor elke pagina een kolom, met daaronder voor elk paradigma of dit volledig getest is voor deze pagina of niet. Het volledig getest-zijn hangt af van de pagina specifieke checklist die verder besproken wordt. 
+Op de general checklist staat voor elke pagina een kolom, met daaronder voor elk paradigma of dit volledig getest is voor deze pagina of niet. Men verklaard een pagina als volledig getest wanneer de pagina specifieke checklist, die verder besproken wordt, volledig is afgewerkt. 
 
-Onderaan de general checklist staat ook een legende met een letter en een kleur voor elke toestand van het "getest-zijn" van een paradigma (bvb Y van Yes = getest, D van Do = nog te doen, E van Error = probleem bij testen,...)
+Onderaan de general checklist staat ook een legende met een letter en een kleur die de test-status voorstelt van een paradigma (bijvoorbeeld: Y van Yes = getest, D van Do = nog te doen, E van Error = probleem bij testen,...)
 
 ### 5.1.4 Paradigm checklist
 
@@ -105,7 +102,7 @@ Dit het algoritme dat de zoekfunctie doet werken. Er zijn 3 verschillende testsc
 
 ##### E. Part-pickers
 
-Part-pickers zijn speciale knoppen waarmee je een datum of een tijd kan instellen. Door op de knop te klikken, verschijnt er een popup-venster. In dit venster staan een aantal verschillende tabs. Elk van deze tabs bevat een aantal blokken met waarden gaande van bvb 0-30/maandag-vrijdag/januari-december/... Door over deze blokken te hoveren met de muis en te scrollen, verschuiven ze, waardoor je de waarde aanpast. Er is altijd 1 van tab geselecteerd die je kan aanpassen. Bij het hoveren met de muis wordt de tab waarover je hovert automatisch geselecteerd. Je kan echter ook met de pijltjestoetsen van links naar rechts gaan om andere tabs te selecteren. Als je met de pijltjestoetsen van boven naar beneden gaat verschuif je de geselecteerde tab altijd met 2 waardes per keer. Met het scroll-wiel van de muis verplaats je de geselecteerde tab met 1 waarde per keer. 
+Part-pickers zijn speciale knoppen waarmee je een datum of een tijd kan instellen. Door op de knop te klikken, verschijnt er een popup-venster. In dit venster staan een aantal verschillende tabs. Elk van deze tabs bevat een aantal blokken met waarden gaande van bijvoorbeeld 0-30/maandag-vrijdag/januari-december/... Door over deze blokken te hoveren met de muis en te scrollen, verschuiven ze, waardoor je de waarde aanpast. Er is altijd 1 van tab geselecteerd die je kan aanpassen. Bij het hoveren met de muis wordt de tab waarover je hovert automatisch geselecteerd. Je kan echter ook met de pijltjestoetsen van links naar rechts gaan om andere tabs te selecteren. Als je met de pijltjestoetsen van boven naar beneden gaat verschuif je de geselecteerde tab altijd met 2 waardes per keer. Met het scroll-wiel van de muis verplaats je de geselecteerde tab met 1 waarde per keer. 
 
 Onderaan het popup-venster staan 2 knoppen, een vinkje en een kruisje. Door op het vinkje te klikken accepteer je de datum/tijd die je net hebt ingesteld en zal deze verschijnen in de Part-picker waarmee je net gewerkt hebt. Door op het kruisje te klikken wordt de verandering geanuleerd en blijft de waarde van de part-picker staan zoals die voordien stond. 
 
@@ -121,7 +118,7 @@ Het volgende grote paradigma zijn de navigaties binnen de applicatie. Onder navi
 
 Om een navigatie te testen zijn er dus in grote lijnen 2 handelingen die we moeten uitvoeren. Enerzijds moete de actie uitvoerd worden die zorgt voor de navigatie (meestal klikken op een control). Anderzijds moeten gecontroleerd worden of de juiste pagina wordt geopend nadat deze actie is uitgevoerd. 
 
-Deze controle kan voor elke pagina anders zijn, maar de werkwijze is steeds dezelfde: er wordt een control of een set van controls die uniek zijn voor de desbetreffende pagina gezocht, en gecontroleerd of deze controls aanwezig zijn, of dat ze de juiste waarde bevatten (bvb titels). 
+Deze controle kan voor elke pagina anders zijn, maar de werkwijze is steeds dezelfde: er wordt een control of een set van controls die uniek zijn voor de desbetreffende pagina gezocht, en gecontroleerd of deze controls aanwezig zijn, of dat ze de juiste waarde bevatten (bijvoorbeeld: titels). 
 
 ##### A. Soorten navigations
 
@@ -141,7 +138,7 @@ Vaste controls zijn controls die altijd op een pagina aanwezig zijn, ongeacht de
 
 Het aantal vaste controls op een pagina is altijd dezelfde, en deze staan ook altijd op dezelfde plaats gepositioneerd, enkel kan het zijn dat de tekst in deze controls varieert op basis van de data die zich in de database bevind. 
 
-Om deze controls te testen moet ook geklikt worden op de control, maar de concrete klikfunctie voor deze testmethode zal lichtjes verschillen van de variabele controls, aangezien de manier om toegang te krijgen tot de control anders zal zijn. De controle of de navigatie juist gebeurd is is opnieuw een controle op de titel van de pagina waarnaar genavigeerd werd, en eventueel een controle op de state van deze pagina (bvb: staat de juiste tab open? Staan de elementen in de pagina juist ge-ordend? ...).
+Om deze controls te testen moet ook geklikt worden op de control, maar de concrete klikfunctie voor deze testmethode zal lichtjes verschillen van de variabele controls, aangezien de manier om toegang te krijgen tot de control anders zal zijn. De controle of de navigatie juist gebeurd is is opnieuw een controle op de titel van de pagina waarnaar genavigeerd werd, en eventueel een controle op de state van deze pagina (bijvoorbeeld: staat de juiste tab open? Staan de elementen in de pagina juist ge-ordend? ...).
 
 **Zoekfunctie**
 
@@ -153,7 +150,7 @@ De controle gebeurt opnieuw op de titel van de zoekresultatenpagina.
 
 **Hyperlink-navigatie**
 
-Op pagina's die data bevatten die te maken heeft met één bepaalde studie of één bepaalde patiënt (of eventueel nog andere objecten die in de toekomst zouden kunnen tevoorschijn komen), staat bovenaan steeds een hyperlink met de naam van dit object. Als hierop geklikt wordt, verschijnt de overzichtpagina van dat object (bvb studie->TrialHub, patiënt->PatientHub, ...)
+Op pagina's die data bevatten die te maken heeft met één bepaalde studie of één bepaalde patiënt (of eventueel nog andere objecten die in de toekomst zouden kunnen tevoorschijn komen), staat bovenaan steeds een hyperlink met de naam van dit object. Als hierop geklikt wordt, verschijnt de overzichtpagina van dat object (bijvoorbeeld: studie->TrialHub, patiënt->PatientHub, ...)
 
 Het schrijven van navigatiecode zal hier opnieuw lichtjes verschillen omdat de toegankelijkheid van de hyperlink lichtjes verschilt van de vorige navigaties. De controle gebeurt opnieuw op de titel.
 
@@ -351,7 +348,9 @@ Dit hoofdstuk gaat al terug iets specifieker. Hier staan een aantal speciale con
 
 ### 4.3.5 BaseClassCodedUI
 
-In dit hoofdstuk staan wel iets specifiekere zaken beschreven rond de applicatie Maät. Om het effectieve testen van de applicatie zo efficient mogelijk te laten verlopen, zijn er functies beschreven in een algemene baseclass (namelijk BaseClassCodedUI) die bepaalde tests automatisch uitvoeren. Het is tijdens de analyse de taak van de tester om bepaalde paradigma's te gaan uitzoeken (bvb navigatie naar een andere pagina). Wanneer geanalyseerd is hoe dit moet getest worden wordt dit in een functie geschreven in de BaseClassCodedUI, waardoor dit paradigma bij de volgende test in één of enkele lijnen kan getest worden in plaats van elke keer opnieuw een hele blok code te schrijven. 
+In dit hoofdstuk staan wel iets specifiekere zaken beschreven rond de applicatie Maät. Om het effectieve testen van de applicatie zo efficient mogelijk te laten verlopen, zijn er functies beschreven in een algemene baseclass (namelijk BaseClassCodedUI) die bepaalde tests automatisch uitvoeren. Het is tijdens de analyse de taak van de tester om bepaalde paradigma's te gaan uitzoeken (bijvoorbeeld: navigatie naar een andere pagina). Wanneer geanalyseerd is hoe dit moet getest worden wordt dit in een functie geschreven in de BaseClassCodedUI, waardoor dit paradigma bij de volgende test in één of enkele lijnen kan getest worden in plaats van elke keer opnieuw een hele blok code te schrijven. 
+
+## 4.4 Result Management Tools
 
 
 
