@@ -371,7 +371,7 @@ RegisterTest is een methode, gedefineerd in de BaseTestClass, die altijd als eer
 
 In dit onderdeeltje is kort uitgelegd hoe er manueel voor gezorgd werd dat het .trx bestand gegenereerd werd. De bedoeling is uiteraard in de toekomst dat dit mee in de build-straat komt en het zo automatisch gebeurd.
 
-#### 4.4.1.3 Running the tool
+#### 4.4.1.3 Running the TRX 2 XML tool
 
 Omdat er manueel nog variabelen moeten meegegeven worden in het stadium waar de tool zich op het einde van de stage zich bevond, is er duidelijk beschreven hoe dit moet gebeuren.
 
@@ -449,14 +449,57 @@ Het Target XML bestand defineerd een doel voor elke testcase. Het Target XML bes
     * Unknown (Deze testcase is nog niet geanalyseerd)
     * Done (Deze testcase is manueel toegekend als zijnde 100% compleet)
 
-#### 4.4.2.4 XSD bestanden
+#### 4.4.2.4 XSD Files
+
+XSD of XML Schema Definition is een schema achter elk XML bestand. Deze is toegevoegd voor een zeer goede reden. Zoals besproken bij de gebruikte tools en software, werd in het project gebruik gemaakt van Xsd2Code++. Deze tool zorgt voor de omzetting van XML objecten naar objecten in Visual Studio.
+
+#### 4.4.2.5 Running the Testresult Parser tool
+
+De tool werkt in verschillende fasen. Elk in aparte methoden gegoten om een maximaal overzicht te bewaren en een efficiente werking te garanderen. 
+
+##### Fase 1: Genereren van matrix in het geheugen
+
+Bestaat uit drie methoden:
+
+- ProcessCategories
+  - Gebruikt Definition XML om categorieën te maken op de verticale as
+- ProcessObjects
+  - Gebruikt Definition XML om objecten te maken op de horizontale as
+- CreateCells
+  - Maakt cellen en houdt parents en children bij
 
 
+##### Fase 2: Matrix populeren
 
+Bestaat uit twee methoden:
 
+- ProcessTargetData
+  - Vult Target XML data in de matrix in aan de hand van de GUID's
+- ProcessResultData
+  - Vult Result XML data in de matrix in aan de hand van de GUID's
 
+##### Fase 3: HTML genereren
 
+Bestaat uit nog eens acht verschillende methoden
 
+* ProduceHtml
+  * CreateHtmlHead
+    * Maken van metadata
+  * CreateHtmlBody
+    * Maken van de tabel, legende en lijst met gefaalde tests
+  * CreateTestResultDiv
+    * Maken van de tabel wrapper
+  * CreateTestResultTableHead
+    * Maken van de tabel header (Objecten/Schermen)
+  * CreateTestResultTableBody
+    * Maken van tabel body (Cellen / Categorieën)
+  * CreateLegendDiv
+    * Maken van legende wrapper
+  * CreateFailedDiv
+    * Maken van gefaalde tests wrapper
 
+#### 4.4.2.5 Resultaat
 
+Het resultaat is dan de HTML tabel met alle resultaten van de tests, zichtbaar in onderstaande afbeelding.
 
+![Result tabel](/OverigeDocumenten/Afbeeldingen/ResultTable.PNG)
