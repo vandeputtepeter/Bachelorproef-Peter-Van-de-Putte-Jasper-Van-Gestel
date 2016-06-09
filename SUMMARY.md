@@ -10,6 +10,6 @@
 * [Research](Scriptie/Research.md)
 * [Conclusies](Scriptie/Conclusies.md)
 * [Glossary](GLOSSARY.md)
-* [Appendices](Scriptie/Appendices.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
+* [Appendices](Scriptie/Appendices.md)
 
