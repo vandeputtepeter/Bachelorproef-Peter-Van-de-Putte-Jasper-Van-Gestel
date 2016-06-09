@@ -401,6 +401,13 @@ Deze XML zal het gegenereerde XML bestand zijn dat voortkomt uit het .trx bestan
 Deze tool is de tool waar het allemaal om te doen is als men spreekt over het weergeven van de vooruitgang bij testing. Het neemt drie XML bestanden als input en genereerd hieruit een HTML bestand dat de stand van zake weergeeft.
 
 
+#### 4.4.2.1 HTML bestand: Result tabel
+
+Om te begrijpen 
+
+
+
+
 
 
 
