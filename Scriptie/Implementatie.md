@@ -352,6 +352,56 @@ In dit hoofdstuk staan wel iets specifiekere zaken beschreven rond de applicatie
 
 ## 4.4 Result Management Tools
 
+In dit hoofdstuk wordt beschreven hoe de result management tools tot stand zijn gekomen. Het draait hier voornamelijk over het feit dat er nooit echt een goed beeld kan worden gegeven van de status van testing. Deze tools zijn ontwikkeld om de ontwikkelaar en de klant te bewijzen dat tests wel degelijk uitgevoerd werden, en garanderen dat de resultaten onvervalst zijn.
+
+Er zijn twee tools die dit mogelijk maken:
+
+- TRX 2 XML Parser
+- Testresult Parser
+
+### 4.4.1 TRX 2 XML Parser
+
+Wanneer Coded UI Tests uitgevoerd worden via MSTest of via Visual Studio zal er een .trx document gegenereerd worden. Dit document bevat alle resultaten en andere informatie omtrent de tests. Het .trx document is opgesteld in een XML-structuur. Omdat dit document teveel informatie bevat wordt er enkel de essentiele informatie uitgehaald en in een nieuw aangemaakt XML document gezet.
+
+#### 4.4.1.1 RegisterTest
+
+RegisterTest is een methode, gedefineerd in de BaseTestClass, die altijd als eerste moet worden aangeroepen binnen een testmethode. Deze methode zorgt ervoor dat er nog meer noodzakelijke informatie in de XML terecht zal komen. Het neemt namenlijk de scherm en paradigma ID op in zijn methode en schrijft deze dan bij uitvoering van de test mee weg in het .trx document. Op deze manier is er een link tussen de test, het scherm en het paradigma waarbij een test-resultaat wordt gegeven.
+
+#### 4.4.1.2 Running tests
+
+In dit onderdeeltje is kort uitgelegd hoe er manueel voor gezorgd werd dat het .trx bestand gegenereerd werd. De bedoeling is uiteraard in de toekomst dat dit mee in de build-straat komt en het zo automatisch gebeurd.
+
+#### 4.4.1.3 Running the tool
+
+Omdat er manueel nog variabelen moeten meegegeven worden in het stadium waar de tool zich op het einde van de stage zich bevond, is er duidelijk beschreven hoe dit moet gebeuren.
+
+#### 4.4.1.4 Result XML
+
+Deze XML zal het gegenereerde XML bestand zijn dat voortkomt uit het .trx bestand dat de tests zelf op hun beurt voortbrachten. Belangrijk is om te weten wat er in dit bestand aanwezig is. Het bevat volgende syntax:
+
+```
+<Test TestId=”Test Name” CategoryId =”Category GUID” ObjectId=”Object GUID” ResultLabel=”Outcome”>
+```
+
+* TestId
+  * De test naam (test methode naam) die gegeven was in de code van de test
+* CategoryId
+  * De ID van de category, geschreven als een GUID
+* ObjectId
+  * De ID van het object, geschreven als een GUID
+* ResultLabel 
+  * Bevat één van de vier verschillende mogelijke statusen:
+    * Passed (De test is geslaagd)
+    * Failed (De test is gefaald)
+    * Aborted (De test die uitgevoerd werd is manueel geanuleerd)
+    * Not Executed (De test is niet uitgevoerd geweest)
+
+###  4.4.2 Testresult Parser
+
+Deze tool is de tool waar het allemaal om te doen is als men spreekt over het weergeven van de vooruitgang bij testing. Het neemt drie XML bestanden als input en genereerd hieruit een HTML bestand dat de stand van zake weergeeft.
+
+
+
 
 
 
