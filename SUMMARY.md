@@ -9,7 +9,7 @@
 * [Implementatie](Scriptie/Implementatie.md)
 * [Research](Scriptie/Research.md)
 * [Conclusies](Scriptie/Conclusies.md)
-* [Appendices](Scriptie/Appendices.md)
 * [Glossary](GLOSSARY.md)
+* [Appendices](Scriptie/Appendices.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
 
