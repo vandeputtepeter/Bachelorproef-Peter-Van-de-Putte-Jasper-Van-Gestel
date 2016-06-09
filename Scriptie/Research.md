@@ -119,28 +119,30 @@ normale testmethode:
 
 ```
 [TestMethod]
-        public void Method1()
-        {
-            //testcode...
-        }
+public void Method1()
+{
+    //testcode...
+}
 ```
 
 
 testmethode met datasource:
 
 ```
-[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
-        public void ClickPatientSearchResults()
-        {
+[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|data.csv", "data#csv",
+DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
+public void ClickPatientSearchResults()
+{           
+    // set searchproperty to value in datafile
+    UIMap.UICalidosMaatWindowsWindow.UISemanticZoomSemanticZoom.UIPatiëntenHubSection.UIPatiëntenText.
+    UIItemList.UICalidosMaatClientLogListItem1.SearchProperties[XamlControl.PropertyNames.Instance] = TestContext.DataRow[0].ToString();
             
-            // set searchproperty to value in datafile
-            UIMap.UICalidosMaatWindowsWindow.UISemanticZoomSemanticZoom.UIPatiëntenHubSection.UIPatiëntenText.UIItemList.UICalidosMaatClientLogListItem1.SearchProperties[XamlControl.PropertyNames.Instance] = TestContext.DataRow[0].ToString();
+    // create control based on new searchproperty
+    XamlControl Control = new XamlControl(UIMap.UICalidosMaatWindowsWindow.UISemanticZoomSemanticZoom
+    .UIPatiëntenHubSection.UIPatiëntenText.UIItemList.UICalidosMaatClientLogListItem);
             
-            // create control based on new searchproperty
-            XamlControl Control = new XamlControl(UIMap.UICalidosMaatWindowsWindow.UISemanticZoomSemanticZoom.UIPatiëntenHubSection.UIPatiëntenText.UIItemList.UICalidosMaatClientLogListItem);
-            
-            //testcode...
-        }
+    //testcode...
+}
 ```
         
 De DataSource-functie heeft 4 variabelen nodig:
@@ -150,7 +152,6 @@ De DataSource-functie heeft 4 variabelen nodig:
 * Connectie string
 * Tabel naam
 * Data toegang methode
-
 
 In deze testmethode is er een datafile gebruikt om de zoekeigenschap van een control die we willen uit testen te specificeren. Dit gebeurt in de CSV file zodat het mogelijk wordt om variabelen binnen de testcode te definiëren zonder effectief code te veranderen.
 
