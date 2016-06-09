@@ -119,7 +119,22 @@ Er is vroeg gekeken naar data driven tests omdat het mogelijk was dat er van bij
 
 ### 5.1.3 Test Automation (Integratie in Build-straat)
 
-#### 5.1.3.1 
+#### 5.1.3.1 Probleemstelling
+
+Het uitvoeren van Coded UI Tests werd lange tijd manueel gedaan op de computer die ook gebruikt werd om code te ontwikkelen. Wanneer een Coded UI Test uitgevoerd wordt is het belangrijk om alle randapparatuur beschikbaar te stellen aan de computer, zodat de tests naar behoren kunnen worden uitgevoerd. Als dit niet het geval is, zal de gebruiker de test verstoren en 95% van de tijd een verkeerd resultaat laten genereren door de testing tool. Zoals gezegd is men dus tijdelijk de computer kwijt en zit de ontwikkelaar/tester met een productief "gat" waar men niets meer kan doen dan wachten tot de alle tests uitgevoerd zijn geweest.
+
+Omdat er een hele hoop tests geschreven waren en de tijdsduur van deze tests te laten uitvoeren steeds langer werd, werd beslist om te kijken of we deze in de build-straat konden krijgen. Dit hield in dat er virtual machines moesten aangemaakt worden en deze tests daar uit te laten voeren. Er waren dus enkele vragen die beantwoord moesten worden:
+
+- Is het mogelijk om de tests op virtual machines uit te voeren
+- Zijn er speciale vereisten om dit mogelijk te maken
+
+#### 5.1.3.2 Bevindingen
+
+**Is het mogelijk om de tests op virtual machines uit te voeren**
+
+Ja. Dat was meteen duidelijk. Er werd een virtual machine opgezet om dit te laten gebeuren. Maar het zou te makkelijk geweest zijn als er geen probleem zou opduiken. Ook al doet men de uitvoer van de tests op een virtual machine, men heeft altijd een scherm, muis en toetsenbord nodig. Deze tests kunnen niet op de achtergrond worden uitgevoerd omdat deze dan niet meer overeenkomen met een "werkelijke" testomgeving.
+
+Er was dus nood aan een beter concept om deze testing uit te voeren. Daarom werd gekeken naar testsettings, 
 
 
 
