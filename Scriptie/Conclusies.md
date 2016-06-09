@@ -1,5 +1,5 @@
 
-# 5 Conclusies
+# 6 Conclusies
 
 Bij het begin van het project was de opdracht nog vrij vaag. Er werd gevraagd om de applicatie "Maät" te testen met behulp van de technologie "Coded User Interface Testing" (of afgekort Coded UI Testing). Het concept hiervan is simpel. Namelijk testen op zulke manier alsof een eindgebruiker met de applicatie aan het werken is. Er worden dus geen stukken code rechtstreeks getest maar alles gebeurt op een natuurgetrouwe manier via de UI. 
 
