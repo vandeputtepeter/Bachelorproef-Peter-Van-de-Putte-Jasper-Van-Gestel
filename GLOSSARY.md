@@ -1,4 +1,4 @@
-# 7 Glossary
+# 6 Glossary
 
 ## hub-pagina
 
