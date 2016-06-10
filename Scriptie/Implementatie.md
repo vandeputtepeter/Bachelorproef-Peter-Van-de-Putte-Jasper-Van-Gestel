@@ -451,7 +451,7 @@ Het Target XML bestand defineerd een doel voor elke testcase. Het Target XML bes
 
 #### 4.4.2.4 XSD Files
 
-XSD of XML Schema Definition is een schema achter elk XML bestand. Deze is toegevoegd voor een zeer goede reden. Zoals besproken bij de gebruikte tools en software, werd in het project gebruik gemaakt van Xsd2Code++. Deze tool zorgt voor de omzetting van XML objecten naar objecten in Visual Studio.
+Achter elk XML bestand zit een XSD schema in deze tools. Deze zijn toegevoegd voor een zeer goede reden. Zoals besproken bij de gebruikte tools en software, werd in het project gebruik gemaakt van Xsd2Code++. Deze tool zorgt voor de omzetting van XML objecten naar objecten in Visual Studio. Deze objecten zijn van belang bij de opbouw van de matrix die de resultaten uiteindelijk zal weergeven in een HTML bestand.
 
 #### 4.4.2.5 Running the Testresult Parser tool
 
