@@ -7,15 +7,15 @@
 
 Dit is de kern van het project. Het was de bedoeling dat er een lijst werd opgesteld waarin alle paradigma's die getest moesten worden onder elkaar weergegeven werden. In de "testing guideline" staat voor elk element in deze lijst beschreven hoe dat specifieke paradigma moet getest worden. Daarnaast is er in een apart excel document voor elke pagina opgelijst welke specifieke paradigma's op die bepaalde pagina aanwezig zijn. Op die manier wordt er per pagina in een matrix bijgehouden of een bepaald paradigma volledig getest is, moet getest worden of niet van toepassing is. 
 
->Naar het einde van de bachelorproef toe werd er een automatisatie van dit process in ontwikkeld, er werd gehoopt dat deze volledig af zou zijn tegen het einde van de stage. Uiteindelijk zijn de tools niet volledig afgeraakt. Al zijn ze wel functioneel. Meer informatie over deze tools vindt je terug in de 'Gebruikte tools en technologieën' sectie van het 'Introductie' hoofdstuk.
+>Naar het einde van de bachelorproef toe werd er een automatisatie van dit process in ontwikkeld, er werd gehoopt dat deze volledig af zou zijn tegen het einde van de stage. Uiteindelijk zijn de tools niet volledig afgeraakt. Al zijn ze wel functioneel. Meer informatie over deze tools vindt je terug in de "Gebruikte tools en technologieën" sectie van het "Introductie" hoofdstuk.
  
 ### 4.1.2 Werkwijze
 
-Er werd gestart met de basispagina’s die de meest gebruikte paradigma's/control ’s bevatten (die zo goed als overal terugkomen). 
+Er werd gestart met de basispagina’s die de meest gebruikte paradigma's/besturingselementen bevatten (die zo goed als overal terugkomen). 
 
-Voor elke gevonden control/paradigma werd dan ge-analyseerd hoe deze zo effecient mogelijk getest kon worden. Deze methode werd dan gedocumenteerd zodat eventuele opvolgers deze altijd terug kunnen raadplegen wanneer nodig. Er werd ook gedocumenteerd welke control ’s en paradigma's reeds getest zijn geweest, tot alles getest is voor de specifieke pagina. Op het moment dat alle paradigma's op alle controls die deze paradigma's toepassen getest zijn, wordt een pagina als volledig getest verklaard.
+Voor elke gevonden besturingselement/paradigma werd dan ge-analyseerd hoe deze zo effecient mogelijk getest kon worden. Deze methode werd dan gedocumenteerd zodat eventuele opvolgers deze altijd terug kunnen raadplegen wanneer nodig. Er werd ook gedocumenteerd welke besturingselementen en paradigma's reeds getest zijn geweest, tot alles getest is voor de specifieke pagina. Op het moment dat alle paradigma's op alle besturingselementen die deze paradigma's toepassen getest zijn, wordt een pagina als volledig getest verklaard.
 
-Indien er op een volgende pagina weer een nieuwe control/paradigma tevoorschijn komt, zetten we deze bij onderaan onze checklist met gevonden control ‘s/paradigma's. Het is dan weer opnieuw de bedoeling om uit te zoeken hoe deze getest kan worden en alle voorgaande pagina’s opnieuw af te gaan en te controleren of ook dit element aanwezig is op de pagina en te testen indien nodig, zodat de pagina weer als getest verklaard kan worden. 
+Indien er op een volgende pagina weer een nieuwe besturingselement/paradigma tevoorschijn komt, zetten we deze bij onderaan onze checklist met gevonden besturingselementen/paradigma's. Het is dan weer opnieuw de bedoeling om uit te zoeken hoe deze getest kan worden en alle voorgaande pagina’s opnieuw af te gaan en te controleren of ook dit element aanwezig is op de pagina en te testen indien nodig, zodat de pagina weer als getest verklaard kan worden. 
 
 ### 4.1.3 General checklist
 
@@ -33,13 +33,13 @@ Wanneer er een nieuw paradigma bijkomt, zal deze dus altijd eerst op groen moete
 
 ### 4.1.5 Example-page + Page checklists
 
-Vervolgens is er de pagina-specifieke checklist. Hierin staan de algemene paradigma's van de general checklist verder onderverdeeld zoals bij de paradigma-checklist. Bovenaan wordt de pagina dan opgesplitst in al zijn aparte control's, die worden gebruikt om tests uit te voeren. Voor elke control is ook de parent-control gedocumenteerd, zodat het duidelijk is over welke control het gaat. 
+Vervolgens is er de pagina-specifieke checklist. Hierin staan de algemene paradigma's van de general checklist verder onderverdeeld zoals bij de paradigma-checklist. Bovenaan wordt de pagina dan opgesplitst in al zijn aparte besturingselementen, die worden gebruikt om tests uit te voeren. Voor elk besturingselement is ook het parent-besturingselement gedocumenteerd, zodat het duidelijk is over welke besturingselement het gaat. 
 
-Op de example-page zijn enkele control's aanwezig die op elke pagina terugkomen, zoals de backbutton of de home-knop. 
+Op de example-page zijn enkele besturingselementen aanwezig die op elke pagina terugkomen, zoals de backbutton of de home-knop. 
 
-Wanneer een nieuw paradigma gevonden wordt, zal dit eerst in de paradigm checklist terecht komen. Vervolgens komt paradigma op de example-page en nadien op alle andere page-checklists. Wanneer er begonnen wordt met een nieuwe pagina te testen en dus een page-checklist gemaakt wordt voor deze pagina, kan de example-page rechtstreeks gekopiërd en geplakt worden, en kunnen vervolgens alle pagina-specifieke control's toegevoegd worden.
+Wanneer een nieuw paradigma gevonden wordt, zal dit eerst in de paradigm checklist terecht komen. Vervolgens komt paradigma op de example-page en nadien op alle andere page-checklists. Wanneer er begonnen wordt met een nieuwe pagina te testen en dus een page-checklist gemaakt wordt voor deze pagina, kan de example-page rechtstreeks gekopiërd en geplakt worden, en kunnen vervolgens alle pagina-specifieke besturingselementen toegevoegd worden.
 
-Op de page checklist staat opnieuw aangeduid welk paradigma getest is en welk niet, volgens de kleurcode in de legende op de general checklist, met als verschil dat deze hier nog eens onderverdeeld worden per control. Er wordt dus voor elke control ge-analyseerd welk paradigma van toepassing is en dan wordt de status volgens de kleurcode aangeduid. 
+Op de page checklist staat opnieuw aangeduid welk paradigma getest is en welk niet, volgens de kleurcode in de legende op de general checklist, met als verschil dat deze hier nog eens onderverdeeld worden per besturingselement. Er wordt dus voor elk besturingselement ge-analyseerd welk paradigma van toepassing is en dan wordt de status volgens de kleurcode aangeduid. 
 
 ### 4.1.6 Full checklist (eerste versie)
 
@@ -47,15 +47,15 @@ In de guideline staat de volledig uitgeschreven versie van de checklist. Hierin 
 
 Vervolgens staat onder "how?" een stappenplan beschreven dat je moet volgen om die specifieke test uit te voeren. 
 
-In deze checklist hoort zo specifiek en zo duidelijk mogelijk te zijn, zodat het ook voor een eventuele opvolger helemaal duidelijk is wat exact de bedoeling is van deze test en wat de verschillende control's en elementen horen te doen wanneer ze gebruikt worden op de beschreven manier. 
+In deze checklist hoort zo specifiek en zo duidelijk mogelijk te zijn, zodat het ook voor een eventuele opvolger helemaal duidelijk is wat exact de bedoeling is van deze test en wat de verschillende besturingselementen en elementen horen te doen wanneer ze gebruikt worden op de beschreven manier. 
 
 Merk op dat deze checklist later nogmaals veranderd is. Bij deze de uitleg over de eerste versie van de checklist (de uiteindelijke volgt nog): 
 
 #### 4.1.6.1 Content
 
-In deze sectie worden alle paradigma's beschreven die betrekking hebben tot de inhoud van control's en tekstvelden. Alle informatie die in de user-interface beschikbaar is die uit de database komt, of aangepast kan worden, komt onder het paradigma "content". 
+In deze sectie worden alle paradigma's beschreven die betrekking hebben tot de inhoud van besturingselementen en tekstvelden. Alle informatie die in de user-interface beschikbaar is die uit de database komt, of aangepast kan worden, komt onder het paradigma "content". 
 
-Er zijn 4 verschillende handelingen die uitgevoerd kunnen worden op info in de control's. Deze 4 staan beter bekend als de CRUD-acties. (Create, Read, Update, Delete)
+Er zijn 4 verschillende handelingen die uitgevoerd kunnen worden op info in de besturingselementen. Deze 4 staan beter bekend als de CRUD-acties. (Create, Read, Update, Delete)
 
 ##### A. Create
 
@@ -67,7 +67,7 @@ Om dit paradigma te testen, moet eerst uitgezocht worden op welk deel van de app
 
 ##### B. Read
 
-"Read" wil zeggen dat je gaat controleren of bestaande data, die aanwezig zou moeten zijn in de user-interface, ook effectief aanwezig is. Om dit te testen moet uitgezocht worden hoe enerzijds tekstvelden en eventueel andere control's uitgelezen kunnen worden, en anderzijds hoe deze vergeleken kunnen worden met de effectieve data in de database. 
+"Read" wil zeggen dat je gaat controleren of bestaande data, die aanwezig zou moeten zijn in de user-interface, ook effectief aanwezig is. Om dit te testen moet uitgezocht worden hoe enerzijds tekstvelden en eventueel andere besturingselementen uitgelezen kunnen worden, en anderzijds hoe deze vergeleken kunnen worden met de effectieve data in de database. 
 
 Er zijn verschillende scenario's die onder "Read" vallen.
 
@@ -116,35 +116,35 @@ Het testen van deze partpickers is tot nu toe nog niet gelukt, aangezien er geen
 
 Het volgende grote paradigma zijn de navigaties binnen de applicatie. Onder navigaties vallen alle acties die ervoor zorgen dat de applicatie een ander scherm opendoet. Ook de zoekfunctie behoort tot navigaties, aangezien we hier ook naar een ander scherm gaan. Het verschil tussen de CRUD-tests voor de zoekfunctie en de navigatietests is echter dat bij de navigatietests niet gecontroleerd wordt welke zoekdata weergegeven wordt, maar enkel of er naar de zoekresultatenpagina genavigeerd wordt (ClinicSearch). 
 
-Om een navigatie te testen zijn er dus in grote lijnen 2 handelingen die we moeten uitvoeren. Enerzijds moete de actie uitvoerd worden die zorgt voor de navigatie (meestal klikken op een control). Anderzijds moeten gecontroleerd worden of de juiste pagina wordt geopend nadat deze actie is uitgevoerd. 
+Om een navigatie te testen zijn er dus in grote lijnen 2 handelingen die we moeten uitvoeren. Enerzijds moete de actie uitvoerd worden die zorgt voor de navigatie (meestal klikken op een besturingselement). Anderzijds moeten gecontroleerd worden of de juiste pagina wordt geopend nadat deze actie is uitgevoerd. 
 
-Deze controle kan voor elke pagina anders zijn, maar de werkwijze is steeds dezelfde: er wordt een control of een set van controls die uniek zijn voor de desbetreffende pagina gezocht, en gecontroleerd of deze controls aanwezig zijn, of dat ze de juiste waarde bevatten (bijvoorbeeld: titels). 
+Deze controle kan voor elke pagina anders zijn, maar de werkwijze is steeds dezelfde: er wordt een besturingselement of een set van besturingselementen die uniek zijn voor de desbetreffende pagina gezocht, en gecontroleerd of deze besturingselementen aanwezig zijn, of dat ze de juiste waarde bevatten (bijvoorbeeld: titels). 
 
 ##### A. Soorten navigations
 
 Paradigmagewijs zijn alle navigations natuurlijk hetzelfde. Maar in manier van testen zijn de navigaties verder onderverdeeld in sub-paradigma's, waarbij elk sub-paradigma een lichtjes andere manier van testen omvat. 
 
-**Variabele controls**
+**Variabele besturingselementen**
 
-Hieronder valt het concept van een lijst, waarin zich allemaal verschillende gevallen bevinden van een bepaald opject. Dit kan bijvoorbeeld zijn: een lijst van studies, een lijst van patienten,... Het aantal items in de lijst staat nooit vast, aangezien het afhangt van hoeveel studies/patienten/... er zich in de database bevinden. Dit kan voortdurend wijzigen. Ook de tekst op deze controls hangt af van de data in de database. 
+Hieronder valt het concept van een lijst, waarin zich allemaal verschillende gevallen bevinden van een bepaald opject. Dit kan bijvoorbeeld zijn: een lijst van studies, een lijst van patienten,... Het aantal items in de lijst staat nooit vast, aangezien het afhangt van hoeveel studies/patienten/... er zich in de database bevinden. Dit kan voortdurend wijzigen. Ook de tekst op deze besturingselementen hangt af van de data in de database. 
 
-Als je op één van de controls in deze lijst klikt, zal je altijd op dezelfde pagina terecht komen. Hoe deze pagina is ingevuld hangt echter af van de control waarop je geklikt hebt.
+Als je op één van de besturingselementen in deze lijst klikt, zal je altijd op dezelfde pagina terecht komen. Hoe deze pagina is ingevuld hangt echter af van de besturingselement waarop je geklikt hebt.
 
-Om dit te testen moet er dus enerzijds voor gezorgd worden dat de control aanklikbaar is, en nadien moet gecontroleerd worden of de titel van de pagina naarwaar genavigeerd werd overeen stemt met de control waarop geklikt is. 
+Om dit te testen moet er dus enerzijds voor gezorgd worden dat het besturingselement aanklikbaar is, en nadien moet gecontroleerd worden of de titel van de pagina naarwaar genavigeerd werd overeen stemt met de besturingselement waarop geklikt is. 
 
-**Vaste controls**
+**Vaste besturingselementen**
 
-Vaste controls zijn controls die altijd op een pagina aanwezig zijn, ongeacht de data in de database. De navigatie is uniek voor elk van deze controls. Soms kan het wel zijn dat meerdere vaste controls naar dezelfde pagina navigeren maar ze zorgen dan elk apart voor een andere state van de desbetreffende pagina. Ze openen bijvoorbeeld allemaal een aparte tab van dezelfde pagina of zorgen ervoor dat de pagina anders ge-ordend is. 
+Vaste besturingselementen zijn besturingselementen die altijd op een pagina aanwezig zijn, ongeacht de data in de database. De navigatie is uniek voor elk van deze besturingselementen. Soms kan het wel zijn dat meerdere vaste besturingselementen naar dezelfde pagina navigeren maar ze zorgen dan elk apart voor een andere state van de desbetreffende pagina. Ze openen bijvoorbeeld allemaal een aparte tab van dezelfde pagina of zorgen ervoor dat de pagina anders ge-ordend is. 
 
-Het aantal vaste controls op een pagina is altijd dezelfde, en deze staan ook altijd op dezelfde plaats gepositioneerd, enkel kan het zijn dat de tekst in deze controls varieert op basis van de data die zich in de database bevind. 
+Het aantal vaste besturingselementen op een pagina is altijd dezelfde, en deze staan ook altijd op dezelfde plaats gepositioneerd, enkel kan het zijn dat de tekst in deze besturingselementen varieert op basis van de data die zich in de database bevind. 
 
-Om deze controls te testen moet ook geklikt worden op de control, maar de concrete klikfunctie voor deze testmethode zal lichtjes verschillen van de variabele controls, aangezien de manier om toegang te krijgen tot de control anders zal zijn. De controle of de navigatie juist gebeurd is is opnieuw een controle op de titel van de pagina waarnaar genavigeerd werd, en eventueel een controle op de state van deze pagina (bijvoorbeeld: staat de juiste tab open? Staan de elementen in de pagina juist ge-ordend? ...).
+Om deze besturingselementen te testen moet ook geklikt worden op de besturingselement, maar de concrete klikfunctie voor deze testmethode zal lichtjes verschillen van de variabele besturingselementen, aangezien de manier om toegang te krijgen tot het besturingselement anders zal zijn. De controle of de navigatie juist gebeurd is is opnieuw een controle op de titel van de pagina waarnaar genavigeerd werd, en eventueel een controle op de state van deze pagina (bijvoorbeeld: staat de juiste tab open? Staan de elementen in de pagina juist ge-ordend? ...).
 
 **Zoekfunctie**
 
 De zoekfunctie vanuit de ClinicHubPage kan ook beschouwd worden als een navigatie. Als puur het navigatiegedeelte hiervan getest wordt, moet er geen rekening gehouden worden met het algoritme dat zorgt voor de correcte zoekresultaten, maar enkel met het feit dat er genavigeerd wordt naar de zoekresultatenpagina. 
 
-Opnieuw zal dit een klein verschil geven in het schrijven van code, aangezien er deze keer niet moet geklikt worden op een control, maar er eerst een zoekwoord moet ingeven worden en nadien ge-enterd moet worden of geklikt moet worden op het vergrootglas naast het zoekvak. 
+Opnieuw zal dit een klein verschil geven in het schrijven van code, aangezien er deze keer niet moet geklikt worden op een besturingselementen, maar er eerst een zoekwoord moet ingeven worden en nadien ge-enterd moet worden of geklikt moet worden op het vergrootglas naast het zoekvak. 
 
 De controle gebeurt opnieuw op de titel van de zoekresultatenpagina. 
 
@@ -154,7 +154,7 @@ Op pagina's die data bevatten die te maken heeft met één bepaalde studie of é
 
 Het schrijven van navigatiecode zal hier opnieuw lichtjes verschillen omdat de toegankelijkheid van de hyperlink lichtjes verschilt van de vorige navigaties. De controle gebeurt opnieuw op de titel.
 
->Voor al deze verschillende navigaties wordt steeds onderzocht hoe de control gevonden kan worden in code, hoe een verwachte waarde gecreëerd kan worden aan de hand van welke gecontroleerd kan worden of de juiste navigatie uitgevoerd werd, hoe dan deze control gebruikt kan worden (meestal klikken, aangezien de verschillende functionaliteiten zoals tab-enter bij navigaties nog niet van belang zijn, deze komen later terug bij functionality) en hoe dan gecontroleerd kan worden dat deze verwachtte waarde aanwezig is na de navigatie. Na elk van deze tests wordt dan ook nog de omgekeerde test gedaan met de backbutton, opnieuw met een verwachtte waarde en een effectieve waarde. Dit zorgt ervoor dat alle mogelijke back-navigaties in de applicatie uiteindelijk getest zijn. Dit geheel wordt zoveel mogelijk in één grote functie per soort navigatie geschreven, zodat als nadien dit soort navigatie nog tevoorschijn komt, de geschreven functie gewoon éénmaal aangeroepen moet worden en er dus geen extra werk meer is.
+>Voor al deze verschillende navigaties wordt steeds onderzocht hoe het besturingselement gevonden kan worden in code, hoe een verwachte waarde gecreëerd kan worden aan de hand van welke gecontroleerd kan worden of de juiste navigatie uitgevoerd werd, hoe dan deze control gebruikt kan worden (meestal klikken, aangezien de verschillende functionaliteiten zoals tab-enter bij navigaties nog niet van belang zijn, deze komen later terug bij functionality) en hoe dan gecontroleerd kan worden dat deze verwachtte waarde aanwezig is na de navigatie. Na elk van deze tests wordt dan ook nog de omgekeerde test gedaan met de backbutton, opnieuw met een verwachtte waarde en een effectieve waarde. Dit zorgt ervoor dat alle mogelijke back-navigaties in de applicatie uiteindelijk getest zijn. Dit geheel wordt zoveel mogelijk in één grote functie per soort navigatie geschreven, zodat als nadien dit soort navigatie nog tevoorschijn komt, de geschreven functie gewoon éénmaal aangeroepen moet worden en er dus geen extra werk meer is.
 
 #### 4.1.6.3 States
 
@@ -172,9 +172,9 @@ De verschillende states van een pagina zijn de verschillende soorten toestanden 
 
 ##### A. Semantic zoom
 
-De semantic zoom is een parent-control, die de mogelijkheid bezit om zichzelf in en uit te zoomen. Meestal bevind er zich in de semantic zoom een hub, die onderverdeeld wordt in verschillende hubsecties. Dit zijn allemaal aparte blokken waarin zich een aantal controls bevinden. Bovenaan een hubsectie staat dan de titel van deze hubsectie. Het aantal hubsecties is niet van belang, en ook het aantal controls die in een hubsectie geimplementeerd worden is niet van belang. Dat zijn er zoveel of zo weinig als je zelf wil. 
+De semantic zoom is een parent-besturingselement, die de mogelijkheid bezit om zichzelf in en uit te zoomen. Meestal bevind er zich in de semantic zoom een hub, die onderverdeeld wordt in verschillende hubsecties. Dit zijn allemaal aparte blokken waarin zich een aantal besturingselementen bevinden. Bovenaan een hubsectie staat dan de titel van deze hubsectie. Het aantal hubsecties is niet van belang, en ook het aantal besturingselementen die in een hubsectie geimplementeerd worden is niet van belang. Dat zijn er zoveel of zo weinig als je zelf wil. 
 
-Wanneer naar een pagina met een semantic zoom genavigeerd wordt, staat deze automatisch ingezoomd. Alle hubsecties zijn dan volledig zichtbaar met hun titel en alle controls. Uitzoomen wordt gedaan door "Ctrl-", Ctrl & scrollen, klikken op de hubsectie-titels, PgUp/PgDn&Enter en Tab&Enter. Wanneer uitgezoomd wordt verdwijnen alle volledige hubsecties en komt er in de plaats een lijst met listitems tevoorschijn, waarin alle titels van de hubsecties weergegeven zijn. Zo kan er makkelijk genavigeerd worden naar een hubsectie die helemaal rechts op het scherm staat en dus nog niet zichtbaar was in de zoomed-in state (toen moest er naartoe gescrolld worden). 
+Wanneer naar een pagina met een semantic zoom genavigeerd wordt, staat deze automatisch ingezoomd. Alle hubsecties zijn dan volledig zichtbaar met hun titel en alle besturingselementen. Uitzoomen wordt gedaan door "Ctrl-", Ctrl & scrollen, klikken op de hubsectie-titels, PgUp/PgDn&Enter en Tab&Enter. Wanneer uitgezoomd wordt verdwijnen alle volledige hubsecties en komt er in de plaats een lijst met listitems tevoorschijn, waarin alle titels van de hubsecties weergegeven zijn. Zo kan er makkelijk genavigeerd worden naar een hubsectie die helemaal rechts op het scherm staat en dus nog niet zichtbaar was in de zoomed-in state (toen moest er naartoe gescrolld worden). 
 
 Het terug inzoomen kan op dezelfde manier, door te klikken op de listitems, "Ctrl+", Ctrl & scrollen, , PgUp/PgDn&Enter en Tab&Enter. Als er terug ingezoomd wordt op een bepaalde hubsectie zal deze links van het scherm getoond worden. 
 
@@ -194,7 +194,7 @@ Wat hier moet getest worden zijn verschillende dingen. Eerst en vooral moet gete
 
 #### 4.1.6.4 Functionality
 
-Onder functionaliteit valt: alles dat te maken heeft met hoe de applicatie werkt, hoe controls werken,...
+Onder functionaliteit valt: alles dat te maken heeft met hoe de applicatie werkt, hoe besturingselementen werken,...
 
 ##### A. Speed
 
@@ -210,38 +210,38 @@ Om dit te testen moet dus eerst uitgezocht worden hoe je nagaat of een pagina ge
 
 **Reactivity**
 
-Reactiviteit is het kunnen gebruiken van controls vooraleer de pagina volledig geladen is. 
+Reactiviteit is het kunnen gebruiken van besturingselementen vooraleer de pagina volledig geladen is. 
 
-Om dit te testen moet een manier gevonden worden om te controleren of de pagina al geladen is of nog niet, nadat de control gebruikt is. Als de vorige test succesvol uitgevoerd is, is bekend hoe gecontroleerd moet worden of een pagina geladen is of niet, dus zou dit voor deze test geen probleem mogen zijn. 
+Om dit te testen moet een manier gevonden worden om te controleren of de pagina al geladen is of nog niet, nadat het besturingselement gebruikt is. Als de vorige test succesvol uitgevoerd is, is bekend hoe gecontroleerd moet worden of een pagina geladen is of niet, dus zou dit voor deze test geen probleem mogen zijn. 
 
 ##### B. Scrolling
 
 De scroll-functie wordt bij heel veel verschillende soorten vensters gebruikt. Het wordt gebruikt binnen een hub, binnen een combobox, sommige dropdown of popup-menus,...
 
-Om de scroll-functie te testen, moet een manier gevonden worden om te controleren of de controls op het scherm dat getest wordt verplaatsen of zijn verplaatst. Vervolgens moet dan een manier gezocht worden om de verschillende soorten scroll-functies uit te voeren. Deze zijn onderandere het muis-scroll-wiel, de scrollbar,...
+Om de scroll-functie te testen, moet een manier gevonden worden om te controleren of de besturingselementen op het scherm dat getest wordt verplaatsen of zijn verplaatst. Vervolgens moet dan een manier gezocht worden om de verschillende soorten scroll-functies uit te voeren. Deze zijn onderandere het muis-scroll-wiel, de scrollbar,...
 
 ##### C. Control state verification
 
-Dit is het controleren of de visuele toestand van de controls is hoe deze hoort te zijn. Enkele toestanden kunnen zijn: enabled/disabled, de kleur, de helptext,...
+Dit is het controleren of de visuele toestand van de besturingselementen is hoe deze hoort te zijn. Enkele toestanden kunnen zijn: enabled/disabled, de kleur, de helptext,...
 
-Er zijn ook verschillende scenarios waarvoor deze toestanden moeten gecontroleerd worden. Je kunt klikken op een control, klikken en vasthouden, hoveren over de control, ... Ook heb je nog de initiele toestand waarin de control zich bevind. 
+Er zijn ook verschillende scenarios waarvoor deze toestanden moeten gecontroleerd worden. Je kunt klikken op een besturingselement, klikken en vasthouden, hoveren over het besturingselement, ... Ook heb je nog de initiele toestand waarin het besturingselement zich bevind. 
 
 De tests zullen dus bestaan uit 2 delen, in het eerste deel wordt het scenario gecreëerd dat getest gaat worden (initeel, hover,...)
-In het tweede deel wordt de toestand van de control gecontroleerd, zich bevindend in dit scenario. 
+In het tweede deel wordt de toestand van het besturingselement gecontroleerd, zich bevindend in dit scenario. 
 
 ##### D. Control accessibility
 
-Als de toestand van een control getest wordt, wordt natuurlijk ook de toegankelijkheid getest. Dit wil zeggen dat er getest wordt of je de control kan selecteren door middel van de tab en pijltjes toetsen. Het werd duidelijk dat dit voor sommige controls mogelijk is maar voor andere niet. Indien het mogelijk is moet er uitgezocht worden hoe er gecontroleerd kan worden of er een stippelijn rondom de control zichtbaar is wanneer deze geselecteerd is. Vervolgens moet er automatisch getabt worden of op de pijltjestoetsen gedrukt worden in code en gecontroleerd worden of op een gegeven moment deze control geselecteerd is. 
+Als de toestand van een besturingselement getest wordt, wordt natuurlijk ook de toegankelijkheid getest. Dit wil zeggen dat er getest wordt of je het besturingselement kan selecteren door middel van de tab en pijltjes toetsen. Het werd duidelijk dat dit voor sommige besturingselementen mogelijk is maar voor andere niet. Indien het mogelijk is moet er uitgezocht worden hoe er gecontroleerd kan worden of er een stippelijn rondom het besturingselement zichtbaar is wanneer deze geselecteerd is. Vervolgens moet er automatisch getabt worden of op de pijltjestoetsen gedrukt worden in code en gecontroleerd worden of op een gegeven moment dit besturingselement geselecteerd is. 
 
-Later wordt er ook gecontroleerd of de control gebruikt kan worden met enkele toetsen op het toetsenbord als deze geselecteerd is. 
+Later wordt er ook gecontroleerd of het besturingselement gebruikt kan worden met enkele toetsen op het toetsenbord als deze geselecteerd is. 
 
 ##### E. Custom
 
-Onder custom valt alle functionaliteit die specifiek te maken heeft met de controls zelf, en voor elk type van control alle tests die enkel gelden voor dit soort control. 
+Onder custom valt alle functionaliteit die specifiek te maken heeft met de besturingselementen zelf, en voor elk type van besturingselement alle tests die enkel gelden voor dit soort besturingselement. 
 
 #### 4.1.6.5 Config
 
-Alle config-pagina's van Maät, zijn veruit de meest unieke pagina's in de applicatie. Dit zijn de pagina's met de meeste maar ook de meest complexe functionaliteit, die nergens anders in de applicatie te vinden is. Daarom is er beslist om voor deze pagina's een apart paradigma te maken, waarin al deze unieke gevallen beschreven worden en er automatische functies van gemaakt worden. Deze functies kunnen dan op alle config-pagina's toepast worden. Dit is mogelijk omdat veel controls en elementen op exact dezelfde plaats en in exact dezelfde hiërarchie voorkomen op al deze pagina's. 
+Alle config-pagina's van Maät, zijn veruit de meest unieke pagina's in de applicatie. Dit zijn de pagina's met de meeste maar ook de meest complexe functionaliteit, die nergens anders in de applicatie te vinden is. Daarom is er beslist om voor deze pagina's een apart paradigma te maken, waarin al deze unieke gevallen beschreven worden en er automatische functies van gemaakt worden. Deze functies kunnen dan op alle config-pagina's toepast worden. Dit is mogelijk omdat veel besturingselementen en elementen op exact dezelfde plaats en in exact dezelfde hiërarchie voorkomen op al deze pagina's. 
 
 ### 4.1.7 Full checklist (nieuw)
 
@@ -249,7 +249,7 @@ Na een tijdje te werken met deze checklist, begonnen meer en meer paradigmas in 
 
 #### 4.1.7.1 Content
 
-Content krijgt een nieuwe onderverdeling, waarbij alle normale CRUD-operaties onder 1 subcategorie "CRUD" worden geplaatst met dan de verdere onderverdeling in Create, Read, Update en Delete. Onder "normaal" verstaan we gewone content die weergegeven wordt door controls. 
+Content krijgt een nieuwe onderverdeling, waarbij alle normale CRUD-operaties onder 1 subcategorie "CRUD" worden geplaatst met dan de verdere onderverdeling in Create, Read, Update en Delete. Onder "normaal" verstaan we gewone content die weergegeven wordt door besturingselementen. 
 
 Alle "niet-normale" CRUD-operaties zijn interactieve functies zoals bijvoorbeeld de zoekfunctie. Deze worden onder de tab "Custom CRUD" geplaatst. 
 
@@ -292,22 +292,22 @@ Resultaat:
 
 #### 4.1.7.4 Control state appearance
 
-Dit was een onderdeel van functionality in de oude checklist, maar het lijkt logischer om ook dit paradigma apart te plaatsen. Onder control state appearance vallen alle tests die de toestand van een control (zowel visueel als functioneel) gaan controleren. Dit kan bijvoorbeeld zijn: de kleur van controls, het feit dat deze ge-enabled zijn, de waarde die zich in de control bevind,... Deze toestand moet voor verschillende handelingen gecontroleerd worden. Volgende handelingen zijn alle handelingen die de state van een control kunnen veranderen:
+Dit was een onderdeel van functionality in de oude checklist, maar het lijkt logischer om ook dit paradigma apart te plaatsen. Onder control state appearance vallen alle tests die de toestand van een besturingselement (zowel visueel als functioneel) gaan controleren. Dit kan bijvoorbeeld zijn: de kleur van besturingselementen, het feit dat deze ge-enabled zijn, de waarde die zich in het besturingselement bevind,... Deze toestand moet voor verschillende handelingen gecontroleerd worden. Volgende handelingen zijn alle handelingen die de state van een besturingselement kunnen veranderen:
 
 * Initial (= de oorspronkelijke toestand, voor er een handeling uitgevoerd is)
-* Hovered (= wanneer de muis over de control zweeft)
-* Clicked (= wanneer er op de control geklikt is)
-* Click & hold (= wanneer er op de control geklikt wordt maar de muis ingedrukt gehouden wordt)
-* Filled in (= wanneer er data in de control wordt geplaatst door de gebruiker)
+* Hovered (= wanneer de muis over het besturingselement zweeft)
+* Clicked (= wanneer er op het besturingselement geklikt is)
+* Click & hold (= wanneer er op het besturingselement geklikt wordt maar de muis ingedrukt gehouden wordt)
+* Filled in (= wanneer er data in het besturingselement wordt geplaatst door de gebruiker)
 
 #### 4.1.7.5 Control functionality
 
-Hieronder vallen alle andere functionality tests van de oude checklist, maar deze zijn anders geördend en meer veralgemeend (niet meer specifiek per type control, maar gewoon algemene tests) aangezien de volledige analyse voor elk type control moet gebeuren. 
+Hieronder vallen alle andere functionality tests van de oude checklist, maar deze zijn anders geördend en meer veralgemeend (niet meer specifiek per type besturingselement, maar gewoon algemene tests) aangezien de volledige analyse voor elk type besturingselement moet gebeuren. 
 
 De nieuwe indeling is als volgt:
 
-* General: Hieronder vallen alle algemene functionaliteiten, namelijk het selecteren van een control door click/tab/pijltjestoetsen, en het gebruiken van een control met click/enter/spatie.
-* Execution functionality: Hieronder zijn alle functionaliteiten geplaatst die mogelijk zijn met controls in de applicatie. Dit kan gaan van het doen verschijnen van andere controls tot het scrollen doorheen de childs van een control. 
+* General: Hieronder vallen alle algemene functionaliteiten, namelijk het selecteren van een besturingselement door click/tab/pijltjestoetsen, en het gebruiken van een besturingselement met click/enter/spatie.
+* Execution functionality: Hieronder zijn alle functionaliteiten geplaatst die mogelijk zijn met besturingselementen in de applicatie. Dit kan gaan van het doen verschijnen van andere besturingselementen tot het scrollen doorheen de childs van een besturingselement. 
 
 #### 4.1.7.6 Custom functionality
 
@@ -332,11 +332,11 @@ In dit onderdeel word algemeen beschreven hoe een test opgebouwd wordt en hoe de
 ### 4.3.1 Basics
 
 In de basics wordt beschreven hoe een testproject aangemaakt wordt, welke parameters er in dit project moeten staan om dit te laten runnen, hoe je deze parameters moet aanroepen en dergelijke. 
-Ook hoe controls toegevoegd worden aan een testproject wordt hier beschreven. Dit is dus eigelijk het eerste hoofdstuk dat de eventuele opvolger moet lezen om aan het project te kunnen beginnen. Zonder deze basis is het onmogelijk om de rest van de guideline te begrijpen. 
+Ook hoe besturingselementen toegevoegd worden aan een testproject wordt hier beschreven. Dit is dus eigelijk het eerste hoofdstuk dat de eventuele opvolger moet lezen om aan het project te kunnen beginnen. Zonder deze basis is het onmogelijk om de rest van de guideline te begrijpen. 
 
 ### 4.3.2 Generating controls 
 
-Onder generating controls staat alles wat nodig is om controls in een test aan te roepen en waardes van deze control te verifiëren. Dit is uiteindelijk de essentie van alle tests, namelijk dat we bepaalde waardes gaan controleren op hun correctheid. 
+Onder generating controls staat alles wat nodig is om besturingselementen in een test aan te roepen en waardes van dit besturingselement te verifiëren. Dit is uiteindelijk de essentie van alle tests, namelijk dat we bepaalde waardes gaan controleren op hun correctheid. 
 
 ### 4.3.3 Commonly used variables and methods
 
@@ -344,7 +344,7 @@ Hier staan een aantal variabelen en methoden beschreven die vaak nodig zijn om b
 
 ### 4.3.4 Commonly used controls
 
-Dit hoofdstuk gaat al terug iets specifieker. Hier staan een aantal speciale controls beschreven die vaak terugkomen in de applicatie en vaak gebruikt worden in tests. Het kan bijvoorbeeld gaan om de "ProgressBar", die aangeeft wanneer een pagina volledig geladen is. 
+Dit hoofdstuk gaat al terug iets specifieker. Hier staan een aantal speciale besturingselementen beschreven die vaak terugkomen in de applicatie en vaak gebruikt worden in tests. Het kan bijvoorbeeld gaan om de "ProgressBar", die aangeeft wanneer een pagina volledig geladen is. 
 
 ### 4.3.5 BaseClassCodedUI
 
@@ -412,7 +412,7 @@ Om te begrijpen hoe de tool werkt is het noodzakelijk de output te begrijpen. In
 
 #### 4.4.2.2 Definition XML
 
-De Definition XML is het document waar manueel de assen van de tabel worden gedefineerd. Hier worden de GUID's toegewezen aan elk scherm of control en elke paradigma. Het Definition XML bestand bevat volgende syntax:
+De Definition XML is het document waar manueel de assen van de tabel worden gedefineerd. Hier worden de GUID's toegewezen aan elk scherm of besturingselement en elke paradigma. Het Definition XML bestand bevat volgende syntax:
 
 ```
 <Category id="Category GUID" name="Paradigm" info="Description" level="">
@@ -422,7 +422,7 @@ De Definition XML is het document waar manueel de assen van de tabel worden gede
 * CategoryId / ObjectId
   * Het ID, geschreven als een GUID
 * Name
-  * Paradigma of scherm/control naam
+  * Paradigma of scherm/besturingselement naam
   * Moet uniek zijn
 * Level
   * Het level object zal gecalculeerd worden en moet daarom dus niet gedefineerd worden aangezien het toch overschreven zal worden
@@ -500,7 +500,7 @@ Bestaat uit nog eens acht verschillende methoden
 
 #### 4.4.2.5 Extra functionaliteit
 
-Er is ook veel tijd gekropen in het "bruikbaar" maken van de matrix. Een oneindig doorlopende reeks van schermen en controls langs de ene, en een hele hoop paradigmas op de andere as zou resulteren in miljoenen cellen. Deze moeten allemaal zichtbaar gemaakt **kunnen** worden. Maar het is niet handig om een overzicht te krijgen met miljoenen cellen als we maar kort willen kijken hoe de testprocedure ervoor staat. Dus, als oplossing, was het noodzakelijk dat de schermen en controls, alsook de paradigmas inklapbaar werden gemaakt zodat er een beter overzicht kon gecreërd worden indien de gebruiker dit wenst.
+Er is ook veel tijd gekropen in het "bruikbaar" maken van de matrix. Een oneindig doorlopende reeks van schermen en besturingselementen langs de ene, en een hele hoop paradigmas op de andere as zou resulteren in miljoenen cellen. Deze moeten allemaal zichtbaar gemaakt **kunnen** worden. Maar het is niet handig om een overzicht te krijgen met miljoenen cellen als we maar kort willen kijken hoe de testprocedure ervoor staat. Dus, als oplossing, was het noodzakelijk dat de schermen en besturingselementen, alsook de paradigmas inklapbaar werden gemaakt zodat er een beter overzicht kon gecreërd worden indien de gebruiker dit wenst.
 
 In de toekomst was het ook gepland om de headers te laten zweven, zodat het ten alle tijden duidelijk was waar men zich bevond tijdens het scrollen. Heirvoor was echter niet genoeg tijd weggelegd.
 
