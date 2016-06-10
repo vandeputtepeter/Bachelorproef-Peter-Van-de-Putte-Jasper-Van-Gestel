@@ -21,7 +21,7 @@ Bijkomend na eerste fase in research:
 
 #### 5.1.1.2 Resultaten van research
 
-Hieronder de conclusies die opgelijst werden na diepgaand onderzoek naar de Store For Business.
+Hieronder de conclusies die gelijst werden na diepgaand onderzoek naar de Store For Business.
 
 >Het volledige document in verband met de research over de Store For Business is te vinden onder de "OverigeDocumenten/Documenten" folder
 
@@ -34,10 +34,10 @@ Hieronder de conclusies die opgelijst werden na diepgaand onderzoek naar de Stor
 -	Windows Store for Business stelt in staat om apps in deze Private Store te zetten en deze beschikbaar te maken voor een beperkt publiek (bedrijven)
 -	Enkel apps met online licenses kunnen in deze Private Store toegevoegd worden
 -	Het beschikbaar stellen van een app in de Private Store duurt ongeveer 12 uur
--	Apps zonder certificaat kunnen in principe geïnstalleerd worden als de instellingen van de computer ingesteld staan als ‘modus voor ontwikkelaar’
+-	Apps zonder certificaat kunnen in principe geïnstalleerd worden als de instellingen van de computer ingesteld staan als "modus voor ontwikkelaar"
   -	Naar verluidt enkel beschikbaar als men ontwikkelaar programma’s zoals VS op de computer heeft staan (de key zou deze modus activeren) > nog te controleren
-  -	‘instellingen’ typen in Windows search > Bijwerken & beveiligen > voor ontwikkelaars
-  -	Side-loading kan ook via deze weg ingesteld worden, aangezien er een ‘sideload modus’ beschikbaar is onder deze tab
+  -	"instellingen" typen in Windows search > Bijwerken & beveiligen > voor ontwikkelaars
+  -	Side-loading kan ook via deze weg ingesteld worden, aangezien er een "sideload modus" beschikbaar is onder deze tab
 -	Line-of-Business (LOB) lijkt een mogelijke oplossing voor het gestelde probleem
   - Via Mobile Device Management (MDM) zoals Windows Intune lijkt het mogelijk om updates gesynched te houden met alle devices
   - LOB kan via de Windows SFB
