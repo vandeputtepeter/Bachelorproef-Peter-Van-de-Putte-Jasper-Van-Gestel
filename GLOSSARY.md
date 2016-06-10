@@ -24,6 +24,10 @@ Navigatie is wanneer men van de ene pagina naar de andere pagina gaat in een app
 
 Een manier van doen, zienswijze
 
+## SFX
+
+Self-Extracting Zip
+
 ## UID
 
 Unique (Automation) Identifier
@@ -36,6 +40,6 @@ Universal Windows Platform
 
 Verpleegkundige Gegevens
 
-## SFX
+## CSV
 
-Self-Extracting Zip
+Comma Seperated Values
