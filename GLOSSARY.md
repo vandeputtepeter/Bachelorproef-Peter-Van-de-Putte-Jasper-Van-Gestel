@@ -20,6 +20,10 @@ Minimale Ziekenhuis Gegevens
 
 Navigatie is wanneer men van de ene pagina naar de andere pagina gaat in een applicatie met behulp van een link, knop of actie. We spreken van connecties tussen verschillende pagina's wanneer ze naar elkaar kunnen navigeren.
 
+## Paradigma
+
+Een manier van doen, zienswijze
+
 ## UWP
 
 Universal Windows Platform
@@ -28,6 +32,6 @@ Universal Windows Platform
 
 Verpleegkundige Gegevens
 
-## Paradigma
+## UID
 
-Een manier van doen, zienswijze
+Unique (Automation) Identifier
