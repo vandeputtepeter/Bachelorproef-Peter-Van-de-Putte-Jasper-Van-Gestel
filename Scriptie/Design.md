@@ -20,12 +20,12 @@ $$Page name + Paradigm (+ Context) (+ Xaml Control Type Property) (+ Specific In
   * Deze parameter komt meteen na de pagina om een duidelijke afbakening te zien van wat er wel/niet werkt op welke pagina.
 * **"Context"**
   * _Optionele parameter_
-  * Duidt meer specifiek aan welke control of welk deel van de geteste pagina getest wordt.
+  * Duidt meer specifiek aan welke besturingselement of welk deel van de geteste pagina getest wordt.
   * Bijvoorbeeld: Wanneer je meerdere lijsten hebt, die elk een lijst van zoekresultaten bevatten, en waarbij elke lijst een ander soort zoekresultaat bevat, kan je "Context" interpreteren als het woord dat duidelijk maakt om welke lijst het gaat. 
 * **"Xaml Control Type Property"**
   * _Optionele parameter_
-  * Duidt op het type control dat getest wordt.
-  * Bijvoorbeeld: Wanneer je bij context al hebt aangeduid welk sub-deel van de applicatie getest wordt, kan het nog steeds zijn dat dit sub-deel meerdere control's of control types bevat. Deze parameter duid dan duidelijk aan om welke control het gaat (indien er één specifieke control getest wordt). 
+  * Duidt op het type besturingselement dat getest wordt.
+  * Bijvoorbeeld: Wanneer je bij context al hebt aangeduid welk sub-deel van de applicatie getest wordt, kan het nog steeds zijn dat dit sub-deel meerdere besturingselementen of besturingselement-types bevat. Deze parameter duid dan duidelijk aan om welke besturingselement het gaat (indien er één specifiek besturingselement getest wordt). 
 * **"Specific Info"**
   * _Optionele parameter_
   * Duidt op de info die je bij sommige tests nodig hebt om volledig duidelijk te maken wat er exact getest wordt. Dit kan allerhande informatie zijn.
@@ -63,9 +63,9 @@ Door bovenstaande regels in acht te nemen, bekwamen we volgende file structuur:
         * **Navigatie**
           * Klasse die alle testen betreffende voorwaartse en achterwaartse navigatie naar pagina's bevat
         * **Funtionaliteit**
-          * Klasse die alle testen betreffende functionaliteit / inter-functionaliteit van controls bevat
+          * Klasse die alle testen betreffende functionaliteit / inter-functionaliteit van besturingselementen bevat
         * **Control state appearance**
-          * Klasse die alle testen betreffende de staat van controls bevat
+          * Klasse die alle testen betreffende de staat van besturingselementen bevat
         * **Content**
           * Klasse die alle testen betreffende data in de database of applicatie bevat
 
