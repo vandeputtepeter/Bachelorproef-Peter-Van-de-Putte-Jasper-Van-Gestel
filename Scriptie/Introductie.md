@@ -139,28 +139,21 @@ De appendices bestaan voornamelijk uit alle documenten die als "deliverable" wor
 
 Hieronder volgt een korte opsomming van de voornaamste technologieën die gebruikt zijn tijdens de stage.
 
-### 1.3.1 Windows 10
+### 1.3.1 Software
+
+#### 1.3.1.1 Windows 10
 
 Oorspronkelijk is het Maät project gestart met als doelplatform Windows 8, maar door de snelle upgrade van Microsoft naar het veel recentere Windows 10 is Calidos ook overgegaan om Windows 10 tot het doelplatform te maken.
 
-### 1.3.2 Universal Windows Platform (UWP)
-
-Het Maät project is een Universal Windows Platform (UWP) applicatie opgestelt in C# en XAML
-
-![Windows Core](/OverigeDocumenten/Afbeeldingen/windowscore.png)
-
-Met de komst van Windows 10 werd UWP geïntroduceerd, dat het Windows Runtime model verder evolueert en het zo naar een verenigde Windows 10 core brengt. Als onderdeel van de core, brengt UWP een gezamenlijk app platform dat beschikbaar is op alle apparaten die Windows 10 runnen. Het UWP voorziet een gegarandeerde core API laag over apparaten. Dit wil zeggen dat men een enkel applicatie pakket kan maken dat kan geïnstalleerd worden op een waaier van apparaten. Bovendien voorziet de Windows Store een verenigd distributie kanaal dat, met dit single app pakket, alle apparaten waarop de applicatie kan draaien bereikbaar wordt.
-
-### 1.3.3 Visual Studio 2015
+#### 1.3.1.2 Visual Studio 2015
 
 Visual Studio 2015 is een rijk, geïntegreerd ontwikkelingsplatform om applicaties te creëren voor Windows, Andriod en iOS. Maar ook webapplicaties en cloud services vallen onder deze noemer.
 
-
-### 1.3.4 Team Foundation Server (TFS) 2013
+#### 1.3.1.3 Team Foundation Server (TFS) 2013
 
 Team Foundation Server 2013 is een server die het praktisch maakt om code te delen binnen een bedrijf/groep. Het is te vergelijken met bijvoorbeeld GitHub. Het maakt het mogelijk om code te mergen naar de server vanop ieders eigen branch, alsook de historie bekijken van elke methode/project. De ideale uitbreiding op de Visual Studio IDE wanneer men in een team aan een groot project werkt.
 
-### 1.3.5 Maät
+#### 1.3.1.4 Maät
 
 De applicatie "Maät" is, zoals al eerder vermeld, een Windows 10 UWP applicatie die nog steeds onder ontwikkeling is. De applicatie maakt het mogelijk om clinical trials te plannen, te organiseren en op te volgen in ziekenhuizen.
 
@@ -168,10 +161,41 @@ De applicatie bevat heel wat data die gestructureerd en overzichtelijk wordt wee
 
   De applicatie werkt op alle Windows-10-draaiende apparaten en vereist een internetverbinding om de connecties met de database live te houden. Dit zodat alle data die aangepast wordt via een scherm, rechtstreeks aangepast kan worden in de database zelf.
 
-### 1.3.6 Coded UI Test Builder _(Test Tool from Visual Studio 2015)_
+#### 1.3.1.5 Xsd2Code++
+
+Xsd2code++ is een Add-in voor Microsoft Visual Studio die code genereerd uit XSD bestanden. Het maakt als het ware objecten in Visual Studio die beschreven zijn in XML-vorm in de XSD schema's. Deze tool is gebruikt in de thesis bij het creëren van HTML in de Result Management Tools.
+
+### 1.3.2 Tools 
+
+#### 1.3.2.1 Coded UI Test Builder _(Test Tool from Visual Studio 2015)_
 
 De Coded UI Test Builder is een onderdeel van het testing framework dat voorzien is door Visual Studio. Het is meer bepaald een testing tool die de ontwikkelaar in staat stelt om controls te mappen via UIMap's. De UIMap is een partial klasse die voor de helft automatisch gegenereerd wordt. Dit deel zorgt voor de mapping en eventueel voor assertions (beweringen) die kunnen controleren of een bepaalde voorwaarde voldoet. Een soort van "if" statement, maar dan voor het testing framework. De andere helft van de partial klasse is voor manuele aanpassingen. Hier komen we later duidelijker op terug.
 
-### 1.3.7 Xsd2Code++
+### 1.3.3 Technologieën
 
-Xsd2code++ is een Add-in voor Microsoft Visual Studio die code genereerd uit XSD bestanden. Het maakt als het ware objecten in Visual Studio die beschreven zijn in XML-vorm in de XSD schema's. Deze tool is gebruikt in de thesis bij het creëren van HTML in de Result Management Tools.
+#### 1.3.3.1 Universal Windows Platform (UWP)
+
+Het Maät project is een Universal Windows Platform (UWP) applicatie opgestelt in C# en XAML
+
+![Windows Core](/OverigeDocumenten/Afbeeldingen/windowscore.png)
+
+Met de komst van Windows 10 werd UWP geïntroduceerd, dat het Windows Runtime model verder evolueert en het zo naar een verenigde Windows 10 core brengt. Als onderdeel van de core, brengt UWP een gezamenlijk app platform dat beschikbaar is op alle apparaten die Windows 10 runnen. Het UWP voorziet een gegarandeerde core API laag over apparaten. Dit wil zeggen dat men een enkel applicatie pakket kan maken dat kan geïnstalleerd worden op een waaier van apparaten. Bovendien voorziet de Windows Store een verenigd distributie kanaal dat, met dit single app pakket, alle apparaten waarop de applicatie kan draaien bereikbaar wordt.
+
+#### 1.3.3.2 "C#" 
+
+De Thesis is grotendeels opgesteld in C#. Dit heet te maken met het feit dat het grootste deel van applicatie in deze taal is geschreven, wat de dijdelijkheid van de code verbeterd. C# is een object georiënteerde programeertaal van Microsoft en is gebaseerd op de C++ programeertaal. De essentie is dat het de gemakkelijkheid van Visual Basic wil combineren met de kracht van C++. Ook .NET is nauwgebonden aan de C# taal.
+
+#### 1.3.3.3 XML
+
+
+
+
+
+
+
+
+
+ 
+
+
+
