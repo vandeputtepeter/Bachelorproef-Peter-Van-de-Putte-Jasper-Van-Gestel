@@ -23,7 +23,3 @@ Navigatie is wanneer men van de ene pagina naar de andere pagina gaat in een app
 ## UWP
 
 Universal Windows Platform
-
-## VG-MZG
-
-Verpleegkundige Gegevens - Minimale Ziekenhuis Gegevens
