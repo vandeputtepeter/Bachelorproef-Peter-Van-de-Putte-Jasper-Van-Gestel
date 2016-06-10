@@ -36,7 +36,7 @@ Notities over het onderzoek naar de Windows Store For Business, Windows Intune e
 
 Het is een Excel bestand dat de eerste versie van de checklist bevat. Aangezien later de Result Management Tools dit systeem moesten overnemen speelt dit ook iets minder er een rol. Maar het geeft een beeld van waar de thesis op een bepaald moment heeft gestaan, tegenover waar de thesis is afgerond.
 
-***ResultTable**
+***TestResultTable**
 
 Dit is het uiteindelijke eindproduct van de Result Management Tools. Een HTML document dat een bevat tabel die de status weergeeft in hoeverre de applicatie getest is.
 
