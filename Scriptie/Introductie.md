@@ -187,17 +187,8 @@ De Thesis is grotendeels opgesteld in C#. Dit heet te maken met het feit dat het
 
 #### 1.3.3.3 XML
 
-
-
+XML, of languit Extensive Markup Language, wordt gebruikt om data te beschrijven. Het is een flexibele manier om informatie formats te creëren. Meestal wordt XML gebruikt als bestanden voor databases.
 
 #### 1.3.3.4 XSD
 
-
-
-
-
-
- 
-
-
-
+XSD, of languit XML Schema Definition, is een W3C aanbeveling van hoe men elementen moet beschrijven in XML. Het handige aan XSD is dat het mogelijk wordt om zo XML te kunnen omzetten in bruikbare objecten in andere talen.
