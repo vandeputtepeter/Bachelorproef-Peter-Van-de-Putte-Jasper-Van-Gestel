@@ -1,45 +1,45 @@
 # Glossary
 
-## GUID
+#### CSV
+
+Comma Seperated Values
+
+#### GUID
 
 Global Universal Identifiers
 
-## Hub-pagina
+#### Hub-pagina
 
 Pagina's van waaruit we naar meerdere andere pagina's kunnen navigeren
 
-## Maät
+#### Maät
 
 De applicatie van calidos die getest wordt. 
 
-## MZG
+#### MZG
 
 Minimale Ziekenhuis Gegevens
 
-## Navigatie
+#### Navigatie
 
 Navigatie is wanneer men van de ene pagina naar de andere pagina gaat in een applicatie met behulp van een link, knop of actie. We spreken van connecties tussen verschillende pagina's wanneer ze naar elkaar kunnen navigeren.
 
-## Paradigma
+#### Paradigma
 
 Een manier van doen, zienswijze
 
-## SFX
+#### SFX
 
 Self-Extracting Zip
 
-## UID
+#### UID
 
 Unique (Automation) Identifier
 
-## UWP
+#### UWP
 
 Universal Windows Platform
 
-## VG
+#### VG
 
 Verpleegkundige Gegevens
-
-## CSV
-
-Comma Seperated Values
