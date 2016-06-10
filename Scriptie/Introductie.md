@@ -147,7 +147,7 @@ Oorspronkelijk is het Maät project gestart met als doelplatform Windows 8, maar
 
 #### 1.3.1.2 Visual Studio 2015
 
-Visual Studio 2015 is een rijk, geïntegreerd ontwikkelingsplatform om applicaties te creëren voor Windows, Andriod en iOS. Maar ook webapplicaties en cloud services vallen onder deze noemer.
+Visual Studio 2015 is een rijk, geïntegreerd ontwikkelingsplatform om applicaties te creëren voor Windows, Android en iOS. Maar ook webapplicaties en cloud services vallen onder deze noemer.
 
 #### 1.3.1.3 Team Foundation Server (TFS) 2013
 
@@ -175,7 +175,7 @@ De Coded UI Test Builder is een onderdeel van het testing framework dat voorzien
 
 #### 1.3.3.1 Universal Windows Platform (UWP)
 
-Het Maät project is een Universal Windows Platform (UWP) applicatie opgestelt in C# en XAML
+Het Maät project is een UWP applicatie opgestelt in C# en XAML
 
 ![Windows Core](/OverigeDocumenten/Afbeeldingen/windowscore.png)
 
@@ -183,7 +183,7 @@ Met de komst van Windows 10 werd UWP geïntroduceerd, dat het Windows Runtime mo
 
 #### 1.3.3.2 "C#" 
 
-De Thesis is grotendeels opgesteld in C#. Dit heet te maken met het feit dat het grootste deel van applicatie in deze taal is geschreven, wat de dijdelijkheid van de code verbeterd. C# is een object georiënteerde programeertaal van Microsoft en is gebaseerd op de C++ programeertaal. De essentie is dat het de gemakkelijkheid van Visual Basic wil combineren met de kracht van C++. Ook .NET is nauwgebonden aan de C# taal.
+De Thesis is grotendeels opgesteld in C#. Dit heet te maken met het feit dat het grootste deel van applicatie in deze taal is geschreven, wat de duidelijkheid van de code verbeterd. C# is een object georiënteerde programmeertaal van Microsoft en is gebaseerd op de C++ programmeertaal. De essentie is dat het de gemakkelijkheid van Visual Basic wil combineren met de kracht van C++. Ook .NET is een onderdeel dat heel gerelateerd is met de C# taal.
 
 #### 1.3.3.3 XML
 
