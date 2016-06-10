@@ -105,7 +105,7 @@ De DataSource-functie heeft 4 variabelen nodig:
 * Tabel naam
 * Data toegang methode
 
-In deze testmethode is er een datafile gebruikt om de zoekeigenschap van een control die we willen uit testen te specificeren. Dit gebeurt in de CSV file zodat het mogelijk wordt om variabelen binnen de testcode te definiëren zonder effectief code te veranderen.
+In deze testmethode is er een datafile gebruikt om de zoekeigenschap van een besturingselement die we willen uit testen te specificeren. Dit gebeurt in de CSV file zodat het mogelijk wordt om variabelen binnen de testcode te definiëren zonder effectief code te veranderen.
 
 Het is mogelijk om kolom namen te vernoemen om de datakolom te specificeren op volgende wijze:
 ```
