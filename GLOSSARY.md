@@ -27,3 +27,7 @@ Universal Windows Platform
 ## VG
 
 Verpleegkundige Gegevens
+
+## paradigma
+
+Een manier van doen, zienswijze
