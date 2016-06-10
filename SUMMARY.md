@@ -1,4 +1,4 @@
-# Summary
+# Inhoudstabel
 
 * [Abstract](README.md)
 * [Inhoudstabel](SUMMARY.md)
@@ -12,4 +12,3 @@
 * [Glossary](GLOSSARY.md)
 * [Bibliografie](Scriptie/Bibliografie.md)
 * [Appendices](Scriptie/Appendices.md)
-
