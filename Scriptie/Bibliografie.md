@@ -43,4 +43,6 @@
 * https://www.visualstudio.com/en-us/docs/test/lab-management/test-machines/install-configure-test-agents
 * http://www.xsd2code.com/
 * http://searchwindevelopment.techtarget.com/definition/C
+* http://searchsoa.techtarget.com/definition/XSD
+* http://searchsoa.techtarget.com/definition/XML
 * 
