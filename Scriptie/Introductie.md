@@ -51,7 +51,7 @@ Opstellen van een lijst criteria, die "afgevinkt" kan worden en zo duidelijk wee
 
 Documenteren waar er zich problemen voordoen en wanneer mogelijk ook waarom. Ook problemen die zijn tegengekomen en hoe deze ondertussen verholpen zijn werden gedocumenteerd. Visuele foutjes, dingen die lichtjes verschillen op verschillende pagina's maar in wezen wel dezelfde control zijn,... Al deze dingen staan in dit document beschreven.
 
-> In de laatste weken van de stageperiode is er beslist om Result Management Tools te creëren. Deze tool zou dan dit gehele process automatiseren (zie 'Result Management Tools' sectie).
+> In de laatste weken van de stageperiode is er beslist om Result Management Tools te creëren. Deze tool zou dan dit gehele proces automatiseren (zie 'Result Management Tools' sectie).
 
 #### 1.1.2.3 Opleveren van een "Testing Log" als onderdeel van de "Testing Guideline"
 
@@ -63,11 +63,11 @@ Bijhouden van bugs en problemen en hoe deze initieel opgelost of omzeilt zijn ge
 
 #### 1.1.2.4 Result Management Tools
 
-Als "zij-project" werd er de laatste 5 weken gevraagd of het mogelijk was om een kleine applicatie te schrijven die het mogelijk maakt om, via de DOBT, deze matrix weer te geven in "real-time". Waar we mee willen zeggen dat de matrix het resultaat zal zijn van drie afzonderlijke bestanden.
+Als "zij-project" werd er de laatste 5 weken gevraagd of het mogelijk was om een kleine applicatie te schrijven die het mogelijk maakt om, via de build-straat, deze matrix weer te geven in "real-time". Waar we mee willen zeggen dat de matrix het resultaat zal zijn van drie afzonderlijke bestanden.
 * Een "Definition" document
   * Definities van paradigma's op de ene en pagina's / controls op de andere matrix-as in XML formaat
 * Een "Result" document
-  * Resultaat van de testen, die 's nachts op de DOBT uitgevoerd werden in XML formaat
+  * Resultaat van de testen, die 's nachts op de build-straat uitgevoerd werden in XML formaat
 * Een "Target" document
   * Automatisch gegenereerd document. Dit gebeurt via de matrix applicatie, waar men manueel kan invoeren welke testen uitgevoerd moeten worden door de gewenste cellen op "TO DO" in te stellen.
 
