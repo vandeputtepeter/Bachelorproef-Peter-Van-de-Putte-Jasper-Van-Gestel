@@ -1,6 +1,6 @@
 # 9 Appendices
 
-De Appendices bevatten volgende documenten:
+Het *appendices hoofdstuk bevat volgende documenten:
 
 **Testing Guideline**
 
@@ -32,12 +32,14 @@ Schatting van de noodzakelijke tijd (in dagen) om de volledige applicatie getest
 
 Notities over het onderzoek naar de Windows Store For Business, Windows Intune en alles wat daarbij kwam kijken.
 
-***Testing Checklist**
+****Testing Checklist**
 
 Het is een Excel bestand dat de eerste versie van de checklist bevat. Aangezien later de Result Management Tools dit systeem moesten overnemen speelt dit ook iets minder er een rol. Maar het geeft een beeld van waar de thesis op een bepaald moment heeft gestaan, tegenover waar de thesis is afgerond.
 
-***TestResultTable**
+****TestResultTable**
 
 Dit is het uiteindelijke eindproduct van de Result Management Tools. Een HTML document dat een bevat tabel die de status weergeeft in hoeverre de applicatie getest is.
 
-*Dit document is te vinden onder "OverigeDocumenten/Documenten".
+*Alle documenten zijn te vinden onder "OverigeDocumenten/Documenten".
+
+**Deze documenten zijn niet aanwezig in de scriptie omdat het format dit niet toelaat.
